@@ -1,7 +1,7 @@
 # Samsungpdtraining
 PD training 
-# Alwin_iiitb_asic_class
-This github repository summarizes the progress made in the ASIC class. Quick links:
+# Nihar_Pd_training
+This github repository summarizes the progress made in the samsung pd training. Quick links:
 
 - [Day-0-Installation](#day-0-Installation)
 
