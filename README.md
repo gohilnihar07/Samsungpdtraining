@@ -21,5 +21,5 @@ follwing tools are explored : dc shell , icc2 shell, pt shell,lc shell
 
 Below is the screenshot showing sucessful launch icc2:
 
-<img width="1085" alt="yosys" src="https://github.com/alwinshaju08/Alwin_iiitb_asic_class/assets/69166205/4048f403-62c7-4be1-9bc3-64d9d43e68ea">
+<img width="1085" alt="snapshot2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
 </details>
