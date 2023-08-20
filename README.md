@@ -101,9 +101,11 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
 
  <details>
- <summary> gtkwave output for the design good_mux </summary>
-   we can observe output result in a better way from the gtkwave waveforms.  
-   <img width="1085" alt="clone sky" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b396e7227784d6031ced0b062d65fd4119d06d08/clone_sky.jpg">  
+ <summary> iverilog and gtkwave </summary>
+
+  verilog_files consists of all the Verilog design files and testbench for that design.
+   <img width="1085" alt="verilog files" src="">  
+   we can observe output result in a better way from the gtkwave waveforms.   
     <img width="1085" alt="vsdflow" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/41ef5e4854c4918f41047d7fe10b011a8461af69/clone_vsdflow.jpg">  	  
   </details>
 
