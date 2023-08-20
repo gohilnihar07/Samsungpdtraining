@@ -72,3 +72,6 @@ Below is the screenshot showing the successful launch gtk wave:
 <img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/cbc87d384d246852a8d32167efc9adb7f51a47ed/gtkwave.png">
 </details>
 
+
+
+## Day-1-Installation
