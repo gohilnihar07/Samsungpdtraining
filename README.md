@@ -96,7 +96,8 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
   The commandd to clone the files from GitHub is:- git clone link_url.git.
   The below figure shows the cloning of vsdflow and sky libraries.	  
    <img width="1085" alt="clone sky" src=" https://github.com/gohilnihar07/Samsungpdtraining/blob/b396e7227784d6031ced0b062d65fd4119d06d08/clone_sky.jpg">  
-    	  
+    <img width="1085" alt="clone sky" src="">  
+	  
   </details>
 
 
