@@ -54,19 +54,20 @@ Below is the screenshot showing the successful launch pt:
 
 
 <details>
- <summary> gtk wave </summary>
+ <summary> yosys </summary>
 
-Below is the screenshot showing the successful launch gtk wave:
+Below is the screenshot showing the successful launch yosys:
 
-<img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/cbc87d384d246852a8d32167efc9adb7f51a47ed/gtkwave.png">
+<img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/94c49bedda1760744522b5223449e03c4983c3d8/yosys.png">
 </details>
 
 
 
 <details>
- <summary> yosys </summary>
+ <summary> gtkwave </summary>
 
-Below is the screenshot showing the successful launch yosys:
+
+Below is the screenshot showing the successful launch gtk wave:
 
 <img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/cbc87d384d246852a8d32167efc9adb7f51a47ed/gtkwave.png">
 </details>
