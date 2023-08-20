@@ -114,6 +114,6 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
  <summary> Example of one Design and its testbench </summary>
  The below figures are examples of the design and testbench code for the good_mux. And the command used to view is: vim file_nanw.v
  <img width="1085" alt="Design" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77a26d76b5c7408921b46946aeb61f47ffa7aac6/good_mux.jpg">  
- <img width="1085" alt="Design" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b03d17fe777d6a32d60cc6d5e6b36d5734b6f994/gtkwave_good_mux.jpg">  
+ <img width="1085" alt="Testbench" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c11432dd91f9d8b3c0b69ad37090ee3b5ebf77c7/tb_new.jpg">  
 	 	 
   </details>
