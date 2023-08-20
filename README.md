@@ -117,3 +117,11 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
  <img width="1085" alt="Testbench" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c11432dd91f9d8b3c0b69ad37090ee3b5ebf77c7/tb_new.jpg">  
 	 	 
   </details>
+
+
+ <details>
+ <summary> Introduction to Yosys </summary>
+   Yosys is an open-source framework for RTL synthesis and formal verification of digital circuits. It transforms hardware descriptions written in languages like Verilog and VHDL into optimized netlists or other formats. Yosys is popular for its versatility, enabling various design transformations and analyses in the field of digital design automation.Basically, it converts RTL code into gate level netlist. As an input it takes DESIGN and .lib file and gives netlist which is nothing but the file which consists the connections of gate.
+   
+	 	 
+  </details>
