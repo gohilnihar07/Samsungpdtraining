@@ -75,7 +75,7 @@ GTKWave is an open-source waveform viewer software used in digital design and ve
 <details>
  <summary> Summary </summary>
 	
-following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, gtkwave
+following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, gtkwave.
 
 </details>	
 
@@ -87,6 +87,14 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 	 
   Testbench:-
   Testbench is the setup to apply the stimulus to the design to check .its functionality.
+   <img width="1085" alt="Design and verification" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9c4ca4c892766e1c6449047a02ca291b3302c1ce/Design%20and%20testbench.jpg">  
+  </details>
+
+
+  <details>
+ <summary> Cloning directories </summary>
+  Command to clone the files from github is:- git clone link_url.git.
+  below figure shows cloning of vsdflow and sky libraries.	  
    <img width="1085" alt="Design and verification" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9c4ca4c892766e1c6449047a02ca291b3302c1ce/Design%20and%20testbench.jpg">  
   </details>
 
