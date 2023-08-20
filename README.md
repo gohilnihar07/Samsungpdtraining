@@ -7,12 +7,7 @@ This github repository summarizes the progress made in the samsung pd training. 
 
 
 ## Day-0-Installation
-<details>
- <summary> Summary </summary>
-	
-following tools are explored: dc shell, icc2 shell, pt shell, lc shell
 
-</details>	
 	
  <details>
  <summary> icc2 tool </summary>
@@ -77,7 +72,12 @@ GTKWave is an open-source waveform viewer software used in digital design and ve
 <img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/cbc87d384d246852a8d32167efc9adb7f51a47ed/gtkwave.png">
 </details>
 
+<details>
+ <summary> Summary </summary>
+	
+following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, gtkwave
 
+</details>	
 
 ## Day-1-Introduction to Verilog RTL Design and Synthesis
  <details>
