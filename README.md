@@ -109,3 +109,11 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
     <img width="1085" alt="gtkwave" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b03d17fe777d6a32d60cc6d5e6b36d5734b6f994/gtkwave_good_mux.jpg">  	  
   </details>
 
+
+ <details>
+ <summary> Example of one Design and its testbench </summary>
+ The below figures are examples of the design and testbench code for the good_mux. And the command used to view is: vim file_nanw.v
+ <img width="1085" alt="Design" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b03d17fe777d6a32d60cc6d5e6b36d5734b6f994/gtkwave_good_mux.jpg">  
+ <img width="1085" alt="Design" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b03d17fe777d6a32d60cc6d5e6b36d5734b6f994/gtkwave_good_mux.jpg">  
+	 	 
+  </details>
