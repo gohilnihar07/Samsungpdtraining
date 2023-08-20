@@ -104,8 +104,8 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
  <summary> iverilog and gtkwave </summary>
 
   verilog_files consists of all the Verilog design files and testbench for that design.
-   <img width="1085" alt="verilog files" src="">  
+   <img width="1085" alt="verilog files" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/178397567e2b999cd43c646e5bf08ba328796fee/verilof_files.jpg">  
    we can observe output result in a better way from the gtkwave waveforms.   
-    <img width="1085" alt="vsdflow" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/41ef5e4854c4918f41047d7fe10b011a8461af69/clone_vsdflow.jpg">  	  
+    <img width="1085" alt="gtkwave" src="">  	  
   </details>
 
