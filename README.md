@@ -20,7 +20,9 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell
      
 Below is the screenshot showing the successful launch icc2:
 Synopsys ICC2 is an advanced IC design tool automating physical layout generation. It optimizes placement, routing, power, and timing, ensuring efficient and manufacturable chip designs. Hierarchical, multi-domain support enhances its utility.
-<img width="1085" alt="Design and verification" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9c4ca4c892766e1c6449047a02ca291b3302c1ce/Design%20and%20testbench.jpg">
+<img width="1085" alt="snapshot2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
+
+
 </details>
 
 
@@ -82,8 +84,8 @@ GTKWave is an open-source waveform viewer software used in digital design and ve
  <summary> introduction to iverilog design and testbench </summary>
   Design:-
   It's the actual verilog code or set of verilog codes which has the intended functionality to meet the required specifications.
+	 
   Testbench:-
   Testbench is the setup to apply the stimulus to the design to check it's functionality.
-     
-  <img width="1085" alt="snapshot2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
-</details>
+   <img width="1085" alt="Design and verification" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9c4ca4c892766e1c6449047a02ca291b3302c1ce/Design%20and%20testbench.jpg">  
+  </details>
