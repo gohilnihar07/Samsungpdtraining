@@ -105,7 +105,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
   verilog_files consists of all the Verilog design files and testbench for that design.
    <img width="1085" alt="verilog files" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/178397567e2b999cd43c646e5bf08ba328796fee/verilof_files.jpg">  
-   we can observe output result in a better way from the gtkwave waveforms. As an example here we can see output waveforms for good_mux design 
+   we can observe output result in a better way from the gtkwave waveforms. As an example here we can see output waveforms for good_mux design. 
     <img width="1085" alt="gtkwave" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b03d17fe777d6a32d60cc6d5e6b36d5734b6f994/gtkwave_good_mux.jpg">  	  
   </details>
 
