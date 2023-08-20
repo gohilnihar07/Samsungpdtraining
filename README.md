@@ -22,10 +22,11 @@ Below is the screenshot showing the successful launch icc2:
 
 <img width="1085" alt="snapshot2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
 </details>
-
-
+Synopsys ICC2 is an advanced IC design tool automating physical layout generation. It optimizes placement, routing, power, and timing, ensuring efficient and manufacturable chip designs. Hierarchical, multi-domain support enhances its utility.
 
 <details>
+
+ 
  <summary> lc tool </summary>
 
 Below is the screenshot showing the successful launch lc:
