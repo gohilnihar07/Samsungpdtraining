@@ -72,7 +72,7 @@ Yosys is an open-source framework for RTL synthesis and formal verification of d
  <summary> gtkwave </summary>
 
 Below is the screenshot showing the successful launch gtk wave:
-GTKWave is an open-source waveform viewer software used in digital design and verification. It allows engineers to visualize and analyze simulation results from hardware description languages like Verilog or VHDL. GTKWave displays signal waveforms, enabling users to debug and understand the behavior of their digital circuits during simulation.
+GTKWave is an open-source waveform viewer software used in digital design and verification. It allows engineers to visualize and analyze simulation results from hardware description languages like Verilog or VHDL. GTKWave displays signal waveforms, enabling users to debug and understand the behaviour of their digital circuits during simulation.
 
 <img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/cbc87d384d246852a8d32167efc9adb7f51a47ed/gtkwave.png">
 </details>
@@ -81,11 +81,13 @@ GTKWave is an open-source waveform viewer software used in digital design and ve
 
 ## Day-1-Introduction to Verilog RTL Design and Synthesis
  <details>
- <summary> introduction to iverilog design and testbench </summary>
+ <summary> introduction to Verilog design and testbench </summary>
   Design:-
-  It's the actual verilog code or set of verilog codes which has the intended functionality to meet the required specifications.
+  The actual Verilog code or set of Verilog codes has the intended functionality to meet the required specifications.
 	 
   Testbench:-
-  Testbench is the setup to apply the stimulus to the design to check it's functionality.
+  Testbench is the setup to apply the stimulus to the design to check .its functionality.
    <img width="1085" alt="Design and verification" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9c4ca4c892766e1c6449047a02ca291b3302c1ce/Design%20and%20testbench.jpg">  
   </details>
+
+
