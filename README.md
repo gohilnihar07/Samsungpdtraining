@@ -26,9 +26,26 @@ Below is the screenshot showing the successful launch icc2:
 
 
 <details>
- <summary> l2 tool </summary>
+ <summary> lc tool </summary>
 
 Below is the screenshot showing the successful launch lc:
 
 <img width="1085" alt="snapshot1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/fec3cd79f23c12bd75fbffcdec0799ecf779cb5b/snapshot1.png">
 </details>
+
+
+<details>
+ <summary> dc tool </summary>
+
+Below is the screenshot showing the successful launch dc:
+
+<img width="1085" alt="snapshot1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e522a90d26319118b401e2a043af682d9953a5f9/snapshot3.png">
+</details>
+
+
+
+
+
+
+
+
