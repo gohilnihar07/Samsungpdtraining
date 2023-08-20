@@ -39,10 +39,18 @@ Below is the screenshot showing the successful launch lc:
 
 Below is the screenshot showing the successful launch dc:
 
-<img width="1085" alt="snapshot1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e522a90d26319118b401e2a043af682d9953a5f9/snapshot3.png">
+<img width="1085" alt="snapshot3" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e522a90d26319118b401e2a043af682d9953a5f9/snapshot3.png">
 </details>
 
 
+
+<details>
+ <summary> pt tool </summary>
+
+Below is the screenshot showing the successful launch pt:
+
+<img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c0557b0a5bd5348ceecca3631719d89546d6a5d7/snapshot4.png">
+</details>
 
 
 
