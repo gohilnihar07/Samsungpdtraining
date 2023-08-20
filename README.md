@@ -40,7 +40,7 @@ Synopsys Library Compiler is an essential EDA tool for semiconductor design. It 
  <summary> dc tool </summary>
 
 Below is the screenshot showing the successful launch dc:
-
+Synopsys Design Compiler (DC) is a prominent EDA tool for semiconductor design. It translates Register Transfer Level (RTL) descriptions into gate-level representations, optimizing for power, area, and performance. DC plays a crucial role in efficient chip synthesis and meeting design goals.
 <img width="1085" alt="snapshot3" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e522a90d26319118b401e2a043af682d9953a5f9/snapshot3.png">
 </details>
 
@@ -50,6 +50,7 @@ Below is the screenshot showing the successful launch dc:
  <summary> pt tool </summary>
 
 Below is the screenshot showing the successful launch pt:
+Synopsys PrimeTime is a leading EDA tool for signoff static timing analysis. It ensures accurate timing predictions in IC designs, verifying performance and meeting critical design requirements. PrimeTime aids in identifying and addressing timing violations, contributing to reliable and high-performance chip development.
 
 <img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c0557b0a5bd5348ceecca3631719d89546d6a5d7/snapshot4.png">
 </details>
@@ -59,7 +60,7 @@ Below is the screenshot showing the successful launch pt:
  <summary> yosys </summary>
 
 Below is the screenshot showing the successful launch yosys:
-
+Yosys is an open-source framework for RTL synthesis and formal verification of digital circuits. It transforms hardware descriptions written in languages like Verilog and VHDL into optimized netlists or other formats. Yosys is popular for its versatility, enabling various design transformations and analyses in the field of digital design automation.
 <img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/94c49bedda1760744522b5223449e03c4983c3d8/yosys.png">
 </details>
 
@@ -68,8 +69,8 @@ Below is the screenshot showing the successful launch yosys:
 <details>
  <summary> gtkwave </summary>
 
-
 Below is the screenshot showing the successful launch gtk wave:
+GTKWave is an open-source waveform viewer software used in digital design and verification. It allows engineers to visualize and analyze simulation results from hardware description languages like Verilog or VHDL. GTKWave displays signal waveforms, enabling users to debug and understand the behavior of their digital circuits during simulation.
 
 <img width="1085" alt="snapshot4" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/cbc87d384d246852a8d32167efc9adb7f51a47ed/gtkwave.png">
 </details>
