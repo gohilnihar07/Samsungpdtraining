@@ -131,16 +131,18 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
  <summary> Yosys </summary>
    1. To invoke the yosys, command is: yosys <br>
    2. To read the library file inside yosys, command is: read_library -lib ../library_path <br>
-	 img width="1085" alt="snapshot2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
-
-
    3. To read the verilog file, command is : read_verilog file_name.v <br>
    4. To specify the module for synthesis :  synth -top file_name<br>
-   5. To generate the netlist : abc -liberty ../library_path<br>
+   5. To generate the netlist : abc -liberty ../library_path<br> 
+    
+  img width="1085" alt="signals" src="img" alt="snapsrc="">
+
    6. For graphical view : show<br>
+      img width="1085" alt="graphical representation" src="img" alt="snapsrc="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
+
    7. For writing netlist : write_verilog netlist_filename.v<br>
    8. To see the generated netlist : !vim filename_netlist.v
-   img width="1085" alt="yosys" src="img alt="snapsrc="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
+   img width="1085" alt="netlist" src="img" alt="snapsrc="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
 
 
 
