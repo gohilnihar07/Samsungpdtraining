@@ -134,7 +134,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
    3. To read the verilog file, command is : read_verilog file_name.v <br>
    4. To specify the module for synthesis :  synth -top file_name<br>
    5. To generate the netlist : abc -liberty ../library_path<br> 
-   img width="700" alt="[icc2_shell" src="https://github.com/mynkv/Samsung-PD-/blob/95aaab7969f9daedac9753f19158df9484d434e0/info_design.PNG"><br>
+   img width="700" alt="signals" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/849e349412ce2a859b4aa428cd9349bb118a253f/Signals.jpg "><br>
 
   
    6. For graphical view : show<br>
