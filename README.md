@@ -129,13 +129,13 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
  <details>
  <summary> Yosys </summary>
-   1. To invoke the yosys, command is: yosys
-   2. To read the library file inside yosys, command is: read_library -lib ../library_path
-   3. To read the verilog file, command is : read_verilog file_name.v
-   4. To specify the module for synthesis :  synth -top file_name
-   5. To generate the netlist : abc -liberty ../library_path
-   6. For graphical view : show
-   7. For writing netlist : write_verilog netlist_filename.v
+   1. To invoke the yosys, command is: yosys <br>
+   2. To read the library file inside yosys, command is: read_library -lib ../library_path <br>
+   3. To read the verilog file, command is : read_verilog file_name.v <br>
+   4. To specify the module for synthesis :  synth -top file_name<br>
+   5. To generate the netlist : abc -liberty ../library_path<br>
+   6. For graphical view : show<br>
+   7. For writing netlist : write_verilog netlist_filename.v<br>
    8. To see the generated netlist : !vim filename_netlist.v
    
 	 	 
