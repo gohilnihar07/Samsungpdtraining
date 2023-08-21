@@ -135,7 +135,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
    4. To specify the module for synthesis :  synth -top file_name<br>
    5. To generate the netlist : abc -liberty ../library_path<br> 
    6. For graphical view : show<br>
-   <img width="1085" alt="signals" src=""><br>
+   <img width="1085" alt="graph" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e0737761ed09a7cb5ce2025ffeb29826f6205bab/Graphical%20representation.jpg "><br>
 
    7. For writing netlist : write_verilog netlist_filename.v<br>
    8. To see the generated netlist : !vim filename_netlist.v
