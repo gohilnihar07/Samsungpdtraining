@@ -8,7 +8,7 @@ This github repository summarizes the progress made in the samsung pd training. 
 
 ## Day-0-Installation
 
-	
+	 
  <details>
  <summary> icc2 tool </summary>
 
