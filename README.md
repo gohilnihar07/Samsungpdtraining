@@ -142,7 +142,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
    7. For writing netlist : write_verilog netlist_filename.v<br>
    8. To see the generated netlist : !vim filename_netlist.v
-   img width="1085" alt="netlist" src="img" alt="snapsrc="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
+   img width="700" alt="netlist" src="img" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/9ff00607aca0b62ecc9c1948ea4cd27dbb9690a3/Netlist.jpg ">
 
 
 
