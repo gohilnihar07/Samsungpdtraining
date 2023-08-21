@@ -127,7 +127,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
   </details>
 
 
- <details
+ <details>
  <summary> Yosys </summary>
    1. To invoke the yosys, command is: yosys <br>
    2. To read the library file inside yosys, command is: read_library -lib ../library_path <br>
