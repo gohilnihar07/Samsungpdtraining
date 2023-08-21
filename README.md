@@ -134,15 +134,15 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
    3. To read the verilog file, command is : read_verilog file_name.v <br>
    4. To specify the module for synthesis :  synth -top file_name<br>
    5. To generate the netlist : abc -liberty ../library_path<br> 
-   img width="700" alt="signals" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/849e349412ce2a859b4aa428cd9349bb118a253f/Signals.jpg "><br>
+  < img width="700" alt="signals" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/849e349412ce2a859b4aa428cd9349bb118a253f/Signals.jpg "><br>
 
   
    6. For graphical view : show<br>
-      img width="700" alt="graphical representation" src="img" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/19b70292907a43d0bae466b5abce984e0117d602/Graphical%20representation.jpg">
+    <  img width="700" alt="graphical representation" src="img" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/19b70292907a43d0bae466b5abce984e0117d602/Graphical%20representation.jpg">
 
    7. For writing netlist : write_verilog netlist_filename.v<br>
    8. To see the generated netlist : !vim filename_netlist.v
-   img width="700" alt="netlist" src="img" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/9ff00607aca0b62ecc9c1948ea4cd27dbb9690a3/Netlist.jpg ">
+  < img width="700" alt="netlist" src="img" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/9ff00607aca0b62ecc9c1948ea4cd27dbb9690a3/Netlist.jpg ">
 
 
 
