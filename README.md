@@ -138,8 +138,6 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
   
    6. For graphical view : show<br>
-    <img width="700" alt="graphical representation" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/19b70292907a43d0bae466b5abce984e0117d602/Graphical%20representation.jpg"> <br>
-
    7. For writing netlist : write_verilog netlist_filename.v<br>
    8. To see the generated netlist : !vim filename_netlist.v
   <img width="700" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9ff00607aca0b62ecc9c1948ea4cd27dbb9690a3/Netlist.jpg">
