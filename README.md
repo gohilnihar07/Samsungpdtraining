@@ -266,11 +266,12 @@ endmodule<br>
         After synthesizing it we can see the netlist shown in below figure<br>
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/266e4e7550a818f7b9b065d4ef780871b6bb967e/dff_syncres_netlist.jpg"><br>  
 
-
+</details>
 
 
  
 <details>
+	
 	<summary> Some special cases in optimization </summary>
 	In some cases there is not actually any hardware required so, in those cases just by rewiring signals we are able to get the logic functionality implemented.Let's see some examples of special cases,<br>
 	1. y=2*a where, a[2:0] and y[3:0]
