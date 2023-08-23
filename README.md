@@ -178,5 +178,5 @@ Now, let's see when we synthesize it how does it make difference, and by default
 As we can see in below figure it's not showing the AND and OR gate but it's showing in the form of sub module1 and sub module2, so this is what basically hierarchical synthesis is, which infered the 
 	modules.<br>
 	--> insert the structure of hierarchical synthesis of multiple_modules
-	<img width="600" alt="lib" src="<img width="600" alt="lib" src=" "> <br>
+	<img width="600" alt="lib" src="<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d0422cfa563b5097a6555aa56bd367db5d62a346/hierarcy_synthesis_infered.jpg"> <br>
  </details>
