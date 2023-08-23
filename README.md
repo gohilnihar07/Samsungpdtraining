@@ -146,8 +146,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
 
 
-## Day-2-lib,synth,coding,opt
-**Timing libs, hierarchical vs flat synthesis and efficient flop coding styles**
+## Day-2-Timing libs, hierarchical Vs flat synthesis and efficient flop coding styles
 
 <details>
 	<summary> Timing libs </summary>
