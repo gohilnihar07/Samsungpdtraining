@@ -151,19 +151,19 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 <details>
 	<summary> Timing libs </summary>
 	For opening a library,command :- **gvim /library_path** <br>
-	There are three corners basically which are process, voltage and temprature which can be identified from the library name itself. so basically we want our silicon to work across all the corners because that three corners basically decides, how my silcion is going toi work. so we need to factor in these variation while we are designing out circuit, so our library are characterized to model these variation.there are different flavour of different cell and different flavour of same cell are available.
+	There are three corners basically which are process, voltage and temperature which can be identified from the library name itself. So basically we want our silicon to work across all the corners because those three corners basically decide, how my silicon is going to work. so we need to factor in these variations while we are designing our circuit, so our library is characterized to model these variations. there are different flavours of different cells and different flavours of the same cell are available.
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ba497da455f34a15778288bda42c074152b1dcfb/lib%20file.jpg"><br>
-	For going to cell, command : **/ cell** <br>
+	For going to cell, command : / cell <br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff2c84c8133be5cd98e1e9145ee1c6421c051583/info%20of%20leakage%20power%20for%20all%20input%20combi.%20for%20a%20cell.jpg"><br>
-       The keyword cell is mark the begining of cell definition. For each cell it will tell you what is the leakage power for the all possible input combinations<br>
+       The keyword cell is marked at the beginning of the cell definition. For each cell it will tell you what is the leakage power for all possible input combinations<br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b966e8ec355ef31b6db07d4a74a964ce34ea0f5e/lib%20it%20gives%20info%20about%20area%20and%20power%20etc...jpg"><br>
       It gives you the are number and power information of cell.<br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/f5374386094a0c7aea0445849005114294307a2a/lib%20pin%20info.jpg"><br>
 	For every pin it describes, what's the input capacitance of the pin, what's the power related to pin, what's the delay associated to the pin, what's power associated with the pin and timing information about pin.<br> 
-	For closing the cell,command :  ** :g// **
+	For closing the cell,command :   :g// 
 	Incase you want to understand  functionality or behavior of any cell, command : **:sp ../my_lib/verilog_model/sky130_fd_sc_hd_cellname.behavioral.v** <br>
-	For picking any particular cell, command : **/cell .*cell_name** <br>
-	For separating the same screen, command : **:vsp** <br>
+	For picking any particular cell, command : /cell .*cell_name <br>
+	For separating the same screen, command : :vsp <br>
 	From the same cell with two or three different flavours we can observe the cell area information and from that we can say, the cell with higher area(wider area cell) is faster cell and the cell with lesser area is slower cell and also wider cell consumes more power and having less delay, vice versa.<br>
 </details>
 
@@ -179,7 +179,7 @@ As we can see graphical representation of hierarchical synthesis in below figure
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d0422cfa563b5097a6555aa56bd367db5d62a346/hierarcy_synthesis_infered.jpg"><br>
  Here also in the below figure of generated netlist, we can see it preserves hierarchy.<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36f6a31ab857072270000ae0c196a561623ca6d1/even%20in%20the%20generated%20netlist%20also%20we%20can%20see%20that%20the%20hierarcy%20preserves.jpg"><br>
- Now for flat synthesis after linking the design to library write, command : **flatten** <br>
+ Now for flat synthesis after linking the design to library write, command : flatten <br>
  Can see the graphical representation for flat synthesis in below figure, <br>
  
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/10e33b875b7f2307c7e4a487ead123aeca51b57e/so%20in%20flatten%20synthesis%20we%20can%20directly%20see%20the%20structure%20completely.jpg"><br>
@@ -188,7 +188,7 @@ So, from above figure we can say that, in flatten synthesis we can see whole str
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/84e741ae2c240337fe1a1057912da4482d490863/flat_synthesis_netlist.jpg"><br>
 The single netlist will be generated of multiple_module, underneath we can see everything.<br>
 
-We can do synthesis at sub module level also, command : **synth -top sub_module_name**
+We can do synthesis at sub module level also, command : synth -top sub_module_name
 Basically in some cases it's preferable to do synthesis at sub module level,<br>
 1. It's preferred when we have multiple instances of same module. so, instead of synthesizing one sub module many times, it's better to synthesize it once and then replicate it as much times as needed and then stitch it to together in top module.<br>
 2. Divide and conquer. like when your design is massive in that case let's say your tool is not doing good job, so instead of giving massive design to the tool, giving portion by portion to the tool so that it writes out very optimize netlist and then you stich it together at the top module.<br>
@@ -205,7 +205,7 @@ Can see the below netlist which is generated for sub module,<br>
  <summary> Flop coding style, simulation and synthesis</summary>
 	 We required flop beacause due to the diffferent propagation delay of gates at the output glitches may come, so to overcome glitch problem, in between combinational circuit we keep flipflop to avoid glitches.And to control the flop there is a set and reset which we can design synchronous or asynchronous based on our requirements.<br>
 	
- **Below is the code for asyncronous reset D flip flop**,
+ **Below is the code for asynchronous reset D flip flop**,
 '''ruby
 module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
 always @ (posedge clk , posedge async_reset)
@@ -222,7 +222,7 @@ endmodule
         After synthesizing it we can see the netlist in below figure
 <img width="600" alt="netlist" src=""><br>  
 
- **Below is the code for asyncronous set D flip flop**,<br>
+ **Below is the code for asynchronous set D flip flop**,<br>
 
 '''ruby
 module dff_async_set ( input clk ,  input async_set , input d , output reg q );
@@ -240,8 +240,8 @@ endmodule
         After synthesizing it we can see the netlist in below figure
 <img width="600" alt="netlist" src=""><br>  
 
- **Below code is for syncronous reset D flip flop**,<br>
-```ruby
+ **Below code is for synchronous reset D flip flop**,<br>
+'''ruby
 module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 always @ (posedge clk )
 begin
@@ -251,13 +251,13 @@ begin
 		q <= d;
 end
 endmodule
-```
+'''
          After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in below figure
+        After synthesizing it we can see the netlist in the below figure
 <img width="600" alt="netlist" src=""><br>  
 
-**Below code is for synchronous/asyncronous Reset**,
+**Below code is for synchronous/asynchronous Reset**,
 '''ruby
 module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 always @ (posedge clk , posedge async_reset)
