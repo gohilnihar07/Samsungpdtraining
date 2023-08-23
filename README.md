@@ -160,13 +160,11 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
       It gives you the are number and power information of cell.<br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/f5374386094a0c7aea0445849005114294307a2a/lib%20pin%20info.jpg"><br>
 	For every pin it describes, what's the input capacitance of the pin, what's the power related to pin, what's the delay associated to the pin, what's power associated with the pin and timing information about pin.<br> 
-	For closing the cell,command : ** :g// **
+	For closing the cell,command :  ** :g// **
 	Incase you want to understand  functionality or behavior of any cell, command : **:sp ../my_lib/verilog_model/sky130_fd_sc_hd_cellname.behavioral.v** <br>
-	--> need to insert image of and2 behavior
-	For picking any particular cell, command : **/ cell .*cell_name** <br>
-	For separating the same screen, command : **:vsp** <br> 
-	--> need to insert the image of same cell with two or three different flavours
-	Here, from the cell area information we can say that, the cell with higher area(wider area cell) is faster cell and the cell with lesser area is slower cell and also wider cell consumes more power and having less delay, vice versa.<br>
+	For picking any particular cell, command : **/cell .*cell_name** <br>
+	For separating the same screen, command : **:vsp** <br>
+	From the same cell with two or three different flavours we can observe the cell area information and from that we can say, the cell with higher area(wider area cell) is faster cell and the cell with lesser area is slower cell and also wider cell consumes more power and having less delay, vice versa.<br>
 </details>
 
 
@@ -285,4 +283,6 @@ endmodule
  
 <details>
 	<summary> Some special cases in optimization </summary>
+	In some cases there is not actually any hardware required so, in those cases just by rewiring signals we are able to get the logic functionality implemented.Let's see some examples of special cases,<br>
+	
 </details>
