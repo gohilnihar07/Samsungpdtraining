@@ -292,7 +292,7 @@ endmodule<br>
 	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
 	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3c7ae27a9d6df143b5a8ae2f0ef14183bf24c8a9/mult_8%20nothing%20to%20map.jpg"><br>
 	We can understand the same thing by graphical representation also after the synthesis,<br>
-   <img width="600" alt="netlist" src=""><br>
+   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/35ed660fb65432f6e4c6e4e0b91552533acd2d6a/mult%208%20after%20synthesis.jpg"><br>
 	Netlist <br>
-	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/faccf7bfb4209ab0a9b6493a6dee561eac98c020/mult_2%20netlist.jpg">
+	<img width="600" alt="netlist" src="">
 </details>
