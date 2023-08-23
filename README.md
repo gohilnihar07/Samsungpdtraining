@@ -164,7 +164,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 	Incase you want to understand  functionality or behavior of any cell, command : **:sp ../my_lib/verilog_model/sky130_fd_sc_hd_cellname.behavioral.v** <br>
 	--> need to insert image of and2 behavior
 	For picking any particular cell, command : **/ cell .*cell_name** <br>
-	For separating the same screen, command : **:vsp** <br>
+	For separating the same screen, command : **:vsp** <br> 
 	--> need to insert the image of same cell with two or three different flavours
 	Here, from the cell area information we can say that, the cell with higher area(wider area cell) is faster cell and the cell with lesser area is slower cell and also wider cell consumes more power and having less delay, vice versa.<br>
 </details>
@@ -179,6 +179,13 @@ As we can see graphical representation of hierarchical synthesis in below figure
 
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c8721bed7184c2ad59e8ed67be9277f76e0428ee/hierarcies%20are%20preserved.jpg"><br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d0422cfa563b5097a6555aa56bd367db5d62a346/hierarcy_synthesis_infered.jpg"><br>
- Here also in the below figure of generated netlist, we can see it preserves hierarchy.
- <img width="600" alt="netlist" src=""><br>
+ Here also in the below figure of generated netlist, we can see it preserves hierarchy.<br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36f6a31ab857072270000ae0c196a561623ca6d1/even%20in%20the%20generated%20netlist%20also%20we%20can%20see%20that%20the%20hierarcy%20preserves.jpg"><br>
+ Now for flat synthesis after linking the design to library write, command : **flatten** <br>
+ Can see the graphical representation forb flat synthesis in below figure, <br>
+ 
+<img width="600" alt="netlist" src=""><br>
+ 
+<img width="600" alt="netlist" src=""><br>
+ 
  </details>
