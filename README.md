@@ -188,7 +188,7 @@ So, from above figure we can say that, in flatten synthesis we can see whole str
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/84e741ae2c240337fe1a1057912da4482d490863/flat_synthesis_netlist.jpg"><br>
 The single netlist will be generated of multiple_module, underneath we can see everything.<br>
 
-We can do synthesis at sub module level also, command : synth -top sub_module_name
+We can do synthesis at sub module level also, command : synth -top sub_module_name <br>
 Basically in some cases it's preferable to do synthesis at sub module level,<br>
 1. It's preferred when we have multiple instances of same module. so, instead of synthesizing one sub module many times, it's better to synthesize it once and then replicate it as much times as needed and then stitch it to together in top module.<br>
 2. Divide and conquer. like when your design is massive in that case let's say your tool is not doing good job, so instead of giving massive design to the tool, giving portion by portion to the tool so that it writes out very optimize netlist and then you stich it together at the top module.<br>
