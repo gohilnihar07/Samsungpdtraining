@@ -182,10 +182,11 @@ As we can see graphical representation of hierarchical synthesis in below figure
  Here also in the below figure of generated netlist, we can see it preserves hierarchy.<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36f6a31ab857072270000ae0c196a561623ca6d1/even%20in%20the%20generated%20netlist%20also%20we%20can%20see%20that%20the%20hierarcy%20preserves.jpg"><br>
  Now for flat synthesis after linking the design to library write, command : **flatten** <br>
- Can see the graphical representation forb flat synthesis in below figure, <br>
+ Can see the graphical representation for flat synthesis in below figure, <br>
  
-<img width="600" alt="netlist" src=""><br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/10e33b875b7f2307c7e4a487ead123aeca51b57e/so%20in%20flatten%20synthesis%20we%20can%20directly%20see%20the%20structure%20completely.jpg"><br>
+So, from above figure we can say that, in flatten synthesis we can see whole structure(every gate). 
  
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/84e741ae2c240337fe1a1057912da4482d490863/flat_synthesis_netlist.jpg"><br>
- 
+The single netlist will be generated of multiple_module, underneath we can see everything. 
  </details>
