@@ -150,6 +150,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
 <details>
 	<summary> Timing libs </summary>
-	There are three corners basically which are process, voltage and temprature. so basically we want our silicon to work across all the corners because that three corners basically decides, how my silcion is going toi work. so we need to factor in these variation while we are designing out circuit, so our library are characterized to model these variation.
-	<img width="1085" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ba497da455f34a15778288bda42c074152b1dcfb/lib%20file.jpg"><br>
+	For opening a library :- ** gvim /library_path ** <br>
+	There are three corners basically which are process, voltage and temprature which can be identified from the library name itself. so basically we want our silicon to work across all the corners because that three corners basically decides, how my silcion is going toi work. so we need to factor in these variation while we are designing out circuit, so our library are characterized to model these variation.
+	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ba497da455f34a15778288bda42c074152b1dcfb/lib%20file.jpg"><br>
 </details>
