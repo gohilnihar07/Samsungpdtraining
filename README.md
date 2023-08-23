@@ -150,21 +150,21 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
 <details>
 	<summary> Timing libs </summary>
-	For opening a library,command :- **gvim /library_path** <br>
+	For opening a library,command :- gvim /library_path <br>
 	There are three corners basically which are process, voltage and temperature which can be identified from the library name itself. So basically we want our silicon to work across all the corners because those three corners basically decide, how my silicon is going to work. so we need to factor in these variations while we are designing our circuit, so our library is characterized to model these variations. there are different flavours of different cells and different flavours of the same cell are available.
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ba497da455f34a15778288bda42c074152b1dcfb/lib%20file.jpg"><br>
-	For going to cell, command : / cell <br>
+	For going to cell, command: / cell <br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff2c84c8133be5cd98e1e9145ee1c6421c051583/info%20of%20leakage%20power%20for%20all%20input%20combi.%20for%20a%20cell.jpg"><br>
        The keyword cell is marked at the beginning of the cell definition. For each cell it will tell you what is the leakage power for all possible input combinations<br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b966e8ec355ef31b6db07d4a74a964ce34ea0f5e/lib%20it%20gives%20info%20about%20area%20and%20power%20etc...jpg"><br>
-      It gives you the are number and power information of cell.<br>
+      It gives you the number and power information ofthe  cell.<br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/f5374386094a0c7aea0445849005114294307a2a/lib%20pin%20info.jpg"><br>
-	For every pin it describes, what's the input capacitance of the pin, what's the power related to pin, what's the delay associated to the pin, what's power associated with the pin and timing information about pin.<br> 
-	For closing the cell,command :   :g// 
-	Incase you want to understand  functionality or behavior of any cell, command : **:sp ../my_lib/verilog_model/sky130_fd_sc_hd_cellname.behavioral.v** <br>
-	For picking any particular cell, command : /cell .*cell_name <br>
-	For separating the same screen, command : :vsp <br>
-	From the same cell with two or three different flavours we can observe the cell area information and from that we can say, the cell with higher area(wider area cell) is faster cell and the cell with lesser area is slower cell and also wider cell consumes more power and having less delay, vice versa.<br>
+	For every pin it describes, what's the input capacitance of the pin, what's the power related to the pin, what's the delay associated with the pin, what's the power associated with the pin and timing information about the pin.<br> 
+	For closing the cell, command:  :g// 
+	In case you want to understand the functionality or behavior of any cell, command: :sp ../my_lib/verilog_model/sky130_fd_sc_hd_cellname. behavioral.v <br>
+	For picking any particular cell, command: /cell .*cell_name <br>
+	For separating the same screen, command: :vsp <br>
+	From the same cell with two or three different flavours of information, we can observe the cell area information and from that, we can say, that the cell with the higher area(wider area cell) is a faster cell and the cell with the lesser area is slower cell and also wider cell consumes more power and having less delay, vice versa.<br>
 </details>
 
 
