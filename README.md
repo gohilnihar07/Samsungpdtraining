@@ -260,7 +260,7 @@ endmodule<br>
 
 
   After simulating we can see the GTK waveforms shown in below figure,<br>
-<img width="600" alt="netlist" src=""><br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/06093e21aeb5db2cc41d92ef2aa89d1f910d4ee6/dff_syncres_gtkwave.v.jpg"><br>
     Graphical representation after the synthesis is shown in below figure,<br>
 <img width="600" alt="netlist" src=""><br>
         After synthesizing it we can see the netlist shown in below figure<br>
