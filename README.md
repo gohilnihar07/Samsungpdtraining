@@ -186,6 +186,6 @@ As we can see graphical representation of hierarchical synthesis in below figure
  
 <img width="600" alt="netlist" src=""><br>
  
-<img width="600" alt="netlist" src=""><br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/84e741ae2c240337fe1a1057912da4482d490863/flat_synthesis_netlist.jpg"><br>
  
  </details>
