@@ -146,11 +146,11 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
 
 
-## Day-2-Timing libs, hierarchical vs flat synthesis and effcient flop coding styles
+## Day-2-Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
 
 <details>
 	<summary> Timing libs </summary>
-	For opening a library,command :- gvim /library_path <br>
+	For opening a library,command:-  gvim /library_path <br>
 	There are three corners basically which are process, voltage and temperature which can be identified from the library name itself. So basically we want our silicon to work across all the corners because those three corners basically decide, how my silicon is going to work. so we need to factor in these variations while we are designing our circuit, so our library is characterized to model these variations. there are different flavours of different cells and different flavours of the same cell are available.
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ba497da455f34a15778288bda42c074152b1dcfb/lib%20file.jpg"><br>
 	For going to cell, command: / cell <br>
