@@ -179,6 +179,7 @@ As we can see graphical representation of hierarchical synthesis in below figure
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d0422cfa563b5097a6555aa56bd367db5d62a346/hierarcy_synthesis_infered.jpg"><br>
  Here also in the below figure of generated netlist, we can see it preserves hierarchy.<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36f6a31ab857072270000ae0c196a561623ca6d1/even%20in%20the%20generated%20netlist%20also%20we%20can%20see%20that%20the%20hierarcy%20preserves.jpg"><br>
+ **flat synthesis**
  Now for flat synthesis after linking the design to library write, command : flatten <br>
  Can see the graphical representation for flat synthesis in below figure, <br>
  
@@ -187,7 +188,7 @@ So, from above figure we can say that, in flatten synthesis we can see whole str
  
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/84e741ae2c240337fe1a1057912da4482d490863/flat_synthesis_netlist.jpg"><br>
 The single netlist will be generated of multiple_module, underneath we can see everything.<br>
-
+**sub-module level synthesis**
 We can do synthesis at sub module level also, command : synth -top sub_module_name <br>
 Basically in some cases it's preferable to do synthesis at sub module level,<br>
 1. It's preferred when we have multiple instances of same module. so, instead of synthesizing one sub module many times, it's better to synthesize it once and then replicate it as much times as needed and then stitch it to together in top module.<br>
