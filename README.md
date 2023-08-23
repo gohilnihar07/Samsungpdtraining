@@ -168,3 +168,11 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 	--> need to insert the image of same cell with two or three different flavours
 	Here, from the cell area information we can say that, the cell with higher area(wider area cell) is faster cell and the cell with lesser area is slower cell and also wider cell consumes more power and having less delay, vice versa.<br>
 </details>
+
+
+<details>
+	<summary> Hierarchical Vs Flat synthesis </summary>
+
+
+
+ </details>
