@@ -272,7 +272,11 @@ endmodule<br>
  
 <details>
 <summary> Some special cases in optimization </summary>
-	In some cases there is not actually any hardware required so, in those cases just by rewiring signals we are able to get the logic functionality implemented.Let's see some examples of special cases,<br>
-	1. y=2*a where, a[2:0] and y[3:0]
+	It's not necessary that every time when you are doing some operations you hardware required but in some cases just by rewiring signals we are able to get the logic functionality implemented.Let's see some examples of special cases,<br>
+	1. y=2*a where, a[2:0] and y[3:0] (here the functionality that we actually need to implement is the multiplication)
+        <img width="600" alt="netlist" src=""><br>
+	 <img width="600" alt="netlist" src=""><br>
+   <img width="600" alt="netlist" src=""><br>
+	
 	
 </details>
