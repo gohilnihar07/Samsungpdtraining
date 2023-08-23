@@ -277,7 +277,8 @@ endmodule<br>
 	When we try to synthesize it, it shows
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a56a95bb0978b390b045f5a1c7a937bed9d8db3d/mul_2%20.jpg"><br>
 	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map
-	 <img width="600" alt="netlist" src=""><br>
+	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4f204fbdc94c9d3f9e866904e4fb99ac1844979b/mul_2_nothing%20to%20map.jpg"><br>
+	We can understand the same thing by graphical representation also after the synthesis,
    <img width="600" alt="netlist" src=""><br>
 	
 	
