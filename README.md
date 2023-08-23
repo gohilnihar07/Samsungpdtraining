@@ -156,5 +156,7 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 	For going to cell, command : **/ cell** <br>
 	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff2c84c8133be5cd98e1e9145ee1c6421c051583/info%20of%20leakage%20power%20for%20all%20input%20combi.%20for%20a%20cell.jpg"><br>
        The keyword cell is mark the begining of cell definition. For each cell it will tell you what is the leakage power for the all possible input combinations.
-	
+	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b966e8ec355ef31b6db07d4a74a964ce34ea0f5e/lib%20it%20gives%20info%20about%20area%20and%20power%20etc...jpg"><br>
+      It gives you the are number and power information of cell.
+	<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b966e8ec355ef31b6db07d4a74a964ce34ea0f5e/lib%20it%20gives%20info%20about%20area%20and%20power%20etc...jpg"><br>
 </details>
