@@ -276,6 +276,7 @@ endmodule<br>
 	1. y=2*a, where a[2:0] and y[3:0] (here the functionality that we actually need to implement is the multiplication)<br>
 	When we try to synthesize it, it shows<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a56a95bb0978b390b045f5a1c7a937bed9d8db3d/mul_2%20.jpg"><br>
+	 means, not needing any cell.<br>
 	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
 	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4f204fbdc94c9d3f9e866904e4fb99ac1844979b/mul_2_nothing%20to%20map.jpg"><br>
 	We can understand the same thing by graphical representation also after the synthesis,<br>
@@ -286,11 +287,12 @@ endmodule<br>
 
        2. Let's suppose a[2:0] and y[5:0] are fixed, now solve y=9*a
        When we try to synthesize it, it shows<br>
- <img width="600" alt="netlist" src=""><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/f7c9ab6227dcbc91d862d45f4b0c13f0fb9d39f2/mult_8.jpg"><br>
+ means, not needing any cell.<br>
 	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
-	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4f204fbdc94c9d3f9e866904e4fb99ac1844979b/mul_2_nothing%20to%20map.jpg"><br>
+	 <img width="600" alt="netlist" src=""><br>
 	We can understand the same thing by graphical representation also after the synthesis,<br>
-   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0500353abc5f74c891f9eaa34bf391d0e5787d10/mul_2_post_synthesis%20view.jpg"><br>
+   <img width="600" alt="netlist" src=""><br>
 	Netlist <br>
 	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/faccf7bfb4209ab0a9b6493a6dee561eac98c020/mult_2%20netlist.jpg">
 </details>
