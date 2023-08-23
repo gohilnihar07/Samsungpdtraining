@@ -222,7 +222,7 @@ endmodule<br>
     Graphical representation after the synthesis is shown in below figure,<br>
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/aafd51c97f0049b9515a5ff34e79354c27880450/netlist%20of%20asyncronous%20reset%20flop.jpg"><br>
         After synthesizing it we can see the netlist shown in below figure<br>
-<img width="600" alt="netlist" src=""><br>  
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2bc4cd5129339a86ffddfd7386363ad4d1186ab9/netlist%20in%20coding%20way%20of%20asyncronous%20reset%20flop.jpg"><br>  
 
 
  **Below is the code for asynchronous set D flip flop**,<br>
