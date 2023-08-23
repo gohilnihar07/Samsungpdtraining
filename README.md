@@ -208,7 +208,7 @@ Can see the below netlist which is generated for sub module,<br>
 	 We required flop beacause due to the diffferent propagation delay of gates at the output glitches may come, so to overcome glitch problem, in between combinational circuit we keep flipflop to avoid glitches.And to control the flop there is a set and reset which we can design synchronous or asynchronous based on our requirements.<br>
 	
  **Below is the code for asyncronous reset D flip flop**,
-
+'''ruby
 module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
 always @ (posedge clk , posedge async_reset)
 begin
@@ -218,15 +218,15 @@ begin
 		q <= d;
 end
 endmodule
-
+'''
          After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
         After synthesizing it we can see the netlist in below figure
 <img width="600" alt="netlist" src=""><br>  
 
- **Below is the code for asyncronous set D flip flop**,
+ **Below is the code for asyncronous set D flip flop**,<br>
 
-
+'''ruby
 module dff_async_set ( input clk ,  input async_set , input d , output reg q );
 always @ (posedge clk , posedge async_set)
 begin
@@ -236,13 +236,14 @@ begin
 		q <= d;
 end
 endmodule
+'''
          After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
         After synthesizing it we can see the netlist in below figure
 <img width="600" alt="netlist" src=""><br>  
 
- **Below code is for syncronous reset D flip flop**,
-
+ **Below code is for syncronous reset D flip flop**,<br>
+```ruby
 module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 always @ (posedge clk )
 begin
@@ -252,14 +253,14 @@ begin
 		q <= d;
 end
 endmodule
-
+```
          After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
         After synthesizing it we can see the netlist in below figure
 <img width="600" alt="netlist" src=""><br>  
 
 **Below code is for synchronous/asyncronous Reset**,
-
+'''ruby
 module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 always @ (posedge clk , posedge async_reset)
 begin
@@ -271,7 +272,7 @@ begin
 		q <= d;
 end
 endmodule
-
+'''
     After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
         After synthesizing it we can see the netlist in below figure
