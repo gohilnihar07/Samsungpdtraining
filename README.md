@@ -217,10 +217,13 @@ begin<br>
 end<br>
 endmodule<br>
 
-         After simulating we can see the GTK waveforms in below figure,<br>
-<img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in below figure<br>
+  After simulating we can see the GTK waveforms shown in below figure,<br>
+<img width="600" alt="netlist" src=""><br>
+    Graphical representation after the synthesis is shown in below figure,<br>
+<img width="600" alt="netlist" src=""><br>
+        After synthesizing it we can see the netlist shown in below figure<br>
 <img width="600" alt="netlist" src=""><br>  
+
 
  **Below is the code for asynchronous set D flip flop**,<br>
 
@@ -235,10 +238,13 @@ begin<br>
 end<br>
 endmodule<br>
 
-         After simulating we can see the GTK waveforms in below figure,<br>
-<img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in below figure<br>
+  After simulating we can see the GTK waveforms shown in below figure,<br>
+<img width="600" alt="netlist" src=""><br>
+    Graphical representation after the synthesis is shown in below figure,<br>
+<img width="600" alt="netlist" src=""><br>
+        After synthesizing it we can see the netlist shown in below figure<br>
 <img width="600" alt="netlist" src=""><br>  
+
 
  **Below code is for synchronous reset D flip flop**,<br>
 
@@ -252,31 +258,14 @@ begin<br>
 end<br>
 endmodule<br>
 
-         After simulating we can see the GTK waveforms in below figure,<br>
-<img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in the below figure<br>
+
+  After simulating we can see the GTK waveforms shown in below figure,<br>
+<img width="600" alt="netlist" src=""><br>
+    Graphical representation after the synthesis is shown in below figure,<br>
+<img width="600" alt="netlist" src=""><br>
+        After synthesizing it we can see the netlist shown in below figure<br>
 <img width="600" alt="netlist" src=""><br>  
 
-**Below code is for synchronous/asynchronous Reset**,
-
-module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );<br>
-always @ (posedge clk , posedge async_reset)<br>
-begin<br>
-	if(async_reset)<br>
-		q <= 1'b0;<br>
-	else if (sync_reset)<br>
-		q <= 1'b0;<br>
-	else	<br>
-		q <= d;<br>
-end<br>
-endmodule<br>
-
-    After simulating we can see the GTK waveforms in below figure,<br>
-<img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in below figure<br>
-<img width="600" alt="netlist" src=""><br>  
-
- </details>
 
 
 
