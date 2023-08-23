@@ -202,5 +202,34 @@ Can see the below netlist which is generated for sub module,<br>
 
 
  <details>
- <summary> Flop coding style and special cases in optimization </summary>
+ <summary> Flop coding style, simulation and synthesis</summary>
+	 We required flop beacause due to the diffferent propagation delay of gates at the output glitches may come, so to overcome glitch problem, in between combinational circuit we keep flipflop to avoid glitches.<br>
+	 Below Figure is the code for asyncronous reset D flip flop,
+<img width="600" alt="netlist" src=""><br>
+         After simulating we can see the GTK waveforms in below figure,
+<img width="600" alt="netlist" src=""><br>             
+        After synthesizing it we can see the netlist in below figure
+<img width="600" alt="netlist" src=""><br>  
+
+ Below Figure is the code for asyncronous set D flip flop,
+<img width="600" alt="netlist" src=""><br>
+         After simulating we can see the GTK waveforms in below figure,
+<img width="600" alt="netlist" src=""><br>             
+        After synthesizing it we can see the netlist in below figure
+<img width="600" alt="netlist" src=""><br>  
+
+ Below Figure is the code for syncronous reset D flip flop,
+<img width="600" alt="netlist" src=""><br>
+         After simulating we can see the GTK waveforms in below figure,
+<img width="600" alt="netlist" src=""><br>             
+        After synthesizing it we can see the netlist in below figure
+<img width="600" alt="netlist" src=""><br>  
+
  </details>
+
+
+
+ 
+<details>
+	<summary> Some special cases in optimization </summary>
+</details>
