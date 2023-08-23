@@ -185,8 +185,16 @@ As we can see graphical representation of hierarchical synthesis in below figure
  Can see the graphical representation for flat synthesis in below figure, <br>
  
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/10e33b875b7f2307c7e4a487ead123aeca51b57e/so%20in%20flatten%20synthesis%20we%20can%20directly%20see%20the%20structure%20completely.jpg"><br>
-So, from above figure we can say that, in flatten synthesis we can see whole structure(every gate). 
+So, from above figure we can say that, in flatten synthesis we can see whole structure(every gate).<br>
  
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/84e741ae2c240337fe1a1057912da4482d490863/flat_synthesis_netlist.jpg"><br>
-The single netlist will be generated of multiple_module, underneath we can see everything. 
+The single netlist will be generated of multiple_module, underneath we can see everything.<br>
+
+We can do synthesis at sub module level also, command : **synth -top sub_module_name**
+Basically in some cases it's preferable to do synthesis at sub module level,<br>
+1. It's preferred when we have multiple instances of same module. so, instead of synthesizing one sub module many times, it's better to synthesize it once and then replicate it as much times as needed and then stitch it to together in top module.<br>
+2. Divide and conquer. like when your design is massive in that case let's say your tool is not doing good job, so instead of giving massive design to the tool, giving portion by portion to the tool so that it writes out very optimize netlist and then you stich it together at the top module.<br>
+Can see the below netlist which is generated for sub module,<br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/196a5a276c197992349ef29e0ba40ade228e7de5/netlist%20for%20sub_module%20level%20synthesis.jpg"><br>
+
  </details>
