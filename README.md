@@ -198,3 +198,9 @@ Can see the below netlist which is generated for sub module,<br>
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/196a5a276c197992349ef29e0ba40ade228e7de5/netlist%20for%20sub_module%20level%20synthesis.jpg"><br>
 
  </details>
+
+
+
+ <details>
+ <summary> Flop coding style and special cases in optimization </summary>
+ </details>
