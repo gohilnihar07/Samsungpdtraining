@@ -273,13 +273,24 @@ endmodule<br>
 <details>
 <summary> Some special cases in optimization </summary>
 	It's not necessary that every time when you are doing some operations you hardware required but in some cases just by rewiring signals we are able to get the logic functionality implemented.Let's see some examples of special cases,<br>
-	1. y=2*a where, a[2:0] and y[3:0] (here the functionality that we actually need to implement is the multiplication)<br>
+	1. y=2*a, where a[2:0] and y[3:0] (here the functionality that we actually need to implement is the multiplication)<br>
 	When we try to synthesize it, it shows<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a56a95bb0978b390b045f5a1c7a937bed9d8db3d/mul_2%20.jpg"><br>
 	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
 	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4f204fbdc94c9d3f9e866904e4fb99ac1844979b/mul_2_nothing%20to%20map.jpg"><br>
 	We can understand the same thing by graphical representation also after the synthesis,<br>
    <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0500353abc5f74c891f9eaa34bf391d0e5787d10/mul_2_post_synthesis%20view.jpg"><br>
-	Netlist 
-	<img width="600" alt="netlist" src=""><br>
+	Netlist <br>
+	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/faccf7bfb4209ab0a9b6493a6dee561eac98c020/mult_2%20netlist.jpg">
+	Similarly, if there is anything power of 2 then just upending with zero can solve. So we don't require any hardware for these cases rewiring signals gives the solution.<br>
+
+       2. Let's suppose a[2:0] and y[5:0] are fixed, now solve y=9*a
+       When we try to synthesize it, it shows<br>
+ <img width="600" alt="netlist" src=""><br>
+	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
+	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4f204fbdc94c9d3f9e866904e4fb99ac1844979b/mul_2_nothing%20to%20map.jpg"><br>
+	We can understand the same thing by graphical representation also after the synthesis,<br>
+   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0500353abc5f74c891f9eaa34bf391d0e5787d10/mul_2_post_synthesis%20view.jpg"><br>
+	Netlist <br>
+	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/faccf7bfb4209ab0a9b6493a6dee561eac98c020/mult_2%20netlist.jpg">
 </details>
