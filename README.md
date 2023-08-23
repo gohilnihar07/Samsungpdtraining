@@ -241,7 +241,7 @@ endmodule
 <img width="600" alt="netlist" src=""><br>  
 
  **Below code is for synchronous reset D flip flop**,<br>
-'''ruby
+ '''ruby
 module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 always @ (posedge clk )
 begin
@@ -251,14 +251,14 @@ begin
 		q <= d;
 end
 endmodule
-'''
+ '''
          After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
         After synthesizing it we can see the netlist in the below figure
 <img width="600" alt="netlist" src=""><br>  
 
 **Below code is for synchronous/asynchronous Reset**,
-'''ruby
+ '''ruby
 module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 always @ (posedge clk , posedge async_reset)
 begin
@@ -270,7 +270,7 @@ begin
 		q <= d;
 end
 endmodule
-'''
+ '''
     After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
         After synthesizing it we can see the netlist in below figure
