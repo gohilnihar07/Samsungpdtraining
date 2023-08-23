@@ -142,3 +142,14 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
   <img width="700" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9ff00607aca0b62ecc9c1948ea4cd27dbb9690a3/Netlist.jpg">
 	 	 
   </details>
+
+
+
+
+## Day-2-Timing libs, hierarchical vs flat synthesis and effcient flop coding styles
+
+<details>
+	<summary> Timing libs </summary>
+	There are three corners basically which are process, voltage and temprature. so basically we want our silicon to work across all the corners because that three corners basically decides, how my silcion is going toi work. so we need to factor in these variation while we are designing out circuit, so our library are characterized to model these variation.
+	<img width="1085" alt="graph" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e0737761ed09a7cb5ce2025ffeb29826f6205bab/Graphical%20representation.jpg "><br>
+</details>
