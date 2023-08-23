@@ -172,7 +172,8 @@ following tools are explored: dc shell, icc2 shell, pt shell, lc shell, yosys, g
 
 <details>
 	<summary> Hierarchical Vs Flat synthesis </summary>
-
+To understand the difference between hierarchical synthesis vs flat synthesis, we will take example of one design named multiple_modules.<br>
+<img width="600" alt="lib" src="<img width="600" alt="lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ba497da455f34a15778288bda42c074152b1dcfb/lib%20file.jpg"> <br>
 
 
  </details>
