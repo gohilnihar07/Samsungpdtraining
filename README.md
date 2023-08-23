@@ -180,20 +180,20 @@ As we can see graphical representation of hierarchical synthesis in below figure
  Here also in the below figure of generated netlist, we can see it preserves hierarchy.<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36f6a31ab857072270000ae0c196a561623ca6d1/even%20in%20the%20generated%20netlist%20also%20we%20can%20see%20that%20the%20hierarcy%20preserves.jpg"><br>
  **flat synthesis**
- Now for flat synthesis after linking the design to library write, command : flatten <br>
+ Now for flat synthesis after linking the design to the  library write, command : flatten <br>
  Can see the graphical representation for flat synthesis in below figure, <br>
  
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/10e33b875b7f2307c7e4a487ead123aeca51b57e/so%20in%20flatten%20synthesis%20we%20can%20directly%20see%20the%20structure%20completely.jpg"><br>
-So, from above figure we can say that, in flatten synthesis we can see whole structure(every gate).<br>
+So, from the above figure, we can say that in flatten synthesis we can see the whole structure(every gate).<br>
  
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/84e741ae2c240337fe1a1057912da4482d490863/flat_synthesis_netlist.jpg"><br>
 The single netlist will be generated of multiple_module, underneath we can see everything.<br>
 **sub-module level synthesis**
-We can do synthesis at sub module level also, command : synth -top sub_module_name <br>
-Basically in some cases it's preferable to do synthesis at sub module level,<br>
-1. It's preferred when we have multiple instances of same module. so, instead of synthesizing one sub module many times, it's better to synthesize it once and then replicate it as much times as needed and then stitch it to together in top module.<br>
-2. Divide and conquer. like when your design is massive in that case let's say your tool is not doing good job, so instead of giving massive design to the tool, giving portion by portion to the tool so that it writes out very optimize netlist and then you stich it together at the top module.<br>
-Can see the below netlist which is generated for sub module,<br>
+We can do synthesis at sub-module level also, command: synth -top sub_module_name <br>
+Basically in some cases, it's preferable to do synthesis at sub-module level,<br>
+1. It's preferred when we have multiple instances of the same module. so, instead of synthesizing one sub-module many times, it's better to synthesize it once and then replicate it as many times as needed and then stitch it together in top module.<br>
+2. Divide and conquer. like when your design is massive that case let's say your tool is not doing a good job, so instead of giving a massive design to the tool, give portion by portion to the tool so that it writes out a very optimize netlist and then you stitch it together at the top module.<br>
+Can see the below netlist which is generated for sub-module,<br>
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/196a5a276c197992349ef29e0ba40ade228e7de5/netlist%20for%20sub_module%20level%20synthesis.jpg"><br>
 
  </details>
@@ -273,7 +273,7 @@ endmodule<br>
  
 <details>
 <summary> Some special cases in optimization </summary>
-	It's not necessary that every time when you are doing some operations you hardware required but in some cases just by rewiring signals we are able to get the logic functionality implemented.<br>
+	It's not necessary that every time when you are doing some operations hardware is required but in some cases, just by rewiring signals, we are able to get the logic functionality implemented.<br>
 	Let's see some examples of special cases,<br>
 	
 	1. y=2*a, where a[2:0] and y[3:0] (here the functionality that we actually need to implement is the multiplication)<br>
@@ -288,7 +288,7 @@ endmodule<br>
 	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/faccf7bfb4209ab0a9b6493a6dee561eac98c020/mult_2%20netlist.jpg">
 	Similarly, if there is anything power of 2 then just upending with zero can solve. So we don't require any hardware for these cases rewiring signals gives the solution.<br>
 
-       2. Let's suppose a[2:0] and y[5:0] are fixed, now solve y=9*a
+       2. Let's suppose a[2:0] and y[5:0] are fixed, now do y=9*a
        When we try to synthesize it, it shows<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/f7c9ab6227dcbc91d862d45f4b0c13f0fb9d39f2/mult_8.jpg"><br>
  means, not needing any cell.<br>
@@ -298,5 +298,5 @@ endmodule<br>
    <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/35ed660fb65432f6e4c6e4e0b91552533acd2d6a/mult%208%20after%20synthesis.jpg"><br>
 	Netlist <br>
 	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3de654333b11c12b2f5fc6b8ac91c0c78f6d098/mult_8%20netlsit.jpg">
-        So, there are some special cases like this in which just by rewiring the signals we can implement the logic functionality.
+        So, there are some special cases like this, in which just by rewiring the signals we can implement the logic functionality.
 </details>
