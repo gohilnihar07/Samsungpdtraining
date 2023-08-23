@@ -206,74 +206,74 @@ Can see the below netlist which is generated for sub module,<br>
 	 We required flop beacause due to the diffferent propagation delay of gates at the output glitches may come, so to overcome glitch problem, in between combinational circuit we keep flipflop to avoid glitches.And to control the flop there is a set and reset which we can design synchronous or asynchronous based on our requirements.<br>
 	
  **Below is the code for asynchronous reset D flip flop**,
-'''ruby
-module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
-always @ (posedge clk , posedge async_reset)
-begin
-	if(async_reset)
-		q <= 1'b0;
-	else	
-		q <= d;
-end
-endmodule
-'''
-         After simulating we can see the GTK waveforms in below figure,
+
+module dff_asyncres ( input clk ,  input async_reset , input d , output reg q ); <br>
+always @ (posedge clk , posedge async_reset) <br>
+begin<br>
+	if(async_reset)<br>
+		q <= 1'b0;<br>
+	else	<br>
+		q <= d;<br>
+end<br>
+endmodule<br>
+
+         After simulating we can see the GTK waveforms in below figure,<br>
 <img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in below figure
+        After synthesizing it we can see the netlist in below figure<br>
 <img width="600" alt="netlist" src=""><br>  
 
  **Below is the code for asynchronous set D flip flop**,<br>
 
  
-module dff_async_set ( input clk ,  input async_set , input d , output reg q );
-always @ (posedge clk , posedge async_set)
-begin
-	if(async_set)
-		q <= 1'b1;
-	else	
-		q <= d;
-end
-endmodule
+module dff_async_set ( input clk ,  input async_set , input d , output reg q );<br>
+always @ (posedge clk , posedge async_set)<br>
+begin<br>
+	if(async_set)<br>
+		q <= 1'b1;<br>
+	else	<br>
+		q <= d;<br>
+end<br>
+endmodule<br>
 
-         After simulating we can see the GTK waveforms in below figure,
+         After simulating we can see the GTK waveforms in below figure,<br>
 <img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in below figure
+        After synthesizing it we can see the netlist in below figure<br>
 <img width="600" alt="netlist" src=""><br>  
 
  **Below code is for synchronous reset D flip flop**,<br>
 
-module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
-always @ (posedge clk )
-begin
-	if (sync_reset)
-		q <= 1'b0;
-	else	
-		q <= d;
-end
-endmodule
+module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );<br>
+always @ (posedge clk )<br>
+begin<br>
+	if (sync_reset)<br>
+		q <= 1'b0;<br>
+	else	<br>
+		q <= d;<br>
+end<br>
+endmodule<br>
 
-         After simulating we can see the GTK waveforms in below figure,
+         After simulating we can see the GTK waveforms in below figure,<br>
 <img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in the below figure
+        After synthesizing it we can see the netlist in the below figure<br>
 <img width="600" alt="netlist" src=""><br>  
 
 **Below code is for synchronous/asynchronous Reset**,
 
-module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
-always @ (posedge clk , posedge async_reset)
-begin
-	if(async_reset)
-		q <= 1'b0;
-	else if (sync_reset)
-		q <= 1'b0;
-	else	
-		q <= d;
-end
-endmodule
+module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );<br>
+always @ (posedge clk , posedge async_reset)<br>
+begin<br>
+	if(async_reset)<br>
+		q <= 1'b0;<br>
+	else if (sync_reset)<br>
+		q <= 1'b0;<br>
+	else	<br>
+		q <= d;<br>
+end<br>
+endmodule<br>
 
-    After simulating we can see the GTK waveforms in below figure,
+    After simulating we can see the GTK waveforms in below figure,<br>
 <img width="600" alt="netlist" src=""><br>             
-        After synthesizing it we can see the netlist in below figure
+        After synthesizing it we can see the netlist in below figure<br>
 <img width="600" alt="netlist" src=""><br>  
 
  </details>
