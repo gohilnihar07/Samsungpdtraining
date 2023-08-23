@@ -224,7 +224,7 @@ endmodule
 
  **Below is the code for asynchronous set D flip flop**,<br>
 
-'''ruby
+ '''ruby
 module dff_async_set ( input clk ,  input async_set , input d , output reg q );
 always @ (posedge clk , posedge async_set)
 begin
@@ -234,7 +234,7 @@ begin
 		q <= d;
 end
 endmodule
-'''
+ '''
          After simulating we can see the GTK waveforms in below figure,
 <img width="600" alt="netlist" src=""><br>             
         After synthesizing it we can see the netlist in below figure
