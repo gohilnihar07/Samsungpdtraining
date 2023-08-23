@@ -243,7 +243,7 @@ endmodule<br>
     Graphical representation after the synthesis is shown in below figure,<br>
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ea21a9363cf71e8e6f749e425d1678af03efaf45/dff_async_set_graphical_repre.jpg"><br>
         After synthesizing it we can see the netlist shown in below figure<br>
-<img width="600" alt="netlist" src=""><br>  
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/af09b0cb2e3a196d73efef7627697f961b61b0dc/dff_async_set_netlist.jpg"><br>  
 
 
  **Below code is for synchronous reset D flip flop**,<br>
