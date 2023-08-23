@@ -290,7 +290,7 @@ endmodule<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/f7c9ab6227dcbc91d862d45f4b0c13f0fb9d39f2/mult_8.jpg"><br>
  means, not needing any cell.<br>
 	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
-	 <img width="600" alt="netlist" src=""><br>
+	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3c7ae27a9d6df143b5a8ae2f0ef14183bf24c8a9/mult_8%20nothing%20to%20map.jpg"><br>
 	We can understand the same thing by graphical representation also after the synthesis,<br>
    <img width="600" alt="netlist" src=""><br>
 	Netlist <br>
