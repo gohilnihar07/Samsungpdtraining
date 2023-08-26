@@ -416,8 +416,14 @@ Modern digital design tools and software use a combination of these techniques t
         The goal of sequential logic optimization is to enhance various aspects of the design, such as speed, power efficiency, area utilization, and reliability, while ensuring that the functionality of the circuit is preserved. Some common techniques used in sequential logic optimization are:<br><br>
 	1. State optimization:<br>
          One of the primary goals is to reduce the number of states in a finite state machine (FSM) while preserving the desired functionality. This helps in reducing the complexity of the circuit and often leads to improved performance.<br><br>
-	2. Cloning:
-          <img width="600" alt="netlist" src=""><br><br>
+	2. Cloning:<br>
+	  Example,<br>
+          <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/dd4e26ba8129a04a02b2a3f90e421c10fc6a5b5e/DAY%203/Seque_cloning_opt_example.jpg"><br><br>
+        3. Retiming:<br>
+	  Moving flip-flops within a circuit while maintaining the same functionality can optimize timing and pipeline stages. This can help balance critical paths and improve the overall speed of the circuit.<br>
+       Example,<br>
+       <img width="600" alt="netlist" src=""><br><br>
+       
 	
 
  <img width="600" alt="netlist" src=""><br><br>
