@@ -554,11 +554,11 @@ It's important to emphasize that sequential logic optimization involves intricat
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counterr_opt_graphical_rep.png"><br>
               As can be seen in the above graphical representation it's generating only one flop as we expected.<br><br>
 	--> Generated netlist,<br>
-	     <img width="600" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt_netlist.png"><br><br><br>
+<img width="600" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt_netlist.png"><br><br><br>
+  2. Counter_opt2
+     --> Verilog code for design counter_opt2,<br>
 
-
-       2. Counter_opt2
-        --> Verilog code for design counter_opt2,<br>
+     
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt2.png"><br><br>
         Here, since the output is dependent on all the three bits. So we are expecting that the output will generate three flops. <br><br>
 	--> statistics,<br>
@@ -568,7 +568,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter2_opt_graphical_rep.png.png"><br>
               As can be seen in the above graphical representation it's generating three flops as we expected.<br><br>
 	--> Generated netlist,<br>
-	     <img width="600" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt2_netlist.png"><br><br><br>
+  <img width="600" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt2_netlist.png"><br><br><br>
       
 
  </details>
