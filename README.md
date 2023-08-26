@@ -551,7 +551,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt_statistics.png"><br>
              As expected it's generating only one flop.<br><br>
 	--> Graphical representation after mapping,<br>
-	     <img width="1000" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counterr_opt_graphical_rep.png"><br>
+	     <img width="1300" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counterr_opt_graphical_rep.png"><br>
               As can be seen in the above graphical representation it's generating only one flop as we expected.<br><br>
 	--> Generated netlist,<br>
 <img width="600" alt="netlist"  src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt_netlist.png"> <br><br><br>
@@ -565,7 +565,7 @@ It's important to emphasize that sequential logic optimization involves intricat
             <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt2_statistics.png.png"><br>
              As expected it's generating three flops.<br><br>
 	--> Graphical representation after mapping,<br>
-	     <img width="1200" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter2_opt_graphical_rep.png.png"><br>
+	     <img width="1600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter2_opt_graphical_rep.png.png"><br>
               As can be seen in the above graphical representation it's generating three flops as we expected.<br><br>
 	--> Generated netlist,<br>
   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt2_netlist.png"><br><br><br>
