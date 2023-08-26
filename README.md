@@ -417,12 +417,13 @@ Modern digital design tools and software use a combination of these techniques t
 	1. Sequential constant propagation:<br>
 	Sequential Constant Propagation (SCP) is an optimization technique used in compiler design to improve the efficiency of code execution by replacing variables with their constant values wherever possible. This technique falls under the category of data flow analysis and optimization, aiming to identify opportunities for substituting variables with their known constant values throughout the program's execution flow.<br>
 	Example,<br>
-	 <img width="600" alt="netlist" src=""><br><br>
+	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/473813b8a20f6fe2fe3c5cbb652cf0d7af3b6afb/DAY%203/Sequ_const_propa_example.jpg"><br><br>
+	
 	2. State optimization:<br>
          One of the primary goals is to reduce the number of states in a finite state machine (FSM) while preserving the desired functionality. This helps in reducing the complexity of the circuit and often leads to improved performance.<br><br>
 	3. Cloning:<br>
 	  Example,<br>
-          <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/dd4e26ba8129a04a02b2a3f90e421c10fc6a5b5e/DAY%203/Seque_cloning_opt_example.jpg"><br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/dd4e26ba8129a04a02b2a3f90e421c10fc6a5b5e/DAY%203/Seque_cloning_opt_example.jpg"><br><br>
         4. Retiming:<br>
 	  Moving flip-flops within a circuit while maintaining the same functionality can optimize timing and pipeline stages. This can help balance critical paths and improve the overall speed of the circuit.<br>
        Example,<br>
@@ -432,9 +433,8 @@ Modern digital design tools and software use a combination of these techniques t
        6. State Assignment:<br>
 	Assigning binary codes (state encodings) to different states of an FSM in a way that minimizes transitions between states can improve circuit performance and reduce area.<br><br>
 
- <img width="600" alt="netlist" src=""><br><br>
 
-
+It's important to emphasize that sequential logic optimization involves intricate interactions between the memory elements and the combinational logic. Designers need to carefully balance optimization goals while ensuring that the circuit's behavior and timing requirements are met. Advanced design automation tools play a crucial role in navigating the complexities of sequential logic optimization, as manual optimization can be extremely challenging and time-consuming for complex designs.
 
  
 </details>
