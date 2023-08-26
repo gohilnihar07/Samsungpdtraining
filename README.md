@@ -440,7 +440,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 
 <details>
 	<Summary> Lab for sequential logic optimization </Summary>
-	Examples,
+	Examples,<br>
 	 1. dff_const1<br>
           --> Verilog code for design dff_const1,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_code.png"><br><br>
