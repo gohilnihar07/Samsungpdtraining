@@ -360,9 +360,8 @@ Modern digital design tools and software use a combination of these techniques t
              As can be seen in the above graphical representation it's generating only one OR gate as we expected.<br><br>
 	  --> Generated netlist,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check2_netlist.jpg"><br><br><br>
-
-       3. opt_chcek3<br>
-	  --> Verilog code for design opt_check3,<br>
+       3. opt_check3<br>
+          --> Verilog code for design opt_check3,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/22ff3bb9af11858fa46b206b4dc0f9723d2b4bf0/DAY%203/opt_check3_code.jpg"><br><br>
           --> Circuit diagram and expecting result after optimization,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/22ff3bb9af11858fa46b206b4dc0f9723d2b4bf0/DAY%203/Comb_lab_opt_check3_example.jpg"><br>
