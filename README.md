@@ -334,8 +334,9 @@ Modern digital design tools and software use a combination of these techniques t
 	1. opt_chcek<br>
 	  --> Verilog code for design opt_check,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d61f67c491ea76b8c03e5058d8a4a1c14b4d764e/DAY%203/opt_check_code.jpg"><br>
-          --> Circuit diagram and expecting optimize result,<br>
-	     <img width="600" alt="netlist" src=""><br>
+          --> Circuit diagram and expecting result after optimization,<br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4920039f9b096e15ba7a6fa7d817e48320a68a80/DAY%203/Comb_lab_opt_check1_example.jpg"><br>
+	      so, we are expecting a AND gate to be generated after optimization <br>																
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src=""><br>
 	  --> Graphical representation after mapping,<br>
