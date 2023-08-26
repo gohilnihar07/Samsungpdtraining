@@ -533,8 +533,8 @@ It's important to emphasize that sequential logic optimization involves intricat
 
 <details>
 	<summary> Optimizing unused outputs in a sequential process  </summary>
-        Optimizing unused outputs in a sequential process typically involves improving the efficiency or effectiveness of a system by optimizing the outputs that are not directly used or observed in the process.<br><br>
-	Here listing some things about how we should approach that,<br>
+        Optimizing unused outputs in a sequential process typically involves improving the efficiency or effectiveness of a system by optimizing the outputs that are not directly used or observed in the process.<br>
+	Here listing some things about how we should approach that,<br><br>
         1. Identify Unused Outputs: In any sequential process, there might be outputs that are generated but not actively used or monitored. These could be intermediate results, byproducts, or secondary outcomes. <br><br>
 2. Assess Importance: Before optimizing unused outputs, it's crucial to assess whether these outputs have any potential value or significance. Sometimes, seemingly unused outputs might hold hidden insights or could be leveraged in unexpected ways.<br><br>
 3. Process Analysis: Understand the sequential process thoroughly. This includes understanding the inputs, steps, transformations, and outputs at each stage. By mapping out the process, you can identify where unused outputs are generated.<br><br>
@@ -554,7 +554,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counterr_opt_graphical_rep.png"><br>
               As can be seen in the above graphical representation it's generating only one flop as we expected.<br><br>
 	--> Generated netlist,<br>
-<img width="600" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt_netlist.png"><br><br><br>
+<img width="600" alt="netlist"  src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt_netlist.png"> <br><br><br>
   2. Counter_opt2
      --> Verilog code for design counter_opt2,<br>
 
@@ -568,7 +568,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter2_opt_graphical_rep.png.png"><br>
               As can be seen in the above graphical representation it's generating three flops as we expected.<br><br>
 	--> Generated netlist,<br>
-  <img width="600" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt2_netlist.png"><br><br><br>
+  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/233000f662f57d0d56036369b37c246838ccf42d/DAY%203/counter_opt2_netlist.png"><br><br><br>
       
 
  </details>
