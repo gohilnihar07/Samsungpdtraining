@@ -326,3 +326,80 @@ The goal of combinational logic optimization is to reduce various metrics such a
 It's important to note that optimization can involve trade-offs between different design parameters like area, power, timing, etc. So designers need to consider their specific requirements and constraints to strike the right balance<br>
 Modern digital design tools and software use a combination of these techniques to automatically optimize digital circuits, taking into account the target technology (e.g., CMOS, FPGA), design constraints, and objectives.
 </details>
+
+
+<details>
+	<summary> Lab for combinational logic optimization </summary>
+	Examples,<br>
+	1. opt_chcek<br>
+	  --> Verilog code for design opt_check,<br>
+	     <img width="600" alt="netlist" src=""><br>
+          --> Circuit diagram and expecting optimize result,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+
+       2. opt_chcek2<br>
+	  --> Verilog code for design opt_check2,<br>
+	     <img width="600" alt="netlist" src=""><br>
+          --> Circuit diagram and expecting optimize result,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+
+       3. opt_chcek3<br>
+	  --> Verilog code for design opt_check3,<br>
+	     <img width="600" alt="netlist" src=""><br>
+          --> Circuit diagram and expecting optimize result,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+
+       4. opt_chcek4<br>
+	  --> Verilog code for design opt_check4,<br>
+	     <img width="600" alt="netlist" src=""><br>
+          --> Circuit diagram and expecting optimize result,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+
+       5. multiple_module_opt<br>
+	  --> Verilog code for design multiple_module_opt,<br>
+	     <img width="600" alt="netlist" src=""><br>
+          --> Circuit diagram and expecting optimize result,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+
+       6. multiple_module_opt2<br>
+	  --> Verilog code for design multiple_module_opt2,<br>
+	     <img width="600" alt="netlist" src=""><br>
+          --> Circuit diagram and expecting optimize result,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+</details>
