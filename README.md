@@ -303,9 +303,16 @@ endmodule<br>
 
 
 
-## Optimization of combinational and sequential circuits
+##Day-3- Optimization of combinational and sequential circuits
 
 <details>
 	<summary> Combinational logic optimization techniques and It's examples </summary>
-	
+	Combinational logic optimization is a process in digital circuit design that aims to improve the performance, efficiency, and/or area utilization of a digital circuit composed of combinational logic gates. Combinational logic refers to a type of digital logic where the output is solely determined by the current input values, without any memory or feedback elements.<br>
+
+The goal of combinational logic optimization is to reduce various metrics such as propagation delay, power consumption, and area occupation while maintaining the functionality of the circuit.Some common techniques used in combinational logic optimization are:<br>
+<br>
+1. Constant propagation technique:<br>
+     It's a direct optimization technique.It identifies and removes redundant logic expressions that appear in multiple places within the circuit.<br>
+     Example,
+     <img width="600" alt="netlist" src=""><br>
 </details>
