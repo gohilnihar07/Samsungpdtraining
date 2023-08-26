@@ -443,86 +443,87 @@ It's important to emphasize that sequential logic optimization involves intricat
 	Examples,
 	 1. dff_const1<br>
           --> Verilog code for design dff_const1,<br>
- <img width="600" alt="netlist" src=""><br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_code.png"><br><br>
           --> Circuit diagram and expecting result after simulation,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/Seque_lab_dff_check1_example.jpg"><br>
               so, we are expecting these waveforms to be generated after simulation. <br><br>
 	--> Gtkwave waveforms,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_gtkwave.png"><br><br>
 	     As expected waveforms has come.
 	  --> statistics,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_graphical_rep.png"><br>
               As can be seen in the above graphical representation as we expected.<br><br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src=""><br><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_netlist.png"><br><br><br>
 
 
 
   2. dff_const2<br>
           --> Verilog code for design dff_const2,<br>
- <img width="600" alt="netlist" src=""><br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_code.png"><br><br>
           --> Circuit diagram and expecting result after simulation,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/Seque_lab_dff_check2_example.jpg"><br>
               so, we are expecting these waveforms to be generated after simulation. <br><br>
 	--> Gtkwave waveforms,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_gtkwave.png"><br><br>
 	     As expected waveforms has come.
 	  --> statistics,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_graphical_rep.png"><br>
               As can be seen in the above graphical representation as we expected.<br><br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src=""><br><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_netlist.png"><br><br><br>
 
 
        3. dff_const3<br>
           --> Verilog code for design dff_const4,<br>
- <img width="600" alt="netlist" src=""><br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_code.png"><br><br>
           --> Circuit diagram and expecting result after simulation,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/Seque_lab_dff_check3_example.jpg"><br>
               so, we are expecting these waveforms to be generated after simulation. <br><br>
 	--> Gtkwave waveforms,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
-	     As expected waveforms has come.
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_gtkwave.png"><br><br>
+	     As expected waveforms have come.
 	  --> statistics,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_graphical_rep.png"><br>
               As can be seen in the above graphical representation as what we expected.<br><br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src=""><br><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_netlist.png"><br><br><br>
 
 
        4. dff_const4<br>
           --> Verilog code for design dff_const4,<br>
-           <img width="600" alt="netlist" src=""><br><br>
+           <img width="600" alt="netlist" src="
+https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_code.png"><br><br>
 	--> Gtkwave waveforms,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
-	     As expected waveforms has come.
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_gtkwave.png"><br><br>
+	     As expected waveforms have come.
 	  --> statistics,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_graphical_rep.png"><br>
               As can be seen in the above graphical representation as what we expected.<br><br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src=""><br><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_netlist.png"><br><br><br>
 
 
 
        5. dff_const5<br>
           --> Verilog code for design dff_const5,<br>
- <img width="600" alt="netlist" src=""><br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_code.png"><br><br>
 	--> Gtkwave waveforms,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
-	     As expected waveforms has come.
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_gtkwave.png"><br><br>
+	     As expected waveforms have come.
 	  --> statistics,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_graphical_rep.png"><br>
               As can be seen in the above graphical representation as what we expected.<br><br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src=""><br><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_netlist.png"><br><br><br>
 </details>
