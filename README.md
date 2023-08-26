@@ -414,17 +414,23 @@ Modern digital design tools and software use a combination of these techniques t
 	<summary> Sequential logic optimization techniques and examples </summary>
 	Sequential logic optimization is the process of improving the performance, efficiency, and other characteristics of digital circuits that contain memory elements such as flip-flops, latches, and registers. Unlike combinational logic, where the output depends only on the current inputs, sequential logic circuits have an element of memory and store information about past inputs.<br>
         The goal of sequential logic optimization is to enhance various aspects of the design, such as speed, power efficiency, area utilization, and reliability, while ensuring that the functionality of the circuit is preserved. Some common techniques used in sequential logic optimization are:<br><br>
-	1. State optimization:<br>
+	1. Sequential constant propagation:<br>
+	Sequential Constant Propagation (SCP) is an optimization technique used in compiler design to improve the efficiency of code execution by replacing variables with their constant values wherever possible. This technique falls under the category of data flow analysis and optimization, aiming to identify opportunities for substituting variables with their known constant values throughout the program's execution flow.<br>
+	Example,<br>
+	 <img width="600" alt="netlist" src=""><br><br>
+	2. State optimization:<br>
          One of the primary goals is to reduce the number of states in a finite state machine (FSM) while preserving the desired functionality. This helps in reducing the complexity of the circuit and often leads to improved performance.<br><br>
-	2. Cloning:<br>
+	3. Cloning:<br>
 	  Example,<br>
           <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/dd4e26ba8129a04a02b2a3f90e421c10fc6a5b5e/DAY%203/Seque_cloning_opt_example.jpg"><br><br>
-        3. Retiming:<br>
+        4. Retiming:<br>
 	  Moving flip-flops within a circuit while maintaining the same functionality can optimize timing and pipeline stages. This can help balance critical paths and improve the overall speed of the circuit.<br>
        Example,<br>
-       <img width="600" alt="netlist" src=""><br><br>
-       
-	
+       <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8e184d661e07b7a2732d262d6f3391ffa26f6497/DAY%203/Seque_retiming_opt_technique_example.jpg"><br><br>
+       5. Clock gating:<br>
+       Introducing clock gating to disable portions of the circuit during clock cycles when they are not needed. This reduces power consumption by preventing unnecessary state changes and logic operations.<br><br>
+       6. State Assignment:<br>
+	Assigning binary codes (state encodings) to different states of an FSM in a way that minimizes transitions between states can improve circuit performance and reduce area.<br><br>
 
  <img width="600" alt="netlist" src=""><br><br>
 
