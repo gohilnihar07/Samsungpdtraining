@@ -303,7 +303,7 @@ endmodule<br>
 
 
 
-##Day-3- Optimization of combinational and sequential circuits
+## Day-3- Optimization of combinational and sequential circuits
 
 <details>
 	<summary> Combinational logic optimization techniques and It's examples </summary>
@@ -313,6 +313,12 @@ The goal of combinational logic optimization is to reduce various metrics such a
 <br>
 1. Constant propagation technique:<br>
      It's a direct optimization technique.It identifies and removes redundant logic expressions that appear in multiple places within the circuit.<br>
-     Example,
+     Example,<br>
+     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c1b18ae69547d8ae05426147dce7071d42f424a9/DAY%203/Comb_const_propa_example.jpg"><br>
+     If we realise it in the form of CMOS then we can clearly observe that this optimized version takes less area.<br>
+     <br>
+2. Boolean logic optimization: <br>
+     This involves using Boolean algebra rules and laws to simplify logical expressions. Karnaugh maps and Quine-McCluskey methods can be used to find the minimal representation of logic functions.<br>
+     Example,<br>
      <img width="600" alt="netlist" src=""><br>
 </details>
