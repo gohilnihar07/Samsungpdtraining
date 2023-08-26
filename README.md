@@ -333,30 +333,34 @@ Modern digital design tools and software use a combination of these techniques t
 	Examples,<br>
 	1. opt_chcek<br>
 	  --> Verilog code for design opt_check,<br>
-	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d61f67c491ea76b8c03e5058d8a4a1c14b4d764e/DAY%203/opt_check_code.jpg"><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d61f67c491ea76b8c03e5058d8a4a1c14b4d764e/DAY%203/opt_check_code.jpg"><br><br>
           --> Circuit diagram and expecting result after optimization,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4920039f9b096e15ba7a6fa7d817e48320a68a80/DAY%203/Comb_lab_opt_check1_example.jpg"><br>
-	      so, we are expecting a AND gate to be generated after optimization <br>																
+	      so, we are expecting a AND gate to be generated after optimization. <br><br>															
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d8da7826348d54b0dcb876643f8027e09de61cfa/DAY%203/opt_check_statistics.jpg"><br>
-	      Can see in the above statistics that only one AND will generate.<br>
+	      Can see in the above statistics that only one AND will generate.<br><br>
 	  --> Graphical representation after mapping,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check_graphical_rep.jpg"><br>
-	      As can be seen in the above graphical representation it's generating only one AND gate as we expected.<br>
+	      As can be seen in the above graphical representation it's generating only one AND gate as we expected.<br><br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check_netlist.jpg"><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check_netlist.jpg"><br><br><br>
 
        2. opt_chcek2<br>
+       
 	  --> Verilog code for design opt_check2,<br>
-	     <img width="600" alt="netlist" src=""><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check2_code.jpg"><br>
           --> Circuit diagram and expecting optimize result,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/Comb_lab_opt_check2_example.jpg"><br>
+             so, we are expecting a OR gate to be generated after optimization. <br><br>
 	  --> statistics,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check2_statistics.jpg"><br>
+             Can see in the above statistics that only one OR will generate.<br><br>
 	  --> Graphical representation after mapping,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check2_graphical_rep.jpg"><br>
+             As can be seen in the above graphical representation it's generating only one OR gate as we expected.<br><br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check2_netlist.jpg"><br><br><br>
 
        3. opt_chcek3<br>
 	  --> Verilog code for design opt_check3,<br>
