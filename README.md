@@ -298,5 +298,14 @@ endmodule<br>
    <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/35ed660fb65432f6e4c6e4e0b91552533acd2d6a/mult%208%20after%20synthesis.jpg"><br>
 	Netlist <br>
 	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3de654333b11c12b2f5fc6b8ac91c0c78f6d098/mult_8%20netlsit.jpg"><br>
-        So, there are some special cases like this, in which just by rewiring the signals we can implement the logic functionality.
+        So, there are some special cases like this, in which we can implement the logic functionality just by rewiring the signals.
+</details>
+
+
+
+## Optimization of combinational and sequential circuits
+
+<details>
+	<summary> Combinational logic optimization techniques and It's examples </summary>
+	
 </details>
