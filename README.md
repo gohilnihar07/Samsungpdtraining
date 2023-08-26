@@ -339,11 +339,12 @@ Modern digital design tools and software use a combination of these techniques t
 	      so, we are expecting a AND gate to be generated after optimization <br>																
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d8da7826348d54b0dcb876643f8027e09de61cfa/DAY%203/opt_check_statistics.jpg"><br>
-	      Can see in above statistics that only one AND will generate.
+	      Can see in the above statistics that only one AND will generate.<br>
 	  --> Graphical representation after mapping,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check_graphical_rep.jpg"><br>
+	      As can be seen in the above graphical representation it's generating only one AND gate as we expected.<br>
 	  --> Generated netlist,<br>
-	     <img width="600" alt="netlist" src=""><br><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check_netlist.jpg"><br><br>
 
        2. opt_chcek2<br>
 	  --> Verilog code for design opt_check2,<br>
