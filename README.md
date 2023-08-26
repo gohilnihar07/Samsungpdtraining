@@ -373,9 +373,9 @@ Modern digital design tools and software use a combination of these techniques t
               As can be seen in the above graphical representation it's generating only one OR gate as we expected.<br><br>
 	  --> Generated netlist,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/22ff3bb9af11858fa46b206b4dc0f9723d2b4bf0/DAY%203/opt_check3_netlist.jpg"><br><br><br>
-
-       4. opt_chcek4<br>
-	  --> Verilog code for design opt_check4,<br>
+   4. opt_check4<br>
+       --> Verilog code for design opt_check,<br>
+      
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/opt_check4_code.jpg"><br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/opt_check4_statistics.jpg"><br><br>
@@ -383,10 +383,10 @@ Modern digital design tools and software use a combination of these techniques t
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/opt_check4_graphical_rep.jpg"><br><br>
 	  --> Generated netlist,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/opt_check4_netlist.jpg"><br><br><br>
-
+      
        5. multiple_module_opt<br>
- --> Verilog code for design multiple_module_opt,<br>
-	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt_code.jpg"><br><br>
+       --> Verilog code for design multiple_module_opt,<br>    
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt_code.jpg"><br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt_statistics.jpg"><br><br>
 	  --> Graphical representation after mapping,<br>
@@ -395,7 +395,7 @@ Modern digital design tools and software use a combination of these techniques t
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt_netlist.jp"><br><br><br>
 
        6. multiple_module_opt2<br>
-	  --> Verilog code for design multiple_module_opt2,<br>
+         --> Verilog code for design multiple_module_opt2,<br>
   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt2_code.jpg"><br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt2_statistics.jpg"><br><br>
