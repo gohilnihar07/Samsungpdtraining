@@ -435,5 +435,94 @@ Modern digital design tools and software use a combination of these techniques t
 
 It's important to emphasize that sequential logic optimization involves intricate interactions between the memory elements and the combinational logic. Designers need to carefully balance optimization goals while ensuring that the circuit's behavior and timing requirements are met. Advanced design automation tools play a crucial role in navigating the complexities of sequential logic optimization, as manual optimization can be extremely challenging and time-consuming for complex designs.
 
- 
+</details>
+
+
+<details>
+	<Summary> Lab for sequential logic optimization </Summary>
+	Examples,
+	 1. dff_const1<br>
+          --> Verilog code for design dff_const1,<br>
+ <img width="600" alt="netlist" src=""><br><br>
+          --> Circuit diagram and expecting result after simulation,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              so, we are expecting these waveforms to be generated after simulation. <br><br>
+	--> Gtkwave waveforms,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	     As expected waveforms has come.
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              As can be seen in the above graphical representation as we expected.<br><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br><br>
+
+
+
+  2. dff_const2<br>
+          --> Verilog code for design dff_const2,<br>
+ <img width="600" alt="netlist" src=""><br><br>
+          --> Circuit diagram and expecting result after simulation,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              so, we are expecting these waveforms to be generated after simulation. <br><br>
+	--> Gtkwave waveforms,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	     As expected waveforms has come.
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              As can be seen in the above graphical representation as we expected.<br><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br><br>
+
+
+       3. dff_const3<br>
+          --> Verilog code for design dff_const4,<br>
+ <img width="600" alt="netlist" src=""><br><br>
+          --> Circuit diagram and expecting result after simulation,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              so, we are expecting these waveforms to be generated after simulation. <br><br>
+	--> Gtkwave waveforms,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	     As expected waveforms has come.
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              As can be seen in the above graphical representation as what we expected.<br><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br><br>
+
+
+       4. dff_const4<br>
+          --> Verilog code for design dff_const4,<br>
+           <img width="600" alt="netlist" src=""><br><br>
+	--> Gtkwave waveforms,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	     As expected waveforms has come.
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              As can be seen in the above graphical representation as what we expected.<br><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br><br>
+
+
+
+       5. dff_const5<br>
+          --> Verilog code for design dff_const5,<br>
+ <img width="600" alt="netlist" src=""><br><br>
+	--> Gtkwave waveforms,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	     As expected waveforms has come.
+	  --> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br><br>
+	  --> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              As can be seen in the above graphical representation as what we expected.<br><br>
+	  --> Generated netlist,<br>
+	     <img width="600" alt="netlist" src=""><br><br><br>
 </details>
