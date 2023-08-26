@@ -498,8 +498,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 
 4. dff_const4<br>
           --> Verilog code for design dff_const4,<br>
-           <img width="600" alt="netlist" src="
-https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_code.png"><br><br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_code.png"><br><br>
 	--> Gtkwave waveforms,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_gtkwave.png"><br><br>
 	     As expected waveforms have come.<br><br>
