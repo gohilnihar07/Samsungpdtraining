@@ -345,9 +345,9 @@ Modern digital design tools and software use a combination of these techniques t
 	      As can be seen in the above graphical representation it's generating only one AND gate as we expected.<br><br>
 	  --> Generated netlist,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check_netlist.jpg"><br><br><br>
-
-           2. opt_chcek2<br>
-          --> Verilog code for design opt_check2,<br>
+         2. opt_check<br>
+	   --> Verilog code for design opt_check_2,<br>
+         
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/opt_check2_code.jpg"><br>
           --> Circuit diagram and expecting result after optimization,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4c5c815820e85961aa1ef2ef5f1ac6706e6013e7/DAY%203/Comb_lab_opt_check2_example.jpg"><br>
