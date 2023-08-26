@@ -306,7 +306,7 @@ endmodule<br>
 ## Day-3- Optimization of combinational and sequential circuits
 
 <details>
-	<summary> Combinational logic optimization techniques and It's examples </summary>
+	<summary> Combinational logic optimization techniques and examples </summary>
 	Combinational logic optimization is a process in digital circuit design that aims to improve the performance, efficiency, and/or area utilization of a digital circuit composed of combinational logic gates. Combinational logic refers to a type of digital logic where the output is solely determined by the current input values, without any memory or feedback elements.<br>
 
 The goal of combinational logic optimization is to reduce various metrics such as propagation delay, power consumption, and area occupation while maintaining the functionality of the circuit.Some common techniques used in combinational logic optimization are:<br>
@@ -405,4 +405,24 @@ Modern digital design tools and software use a combination of these techniques t
 	     <img width="1500" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt2_graphical_rep.jpg"><br><br>
 	  --> Generated netlist,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6e167bbef4831a119aed62c92d3ebaf8018ae6ab/DAY%203/multiple_module_opt2_netlist.jpg"><br><br><br>
+</details>
+
+
+
+
+<details>
+	<summary> Sequential logic optimization techniques and examples </summary>
+	Sequential logic optimization is the process of improving the performance, efficiency, and other characteristics of digital circuits that contain memory elements such as flip-flops, latches, and registers. Unlike combinational logic, where the output depends only on the current inputs, sequential logic circuits have an element of memory and store information about past inputs.<br>
+        The goal of sequential logic optimization is to enhance various aspects of the design, such as speed, power efficiency, area utilization, and reliability, while ensuring that the functionality of the circuit is preserved. Some common techniques used in sequential logic optimization are:<br><br>
+	1. State optimization:<br>
+         One of the primary goals is to reduce the number of states in a finite state machine (FSM) while preserving the desired functionality. This helps in reducing the complexity of the circuit and often leads to improved performance.<br><br>
+	2. Cloning:
+          <img width="600" alt="netlist" src=""><br><br>
+	
+
+ <img width="600" alt="netlist" src=""><br><br>
+
+
+
+ 
 </details>
