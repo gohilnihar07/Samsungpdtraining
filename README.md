@@ -449,7 +449,7 @@ It's important to emphasize that sequential logic optimization involves intricat
               so, we are expecting these waveforms to be generated after simulation. <br><br>
 	--> Gtkwave waveforms,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_gtkwave.png"><br><br>
-	     As expected waveforms has come.
+	     As expected waveforms have come.<br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const1_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
@@ -468,7 +468,7 @@ It's important to emphasize that sequential logic optimization involves intricat
               so, we are expecting these waveforms to be generated after simulation. <br><br>
 	--> Gtkwave waveforms,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_gtkwave.png"><br><br>
-	     As expected waveforms has come.
+	     As expected waveforms have come.<br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
@@ -478,7 +478,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const2_netlist.png"><br><br><br>
 
 
-       3. dff_const3<br>
+ 3. dff_const3<br>
           --> Verilog code for design dff_const4,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_code.png"><br><br>
           --> Circuit diagram and expecting result after simulation,<br>
@@ -486,7 +486,7 @@ It's important to emphasize that sequential logic optimization involves intricat
               so, we are expecting these waveforms to be generated after simulation. <br><br>
 	--> Gtkwave waveforms,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_gtkwave.png"><br><br>
-	     As expected waveforms have come.
+	     As expected waveforms have come.<br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
@@ -496,13 +496,13 @@ It's important to emphasize that sequential logic optimization involves intricat
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const3_netlist.png"><br><br><br>
 
 
-       4. dff_const4<br>
+4. dff_const4<br>
           --> Verilog code for design dff_const4,<br>
            <img width="600" alt="netlist" src="
 https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_code.png"><br><br>
 	--> Gtkwave waveforms,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_gtkwave.png"><br><br>
-	     As expected waveforms have come.
+	     As expected waveforms have come.<br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const4_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
@@ -513,12 +513,12 @@ https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf17072
 
 
 
-       5. dff_const5<br>
+ 5. dff_const5<br>
           --> Verilog code for design dff_const5,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_code.png"><br><br>
 	--> Gtkwave waveforms,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_gtkwave.png"><br><br>
-	     As expected waveforms have come.
+	     As expected waveforms have come.<br><br>
 	  --> statistics,<br>
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf1707246a939de8d2f651/DAY%203/dff_const5_statistics.png"><br><br>
 	  --> Graphical representation after mapping,<br>
