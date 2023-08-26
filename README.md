@@ -338,7 +338,8 @@ Modern digital design tools and software use a combination of these techniques t
 	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4920039f9b096e15ba7a6fa7d817e48320a68a80/DAY%203/Comb_lab_opt_check1_example.jpg"><br>
 	      so, we are expecting a AND gate to be generated after optimization <br>																
 	  --> statistics,<br>
-	     <img width="600" alt="netlist" src=""><br>
+	     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d8da7826348d54b0dcb876643f8027e09de61cfa/DAY%203/opt_check_statistics.jpg"><br>
+	      Can see in above statistics that only one AND will generate.
 	  --> Graphical representation after mapping,<br>
 	     <img width="600" alt="netlist" src=""><br>
 	  --> Generated netlist,<br>
