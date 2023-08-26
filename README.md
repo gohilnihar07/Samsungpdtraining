@@ -534,7 +534,7 @@ https://github.com/gohilnihar07/Samsungpdtraining/blob/0dbed32a773272a3cccf17072
 
 <details>
 	<summary> Optimizing unused outputs in a sequential process  </summary>
-        Optimizing unused outputs in a sequential process typically involves improving the efficiency or effectiveness of a system by optimizing the outputs that are not directly used or observed in the process.<br>
+        Optimizing unused outputs in a sequential process typically involves improving the efficiency or effectiveness of a system by optimizing the outputs that are not directly used or observed in the process.<br><br>
 	Here listing some things about how we should approach that,<br>
         1 .Identify Unused Outputs: In any sequential process, there might be outputs that are generated but not actively used or monitored. These could be intermediate results, byproducts, or secondary outcomes. <br><br>
 2. Assess Importance: Before optimizing unused outputs, it's crucial to assess whether these outputs have any potential value or significance. Sometimes, seemingly unused outputs might hold hidden insights or could be leveraged in unexpected ways.<br><br>
