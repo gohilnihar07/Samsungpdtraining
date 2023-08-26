@@ -319,6 +319,6 @@ The goal of combinational logic optimization is to reduce various metrics such a
      <br>
 2. Boolean logic optimization: <br>
      This involves using Boolean algebra rules and laws to simplify logical expressions. Karnaugh maps and Quine-McCluskey methods can be used to find the minimal representation of logic functions.<br>
-     Example,<br>
-     <img width="600" alt="netlist" src=""><br>
+     Example, assign y=a?(b?c:(c?a:0)):(!c) <br>
+     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/17922903b53a0439a60ec1edd1eafed0444c7b28/DAY%203/Comb_boolean_logic_opt_example.jpg"><br>
 </details>
