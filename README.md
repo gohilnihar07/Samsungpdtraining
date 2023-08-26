@@ -542,7 +542,33 @@ It's important to emphasize that sequential logic optimization involves intricat
 
    Examples,:<br>
        1. Counter_opt
+        --> Verilog code for design counter_opt,<br>
+         <img width="600" alt="netlist" src=""><br><br>
+        --> Circuit diagram,<br>
+	     <img width="600" alt="netlist" src=""><br>
+               Here, I'm not bothered about count[2] and count[1] because the final output only depends on count[0]. So we are expecting that the optimized result will have only one flop. <br><br>
+	--> statistics,<br>
+	     <img width="600" alt="netlist" src=""><br>
+             As expected it's generating only one flop.<br><br>
+	--> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              As can be seen in the above graphical representation it's generating only one flop as we expected.<br><br>
+	--> Generated netlist,<br>
+	     <img width="600" alt=""><br><br><br>
 
+
+       2. Counter_opt2
+        --> Verilog code for design counter_opt2,<br>
+ <img width="600" alt="netlist" src=""><br><br>
+        Here, since the output is dependent on all the three bits. So we are expecting that the output will generate three flops. <br><br>
+	--> statistics,<br>
+            <img width="600" alt="netlist" src=""><br>
+             As expected it's generating three flops.<br><br>
+	--> Graphical representation after mapping,<br>
+	     <img width="600" alt="netlist" src=""><br>
+              As can be seen in the above graphical representation it's generating three flops as we expected.<br><br>
+	--> Generated netlist,<br>
+	     <img width="600" alt=""><br><br><br>
       
 
  </details>
