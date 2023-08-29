@@ -714,3 +714,9 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
 5. Timing and delays: Synthesis tools account for gate delays, interconnect delays, and other physical characteristics of the target technology during the synthesis process. This can lead to timing differences between the original design's simulation and the post-synthesis simulation. Signals that were once perfectly synchronous in simulation might experience timing issues after synthesis.
 
 </details>
+
+
+<details>
+	<summary>Labs on synthesis simulation mismatch </summary>
+	
+</details>
