@@ -773,19 +773,19 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
 
  Example 4,<br>
        --> Verilog code for blocking_caveat design,
-       <img width="600" alt="netlist" src=""> <br><br>
+       <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_code.v.jpg"> <br><br>
        --> RTL level simulation result,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave.v.jpg"> <br><br>
        --> Statistics,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/Blocking_caveat_statistics.v.jpg"> <br><br>
        --> Graphical represntation,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_graphical_rep.v.jpg"> <br><br>
        --> generated netlist,
-        <img width="600" alt="netlist" src=""> <br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_netlist.v.jpg"> <br>
 	this generated netlist we will use for performing gate level simulation.<br><br>
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave_GLS.v.jpg"> <br><br>
        
 	
 </details>
