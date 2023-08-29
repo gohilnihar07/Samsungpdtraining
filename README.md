@@ -735,6 +735,57 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
         <img width="600" alt="netlist" src=""> <br><br>
+
+
+        Example 1,<br>
+       --> Verilog code for ternary_operator_mux design,
+       <img width="600" alt="netlist" src=""> <br><br>
+       --> RTL level simulation result,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Statistics,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Graphical represntation,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> generated netlist,
+        <img width="600" alt="netlist" src=""> <br>
+	this generated netlist we will use for performing gate level simulation.<br><br>
+       --> Gate-level simulation result,<br>
+         To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
+        <img width="600" alt="netlist" src=""> <br><br>
+
+
+        Example 1,<br>
+       --> Verilog code for ternary_operator_mux design,
+       <img width="600" alt="netlist" src=""> <br><br>
+       --> RTL level simulation result,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Statistics,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Graphical represntation,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> generated netlist,
+        <img width="600" alt="netlist" src=""> <br>
+	this generated netlist we will use for performing gate level simulation.<br><br>
+       --> Gate-level simulation result,<br>
+         To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
+        <img width="600" alt="netlist" src=""> <br><br>
+
+
+ Example 1,<br>
+       --> Verilog code for ternary_operator_mux design,
+       <img width="600" alt="netlist" src=""> <br><br>
+       --> RTL level simulation result,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Statistics,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Graphical represntation,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> generated netlist,
+        <img width="600" alt="netlist" src=""> <br>
+	this generated netlist we will use for performing gate level simulation.<br><br>
+       --> Gate-level simulation result,<br>
+         To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
+        <img width="600" alt="netlist" src=""> <br><br>
        
 	
 </details>
