@@ -587,3 +587,46 @@ It's important to emphasize that sequential logic optimization involves intricat
       Here, the design file is nothing but the netlist generated from our sythesis. and since the primary input and primary output remains same for RTL code and netlist file So, we can use the same testbench as what we used for RTL verification.and Gate-level models consists information about all the cell name like what it means and all. if the gate-level models are delay annotated, then we can use GLS for timing validation also along with functional validation.      
 	
 </details>
+
+
+
+
+<details>
+	<summary> Synthesis simulation mismatch</summary>
+	A synthesis simulation mismatch refers to discrepancies or differences between the behavior of a digital design as simulated before and after synthesis. This mismatch can occur due to various reasons, and it's important to identify and resolve these issues to ensure the correctness of the synthesized design. Here are some common reasons for synthesis simulation mismatches:<br><br>
+ 1. Missing sensitivity list:-<br>
+ Example, Let's say my aim is to create mux,<br>
+'''ruby
+module bad_mux (input i0 , input i1 , input sel , output reg y);
+always @ (sel)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule
+'''
+<br>		
+Now, if i will write my code like this then, it won't generate mux but it will generate double edge flop.<br><br>
+
+
+instead if i will write like this<br>
+'''ruby
+module good_mux (input i0 , input i1 , input sel , output reg y);
+always @ (*)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule
+'''
+If we write always like this, always will evaluated when any signal changes then, it will generate mux.<br><br>
+
+So,always write sensitivity list carefully.
+
+ 
+	
+</details>
