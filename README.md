@@ -722,19 +722,19 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
        iverilog path_gate_level_model.v path_verilogg_file_lib.v netlist_name.v design_name.v<br><br>
        Example 1,<br>
        --> Verilog code for ternary_operator_mux design,
-       <img width="600" alt="netlist" src=""> <br><br>
+       <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_code.v.jpg"> <br><br>
        --> RTL level simulation result,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave.v.jpg"> <br><br>
        --> Statistics,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_statistics.v.jpg"> <br><br>
        --> Graphical represntation,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_graphical_repv.jpg"> <br><br>
        --> generated netlist,
-        <img width="600" alt="netlist" src=""> <br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_netlist.v.jpg"> <br>
 	this generated netlist we will use for performing gate level simulation.<br><br>
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave_GLS_.v..jpg"> <br><br>
 
 
         Example 1,<br>
