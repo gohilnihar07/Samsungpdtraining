@@ -596,7 +596,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 	A synthesis simulation mismatch refers to discrepancies or differences between the behavior of a digital design as simulated before and after synthesis. This mismatch can occur due to various reasons, and it's important to identify and resolve these issues to ensure the correctness of the synthesized design. Here are some common reasons for synthesis simulation mismatches:<br><br>
  1. Missing sensitivity list:-<br>
  Example, Let's say my aim is to create mux,<br>
-'''ruby
+```ruby
 module bad_mux (input i0 , input i1 , input sel , output reg y);
 always @ (sel)
 begin
@@ -606,13 +606,13 @@ begin
 		y <= i0;
 end
 endmodule
-'''
+```
 <br>		
 Now, if i will write my code like this then, it won't generate mux but it will generate double edge flop.<br><br>
 
 
 instead if i will write like this<br>
-'''ruby
+```ruby
 module good_mux (input i0 , input i1 , input sel , output reg y);
 always @ (*)
 begin
@@ -622,7 +622,7 @@ begin
 		y <= i0;
 end
 endmodule
-'''
+```
 If we write always like this, always will evaluated when any signal changes then, it will generate mux.<br>
 
 So,always write sensitivity list carefully.
@@ -639,6 +639,7 @@ Non-blocking assignments (<=) are used to model concurrent behavior within proce
 Example 1, My aim is to generate like below <br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b5edaaf3ece9d1d762432f13bdbdd93d34d946aa/DAY%204/IMG_20230829_113637.jpg"> <br><br>
  If i will write my code like this,<br>
+ ```ruby
  module code(input clk, rst, d, output reg q);
  reg q0;
  always @ (posedge clk, posedge rst)
@@ -655,9 +656,11 @@ Example 1, My aim is to generate like below <br>
         end
  end	
 endmodule<br>
+```
 It will not generate as we expected and also it will generate only one flop.<br><br>
 
  But,if i will write my code like this,<br>
+ ```ruby
  module code(input clk, rst, d, output reg q);
  reg q0;
  always @ (posedge clk, posedge rst)
@@ -674,8 +677,37 @@ It will not generate as we expected and also it will generate only one flop.<br>
         end
  end	
 endmodule<br>
+```
 It will generate as what we expected.<br><br>
 
-Example 2,<br>
+Example 2, y aim is to make this,<br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4addd2303879fa24e83f32ca80c919bc74f72bcd/DAY%204/IMG_20230829_150045.jpg"> <br>
+```ruby
+module blocking_caveat (input a , input b , input  c, output reg d); 
+reg q0;
+always @ (*)
+begin
+	d = q0 & c;
+	q0 = a | b;
+end
+endmodule
+```
+The problem with above code is that will take old value of q0 so it will give false results.<br><br>
+```ruby
+module blocking_caveat (input a , input b , input  c, output reg d); 
+reg q0;
+always @ (*)
+begin
+        q0 = a | b;
+	d = q0 & c;
 	
+end
+endmodule
+```
+here q0 will take current value So, ouput will gets correct results.<br>
+Use non-blocking statements for writng sequential circuits for avoiding such mistakes and if you are using blocking statements then be very careful while writing it.<br>br>
+
+
+3. Non standard verilog coding can lead to a synthesis simulation mismatch.So use proper coding guidelines to write the clear RTL code and avoid non-synthesizable constructs.
+
 </details>
