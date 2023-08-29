@@ -737,21 +737,21 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave_GLS_.v..jpg"> <br><br>
 
 
-        Example 1,<br>
-       --> Verilog code for ternary_operator_mux design,
-       <img width="600" alt="netlist" src=""> <br><br>
+        Example 2,<br>
+ --> Verilog code for bad_mux design,
+       <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/good_mux_code.png"> <br><br>
        --> RTL level simulation result,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave.jpg"> <br><br>
        --> Statistics,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_statistics.v.jpg"> <br><br>
        --> Graphical represntation,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_graphical_rep.v.jpg"> <br><br>
        --> generated netlist,
-        <img width="600" alt="netlist" src=""> <br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_netlist.jpg"> <br>
 	this generated netlist we will use for performing gate level simulation.<br><br>
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave_GLS.jpg"> <br><br>
 
 
         Example 1,<br>
