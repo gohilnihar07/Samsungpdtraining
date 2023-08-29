@@ -637,7 +637,7 @@ Non-blocking assignments (<=) are used to model concurrent behavior within proce
 
 --> Cavets with blocking statements,<br>
 Example 1, My aim is to generate like below <br>
- <img width="600" alt="netlist" src=""> <br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b5edaaf3ece9d1d762432f13bdbdd93d34d946aa/DAY%204/IMG_20230829_113637.jpg"> <br><br>
  If i will write my code like this,<br>
  module code(input clk, rst, d, output reg q);
  reg q0;
