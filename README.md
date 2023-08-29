@@ -575,7 +575,7 @@ It's important to emphasize that sequential logic optimization involves intricat
 
 
 
-## DAY-4 GLS, blocking  Vs non-blocking and Synthesis-Simulation mismatch
+## DAY-4- GLS, blocking  Vs non-blocking and Synthesis-Simulation mismatch
 
 <details>
 	<summary> Gate-level simulation</summary>
@@ -704,12 +704,12 @@ begin
 end
 endmodule
 ```
-here q0 will take current value So, ouput will gets correct results.<br>
-Use non-blocking statements for writng sequential circuits for avoiding such mistakes and if you are using blocking statements then be very careful while writing it.<br>br>
+here q0 will take the current value, so Ouput will get the correct results.<br>
+Use non-blocking statements for writing sequential circuits to avoid such mistakes and if you are using blocking statements then be very careful while writing it.<br><br>
 
 
-3. Non standard verilog coding can lead to a synthesis simulation mismatch.So use proper coding guidelines to write the clear RTL code and avoid non-synthesizable constructs.<br><br>
-4. Optimization: Synthesis tools perform various optimizations to enhance area, power, and timing characteristics. These optimizations can alter the logic structure of the design, potentially leading to differences in behavior. Redundant logic might be removed, and signal paths might be altered to achieve better performance.<br><br>
+3. Non-standard verilog coding can lead to a synthesis simulation mismatch. So use proper coding guidelines to write the clear RTL code and avoid non-synthesizable constructs.<br><br>
+4. Optimization: Synthesis tools perform various optimizations to enhance area, power, and timing characteristics. These optimizations can alter the logic structure of the design, potentially leading to differences in behaviour. Redundant logic might be removed, and signal paths might be altered to achieve better performance.<br><br>
 
 5. Timing and delays: Synthesis tools account for gate delays, interconnect delays, and other physical characteristics of the target technology during the synthesis process. This can lead to timing differences between the original design's simulation and the post-synthesis simulation. Signals that were once perfectly synchronous in simulation might experience timing issues after synthesis.
 
