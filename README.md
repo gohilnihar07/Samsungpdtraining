@@ -638,7 +638,7 @@ Non-blocking assignments (<=) are used to model concurrent behavior within proce
 --> Cavets with blocking statements,<br>
 Example 1, My aim is to generate like below <br>
  <img width="600" alt="netlist" src=""> <br><br>
- If i will write my code like this,<br><br>
+ If i will write my code like this,<br>
  module code(input clk, rst, d, output reg q);
  reg q0;
  always @ (posedge clk, posedge rst)
@@ -657,6 +657,25 @@ Example 1, My aim is to generate like below <br>
 endmodule<br>
 It will not generate as we expected and also it will generate only one flop.<br><br>
 
- 
+ But,if i will write my code like this,<br>
+ module code(input clk, rst, d, output reg q);
+ reg q0;
+ always @ (posedge clk, posedge rst)
+ begin
+	if(rst)
+        begin
+		q0 = 1'b0;
+                q = 1'b0;
+        end
+ else 
+        begin
+		q = q0;
+                q0 = d;
+        end
+ end	
+endmodule<br>
+It will generate as what we expected.<br><br>
+
+Example 2,<br>
 	
 </details>
