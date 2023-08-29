@@ -623,10 +623,17 @@ begin
 end
 endmodule
 '''
-If we write always like this, always will evaluated when any signal changes then, it will generate mux.<br><br>
+If we write always like this, always will evaluated when any signal changes then, it will generate mux.<br>
 
 So,always write sensitivity list carefully.
+<br><br>
 
+2.Blocking Vs non-blocking statements <br>
+In Verilog, blocking and non-blocking statements are two different ways of assigning values to variables within procedural blocks like always and initial blocks. These statements control the sequencing and timing of assignments, and understanding their differences is crucial for writing correct and predictable RTL code.<br><br>
+(I)Blocking Statements:<br>
+Blocking assignments (=) are executed sequentially in the order they appear in the code. When a blocking assignment is encountered, the execution of the current procedural block is paused until the assignment is completed.<br><br>
+(II)Non-blocking statements:<br>
+Non-blocking assignments (<=) are used to model concurrent behavior within procedural blocks. Non-blocking assignments are scheduled to occur at the end of the current time step, allowing all non-blocking assignments within a procedural block to update simultaneously without affecting the rest of the logic in the block.<br>
  
 	
 </details>
