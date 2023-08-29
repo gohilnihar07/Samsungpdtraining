@@ -754,9 +754,9 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave_GLS.jpg"> <br><br>
 
 
-        Example 1,<br>
-       --> Verilog code for ternary_operator_mux design,
-       <img width="600" alt="netlist" src=""> <br><br>
+        Example 3,<br>
+       --> Verilog code for good_mux design,
+ <img width="600" alt="netlist" src=""> <br><br>
        --> RTL level simulation result,
         <img width="600" alt="netlist" src=""> <br><br>
        --> Statistics,
