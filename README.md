@@ -735,14 +735,15 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used for the RTL simulation because the primary input and primary outputs won't change.<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave_GLS_.v..jpg"> <br><br>
-	So as we can see our gate-level simulation result is the same as the RTL simulation, so everything is fine.
+	So as we can see our gate-level simulation result is the same as the RTL simulation, so everything is fine.<br><br>
+ Example 2,<br>
 
 
-        Example 2,<br>
+       
  --> Verilog code for bad_mux design,
        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/good_mux_code.png"> <br>
        We are writing code for mux but can see in the Verilog code sensitivity list only consists of select.<br><br>
-       --> RTL level simulation result,
+       --> RTL level simulation result,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave.jpg"> <br>
 	Since the sensitivity list does not consist of all the important parameters it's not working as mux but it's working like a double-edge flipflop in which it will evaluate only when there is a change in sel input.<br><br>
        --> Graphical representation,<br>
@@ -755,8 +756,8 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave_GLS.jpg"> <br>
 	We can clearly see that it's working like a mux, like when there is a change in a or b and depending on the select input value it's evaluating the output result. So here since the RTL simulation and gate-level simulation results are not the same so we can say it's a case of synthesis simulation mismatch.<br><br>
 
-
-        Example 3,<br>
+Example 3,<br>
+      
        --> Verilog code for good_mux design,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_code.png"> <br>
   We are writing code for Mux and we can also see that we have  written the Verilog code sensitivity list very carefully.<br><br>
@@ -772,11 +773,11 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
          To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_GLS_gtkwave.png"> <br>
 	so as we can see our gate-level simulation result is same as the RTL simulation, so everything is fine.<br><br>
+Example 4,<br>
 
 
- Example 4,<br>
        --> Verilog code for blocking_caveat design,
-       <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_code.v.jpg"> <br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_code.v.jpg"> <br>
        Here, we have used the blocking statements which say first will be evaluated based on the past x value and current c value, then the x will be evaluated based on a and b values.<br><br>
        --> RTL level simulation result,
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave.v.jpg"> <br>
