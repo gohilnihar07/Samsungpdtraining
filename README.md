@@ -680,7 +680,7 @@ endmodule<br>
 ```
 It will generate as what we expected.<br><br>
 
-Example 2, y aim is to make this,<br>
+Example 2, my aim is to make this,<br>
 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4addd2303879fa24e83f32ca80c919bc74f72bcd/DAY%204/IMG_20230829_150045.jpg"> <br>
 ```ruby
 module blocking_caveat (input a , input b , input  c, output reg d); 
@@ -708,6 +708,9 @@ here q0 will take current value So, ouput will gets correct results.<br>
 Use non-blocking statements for writng sequential circuits for avoiding such mistakes and if you are using blocking statements then be very careful while writing it.<br>br>
 
 
-3. Non standard verilog coding can lead to a synthesis simulation mismatch.So use proper coding guidelines to write the clear RTL code and avoid non-synthesizable constructs.
+3. Non standard verilog coding can lead to a synthesis simulation mismatch.So use proper coding guidelines to write the clear RTL code and avoid non-synthesizable constructs.<br><br>
+4. Optimization: Synthesis tools perform various optimizations to enhance area, power, and timing characteristics. These optimizations can alter the logic structure of the design, potentially leading to differences in behavior. Redundant logic might be removed, and signal paths might be altered to achieve better performance.<br><br>
+
+5. Timing and delays: Synthesis tools account for gate delays, interconnect delays, and other physical characteristics of the target technology during the synthesis process. This can lead to timing differences between the original design's simulation and the post-synthesis simulation. Signals that were once perfectly synchronous in simulation might experience timing issues after synthesis.
 
 </details>
