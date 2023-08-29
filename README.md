@@ -740,7 +740,7 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
 
 
        
- --> Verilog code for bad_mux design,
+ --> Verilog code for bad_mux design,<br>
        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/good_mux_code.png"> <br>
        We are writing code for mux but can see in the Verilog code sensitivity list only consists of select.<br><br>
        --> RTL level simulation result,<br>
@@ -757,8 +757,8 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
 	We can clearly see that it's working like a mux, like when there is a change in a or b and depending on the select input value it's evaluating the output result. So here since the RTL simulation and gate-level simulation results are not the same so we can say it's a case of synthesis simulation mismatch.<br><br>
 
 Example 3,<br>
-      
-       --> Verilog code for good_mux design,<br>
+--> Verilog code for good_mux design,<br>
+
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_code.png"> <br>
   We are writing code for Mux and we can also see that we have  written the Verilog code sensitivity list very carefully.<br><br>
        --> RTL level simulation result,<br>
@@ -775,11 +775,11 @@ Example 3,<br>
 	so as we can see our gate-level simulation result is same as the RTL simulation, so everything is fine.<br><br>
 Example 4,<br>
 
-
-       --> Verilog code for blocking_caveat design,
+       --> Verilog code for blocking_caveat design,<br>
+       
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_code.v.jpg"> <br>
        Here, we have used the blocking statements which say first will be evaluated based on the past x value and current c value, then the x will be evaluated based on a and b values.<br><br>
-       --> RTL level simulation result,
+       --> RTL level simulation result,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave.v.jpg"> <br>
 	As we can see in the above waveforms when the value of a and b is zero and c is one it should be supposed to give zero as the output result but it's giving one because x is the past value or it mimics a delay.<br><br>
        -->Graphical representation,<br>
