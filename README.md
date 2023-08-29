@@ -692,9 +692,9 @@ begin
 end
 endmodule
 ```
-The problem with above code is that will take old value of q0 so it will give false results.<br><br>
+The problem with the above code is that will take an old value of q0 so it will give false results.<br><br>
 ```ruby
-module blocking_caveat (input a , input b , input  c, output reg d); 
+module blocking_caveat (input a, input b, input  c, output reg d); 
 reg q0;
 always @ (*)
 begin
@@ -725,7 +725,7 @@ Use non-blocking statements for writing sequential circuits to avoid such mistak
        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_code.v.jpg"> <br><br>
        --> RTL level simulation result,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave.v.jpg"> <br>
-	As expected when the value of sel is 1 output follows i1 and when the value of sel is 0 output is following i0.<br><br>
+	As expected when the value of sel is 1 output follows i1 and when the value of sel is 0 output follows i0.<br><br>
        --> Graphical representation,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4b31172b2d88320fa615931dba80531ef2953f87/DAY%204/Ternary_operator_mux_graphical_rep_2_v.jpg"> <br>
 	As expected it's generating one 2x1 mux,<br><br>
