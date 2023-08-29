@@ -774,8 +774,7 @@ Example 3,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_GLS_gtkwave.png"> <br>
 	so as we can see our gate-level simulation result is same as the RTL simulation, so everything is fine.<br><br>
 Example 4,<br>
-
-       --> Verilog code for blocking_caveat design,<br>
+--> Verilog code for blocking_caveat design,<br>
        
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_code.v.jpg"> <br>
        Here, we have used the blocking statements which say first will be evaluated based on the past x value and current c value, then the x will be evaluated based on a and b values.<br><br>
@@ -788,7 +787,7 @@ Example 4,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_netlist.v.jpg"> <br>
 	This generated netlist we will use for performing gate-level simulation.<br><br>
        --> Gate-level simulation result,<br>
-         To perform the gate-level simulation, we can use the same testbench we used for RTL simulation because the primary input and outputs won't change.
+         To perform the gate-level simulation, we can use the same testbench we used for RTL simulation because the primary input and outputs won't change.<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave_GLS.v.jpg"> <br>
 	As we can see in the above waveforms when the value of a and b is zero and c is one it should give zero as the output result and it's giving zero. So here there is no delay in the value of x.<br>
         Here due to a  problem in the order of blocking statements inside the RTL code their result does not match the Gate-level simulation result. so it's a case of synthesis simulation mismatch.
