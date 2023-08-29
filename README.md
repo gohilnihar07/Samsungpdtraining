@@ -717,6 +717,24 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
 
 
 <details>
-	<summary>Labs on synthesis simulation mismatch </summary>
+	<summary>Labs on GLS and synthesis simulation mismatch </summary>
+       Command for Gate-level simulation:<br>
+       iverilog path_gate_level_model.v path_verilogg_file_lib.v netlist_name.v design_name.v<br><br>
+       Example 1,<br>
+       --> Verilog code for ternary_operator_mux design,
+       <img width="600" alt="netlist" src=""> <br><br>
+       --> RTL level simulation result,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Statistics,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> Graphical represntation,
+        <img width="600" alt="netlist" src=""> <br><br>
+       --> generated netlist,
+        <img width="600" alt="netlist" src=""> <br>
+	this generated netlist we will use for performing gate level simulation.<br><br>
+       --> Gate-level simulation result,<br>
+         To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
+        <img width="600" alt="netlist" src=""> <br><br>
+       
 	
 </details>
