@@ -726,48 +726,48 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
        --> RTL level simulation result,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave.v.jpg"> <br>
 	As expected when the value of sel is 1 output follows i1 and when the value of sel is 0 output is following i0.<br><br>
-       --> Graphical represntation,<br>
+       --> Graphical representation,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_graphical_repv.jpg"> <br>
 	As expected it's generating one 2x1 mux,<br><br>
 	--> generated netlist,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_netlist.v.jpg"> <br>
-	Now, this generated netlist we will use for performing gate level simulation or functinal validation.<br><br>
+	Now, this generated netlist we will use for performing gate-level simulation or functional validation.<br><br>
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used for the RTL simulation because the primary input and primary outputs won't change.<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave_GLS_.v..jpg"> <br><br>
-	so as we can see our gate-level simulation result is same as the RTL simulation, so everything is fine.
+	So as we can see our gate-level simulation result is the same as the RTL simulation, so everything is fine.
 
 
         Example 2,<br>
  --> Verilog code for bad_mux design,
        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/good_mux_code.png"> <br>
-       we are writing code for mux but can see in the verilog code sensitivity list only consist select.<br><br>
+       we are writing code for mux but can see in the Verilog code sensitivity list only consists of select.<br><br>
        --> RTL level simulation result,
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave.jpg"> <br>
-	Since sensitivity list is not consist all the important parameter it's not working as mux but it's working like double edge flipflop in which it will evaluate only when there is change in sel input.<br><br>
-       --> Graphical represntation,<br>
+	Since the sensitivity list does not consist of all the important parameters it's not working as mux but it's working like a double-edge flipflop in which it will evaluate only when there is a change in sel input.<br><br>
+       --> Graphical representationn,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_graphical_rep.v.jpg"> <br><br>
        --> generated netlist,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_netlist.jpg"> <br>
-	this generated netlist we will use for performing gate level simulation.<br><br>
+	This generated netlist we will use for performing gate-level simulation.<br><br>
        --> Gate-level simulation result,<br>
-         To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.<br>
+         To perform the gate level simulation we can use the same testbench that we had used for RTL simulation because the primary input and primary outputs won't change.<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave_GLS.jpg"> <br>
-	We can clearly see that it's working like a mux, like when there is a change in a or b and depending on the select input value it's evaluating output result.so here since the RTL simulation and gate-level simulation results are not same so we can say it's case of synthesis simulation mismatch.<br><br>
+	We can clearly see that it's working like a mux, like when there is a change in a or b and depending on the select input value it's evaluating the output result. So here since the RTL simulation and gate-level simulation results are not the same so we can say it's a case of synthesis simulation mismatch.<br><br>
 
 
         Example 3,<br>
        --> Verilog code for good_mux design,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_code.png"> <br>
-  we are writing code for mux and we can also see that we have  written verilog code sensitivity list very carefully.<br><br>
+  We are writing code for Mux and we can also see that we have  written the Verilog code sensitivity list very carefully.<br><br>
        --> RTL level simulation result,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_gtkwave.png"> <br>
-	Since sensitivity list is including all the important parameter which are needed to be considered so, it's working as a mux.<br><br>
-       --> Graphical represntation,<br>
+	Since the sensitivity list includes all the important parameters which are needed to be considered, it's working as a mux.<br><br>
+       --> Graphical representation,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_graphical_rep.png"> <br><br>
        --> generated netlist,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_netlist.png"> <br>
-	this generated netlist we will use for performing gate level simulation.<br><br>
+	This generated netlist we will use for performing gate-level simulation.<br><br>
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_GLS_gtkwave.png"> <br>
@@ -781,16 +781,16 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
        --> RTL level simulation result,
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave.v.jpg"> <br>
 	As we can see in the above waveforms when the value of a and b is zero and c is one it should be supposed to give zero as the output result but it's giving one because x is the past value or it mimics a delay.<br><br>
-       -->Graphical representationn,<br>
-        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_graphical_rep.v.jpg"> <br><br>
+       -->Graphical representation,<br>
+        <img width="600" alt="netlist" src=""> <br><br>
        --> generated netlist,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_netlist.v.jpg"> <br>
 	This generated netlist we will use for performing gate-level simulation.<br><br>
        --> Gate-level simulation result,<br>
-         To perform the gate level simulatio, we can use the same testbench we used while RTL simulation because the primary input and  outputs won't change.
+         To perform the gate-level simulation, we can use the same testbench we used for RTL simulation because the primary input and outputs won't change.
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave_GLS.v.jpg"> <br>
-	As we can see in the above waveforms when the value of a and b is zero and c is one it should supposed give zero as oputput result and it's giving zero.so here there is no delay in value of x.<br>
-        here due to problem in order of blocking statements inside the RTL code their result is not matching with the Gate-level simulation result. so it's a case of synthesis simulation mismatch
+	As we can see in the above waveforms when the value of a and b is zero and c is one it should give zero as the output result and it's giving zero. So here there is no delay in the value of x.<br>
+        Here due to a  problem in the order of blocking statements inside the RTL code their result does not match the Gate-level simulation result. so it's a case of synthesis simulation mismatch.
        
 	
 </details>
