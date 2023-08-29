@@ -727,7 +727,7 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_gtkwave.v.jpg"> <br>
 	As expected when the value of sel is 1 output follows i1 and when the value of sel is 0 output is following i0.<br><br>
        --> Graphical representation,<br>
-        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_graphical_repv.jpg"> <br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4b31172b2d88320fa615931dba80531ef2953f87/DAY%204/Ternary_operator_mux_graphical_rep_2_v.jpg"> <br>
 	As expected it's generating one 2x1 mux,<br><br>
 	--> generated netlist,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a5d7a6d10b5a5afa81fb678b1b3fd628680dd63/DAY%204/Ternary_operator_mux_netlist.v.jpg"> <br>
@@ -741,12 +741,12 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
         Example 2,<br>
  --> Verilog code for bad_mux design,
        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/good_mux_code.png"> <br>
-       we are writing code for mux but can see in the Verilog code sensitivity list only consists of select.<br><br>
+       We are writing code for mux but can see in the Verilog code sensitivity list only consists of select.<br><br>
        --> RTL level simulation result,
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_gtkwave.jpg"> <br>
 	Since the sensitivity list does not consist of all the important parameters it's not working as mux but it's working like a double-edge flipflop in which it will evaluate only when there is a change in sel input.<br><br>
-       --> Graphical representationn,<br>
-        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_graphical_rep.v.jpg"> <br><br>
+       --> Graphical representation,<br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4b31172b2d88320fa615931dba80531ef2953f87/DAY%204/bad_mux_graphical_rep_2_v.jpg"> <br><br>
        --> generated netlist,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ec8497d1fb7b25ee10d748dbcad0d95c048c8e41/DAY%204/bad_mux_netlist.jpg"> <br>
 	This generated netlist we will use for performing gate-level simulation.<br><br>
@@ -782,7 +782,7 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave.v.jpg"> <br>
 	As we can see in the above waveforms when the value of a and b is zero and c is one it should be supposed to give zero as the output result but it's giving one because x is the past value or it mimics a delay.<br><br>
        -->Graphical representation,<br>
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4b31172b2d88320fa615931dba80531ef2953f87/DAY%204/blocking_caveat_graphical_rep_2_.v.jpg"> <br><br>
        --> generated netlist,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_netlist.v.jpg"> <br>
 	This generated netlist we will use for performing gate-level simulation.<br><br>
