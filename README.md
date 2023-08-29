@@ -572,3 +572,18 @@ It's important to emphasize that sequential logic optimization involves intricat
       
 
  </details>
+
+
+
+## DAY-4 GLS, blocking  Vs non-blocking and Synthesis-Simulation mismatch
+
+<details>
+	<summary> Gate-level simulation</summary>
+ Gate-level simulation involves creating a simulation model of the circuit using the gate-level description. This model represents how the gates and flip-flops interact and respond to input signals. Simulation tools then simulate the propagation of signals through the gates, taking into account gate delays, to predict the behavior of the circuit in response to different inputs. This is important for verifying the correctness of the design, identifying potential timing issues, and ensuring that the circuit functions as intended.<br>
+ In modern digital design, gate-level simulation is often complemented with higher-level simulations and formal verification techniques to provide a comprehensive validation of the design's correctness and functionality.<br><br>
+
+--> Gate-level simulation using iverilog :-
+      <img width="600" alt="netlist" src=""> <br>
+      Here, the design file is nothing but the netlist generated from our sythesis. and since the primary input and primary output remains same for RTL code and netlist file So, we can use the same testbench as what we used for RTL verification.and Gate-level models consists information about all the cell name like what it means and all. if the gate-level models are delay annotated, then we can use GLS for timing validation also along with functional validation.      
+	
+</details>
