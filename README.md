@@ -756,23 +756,23 @@ Use non-blocking statements for writng sequential circuits for avoiding such mis
 
         Example 3,<br>
        --> Verilog code for good_mux design,
- <img width="600" alt="netlist" src=""> <br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_code.png"> <br><br>
        --> RTL level simulation result,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_gtkwave.png"> <br><br>
        --> Statistics,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_statistics.png"> <br><br>
        --> Graphical represntation,
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_graphical_rep.png"> <br><br>
        --> generated netlist,
-        <img width="600" alt="netlist" src=""> <br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_netlist.png"> <br>
 	this generated netlist we will use for performing gate level simulation.<br><br>
        --> Gate-level simulation result,<br>
          To perform the gate level simulation we can use the same testbench which we had used while RTL simulation because the primary input and primary outputs won't change.
-        <img width="600" alt="netlist" src=""> <br><br>
+        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/ff63e66e2fde64acbc82d6191b9ed8611d6c68af/DAY%204/good_mux_GLS_gtkwave.png"> <br><br>
 
 
- Example 1,<br>
-       --> Verilog code for ternary_operator_mux design,
+ Example 4,<br>
+       --> Verilog code for blocking_caveat design,
        <img width="600" alt="netlist" src=""> <br><br>
        --> RTL level simulation result,
         <img width="600" alt="netlist" src=""> <br><br>
