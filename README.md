@@ -633,7 +633,30 @@ In Verilog, blocking and non-blocking statements are two different ways of assig
 (I)Blocking Statements:<br>
 Blocking assignments (=) are executed sequentially in the order they appear in the code. When a blocking assignment is encountered, the execution of the current procedural block is paused until the assignment is completed.<br><br>
 (II)Non-blocking statements:<br>
-Non-blocking assignments (<=) are used to model concurrent behavior within procedural blocks. Non-blocking assignments are scheduled to occur at the end of the current time step, allowing all non-blocking assignments within a procedural block to update simultaneously without affecting the rest of the logic in the block.<br>
+Non-blocking assignments (<=) are used to model concurrent behavior within procedural blocks. Non-blocking assignments are scheduled to occur at the end of the current time step, allowing all non-blocking assignments within a procedural block to update simultaneously without affecting the rest of the logic in the block.<br><br>
+
+--> Cavets with blocking statements,<br>
+Example 1, My aim is to generate like below <br>
+ <img width="600" alt="netlist" src=""> <br><br>
+ If i will write my code like this,<br><br>
+ module code(input clk, rst, d, output reg q);
+ reg q0;
+ always @ (posedge clk, posedge rst)
+ begin
+	if(rst)
+        begin
+		q0 = 1'b0;
+                q = 1'b0;
+        end
+ else 
+        begin
+		q0 = d;
+                q = q0;
+        end
+ end	
+endmodule<br>
+It will not generate as we expected and also it will generate only one flop.<br><br>
+
  
 	
 </details>
