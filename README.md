@@ -791,6 +791,65 @@ Example 4,<br>
         <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4041b7cfe699ff0dc49af57eadd78ef42fbc4169/DAY%204/blocking_caveat_gtkwave_GLS.v.jpg"> <br>
 	As we can see in the above waveforms when the value of a and b is zero and c is one it should give zero as the output result and it's giving zero. So here there is no delay in the value of x.<br>
         Here due to a  problem in the order of blocking statements inside the RTL code their result does not match the Gate-level simulation result. so it's a case of synthesis simulation mismatch.
-       
-	
+
 </details>
+
+
+## DAY-5- DFT
+
+--> Testability:-<br>
+In VLSI terms,<br>
+it means "if a design is well-controllable and well-observable it is said to easily testable."
+<br><br>
+
+What is DFT?<br>
+It is a technique which facilitates a design to become testable after prooduction.Adding an extra design for an existing design to make sure it can be tested after being fabricated. "or" in other words Testability features are designed into the chip during its design phase to enable efficient testing. These features help in detecting manufacturing defects, design errors, and other issues that might affect the chip's performance or reliability.<br>
+A few saples of designs included for making the whole chip tetstable. For example,
+<br>
+--> For macros, we including MBIST logic,<br>
+  Design for Testability (DFT) techniques play a crucial role in ensuring that complex macros (large functional blocks) within a chip can be effectively tested for faults. These macros can include memory blocks, processors, and other specialized components. DFT for macros often involves the incorporation of Memory Built-In Self-Test (MBIST) logic.<br>
+  Memory Built-In Self-Test (MBIST) is a DFT technique specifically designed for testing memory arrays within integrated circuits. It involves adding dedicated circuitry to the memory block that enables the memory to be tested using built-in self-test patterns. This eliminates the need for external test equipment and simplifies the testing process.<br><br>
+
+--> For flops, we will use SCAN chains,<br>
+ The SCAN chain (also known as Scan Path) technique is a fundamental Design for Testability (DFT) methodology used to improve the testability of digital circuits, particularly sequential elements like flip-flops. It allows for efficient testing of the internal logic states of flip-flops by serially shifting in test patterns and shifting out responses, thereby simplifying the process of observing and controlling the states of these elements during testing.<br>
+
+Here's how the SCAN chain technique works for flip-flops in DFT:<br><br>
+
+   - Basic Concept:<br>
+        In a traditional digital circuit, the primary inputs and outputs are connected to the external pins, and the internal states of flip-flops are not directly accessible.<br>
+        In the SCAN chain technique, additional circuitry is introduced to create a chain of flip-flops that can be connected in a serial manner.<br><br>
+
+   - Scan-In and Scan-Out (SI and SO) Ports:<br>
+        Each flip-flop is augmented with two additional ports: Scan-In (SI) and Scan-Out (SO).<br>
+        During normal operation, the SI and SO ports are disconnected, and the flip-flops behave like regular sequential elements.<br>
+        During testing, the SI and SO ports are connected to the adjacent flip-flops, forming a serial shift register.<br><br>
+
+   - Test Mode:<br>
+        The circuit enters the test mode by configuring control signals to activate the SCAN chain. This isolates the flip-flops from the normal logic and enables the shift-register behavior.<br>
+        The initial values of the flip-flops are loaded into the chain through the SI port.<br><br>
+
+   - Shifting Test Patterns:<br>
+        Test patterns, which represent the desired inputs for the circuit, are loaded into the SCAN chain through the SI port. These patterns are serially shifted from flip-flop to flip-flop.<br><br>
+
+   - Observing Responses:<br>
+        As the test patterns propagate through the SCAN chain, the responses (expected outputs) are observed at the SO port.<br>
+        These responses are then compared to the expected results to identify any faults or defects.<br><br>
+
+    - Benefits:<br>
+        The SCAN chain technique provides full controllability and observability of internal flip-flop states, enabling comprehensive testing of sequential logic.<br>
+        It simplifies the process of applying test patterns and capturing responses, reducing the need for complex external test equipment.<br>
+        Faults related to flip-flops, such as stuck-at faults or transition faults, can be efficiently detected and diagnosed.<br><br>
+
+   - Trade-offs:<br>
+        Introducing the SCAN chain requires additional circuitry, which can lead to increased chip area and potential performance overhead.<br>
+        The test mode might not perfectly emulate the actual operating conditions, so certain faults might still remain undetected.<br><br>
+
+The SCAN chain technique is a widely used DFT methodology and is supported by many industry-standard tools and methodologies. It greatly enhances the testability of digital circuits containing numerous sequential elements, like flip-flops, ensuring that the manufactured chips are of high quality and reliability.<br>
+
+  
+
+
+
+
+	
+
