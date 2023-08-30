@@ -797,6 +797,9 @@ Example 4,<br>
 
 ## DAY-5- DFT
 
+<details>
+	<summary> Basics of DFT </summary>
+</details>
 --> Testability:-<br>
 In VLSI terms,<br>
 it means "if a design is well-controllable and well-observable it is said to easily testable."
@@ -867,6 +870,69 @@ Here's how the process of generating test patterns for testing combinational cir
     - Fault Detection and Diagnosis: By comparing the observed outputs with expected outputs, you can identify discrepancies that might indicate the presence of faults. Analyzing the discrepancies helps you narrow down the location and type of fault.
 <br><br>
     Iterative Process: The process might involve multiple iterations of test pattern generation, application, and analysis to improve coverage and fault detection.<br><br><br>
+
+
+
+--> Why do we do DFT?<br><br>
+  -The primary reasons for implementing DFT in IC design include:<br>
+
+- Fault Detection: The main purpose of DFT is to detect manufacturing defects, design errors, and faults that may arise due to various factors. By embedding DFT features, designers can identify faults early in the manufacturing process, minimizing the likelihood of faulty chips reaching the market.<br>
+
+- Reliability Enhancement: DFT techniques contribute to the overall reliability of ICs by identifying and addressing potential defects before the chips are deployed in real-world applications. This reduces the risk of field failures and costly recalls.<br>
+
+- Cost Reduction: Detecting and rectifying issues during the manufacturing phase is significantly less expensive than addressing problems after the chips have been manufactured and integrated into devices. DFT helps in reducing post-manufacturing costs related to testing, debugging, and rework.<br>
+
+- Time Savings: Traditional testing methods that rely on external testers can be time-consuming. DFT techniques such as Built-In Self-Test (BIST) and scan chains enable on-chip testing, leading to faster testing cycles and quicker time-to-market for products.<br>
+So, basically it makes the testing easy at the post-production process.<br><br>
+
+  We have 3 main levels of testing after a chip being fabricated,namely:<br>
+  1.Chip-level,when the chips are manufactured,<br>
+  Chip-level testing involves testing the individual integrated circuits (chips) that make up a system. It focuses on ensuring the functionality and quality of each chip before it's integrated into a larger assembly.itcemploys various Design for Testability (DFT) techniques, such as scan chains, Built-In Self-Test (BIST), and boundary scan (JTAG), to verify the chip's correctness.The main goal is to identify manufacturing defects, design errors, or faulty components within an individual chip.<br><br>
+
+  2.Board-level,when the chips are integrated on the board,<br>
+  Board-level testing involves testing the entire printed circuit board (PCB) that holds and connects multiple chips and components. It ensures that the board operates as intended, accounting for signal integrity, power delivery, and interconnections.The main goal is to verify the interactions between chips and components on the PCB, ensure signal quality, and validate power distribution.<br><br>
+
+  3.System-level,when several boards are assembled together,<br>
+  System-level testing involves testing the complete electronic system, which can comprise multiple PCBs, chips, software, and possibly mechanical components. It verifies the system's overall functionality and performance.The main goal is to ensure that the entire system functions as intended, meets performance specifications, and is ready for deployment in its intended application.<br><br><br>
+
+
+  --> When or where DFT comes into the picture in ASIC design flow?<br>
+     So, the answer lies in the below basic ASIC design flow diagram,<br>
+     <img width="600" alt="netlist" src=""> <br>
+    - DFT considerations start at the RTL design stage. Designers should account for scan chain insertion, test point placement, and any additional DFT logic required.<br>
+    - Before synthesis, tools or methodologies may be used to perform DFT analysis. This includes identifying scan chains, memory BIST structures, and other DFT elements. then RTL modifications are made to incorporate DFT structures such as scan chains, boundary scan (JTAG) logic, and memory BIST controllers.<br>
+    - Post synthesis the DFT logic is synthesized along with the design's functional logic. Care is taken to ensure that DFT elements are correctly inserted, and that the DFT logic and functional logic interact as intended.<br><br><br>
+
+    --> pro's and con's of DFT,<br><br>
+    Design for Testability (DFT) techniques offer several advantages and have certain drawbacks as well. Here's an overview of the pros and cons of DFT:<br>
+
+  --> Pros (Advantages) of DFT:<br>
+  - Improved Testability: DFT enhances the testability of complex digital designs, allowing efficient testing of circuits that might otherwise be challenging to test comprehensively.<br>
+  - Reduced Time-to-Market: By incorporating DFT techniques, testing can be performed more quickly and efficiently, contributing to shorter development cycles and faster time-to-market.<br>
+  - Lower Testing Costs: On-chip testing (e.g., scan chains, BIST) reduces the need for expensive external test equipment, resulting in cost savings during manufacturing.<br>
+- Higher Test Coverage: DFT techniques can achieve higher test coverage, meaning a larger portion of potential faults is detected and addressed.<br>
+- Debugging and Diagnosis: DFT features provide insights into the location and nature of faults, aiding debugging and diagnosis efforts.<br><br>
+
+--> Con's of DFT: <br>
+- Increased Design Complexity: Incorporating DFT elements can increase the overall design complexity, potentially leading to longer design times.<br>
+- Area Overhead: DFT logic occupies additional chip area, which can impact the overall chip size, power consumption, and cost.<br>
+- Timing Impact: Some DFT techniques, especially those involving scan chains, can impact the circuit's timing characteristics, potentially leading to performance degradation.<br>
+- Manufacturing Challenges: The insertion of DFT logic can introduce manufacturing challenges, such as ensuring proper manufacturability and testing of DFT structures.<br>
+- Test Pattern Generation: Generating effective test patterns can be complex, and achieving high test coverage may require significant computational resources and time.<br><br>
+
+Careful consideration and balance between the advantages and disadvantages of DFT are crucial to achieving optimal results in the design and testing of integrated circuits.<br><br><br>
+
+
+
+        
+     
+
+  
+  
+
+
+
+
 
 
 
