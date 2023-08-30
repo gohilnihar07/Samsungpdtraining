@@ -805,7 +805,7 @@ it means "if a design is well-controllable and well-observable it is said to eas
 What is DFT?<br>
 It is a technique which facilitates a design to become testable after prooduction.Adding an extra design for an existing design to make sure it can be tested after being fabricated. "or" in other words Testability features are designed into the chip during its design phase to enable efficient testing. These features help in detecting manufacturing defects, design errors, and other issues that might affect the chip's performance or reliability.<br>
 A few saples of designs included for making the whole chip tetstable. For example,
-<br>
+<br><br>
 --> For macros, we including MBIST logic,<br>
   Design for Testability (DFT) techniques play a crucial role in ensuring that complex macros (large functional blocks) within a chip can be effectively tested for faults. These macros can include memory blocks, processors, and other specialized components. DFT for macros often involves the incorporation of Memory Built-In Self-Test (MBIST) logic.<br>
   Memory Built-In Self-Test (MBIST) is a DFT technique specifically designed for testing memory arrays within integrated circuits. It involves adding dedicated circuitry to the memory block that enables the memory to be tested using built-in self-test patterns. This eliminates the need for external test equipment and simplifies the testing process.<br><br>
@@ -844,7 +844,29 @@ Here's how the SCAN chain technique works for flip-flops in DFT:<br><br>
         Introducing the SCAN chain requires additional circuitry, which can lead to increased chip area and potential performance overhead.<br>
         The test mode might not perfectly emulate the actual operating conditions, so certain faults might still remain undetected.<br><br>
 
-The SCAN chain technique is a widely used DFT methodology and is supported by many industry-standard tools and methodologies. It greatly enhances the testability of digital circuits containing numerous sequential elements, like flip-flops, ensuring that the manufactured chips are of high quality and reliability.<br>
+The SCAN chain technique is a widely used DFT methodology and is supported by many industry-standard tools and methodologies. It greatly enhances the testability of digital circuits containing numerous sequential elements, like flip-flops, ensuring that the manufactured chips are of high quality and reliability.<br><br><br>
+
+
+--> For combinational circuit, we will generate test patterns,<br>
+for combinational circuits, we generate and apply test patterns to verify the correctness of their functionality. Combinational circuits are digital circuits where the outputs depend solely on the current inputs, with no memory or feedback elements. Testing combinational circuits involves creating input patterns that exercise various input combinations to detect faults or errors in the circuit's logic.<br>
+
+Here's how the process of generating test patterns for testing combinational circuits typically works:<br><br>
+
+    - Fault Models: First, you need to define the types of faults you want to detect in the combinational circuit. Common fault models include stuck-at faults (where a signal is stuck at either logic high or logic low), transition faults (where a signal fails to transition within a specific time), and bridging faults (where two signal lines are shorted together).<br>
+
+    - Test Generation Algorithms: Various algorithms exist to automatically generate test patterns to detect different fault models. These algorithms analyze the circuit's logic and structure to generate input patterns that activate specific fault conditions.<br>
+
+    - Controllability and Observability: The ability to control inputs and observe outputs is critical for effective testing. Ensure that the circuit's inputs and outputs are accessible for applying test patterns and capturing responses.<br>
+
+    - Test Coverage: Test coverage is a measure of how well the generated test patterns exercise the circuit's logic and detect potential faults. High test coverage indicates that a wide range of potential issues has been addressed.<br>
+
+    - Automatic Test Pattern Generation (ATPG): ATPG tools are used to automatically generate test patterns that activate specific fault conditions. These tools use algorithms like Boolean Difference or Path Sensitization to generate effective test vectors.<br>
+
+    - Applying Test Patterns: The generated test patterns are applied to the inputs of the combinational circuit. The circuit processes these patterns, and its outputs are observed.<br>
+<br>
+    - Fault Detection and Diagnosis: By comparing the observed outputs with expected outputs, you can identify discrepancies that might indicate the presence of faults. Analyzing the discrepancies helps you narrow down the location and type of fault.
+<br>
+    Iterative Process: The process might involve multiple iterations of test pattern generation, application, and analysis to improve coverage and fault detection.<br>
 
   
 
