@@ -852,21 +852,25 @@ for combinational circuits, we generate and apply test patterns to verify the co
 
 Here's how the process of generating test patterns for testing combinational circuits typically works:<br><br>
 
-    - Fault Models: First, you need to define the types of faults you want to detect in the combinational circuit. Common fault models include stuck-at faults (where a signal is stuck at either logic high or logic low), transition faults (where a signal fails to transition within a specific time), and bridging faults (where two signal lines are shorted together).<br>
+    - Fault Models: First, you need to define the types of faults you want to detect in the combinational circuit. Common fault models include stuck-at faults (where a signal is stuck at either logic high or logic low), transition faults (where a signal fails to transition within a specific time), and bridging faults (where two signal lines are shorted together).<br><br>
 
-    - Test Generation Algorithms: Various algorithms exist to automatically generate test patterns to detect different fault models. These algorithms analyze the circuit's logic and structure to generate input patterns that activate specific fault conditions.<br>
+    - Test Generation Algorithms: Various algorithms exist to automatically generate test patterns to detect different fault models. These algorithms analyze the circuit's logic and structure to generate input patterns that activate specific fault conditions.<br><br>
 
-    - Controllability and Observability: The ability to control inputs and observe outputs is critical for effective testing. Ensure that the circuit's inputs and outputs are accessible for applying test patterns and capturing responses.<br>
+    - Controllability and Observability: The ability to control inputs and observe outputs is critical for effective testing. Ensure that the circuit's inputs and outputs are accessible for applying test patterns and capturing responses.<br><br>
 
-    - Test Coverage: Test coverage is a measure of how well the generated test patterns exercise the circuit's logic and detect potential faults. High test coverage indicates that a wide range of potential issues has been addressed.<br>
+    - Test Coverage: Test coverage is a measure of how well the generated test patterns exercise the circuit's logic and detect potential faults. High test coverage indicates that a wide range of potential issues has been addressed.<br><br>
 
-    - Automatic Test Pattern Generation (ATPG): ATPG tools are used to automatically generate test patterns that activate specific fault conditions. These tools use algorithms like Boolean Difference or Path Sensitization to generate effective test vectors.<br>
+    - Automatic Test Pattern Generation (ATPG): ATPG tools are used to automatically generate test patterns that activate specific fault conditions. These tools use algorithms like Boolean Difference or Path Sensitization to generate effective test vectors.<br><br>
 
     - Applying Test Patterns: The generated test patterns are applied to the inputs of the combinational circuit. The circuit processes these patterns, and its outputs are observed.<br>
 <br>
     - Fault Detection and Diagnosis: By comparing the observed outputs with expected outputs, you can identify discrepancies that might indicate the presence of faults. Analyzing the discrepancies helps you narrow down the location and type of fault.
-<br>
-    Iterative Process: The process might involve multiple iterations of test pattern generation, application, and analysis to improve coverage and fault detection.<br>
+<br><br>
+    Iterative Process: The process might involve multiple iterations of test pattern generation, application, and analysis to improve coverage and fault detection.<br><br><br>
+
+
+
+
 
   
 
