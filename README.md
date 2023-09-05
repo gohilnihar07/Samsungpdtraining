@@ -1212,13 +1212,13 @@ statement
     **command: sh gvim &**
 
 **9. Script for printing multiplication**<br>
- <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/42d1492b3aa9a2a53863d7811e1c1b55f124fc92/DAY-6/myscript_for_multiplication.png"> <br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/42d1492b3aa9a2a53863d7811e1c1b55f124fc92/DAY-6/myscript_for_multiplication.png"> <br><br>
   -Output of script,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/42d1492b3aa9a2a53863d7811e1c1b55f124fc92/DAY-6/printing_multiplication_table_through_script.png"> <br><br>
 
 
  **10. script for printing list**<br>
- <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/42d1492b3aa9a2a53863d7811e1c1b55f124fc92/DAY-6/script%20for%20list%20and%20looping%20through%20my%20list.png"> <br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/42d1492b3aa9a2a53863d7811e1c1b55f124fc92/DAY-6/script%20for%20list%20and%20looping%20through%20my%20list.png"> <br><br>
  -Output of script,<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/42d1492b3aa9a2a53863d7811e1c1b55f124fc92/DAY-6/by%20script%20looping%20through%20my%20list.png"> <br><br>
  
