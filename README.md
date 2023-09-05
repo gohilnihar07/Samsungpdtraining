@@ -1136,23 +1136,26 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
    ```
 <br><br>
 
+
 - for loop,<br>
 	  
    ```ruby
 for {<looping variable>} {condition} {incr/decr} {
-/statements
+<statements>
 }
-   ```
+  ```
 <br><br>
+
 
 - while loop,<br>
 	  
    ```ruby
   while {<condition>} {
-/statements
+<statements>
 }
-```
+  ```
 <br><br>
+
 
 - Foreach,<br>
 
