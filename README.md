@@ -1039,7 +1039,9 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
   ```
  <br><br>
 -->  Below is the picture of the output window after compiling. It produces the netlist file, which includes the seqgen library as displayed in the figure. However, it doesn't contain the .db file because we haven't configured the link and target library settings.<br>
-<img width="600" alt="netlist" src=""> <br><br>
+   
+ 
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/674773a15de5a3131a0a0ffbf6db95aae49a61f8/DAY-6/DC%20synthesis%20flow.jpg"> <br>
 
 
 -->  Now first we will set the link_library and target_library then link and compile it and then we will write out the netlist by the following commands,<br>
@@ -1053,9 +1055,48 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 ```
 <br><br><br>
 
- -->
+--> Below result we can see after compilation,<br>
+
+ <img width="600" alt="netlist" src=""> <br><br>
 
 
+ --> Generated netlist,<br>
+
+ <img width="600" alt="netlist" src=""> <br><br>
+ Since, we have set the target and link library so we can see in the netlist that it's using cells from the sky130.<br><br>
+ 
+
+ 
+ **design vision**
+
+ --> Design Vision, part of Synopsys' EDA suite, is essential for digital circuit design. It analyzes RTL descriptions, performs logic synthesis, manages constraints, and conducts timing analysis. This ensures correctness, optimization, and adherence to constraints before the physical implementation, streamlining and improving the reliability of the design process.<br><br>
+
+ - To launch design vision,<br>
+ 
+   ```ruby
+     csh
+     design_vision
+   ```
+ - For writing out the DDC in DC shell command,<br>
+      **write -f ddc -out <filename_name>**
+
+  - Next, you can initiate the graphical user interface (GUI) and open the previously generated .ddc file. This .ddc file holds session-specific tool memory information in Synopsys' proprietary format, exclusively accessible by Synopsys tools. When reading the .db file, it automatically includes the linked .db file, as demonstrated in the figure below,<br>
+   <img width="600" alt="netlist" src=""> <br><br>
+
+  - For viewing the schematic of the design,<br>
+     <img width="600" alt="netlist" src=""> <br><br>
+
+
+  - Gate-level implementation,<br>
+  <img width="600" alt="netlist" src=""> <br><br>
+     
+
+
+  **.synopsys_dc.setup**
+
+  - Imagine a scenario with multiple indispensable .db files where manually configuring each one is impractical. To address this, you can create a file named .synopsys_dc.setup in your workspace's home directory. <br>
+
+  -  When invoking dc_shell, it checks for the .synopsys_dc.setup file in the user's home directory. The priority order is as follows: if the file exists in the user's home directory, it takes precedence, and the installed (default) setup is disregarded. If not found, the installed setup is used. This file streamlines tool setup by automatically configuring all necessary .db files, eliminating repetitive tasks during dc_shell invocation.<br>
 
 
 
