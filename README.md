@@ -1007,7 +1007,8 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
    --> Basic DC setup diagram:-<br>
      <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/674773a15de5a3131a0a0ffbf6db95aae49a61f8/DAY-6/DC_setup.jpg"> <br>
 
-    --> DC synthesis flow:-<br>
+--> DC synthesis flow:-<br>
+
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/674773a15de5a3131a0a0ffbf6db95aae49a61f8/DAY-6/DC%20synthesis%20flow.jpg"> <br>
 
  
