@@ -931,7 +931,8 @@ Careful consideration and balance between the advantages and disadvantages of DF
 <details> 
 	<summary> Basics of digital logic design and logic synthesis </summary>
    
-	--> Digital circuit:-<br><br>
+-->  Digital circuit:-<br><br>
+ 
  A digital circuit is an electronic system designed to process digital signals or binary data, which is characterized by discrete values, usually represented as 0s and 1s. These circuits serve as the foundational elements of digital electronics and find extensive application in various electronic devices and systems, including but not limited to computers, smartphones, televisions, and numerous other electronic appliances. These descriptions are typically formulated within the behavioral model of a design, often implemented in hardware description languages (HDL) like VHDL or Verilog. The specification expressed through these programming languages forms the Register-Transfer Level (RTL) representation of the design.<br>
  Digital circuits are built upon several fundamental concepts that form the basis for understanding and designing digital electronic systems. Here are some essential concepts in digital circuits:<br><br>
 
@@ -960,11 +961,11 @@ Here is an overview of the key aspects of logic synthesis:<br>
 4. Optimization: Logic synthesis tools perform various optimizations to improve the circuit's performance and efficiency.
 <br>These optimizations can include:<br>
 
--Logic Optimization: Reducing the number of logic gates used to implement a function, which can lead to smaller and faster circuits.<br>
+- Logic Optimization: Reducing the number of logic gates used to implement a function, which can lead to smaller and faster circuits.<br>
 
--Timing Optimization: Ensuring that signals meet specified timing constraints, such as setup and hold times, to ensure correct operation at a desired clock frequency.<br>
+- Timing Optimization: Ensuring that signals meet specified timing constraints, such as setup and hold times, to ensure correct operation at a desired clock frequency.<br>
 
--Power Optimization: Minimizing power consumption, especially in battery-powered devices, by optimizing the design for low power usage.<br>
+- Power Optimization: Minimizing power consumption, especially in battery-powered devices, by optimizing the design for low power usage.<br>
 
 - Area Optimization: Balancing the trade-off between circuit size (area) and performance. Smaller circuits might be more power-efficient but could be slower.<br>
 
@@ -1004,10 +1005,10 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 
 
    --> Basic DC setup diagram:-<br>
-     <img width="600" alt="netlist" src=""> <br>
+     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/674773a15de5a3131a0a0ffbf6db95aae49a61f8/DAY-6/DC_setup.jpg"> <br>
 
     --> DC synthesis flow:-<br>
- <img width="600" alt="netlist" src=""> <br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/674773a15de5a3131a0a0ffbf6db95aae49a61f8/DAY-6/DC%20synthesis%20flow.jpg"> <br>
 
  
    
