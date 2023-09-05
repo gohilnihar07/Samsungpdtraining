@@ -1016,8 +1016,7 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 
 
   <details> 
-	  
-	  <summary> Labs on DC </summary>
+	   <summary> Labs on DC </summary>
 	  
   --> First for invoking DC compiler we need to enable C shell and then invoke dC shell with the below commands,<br>
 	  
