@@ -1047,7 +1047,7 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 -->  Below is the picture of the output window after compiling. It produces the netlist file, which includes the seqgen library as displayed in the figure. However, it doesn't contain the .db file because we haven't configured the link and target library settings.<br>
    
  
-<img width="600" alt="netlist" src=""> <br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b0a0e0eed5dad950f5e688ea0512f5e4ba0dc8ec/DAY-6/1.jpg"> <br>
 
 
 -->  Now first we will set the link_library and target_library then link and compile it and then we will write out the netlist by the following commands,<br>
@@ -1065,12 +1065,12 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 
 --> Below result we can see after compilation,<br>
 
- <img width="600" alt="netlist" src=""> <br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b0a0e0eed5dad950f5e688ea0512f5e4ba0dc8ec/DAY-6/compilatio_complete.png"> <br><br>
 
 
  --> Generated netlist,<br>
 
- <img width="600" alt="netlist" src=""> <br><br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/527beac68a2fc17dda042dade143a2eb9f09c0d5/DAY-6/can%20see%20the%20netlist%20file%20created%20by%20using%20sky130.png"> <br><br>
  Since, we have set the target and link library so we can see in the netlist that it's using cells from the sky130.<br><br>
  
 
@@ -1089,14 +1089,14 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
       **write -f ddc -out <filename_name>**
 
   - Next, you can initiate the graphical user interface (GUI) and open the previously generated .ddc file. This .ddc file holds session-specific tool memory information in Synopsys' proprietary format, exclusively accessible by Synopsys tools. When reading the .db file, it automatically includes the linked .db file, as demonstrated in the figure below,<br>
-   <img width="600" alt="netlist" src=""> <br><br>
+   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b0a0e0eed5dad950f5e688ea0512f5e4ba0dc8ec/DAY-6/after%20opening%20design%20vision%20we%20will%20see%20something%20like%20this%20view.png"> <br><br>
 
   - For viewing the schematic of the design,<br>
-     <img width="600" alt="netlist" src=""> <br><br>
+     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b0a0e0eed5dad950f5e688ea0512f5e4ba0dc8ec/DAY-6/3.jpg"> <br><br>
 
 
   - Gate-level implementation,<br>
-  <img width="600" alt="netlist" src=""> <br><br>
+  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/527beac68a2fc17dda042dade143a2eb9f09c0d5/DAY-6/lab_1_schematic.png"> <br><br>
      
 
 
@@ -1107,12 +1107,6 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
   -  When invoking dc_shell, it checks for the .synopsys_dc.setup file in the user's home directory. The priority order is as follows: if the file exists in the user's home directory, it takes precedence, and the installed (default) setup is disregarded. If not found, the installed setup is used. This file streamlines tool setup by automatically configuring all necessary .db files, eliminating repetitive tasks during dc_shell invocation.<br>
 
 
-
-                            
-
-                 
- 
-  
 
           
 	   
