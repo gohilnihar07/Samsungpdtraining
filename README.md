@@ -1170,7 +1170,12 @@ foreach_in_collection var collection {
 statement
 }
 ```
-<br><br>
+<br><br><br>
+
+**Examples,** <br>
+
+**1.**
+ 
 
 
   </details>
