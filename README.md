@@ -1148,10 +1148,10 @@ for {<looping variable>} {condition} {incr/decr} {
 - while loop,<br>
 	  
    ```ruby
-  while {<condition>} {
-<statements>
-}
-  ```
+   while {<condition>} {
+   <statements>
+   }
+   ```
 
 
 
