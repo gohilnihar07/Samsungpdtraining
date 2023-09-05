@@ -1203,12 +1203,13 @@ statement
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/collection%20of%20AND%20cells%20present%20in%20library.png"> <br><br>
 
 
-**8. foreach in collection, looping through**
+**8. foreach in collection, looping through**<br>
  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/looping%20through%20my%20collection%20of%20AND%20cells.png"> <br><br>
 
 
 **Creating a small script**<br>
---> first 
+--> first launch gvim within dc_shell,<br>
+    **command: sh gvim &**
  <img width="600" alt="netlist" src=""> <br><br>
 
 
