@@ -1174,8 +1174,46 @@ statement
 
 **Examples,** <br>
 
-**1.**
- 
+**1. set variable**<br>
+  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/tcl_setting_variable.png"> <br><br>
+
+**2. while loop**<br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/tcl_running_while_loop1.png"> <br><br>
+
+  
+**3. for loop**<br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/tcl_running_for_loop.png"> <br><br>
+
+
+**4. set list**<br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/for_setting_the_list.png"> <br><br>
+
+
+**5. Foreach for looping through the list**<br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/for_looping_through_the_list.png"> <br><br>
+
+
+**6. Command for collection of all cells present in .lib for AND cell**<br>
+
+```ruby
+  get_lib_cells */*and*
+```
+
+**7. collection of AND cells present in library**<br>
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/collection%20of%20AND%20cells%20present%20in%20library.png"> <br><br>
+
+
+**8. foreach in collection, looping through**
+ <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/87397a2368ff49e151c66e70846d0a2c7ec8cd8f/DAY-6/looping%20through%20my%20collection%20of%20AND%20cells.png"> <br><br>
+
+
+**Creating a small script**<br>
+--> first 
+ <img width="600" alt="netlist" src=""> <br><br>
+
+
+
+ <img width="600" alt="netlist" src=""> <br><br>
 
 
   </details>
