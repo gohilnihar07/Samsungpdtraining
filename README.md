@@ -1023,7 +1023,48 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 	   <img width="600" alt="netlist" src=""> <br><br>
 
 	   --> Then we need to set the target library and link library else it will returns an imaginary pointer library namely your library.<br><br>
- <img width="600" alt="netlist" src=""> <br><br>
+
+    --> Example,<br>
+  - Verilog code for the design,<br>
+    ```ruby
+   module lab1_flop_with_en ( input res , input clk , input d , input en , output reg q);
+   always @ (posedge clk , posedge res)
+   begin
+	if(res)
+		q <= 1'b0;
+	else if(en)
+		q <= d;	
+   end
+   endmodule
+  ```
+ <br><br>
+-->  Below is the picture of the output window after compiling. It produces the netlist file, which includes the seqgen library as displayed in the figure. However, it doesn't contain the .db file because we haven't configured the link and target library settings.<br>
+<img width="600" alt="netlist" src=""> <br><br>
+
+
+-->  Now first we will set the link_library and target_library then link and compile it and then we will write out the netlist by the following commands,<br>
+```ruby
+    read_verilog <path of design file>
+    set target_library <path of .db>
+    set link_library { * $path of .db }
+    link
+    compile
+    write -f verilog -out <net_filename>
+```
+<br><br><br>
+
+ -->
+
+
+
+
+
+                            
+
+                 
+ 
+  
+
           
 	   
    
