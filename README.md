@@ -1107,11 +1107,72 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 
   -  When invoking dc_shell, it checks for the .synopsys_dc.setup file in the user's home directory. The priority order is as follows: if the file exists in the user's home directory, it takes precedence, and the installed (default) setup is disregarded. If not found, the installed setup is used. This file streamlines tool setup by automatically configuring all necessary .db files, eliminating repetitive tasks during dc_shell invocation.<br>
 
-
-
-          
-	   
    
+  </details>
+
+
+
+
+  <details>
+	  <summary> Tcl scripting </summary>
+	  Tcl(Tool Command Language) is a dynamic and interpreted scripting language initially crafted as a simple yet powerful scripting tool. Renowned for its user-friendly syntax, versatility, and expandability, Tcl enjoys broad usage across diverse domains and applications.<br><br>
+-Basic tcl commands,<br>
+-Variable assign,<br>
+	  
+   ```ruby
+     set a 10
+     set b 10
+     set a [expr $a + $b]
+   ```
+
+- If else,<br>
+	  
+   ```ruby
+    if { condition } {
+<statements>
+} else {
+<statements>
+}
+   ```
+<br><br>
+
+- for loop,<br>
+	  
+   ```ruby
+for {<looping variable>} {condition} {incr/decr} {
+/statements
+}
+   ```
+<br><br>
+
+- while loop,<br>
+	  
+   ```ruby
+  while {<condition>} {
+/statements
+}
+```
+<br><br>
+
+- Foreach,<br>
+
+```ruby
+ foreach var list{
+statement
+}
+```
+<br><br>
+
+- Foreach in collection,<br>
+
+```ruby
+foreach_in_collection var collection {
+statement
+}
+```
+<br><br>
+
+
   </details>
 
 
