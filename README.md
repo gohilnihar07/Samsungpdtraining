@@ -1111,9 +1111,12 @@ statement
 -->  Static Timing Analysis (STA) is a fundamental technique in the field of digital integrated circuit design. STA is used to evaluate and ensure that a digital circuit operates correctly with respect to timing requirements. Here's a some key concepts of STA:<br><br>
 
 
+
       1. Timing Paths: In a digital circuit, there are paths from input to output that define the maximum and minimum delay paths. These paths include combinational logic gates and interconnects.<br>
 
+
       2. Clock Domains: Many digital circuits have multiple clock domains with their own clock signals. STA must account for interactions between these domains.<br>
+
 
       3. Setup and Hold Time: Setup time is the minimum time data must be stable before the clock edge, while hold time is the minimum time data must remain stable after the clock edge for correct operation.<br>
 
@@ -1148,9 +1151,12 @@ statement
     <br><br>
 
     Timing arcs, also known as timing paths or timing arcs, are essential components of static timing analysis (STA) in digital circuit design. They represent the paths through which signals propagate within a digital circuit.Here are some key aspects of timing arcs:<br><br>
+    
      - Signal Propagation Paths: Timing arcs represent the paths through which digital signals traverse the circuit, including logic gates, interconnects, flip-flops, and latches.<br>
 
+
      - Signal Delays: Timing arcs account for the delays introduced by logic gates, interconnects, and flip-flops along the signal path. These delays affect the overall performance of the circuit.<br>
+
 
      - Critical Paths: Some timing arcs are critical paths that have the most significant impact on circuit performance. These paths must be carefully analyzed and optimized to meet timing constraints.<br>
 
