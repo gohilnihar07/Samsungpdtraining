@@ -1291,7 +1291,7 @@ In summary, unateness is a concept used to characterize the behavior of variable
  **3. DLatch Poslevel triggered unateness**<br>
    <img width="600" alt="netlist" src=""> <br><br>
 
-
+</details>
 
 <details>
 	<summary>Lab on .lib</summary>
