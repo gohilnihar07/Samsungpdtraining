@@ -1293,7 +1293,51 @@ In summary, unateness is a concept used to characterize the behavior of variable
 
 
 
+<details>
+	<summary>Lab on .lib</summary>
 
+ **Examples,** <br>
+  --> Print the list of cells from the collection,<br>
+	  <img width="600" alt="netlist" src=""> <br><br>
+
+--> Getting functionality of a cell in dc_shell,<br>
+ <img width="600" alt="netlist" src=""> <br><br>
+   --> prints the pins along with the direction of and2_0 gate,<br>
+         <img width="600" alt="netlist" src=""> <br><br>
+
+  --> A below tcl Script takes the list of cells as input and prints the output pins along with its functionality,<br>
+
+  ```ruby
+  set mylist [list sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand2_1 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand2_2 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand2_4 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand2_8 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand2b_1 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand2b_2 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand2b_4 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand3_1 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand3_2 \
+ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand3_4 ];
+
+ foreach var $mylist {
+  foreach_in_collection var_pins [get_lib_pins ${var}/* ] {
+      set pin_name [get_object_name $var_pins];
+      set pin_dir [get_lib_attribute $pin_name direction];
+      if { $pin_dir == 2 } {
+
+
+          set pin_func [get_lib_attribute $pin_name function];
+
+          echo $pin_name $pin_dir $pin_func ;
+       }
+     }
+   }
+   ```
+
+--> Output result of script,<br>
+ <img width="600" alt="netlist" src=""> <br><br>
+    
+</details>
 
 
 
