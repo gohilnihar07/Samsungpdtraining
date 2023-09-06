@@ -1150,7 +1150,6 @@ Timing arcs, also known as timing paths or timing arcs, are essential components
     
  Signal Propagation Paths: Timing arcs represent the paths through which digital signals traverse the circuit, including logic gates, interconnects, flip-flops, and latches.<br>
  Signal Delays: Timing arcs account for the delays introduced by logic gates, interconnects, and flip-flops along the signal path. These delays affect the overall performance of the circuit.<br>
-
  Critical Paths: Some timing arcs are critical paths that have the most significant impact on circuit performance. These paths must be carefully analyzed and optimized to meet timing constraints.<br>
   Setup and Hold Times: Timing arcs assess whether data signals meet setup and hold time requirements at flip-flops. Setup time specifies how early data must be stable before a clock edge, while hold time defines how long data must remain stable after the clock edge.<br>
   Clock-to-Q Delays: Timing arcs calculate the time it takes for data to propagate from the input of a flip-flop to the output (Q) in response to a clock edge, ensuring it occurs within specified limits.<br>
