@@ -889,13 +889,17 @@ Logic synthesis is a critical step in digital circuit design, as it bridges the 
 
 
 
+
+
   <details> 
 	   <summary> Labs on DC </summary>
 	  
   --> First for invoking DC compiler we need to enable C shell and then invoke dC shell with the below commands,<br><br>
-	   
-	  >>  csh <br>
-          >>  dc_shell <br><br>
+
+          ```ruby
+	  csh 
+          dc_shell 
+	  ```
 	 
 
   --> Then we need to set the target library and link library else it will returns an imaginary pointer library namely your library.<br><br>
