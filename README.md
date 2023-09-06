@@ -1108,7 +1108,9 @@ statement
 <details>
 	<summary> Introduction to STA </summary>
 
+
        --> Static Timing Analysis (STA) is a fundamental technique in the field of digital integrated circuit design. STA is used to evaluate and ensure that a digital circuit operates correctly with respect to timing requirements. Here's a some key concepts of STA:<br><br>
+
 
       1. Timing Paths: In a digital circuit, there are paths from input to output that define the maximum and minimum delay paths. These paths include combinational logic gates and interconnects.<br>
 
@@ -1129,7 +1131,10 @@ statement
       In summary, Static Timing Analysis is a critical step in ensuring that digital integrated circuits meet their performance requirements. It helps designers verify and optimize the timing behavior of the circuit, allowing for correct and reliable operation.<br><br><br>
 
 
+
+
      --> Water bucket analogy to understand Delay:-<br>
+     
      - In the analogy, the water tap represents the inflow of current in digital circuits, while the bucket symbolizes the load capacitance, which stores electrical charge. Filling the bucket illustrates the process of charging the load capacitance, and the time it takes to fill it depends on both the current flow rate (from the tap) and the capacitance's size (the bucket's capacity). This analogy helps understand how delay in digital circuits is modeled, with delay being analogous to the time it takes to fill the bucket to a certain charge level, where it depends on the flow rate (current) and the capacitance (load) characteristics.<br>
      
     - Increasing Load Capacitance (Bigger Bucket) in a digital circuit leads to longer delay times, as it takes more time to charge the larger capacitance. Conversely, increasing the Inflow of Current (Higher Flow Rate) reduces delay times, analogous to a faster fill rate when the tap flows more water into the bucket.<br>
