@@ -1134,6 +1134,8 @@ statement
 **-->Water bucket analogy to understand delay :-**
 
     - In the analogy, the water tap represents the inflow of current in digital circuits, while the bucket symbolizes the load capacitance, which stores electrical charge. Filling the bucket illustrates the process of charging the load capacitance, and the time it takes to fill it depends on both the current flow rate (from the tap) and the capacitance's size (the bucket's capacity). This analogy helps understand how delay in digital circuits is modeled, with delay being analogous to the time it takes to fill the bucket to a certain charge level, where it depends on the flow rate (current) and the capacitance (load) characteristics.<br>
+
+    - In the analogy, the water tap represents the inflow of current in digital circuits, while the bucket symbolizes the load capacitance, which stores electrical charge. Filling the bucket illustrates the process of charging the load capacitance, and the time it takes to fill it depends on both the current flow rate (from the tap) and the capacitance's size (the bucket's capacity). This analogy helps understand how delay in digital circuits is modeled, with delay being analogous to the time it takes to fill the bucket to a certain charge level, where it depends on the flow rate (current) and the capacitance (load) characteristics.<br>
      
      
     - Increasing Load Capacitance (Bigger Bucket) in a digital circuit leads to longer delay times, as it takes more time to charge the larger capacitance. Conversely, increasing the Inflow of Current (Higher Flow Rate) reduces delay times, analogous to a faster fill rate when the tap flows more water into the bucket.<br>
