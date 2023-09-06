@@ -1298,12 +1298,12 @@ In summary, unateness is a concept used to characterize the behavior of variable
 
  **Examples,** <br>
   --> Print the list of cells from the collection,<br>
-	  <img width="600" alt="netlist" src=""> <br><br>
+	  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a7f6b727946cfa8714ea2ade74d96f7cef87409e/DAY%207/LAB_printing%20the%20list%20of%20and%20gate%20in%20.lib.jpg"> <br><br>
 
 --> Getting functionality of a cell in dc_shell,<br>
- <img width="600" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a7f6b727946cfa8714ea2ade74d96f7cef87409e/DAY%207/LAB_getting%20functinality%20of%20cells.jpg"> <br><br>
    --> prints the pins along with the direction of and2_0 gate,<br>
-         <img width="600" alt="netlist" src=""> <br><br>
+         <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a7f6b727946cfa8714ea2ade74d96f7cef87409e/DAY%207/LAB_prints%20the%20pins%20along%20with%20direction%20of%20and2_0%20gate.jpg"> <br><br>
 
   --> A below tcl Script takes the list of cells as input and prints the output pins along with its functionality,<br>
 
@@ -1335,7 +1335,7 @@ In summary, unateness is a concept used to characterize the behavior of variable
    ```
 
 --> Output result of script,<br>
- <img width="600" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a7f6b727946cfa8714ea2ade74d96f7cef87409e/DAY%207/LAB_output%20of%20the%20script.jpg"> <br><br>
     
 </details>
 
