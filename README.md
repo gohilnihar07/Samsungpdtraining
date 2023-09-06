@@ -1243,11 +1243,11 @@ Power Consumption: Information on power consumption, covering static and dynamic
 
 In essence, Timing .lib files are the linchpin that bolsters the reliability, efficiency, and success of digital design endeavors, serving as an essential resource for designers and their indispensable companions in the world of EDA tools.<br><br><br>
 
-  <img width="600" alt="netlist" src=""> <br><br>
+  <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3054a6e9a4c03e8dc8ec03194a52ea95be8ced46/DAY%207/.lib%20file.jpg"> <br><br>
 
 
 --> .lib also contains leakage power , area , timing sense of each different flavours of gate cells.<br>
-          <img width="600" alt="netlist" src=""> <br><br>
+          <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3054a6e9a4c03e8dc8ec03194a52ea95be8ced46/DAY%207/.lib%20contains%20area%2C%20leakage%20power.jpg"> <br><br>
 
    **--> Lookup table :-** <br>
   - A Look-Up Table (LUT) in a Liberty file is like a recipe card for a specific type of digital building block. This recipe explains how this block behaves and how fast it works. These recipes are kept in Liberty files, which are like big libraries of these building blocks used by computer chip designers. These designers use these recipes, found in the Liberty files, to put together their digital creations, making the whole process faster and more efficient.<br><br>
@@ -1256,7 +1256,7 @@ In essence, Timing .lib files are the linchpin that bolsters the reliability, ef
 
    index2 -> output load capacitance<br>
    Example,
-       <img width="600" alt="netlist" src=""> <br><br>
+       <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3054a6e9a4c03e8dc8ec03194a52ea95be8ced46/DAY%207/lookup%20table.jpg"> <br><br>
 
 
 
@@ -1283,13 +1283,13 @@ In summary, unateness is a concept used to characterize the behavior of variable
 **--> Example for unateness,** <br>
 
  **1. AND gate unateness** <br>
-     <img width="600" alt="netlist" src=""> <br><br>
+     <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3054a6e9a4c03e8dc8ec03194a52ea95be8ced46/DAY%207/AND%20gate%20unateness.jpg"> <br><br>
 
  **2. DFF negedge triggered unateness** <br>
-   <img width="600" alt="netlist" src=""> <br><br>
+   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3054a6e9a4c03e8dc8ec03194a52ea95be8ced46/DAY%207/unateness%20of%20Dff%20negative%20edge%20triggered.jpg"> <br><br>
 
  **3. DLatch Poslevel triggered unateness**<br>
-   <img width="600" alt="netlist" src=""> <br><br>
+   <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3054a6e9a4c03e8dc8ec03194a52ea95be8ced46/DAY%207/unateness%20of%20Dlatch%20positive%20level%20triggered.jpg"> <br><br>
 
 </details>
 
