@@ -1331,7 +1331,7 @@ In summary, unateness is a concept used to characterize the behavior of variable
 ## DAY-8 Advanced constraints
 
 <details>
-	<summary> Terminologies </summary>
+	<summary> Clock Terminologies </summary>
 	
 </details>
 
