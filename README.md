@@ -1467,9 +1467,29 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 --> This kind of clock can also be useful in some cases like there are some protocol which is in the starting phase and don't want the clock to be high but after some time it is required to be high so in those cases this type of clock is required,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20this%20kind%20of%20clock%2C%20can%20also%20be%20useful%20in%20some%20cases.%20png"> <br><br>
 
-
 </details>
 
 
-	
 
+<details>
+	<summary> Constraining design for Reg to Reg path</summary>
+
+ --> We know the reg-to-reg path is constrained by the clock, so first create a clock else it will show the path is unconstrained. Now if we generate report after creating clock it looks like,<br>
+	<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9131b001f2ccc5a0c0b0759f3b54bc9d44986e2e/DAY8/2_4%20after%20creating%20the%20clock%20the%20path%20is%20constrained%20and%20it's%20showing%20timing%20is%20met.%20png"> <br>
+ 
+ --> Can see after creating a clock, the path is constrained and timing is met.<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9131b001f2ccc5a0c0b0759f3b54bc9d44986e2e/DAY8/2_4%20after%20creating%20the%20clock%20the%20path%20is%20constrained%20and%20it's%20showing%20timing%20is%20met.%20png"> <br><br>
+
+ --> Modeling one by one practical effort of the clock,<br>
+     <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9131b001f2ccc5a0c0b0759f3b54bc9d44986e2e/DAY8/2_4%20modeling%20one%20by%20one%20practical%20effort%20of%20clock.%20png"> <br><br>
+
+--> In the report also we can also see that we have modeled clock latency and clock uncertainty,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9131b001f2ccc5a0c0b0759f3b54bc9d44986e2e/DAY8/2_4%20now%20in%20report%20also%20we%20can%20see%20that%20we%20have%20modeled%20clock%20latency%20and%20clock%20uncertainity.%20png"> <br><br>
+
+--> Report for hold analysis,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9131b001f2ccc5a0c0b0759f3b54bc9d44986e2e/DAY8/2_4%20after%20modeling%20report%20for%20hold%20time%20analysis.%20png"> <br><br>
+</details>
+
+  <img width="800" alt="netlist" src=""> <br><br>
+  <img width="800" alt="netlist" src=""> <br><br>
+    <img width="800" alt="netlist" src=""> <br><br>
