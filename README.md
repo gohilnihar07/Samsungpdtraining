@@ -1599,10 +1599,22 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 
 
 --> We need to constraint IO for this case,<br>
-<img width="800" alt="netlist" src=""> <br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3c7bcd41a93476d6a5a6e233f81d9fbf4c27b34e/DAY8/6.jpg"> <br>
+
+```ruby
+ set_input_delay -max 2 -clock CLK [get_ports IN_A]  #for FF1 to IN_A
+ set_input_delay -max 3 -clock CLK -clock_fall -add [get_ports IN_A]   #for FF2 to IN_A
+```
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/3c7bcd41a93476d6a5a6e233f81d9fbf4c27b34e/DAY8/7.jpg"> <br>
+
+```ruby
+   set_output_delay -max 2 -clock CLK [get_ports out_y]
+   set_output_delay -max 3 -clock CLK -clock_fall -add [get_ports out_y]
+```
 
 
-<img width="800" alt="netlist" src=""> <br><br>
+
 
 
 
