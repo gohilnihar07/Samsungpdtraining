@@ -1458,16 +1458,15 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20clock%20can%20also%20be%20created%20on%20any%20pin%2C%20tool%20will%20accept%20it%20but%20it%20meaning%20less.%20can%20see%20in%20below%20case%20we%20have%20created%20a%20clock%20on%20D%20pin%20of%20register%20which%20is%20not%20at%20all%20meant%20to%20receive%20the%20clock.%20*never%20create%20clock%20on%20some%20pin*.%20png"> <br><br>
 --> In case you created any wrong clock, the command to remove the clock is,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20in%20case%20you%20created%20any%20wrong%20clock%2C%20the%20command%20to%20remove%20the%20clock%20is.%20png"> <br><br>
--->
- <img width="800" alt="netlist" src=""> <br><br>
--->
- <img width="800" alt="netlist" src=""> <br><br>
-
-
+ -->creating a clock which will have the first 5nsec for low and then from 5 to 10 nsec high,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20creating%20a%20clock%20which%20will%20have%20first%205nsec%20for%20low%20and%20the%20from%205%20to%2010%20nsec%20high.%20png"> <br><br>
+--> report for the created clock which will have the first 5nsec for low and then from 5 to 10 ns high,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20%20report%20for%20created%20clock%20which%20will%20have%20first%205nsec%20for%20low%20and%20the%20from%205%20to%2010%20nsec%20high.%20png"> <br><br>
+--> creating a clock for 25% duty cycle,<br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20creating%20a%20clock%20for%2025%25%20duty%20cycle.%20png"> <br><br>
+--> his kind of clock can also be useful in some cases, like there are some protocol which is in the starting phase and don't want the clock to be high but after some time it is required to be high so in those cases this type of clock is required,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20this%20kind%20of%20clock%2C%20can%20also%20be%20useful%20in%20some%20cases.%20png"> <br><br>
 </details>
-  
- <img width="800" alt="netlist" src=""> <br><br>
-
 
 
 	
