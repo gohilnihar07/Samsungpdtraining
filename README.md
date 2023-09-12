@@ -1402,7 +1402,7 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 
 
 <details>
-	<summary> Labs on Advanced constraints</summary>
+	<summary> Labs </summary>
 
 
 </details>
