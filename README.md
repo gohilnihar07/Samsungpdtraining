@@ -1535,5 +1535,8 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7aaf0a9017f54e9d1305579a4684f7dad6053c29/DAY8/2_6%20after%20setting%20load%20for%20output%20can%20see%20the%20difference%20in%20arrival%20time%20in%20report%20for%20min.%20png"> <br><br>
 
 
+
+-->  The output OUT_Y is constrained with the clock leaving the module. It's logically the same but physically not because there will be a routing delay. For every flop we have modeled the routing delay by using the clock uncertainty and clock latency command but at the output clock there is nothing modeled.<br>
+<img width="800" alt="netlist" src=""> <br><br>
 </details>  
 <img width="800" alt="netlist" src=""> <br><br>
