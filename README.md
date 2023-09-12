@@ -1633,7 +1633,8 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 --> After compile ultra, we can see our timing is met because it is optimized in such a way that there won't be any violations,<br>
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4_2%20after%20compile%20ultra%20timing%20is%20met.png"> <br><br>
 
-
+--> After writing out in ddc format, we are going to design vision and read that ddc file to see the schematic,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/5444e1f81e8bb5a26acc4500d050549d2228665f/DAY8/4_2%20schematic.png"> <br><br>
 
 
 
