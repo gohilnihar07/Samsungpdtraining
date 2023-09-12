@@ -1418,16 +1418,30 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 --> It will show all the physical cells,<br>
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_it%20will%20show%20all%20the%20physical%20cells.png"> <br><br>
 
---> ref name is basically shows the name of the cell in .lib,<br>
+--> ref name basically shows the name of the cell in .lib,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_ref_name%20is%20basically%20shows%20the%20name%20of%20the%20cell%20in%20.lib.png"> <br><br>
---> Small script which will show cell name with it's ref name,<br>
+--> Small script which will show cell name with its ref name,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_it%20will%20show%20cell%20name%20with%20it's%20ref%20name.png"> <br><br>
---> After writing out the ddc format for it and reading that ddc file in design vision, we can see the schematic view for lab8_circuit,<br>
+--> After writing out the DDC format for it and reading that DDC file in design vision, we can see the schematic view for lab8_circuit,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_can%20see%20the%20schematic%20view%20for%20lab8_circuit.png"> <br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_can%20see%20the%20schematic%20view%20for%20lab_circuit_2.png"> <br><br>
 --> small script to see the direction and all the pins connected to net n5 in the design vision,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_can%20see%20the%20direction%20and%20all%20the%20pins%20connected%20to%20net%20n5%20in%20design%20vision.png"> <br><br>
 
+
+--> Going through a collection of pins one by one,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0d16d628a556e469d87635e5a70016715f33fc3d/DAY8/2_2%20going%20through%20collection%20of%20pins%20one%20by%20one.png"> <br><br>
+--> Command for viewing the direction of any particular pin,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0d16d628a556e469d87635e5a70016715f33fc3d/DAY8/2_2%20for%20viwing%20the%20direction%20of%20any%20particular%20pin.png"> <br><br>
+--> Command to check for any particular pin whether it's a clock pin or not,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0d16d628a556e469d87635e5a70016715f33fc3d/DAY8/2_2%20to%20check%20for%20any%20particular%20pin%20whether%20it's%20clock%20pin%20or%20not%20.png"> <br><br>
+--> This script will not work because the clock can only for an input port,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0d16d628a556e469d87635e5a70016715f33fc3d/DAY8/2_2%20this%20script%20will%20not%20work%20because%20clock%20can%20only%20for%20input%20port%20.png"> <br><br>
+--> Writing a small script for what all pins in my collection are clock pins considering first that's an input pin actual pin,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0d16d628a556e469d87635e5a70016715f33fc3d/DAY8/2_2%20writing%20small%20script%20for%20what%20all%20pins%20in%20my%20collection%20are%20clock%20pins%20considering%20first%20that's%20a%20input%20pin%20actual%20pin.png"> <br><br>
+ 
+-->
+ <img width="800" alt="netlist" src=""> <br><br>
  
 </details>
   
