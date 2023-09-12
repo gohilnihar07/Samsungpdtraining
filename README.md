@@ -1418,7 +1418,17 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 --> It will show all the physical cells,<br>
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_it%20will%20show%20all%20the%20physical%20cells.png"> <br><br>
 
+--> ref name is basically shows the name of the cell in .lib,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_ref_name%20is%20basically%20shows%20the%20name%20of%20the%20cell%20in%20.lib.png"> <br><br>
+--> Small script which will show cell name with it's ref name,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_it%20will%20show%20cell%20name%20with%20it's%20ref%20name.png"> <br><br>
+--> After writing out the ddc format for it and reading that ddc file in design vision, we can see the schematic view for lab8_circuit,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_can%20see%20the%20schematic%20view%20for%20lab8_circuit.png"> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_can%20see%20the%20schematic%20view%20for%20lab_circuit_2.png"> <br><br>
+--> small script to see the direction and all the pins connected to net n5 in the design vision,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e95ffb895ec43535edfe1b888de69a4781930135/DAY8/2_can%20see%20the%20direction%20and%20all%20the%20pins%20connected%20to%20net%20n5%20in%20design%20vision.png"> <br><br>
 
+ 
 </details>
   
  <img width="800" alt="netlist" src=""> <br><br>
