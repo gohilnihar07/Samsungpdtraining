@@ -1401,7 +1401,7 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 
 
 <details>
-	<summary> Labs </summary>
+	<summary> Lab on some useful command for constraining design </summary>
 	
 --> The Verilog code for the design we will use to perform our lab is,<br>
 	 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/8.2.1_lab8_circuit.v.png"> <br><br>
@@ -1464,8 +1464,10 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20%20report%20for%20created%20clock%20which%20will%20have%20first%205nsec%20for%20low%20and%20the%20from%205%20to%2010%20nsec%20high.%20png"> <br><br>
 --> creating a clock for 25% duty cycle,<br>
    <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20creating%20a%20clock%20for%2025%25%20duty%20cycle.%20png"> <br><br>
---> his kind of clock can also be useful in some cases, like there are some protocol which is in the starting phase and don't want the clock to be high but after some time it is required to be high so in those cases this type of clock is required,<br>
+--> This kind of clock can also be useful in some cases like there are some protocol which is in the starting phase and don't want the clock to be high but after some time it is required to be high so in those cases this type of clock is required,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/88ac16b43f8a8304f7cd22d52ec4abfe93e6980b/DAY8/2_3%20this%20kind%20of%20clock%2C%20can%20also%20be%20useful%20in%20some%20cases.%20png"> <br><br>
+
+
 </details>
 
 
