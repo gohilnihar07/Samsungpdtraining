@@ -1333,7 +1333,8 @@ In summary, unateness is a concept used to characterize the behavior of variable
 <details>
 	<summary> Clock Terminologies </summary>
 
-       --> Clock generator :-<br>
+
+ --> Clock generator :-<br>
        
 In Very Large Scale Integration (VLSI) design, a clock generator is a crucial component that plays a vital role in ensuring that the digital circuits and components within an integrated circuit (IC) operate synchronously and with precise timing. Here are some key aspects of clock generators in VLSI:<br><br>
 
@@ -1368,8 +1369,17 @@ In summary, clock generators in VLSI play a pivotal role in ensuring the proper 
 - Delay-Locked Loop (DLL)<br>
 - Ring Oscillator<br>
 
+--> Clock Distribution:-
 
+Once generated, clock signals need to be distributed to various parts of the IC while maintaining their timing integrity. Clock trees are used for this purpose, which involve a hierarchical network of buffers and repeaters to ensure the clock signal reaches all parts of the chip with minimal skew.
 
+-> Clock skew:-  is a phenomenon in digital design and VLSI (Very Large Scale Integration) circuits where clock signals, which are supposed to be synchronized and have the same edge (rising or falling), arrive at different parts of the circuit at slightly different times.<br>
+       Positive and Negative Skew: Clock skew can be further categorized into positive skew and negative skew based on whether clock signals arrive later or earlier than the ideal clock edge, respectively.
+<br>
+Positive Skew: Positive skew occurs when clock signals arrive at different destinations later than the ideal clock edge. It can lead to setup time violations.<br>
+- Ts + Skew ≤ Tcq + Tcomb + Tst <br>
+Negative Skew: Negative skew occurs when clock signals arrive earlier than the ideal clock edge at different destinations. Negative skew can result in hold time violations.<br>
+- Tc2q + Tcomb ≥ Thold + Tskew <br>
 
 
 
