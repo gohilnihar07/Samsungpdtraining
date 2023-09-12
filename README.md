@@ -1560,7 +1560,42 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 --> sourcing and linking that script,<br>
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7fb9bb75d67e07afe5044d453f34ed2a218f9114/DAY8/3_2%20sourcing%20and%20linking%20that%20script.png"> <br><br>
 --> can see, the min and max load for OUT_Y is also modelled because we mentioned that in script,<br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/12e0826d4fb0e6fb8779970d8a03b0a591103806/DAY8/3_2%20can%20see%2C%20the%20min%20and%20max%20load%20for%20OUT_Y%20is%20also%20modelled%20because%20we%20mentioned%20that%20in%20script.png"> <br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/12e0826d4fb0e6fb8779970d8a03b0a591103806/DAY8/3_2%20can%20see%2C%20the%20min%20and%20max%20load%20for%20OUT_Y%20is%20also%20modelled%20because%20we%20mentioned%20that%20in%20script.png"> <br><br><br>
+
+
+--> Input delay:- <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1d2b47c540ecd92ba26043ec65e3513c865f1945/DAY8/1.jpg"> <br>
+negative delay for max is relaxing and positive delay for max is tightening.<br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1d2b47c540ecd92ba26043ec65e3513c865f1945/DAY8/2.jpg"> <br>
+positive delay for min is relaxing and negative delay for min is tightening.<br><br>
+
+--> We need to constraint IO for this combo logic case,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1d2b47c540ecd92ba26043ec65e3513c865f1945/DAY8/3.jpg"> <br><br>
+
+The command for constraining combo logic is,<br>
+
+```ruby
+ set_max_latency 1.0 -from [get_ports IN_C] -to [gte_ports OUT_Z]
+ set_max_latency 1.0 -from [get_ports IN_D] -to [gte_ports OUT_Z]
+```
+
+--> Another way to constrain that pure combo logic is, By creating something called a Virtual clock(it is just an imaginary clock for budgeting the timing).<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1d2b47c540ecd92ba26043ec65e3513c865f1945/DAY8/3.jpg"> <br><br>
+
+ ```ruby
+  create_clock -name MY_VCLK -period 5
+```
+
+( No clock definition point in command inferred virtual clock.)<br>
+
+```ruby
+ set_ouput_delay -max 2.5 -clock MY_VCLK [get_ports OUT_Z]
+
+
+
+
+
+  
 
    
 
