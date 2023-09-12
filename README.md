@@ -1544,7 +1544,9 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
    ->  Once a clock is created on a pin/port, DC will propagate that clock downstream based on the timing arcs. all the timing arcs from the definition point will see the clock propagation by default.<br><br>
 
 
---> Now, we will look at how to specify the constraints for generated clocks(because since this out_clk may see further routing delay it's better to annotate this clock separately) ,<br>
+--> Now, we will look at how to specify the constraints for generated clocks (because since this out_clk may see further routing delay it's better to annotate this clock separately),<br>
+
+
 
    
 
