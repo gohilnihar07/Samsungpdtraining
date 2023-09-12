@@ -1403,9 +1403,22 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 <details>
 	<summary> Labs </summary>
 	
---> The verilog code for the design we will use to perform our lab is,<br>
-	 <img width="800" alt="netlist" src=""> <br><br>
-  
+--> The Verilog code for the design we will use to perform our lab is,<br>
+	 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/8.2.1_lab8_circuit.v.png"> <br><br>
+--> Going through each collection of ports,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_going_through%20the%20each%20collection%20of%20port.png"> <br><br>
+--> it_shows the direction of rst port,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_it_shows%20the%20direction%20of%20rst%20port.png"> <br><br>
+--> small script for port name with it's direction,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_port%20name%20with%20it's%20direction.png"> <br><br>
+--> For viewing all the cells in design,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_for%20viewing%20all%20the%20cells%20in%20design.png"> <br><br>
+--> for viewing a particular cell U9 is hierarchical or not,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_for%20viewing%20a%20particular%20cell%20U9%20is%20hierarchical%20or%20not.png"> <br><br>
+--> It will show all the physical cells,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/694db1eb2787833f0992cd829838516e2bdf2a9f/DAY8/2_it%20will%20show%20all%20the%20physical%20cells.png"> <br><br>
+
+
 </details>
   
  <img width="800" alt="netlist" src=""> <br><br>
