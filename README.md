@@ -1494,10 +1494,26 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 <details> 
 <summary> Constraining for input and output paths </summary>
 
+--> First, let model for inputs,<br>
+--> modeling the input delay for max(setup),<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20modeling%20the%20input%20delay%20for%20max(setup).%20png"> <br><br>
+--> After modeling input delay we can see now the proper path is reported,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20after%20modelling%20input%20delay%20we%20can%20see%20now%20properly%20path%20is%20reported.%20png"> <br><br>
 
+--> command to see report in a more organized manner,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20command%20to%20see%20report%20in%20more%20organized%20manner.%20png"> <br><br>
+--> It will say path unconstrained because we haven't yet constrained for min(hold),<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20it%20will%20say%20path%20unconstarined%20because%20we%20haven't%20yet%20constrained%20for%20min(hold).%20png"> <br><br>
+--> Constraining for min(hold),<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20constraining%20for%20min(hold).%20png"> <br><br>
+ --> Can see here in the report, that we haven't yet modeled for input transition,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20can%20see%20here%20we%20havn't%20yet%20modelled%20for%20input%20transition.%20png"> <br><br>
 
+--> modeling for input transition,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20modelling%20for%20input%20transition.%20png"> <br><br>
 
+--> We can see here in the report that, after modeling for input transition we can see available margin is going down,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20after%20modelling%20for%20input%20transition%20we%20can%20see%20available%20margin%20is%20going%20down.%20png"> <br><br>
 
-</details>
-  <img width="800" alt="netlist" src=""> <br><br>
-  
+-->
+</details>  
