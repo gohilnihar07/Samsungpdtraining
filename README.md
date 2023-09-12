@@ -1613,12 +1613,25 @@ Can see in this case also available time for optimization of combo logic is 1ns.
    set_output_delay -max 3 -clock CLK -clock_fall -add [get_ports out_y]
 ```
 
+<br>
 
-
-
-
-
-
+--> Lab on the above cases of IO constraints by the design lab14_circuit.v :-<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1d2b47c540ecd92ba26043ec65e3513c865f1945/DAY8/4.jpg"> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4.2%20lab14_circuit.v.png"> <br><br>
+--> It says the path is unconstrained because I haven't yet constrained,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4.2%20says%20path%20is%20unconstrained%20because%20i%20haven't%20yet%20constrained.png"> <br><br>
+--> Some basic commands,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4.2%20some%20basic%20commands.png"> <br><br>
+--> Small script for fanout
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4.2%20script%20for%20fanout.png"> <br><br>
+--> Fanout,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4.2%20fanout.png"> <br><br>
+--> Fanin,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4_2%20fanin.png"> <br><br>
+--> Timing is violated before compile ultra, <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4_2%20timing%20is%20violated%20before%20compile%20ultra.png"> <br><br>
+--> After compile ultra, we can see our timing is met because it is optimized in such a way that there won't be any violations,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4_2%20after%20compile%20ultra%20timing%20is%20met.png"> <br><br>
 
 
 
