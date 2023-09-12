@@ -1333,8 +1333,9 @@ In summary, unateness is a concept used to characterize the behavior of variable
 <details>
 	<summary> Clock Terminologies </summary>
 
-       **Clock generator** :-<br>
-	In Very Large Scale Integration (VLSI) design, a clock generator is a crucial component that plays a vital role in ensuring that the digital circuits and components within an integrated circuit (IC) operate synchronously and with precise timing. Here are some key aspects of clock generators in VLSI:<br><br>
+       --> Clock generator :-<br>
+       
+In Very Large Scale Integration (VLSI) design, a clock generator is a crucial component that plays a vital role in ensuring that the digital circuits and components within an integrated circuit (IC) operate synchronously and with precise timing. Here are some key aspects of clock generators in VLSI:<br><br>
 
 Clock Distribution: VLSI chips often contain numerous digital components, such as flip-flops, registers, and logic gates. These components rely on a common clock signal to ensure synchronized operation. The clock generator generates this clock signal and distributes it across the chip.<br>
 
