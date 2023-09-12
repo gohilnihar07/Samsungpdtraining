@@ -1358,7 +1358,16 @@ Clock Fail-Safe Mechanisms: In some cases, VLSI clock generators may incorporate
 Customization: VLSI designers often have the flexibility to customize the clock generator's settings, including the choice of PLL parameters, clock distribution strategies, and clock gating logic, to optimize the chip's performance and power consumption.<br><br>
 
 
-In summary, clock generators in VLSI play a pivotal role in ensuring the proper operation of digital circuits by generating, distributing, and managing clock signals with precision, low skew, and low jitter. They are a critical component of the overall clocking architecture of VLSI chips, helping to meet the stringent timing requirements of modern integrated circuits.<br>
+In summary, clock generators in VLSI play a pivotal role in ensuring the proper operation of digital circuits by generating, distributing, and managing clock signals with precision, low skew, and low jitter. They are a critical component of the overall clocking architecture of VLSI chips, helping to meet the stringent timing requirements of modern integrated circuits.<br><br><br>
+
+
+--> Types of clock generator:-<br><br>
+- Crystal Oscillator<br>
+- Voltage-Controlled Oscillator (VCO)<br>
+- Phase-Locked Loop (PLL)<br>
+- Delay-Locked Loop (DLL)<br>
+- Ring Oscillator<br>
+
 
 
 
