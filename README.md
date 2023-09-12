@@ -1545,8 +1545,22 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 
 
 --> Now, we will look at how to specify the constraints for generated clocks (because since this out_clk may see further routing delay it's better to annotate this clock separately),<br>
-
-
+--> Command for creating a generated clock,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7fb9bb75d67e07afe5044d453f34ed2a218f9114/DAY8/3_2%20creating%20generated%20clock.%20png"> <br><br>
+--> can see report,<br>
+<img width="800" alt="netlist" src="DAY8/3_2 can see report.png"> <br><br>
+--> it's showing timing w.r.t MYCLK only but i want the capture to be w.r.t MYGEN_CLK,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7fb9bb75d67e07afe5044d453f34ed2a218f9114/DAY8/3_2%20it's%20showing%20timing%20w.r.t%20MYCLK%20only%20but%20i%20want%20the%20capture%20to%20be%20w.r.t%20MYGEN_CLK%20.png"> <br><br>
+--> Modeling for MYGEN_CLK,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7fb9bb75d67e07afe5044d453f34ed2a218f9114/DAY8/3_2%20modeling%20for%20MYGEN_CLK%20.png"> <br><br>
+--> lab8_circuit_modified.v,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7fb9bb75d67e07afe5044d453f34ed2a218f9114/DAY8/3_2%20lab8_circuit_modified.png"> <br><br>
+--> lab8_cons.tcl script which includes every command so I don't need to give everything explicitly every time,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7fb9bb75d67e07afe5044d453f34ed2a218f9114/DAY8/3_2%20lab8_cons.tcl%20script%20which%20includes%20every%20command%20so%20i%20don't%20need%20to%20give%20everything%20explicitely%20everytime.png"> <br><br>
+--> sourcing and linking that script,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7fb9bb75d67e07afe5044d453f34ed2a218f9114/DAY8/3_2%20sourcing%20and%20linking%20that%20script.png"> <br><br>
+--> can see, the min and max load for OUT_Y is also modelled because we mentioned that in script,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/12e0826d4fb0e6fb8779970d8a03b0a591103806/DAY8/3_2%20can%20see%2C%20the%20min%20and%20max%20load%20for%20OUT_Y%20is%20also%20modelled%20because%20we%20mentioned%20that%20in%20script.png"> <br><br>
 
    
 
