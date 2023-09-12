@@ -1440,9 +1440,30 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 --> Writing a small script for what all pins in my collection are clock pins considering first that's an input pin actual pin,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0d16d628a556e469d87635e5a70016715f33fc3d/DAY8/2_2%20writing%20small%20script%20for%20what%20all%20pins%20in%20my%20collection%20are%20clock%20pins%20considering%20first%20that's%20a%20input%20pin%20actual%20pin.png"> <br><br>
  
+--> creating a clock,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20creating%20a%20clock.png"> <br><br>
+--> command to see the period of any particular clock,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20command%20to%20see%20the%20period%20of%20any%20particular%20clock.png"> <br><br>
+--> command to see, if any particular clock is generated or not,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20command%20to%20see%20any%20particular%20clock%20is%20generated%20or%20not.png"> <br><br>
+--> command to get the report for clocks,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20command%20to%20get%20the%20report%20for%20clocks.%20png"> <br><br>
+--> name of clocks,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20name%20of%20clocks.png"> <br><br>
+--> the script result in which it's showing at each register pin which clock is reaching,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20the%20script%20result%20in%20which%20it's%20showing%20at%20each%20register%20pin%20which%20clock%20is%20reaching.%20png"> <br><br>
+--> This script will also tell us at each register pin which clock is reaching,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20this%20script%20will%20also%20tell%20us%20at%20each%20register%20pin%20which%20clock%20is%20reaching.%20png"> <br><br>
+--> clock can also be created on any pin, the tool will accept it but it means less. can see in the below case we have created a clock on the D pin of the register which is not at all meant to receive the clock. *Never create a clock on some pin*,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20clock%20can%20also%20be%20created%20on%20any%20pin%2C%20tool%20will%20accept%20it%20but%20it%20meaning%20less.%20can%20see%20in%20below%20case%20we%20have%20created%20a%20clock%20on%20D%20pin%20of%20register%20which%20is%20not%20at%20all%20meant%20to%20receive%20the%20clock.%20*never%20create%20clock%20on%20some%20pin*.%20png"> <br><br>
+--> In case you created any wrong clock, the command to remove the clock is,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df71eeefecff0c5bc08a085f1724c7f95a8ae725/DAY8/2_3%20in%20case%20you%20created%20any%20wrong%20clock%2C%20the%20command%20to%20remove%20the%20clock%20is.%20png"> <br><br>
 -->
  <img width="800" alt="netlist" src=""> <br><br>
- 
+-->
+ <img width="800" alt="netlist" src=""> <br><br>
+
+
 </details>
   
  <img width="800" alt="netlist" src=""> <br><br>
