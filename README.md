@@ -1490,6 +1490,14 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9131b001f2ccc5a0c0b0759f3b54bc9d44986e2e/DAY8/2_4%20after%20modeling%20report%20for%20hold%20time%20analysis.%20png"> <br><br>
 </details>
 
+
+<details> 
+<summary> Constraining for input and output paths </summary>
+
+
+
+
+
+</details>
   <img width="800" alt="netlist" src=""> <br><br>
-  <img width="800" alt="netlist" src=""> <br><br>
-    <img width="800" alt="netlist" src=""> <br><br>
+  
