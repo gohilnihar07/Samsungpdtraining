@@ -1639,11 +1639,11 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 
 
 
---> Constraining the same design by another way, which is by the virtual clock,<br>
+--> Constraining the same design in another way, which is by the virtual clock,<br>
 --> Creating the virtual clock,<br>
- <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3d9a883c055d4ab4d348bc93639f31a1440acb5/DAY8/4_3%20virtual%20clock.png"> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3d9a883c055d4ab4d348bc93639f31a1440acb5/DAY8/4_3%20virtual%20clock.png"> <br>
 --> constraining for virtual clock,<br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3d9a883c055d4ab4d348bc93639f31a1440acb5/DAY8/4_3%20constraining%20for%20virtual%20clock.png"> <br><br>
---> In the report one path is violated, but after compiling ultra that path won't be violated anymore basically that path has met.
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3d9a883c055d4ab4d348bc93639f31a1440acb5/DAY8/4_3%20constraining%20for%20virtual%20clock.png"> <br>
+--> In the report one path is violated, but after compiling ultra that path won't be violated anymore Basically that path has met.
 
 </details>  
