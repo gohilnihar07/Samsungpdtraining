@@ -1402,11 +1402,13 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 
 <details>
 	<summary> Labs </summary>
-
-
+	
+--> The verilog code for the design we will use to perform our lab is,<br>
+	 <img width="800" alt="netlist" src=""> <br><br>
+  
 </details>
   
-
+ <img width="800" alt="netlist" src=""> <br><br>
 
 
 
