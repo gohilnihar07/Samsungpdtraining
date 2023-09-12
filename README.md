@@ -1634,7 +1634,7 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7278a544e36f8e685a414cae7a9b6202b3179be6/DAY8/4_2%20after%20compile%20ultra%20timing%20is%20met.png"> <br><br>
 
 --> After writing out in ddc format, we are going to design vision and read that ddc file to see the schematic,<br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/5444e1f81e8bb5a26acc4500d050549d2228665f/DAY8/4_2%20schematic.png"> <br><br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/5444e1f81e8bb5a26acc4500d050549d2228665f/DAY8/4_2%20schematic.png"> <br><br>
 
 
 
@@ -1644,10 +1644,6 @@ Can see in this case also available time for optimization of combo logic is 1ns.
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3d9a883c055d4ab4d348bc93639f31a1440acb5/DAY8/4_3%20virtual%20clock.png"> <br><br>
 --> constraining for virtual clock,<br>
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e3d9a883c055d4ab4d348bc93639f31a1440acb5/DAY8/4_3%20constraining%20for%20virtual%20clock.png"> <br><br>
---> from report we can see one path is violating,<br>
-<img width="800" alt="netlist" src=""> <br><br>
---> Now, after compiling ultra, if we see the report then we can see that now path have met.
-<img width="800" alt="netlist" src=""> <br><br>
-
+--> In the report one path is violated, but after compiling ultra that path won't be violated anymore basically that path has met.
 
 </details>  
