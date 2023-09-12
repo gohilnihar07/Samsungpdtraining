@@ -1536,7 +1536,16 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 
 
 
--->  The output OUT_Y is constrained with the clock leaving the module. It's logically the same but physically not because there will be a routing delay. For every flop we have modeled the routing delay by using the clock uncertainty and clock latency command but at the output clock there is nothing modeled.<br>
-<img width="800" alt="netlist" src=""> <br><br>
+-->  The output OUT_Y is constrained with the clock leaving the module. It's logically the same but physically not because there will be a routing delay. For every flop we have modeled the routing delay by using the clock uncertainty and clock latency command but at the output clock there is nothing modeled. So to model this we are going to do something called as Generated clocks.<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/21f4f61704a272da0523d0617053696c7dcc0775/DAY8/IMG_20230913_024934.jpg"> <br>
+--> Generated clocks are always created w.r.t master clocks(clocks at clock source or at primary IO pins).<br>
+<br>
+--> How the clocks are propagated:-<br>
+   ->  Once a clock is crated on a pin/port, DC will propagate that clock downstream based on the timing arcs. all the timing arcs from the definition point will see the clock propagation by default.<br><br>
+
+
+
+--> 
+
 </details>  
 <img width="800" alt="netlist" src=""> <br><br>
