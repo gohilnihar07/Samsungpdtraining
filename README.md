@@ -1515,5 +1515,25 @@ it denotes the temporal delay or propagation delay encountered by a clock signal
 --> We can see here in the report that, after modeling for input transition we can see available margin is going down,<br>
   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/c580120e431720c350f9049c6695f3aad63e326a/DAY8/2_5%20after%20modelling%20for%20input%20transition%20we%20can%20see%20available%20margin%20is%20going%20down.%20png"> <br><br>
 
--->
+--> Now, we will model for an output path,<br>
+--> Modeling for output delay,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7aaf0a9017f54e9d1305579a4684f7dad6053c29/DAY8/2_5%20modelling%20for%20output%20delay.%20png"> <br><br>
+
+--> Can see the report after modeling output delay,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7aaf0a9017f54e9d1305579a4684f7dad6053c29/DAY8/2_5%20can%20see%20the%20report%20after%20modelling%20output%20delay.%20png"> <br><br>
+
+--> Setting load for output,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7aaf0a9017f54e9d1305579a4684f7dad6053c29/DAY8/2_5%20setting%20load%20for%20output%20.%20png"> <br><br>
+
+--> After setting load for output can see the difference in arrival time in the report,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7aaf0a9017f54e9d1305579a4684f7dad6053c29/DAY8/2_5%20after%20setting%20load%20for%20output%20can%20see%20the%20difference%20in%20arrival%20time%20in%20report.%20png"> <br><br>
+
+--> Can set the load for min also and see the corresponding report for that,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7aaf0a9017f54e9d1305579a4684f7dad6053c29/DAY8/2_5%20can%20set%20the%20load%20for%20min%20also%20and%20see%20the%20corresponding%20report%20for%20that.%20png"> <br><br>
+
+--> After setting load for output can see the difference in arrival time in the report for min,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7aaf0a9017f54e9d1305579a4684f7dad6053c29/DAY8/2_6%20after%20setting%20load%20for%20output%20can%20see%20the%20difference%20in%20arrival%20time%20in%20report%20for%20min.%20png"> <br><br>
+
+
 </details>  
+<img width="800" alt="netlist" src=""> <br><br>
