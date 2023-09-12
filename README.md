@@ -1580,7 +1580,7 @@ The command for constraining combo logic is,<br>
 ```
 
 --> Another way to constrain that pure combo logic is, By creating something called a Virtual clock(it is just an imaginary clock for budgeting the timing).<br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1d2b47c540ecd92ba26043ec65e3513c865f1945/DAY8/3.jpg"> <br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/5c1153af3089d15fdafbfa23bfe8ed0fcc7538c4/DAY8/5.jpg"> <br><br>
 
  ```ruby
   create_clock -name MY_VCLK -period 5
@@ -1590,6 +1590,23 @@ The command for constraining combo logic is,<br>
 
 ```ruby
  set_ouput_delay -max 2.5 -clock MY_VCLK [get_ports OUT_Z]
+ set_ouput_delay -max 1.5 -clock MY_VCLK [get_ports IN_C]
+ set_ouput_delay -max 1.5 -clock MY_VCLK [get_ports IN_D]
+```
+
+Can see in this case also available time for optimization of combo logic is 1ns.<br><br>
+
+
+
+--> We need to constraint IO for this case,<br>
+<img width="800" alt="netlist" src=""> <br><br>
+
+
+<img width="800" alt="netlist" src=""> <br><br>
+
+
+
+
 
 
 
