@@ -1660,7 +1660,7 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 --> VLSI design optimization is vital for efficient integrated circuits. It enhances power efficiency, space usage, timing precision, and manufacturability, ensuring high-performance ICs.<br>
  <br>
  
- --> Optimization goals:<br><br>
+ **--> Optimization goals:-** <br><br>
 
 **Cost-Based Optimization:** Striving for an optimal balance between performance and cost, ensuring that cost constraints are met without overemphasizing a single goal, which can compromise others.<br><br>
 
