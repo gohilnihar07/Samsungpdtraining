@@ -1698,11 +1698,17 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 *-> Constant propagation,* <br>
   It's a direct optimization technique. It identifies and removes redundant logic expressions that appear in multiple places within the circuit.<br>
 Example,<br>
-	 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1fb31a2873013a2d80d629724f9a578444e30aab/day9/IMG_20230914_233024.jpg"> <br><br>
+	 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1fb31a2873013a2d80d629724f9a578444e30aab/day9/IMG_20230914_233024.jpg"> <br>
+  So, we are saving power and area by boolean logic optimization.<br><br>
 
-  <img width="800" alt="netlist" src=""> <br>
+*-> Boolean logic optimization,* <br>
+ This involves using Boolean algebra rules and laws to simplify logical expressions. Karnaugh maps and Quine-McCluskey methods can be used to find the minimal representation of logic functions.<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/063215b65d21844fcaa75543ea55c6a2536542a1/day9/IMG_20230914_232955.jpg"> <br><br>
 
- <img width="800" alt="netlist" src=""> <br>
+*-> Resource sharing,* <br>
+Resource sharing optimization in digital design minimizes redundancy, efficiently utilizing resources like logic gates to enhance performance and reduce area.<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/063215b65d21844fcaa75543ea55c6a2536542a1/day9/IMG_20230914_232941.jpg"> <br>
+ we know that compared to mux multiplier is going to take a huge area. so this design is optimized for area and power,<br><br>
  
  <img width="800" alt="netlist" src=""> <br>
 
