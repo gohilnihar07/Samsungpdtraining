@@ -1688,6 +1688,14 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 
 
 <details> 
-<summary>Combinational Logic optimization </summary>
+<summary>Combinational Logic optimization </summary> <br>
+	- It squeezes the logic to get the most optimized design in terms of area and power. There are various techniques for optimizing the circuit.<br>
+	
+        - The goal of combinational logic optimization is to reduce various metrics such as propagation delay, power consumption, and area occupation while maintaining the functionality of the circuit.<br><br>
+	
+**--> Common techniques used for combinational logic optimization are:-** <br>
+
+**1.
+	
 	
 </details>
