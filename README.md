@@ -1689,8 +1689,10 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 
 <details> 
 <summary>Combinational Logic optimization </summary> <br>
-	- It squeezes the logic to get the most optimized design in terms of area and power. There are various techniques for optimizing the circuit.<br>
 	
+	- It squeezes the logic to get the most optimized design in terms of area and power. There are various techniques for optimizing the circuit.<br>
+
+ 
         - The goal of combinational logic optimization is to reduce various metrics such as propagation delay, power consumption, and area occupation while maintaining the functionality of the circuit.<br><br>
 	
 **--> Common techniques used for combinational logic optimization are:-** <br>
@@ -1709,9 +1711,13 @@ Example,<br>
 Resource sharing optimization in digital design minimizes redundancy, efficiently utilizing resources like logic gates to enhance performance and reduce area.<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/063215b65d21844fcaa75543ea55c6a2536542a1/day9/IMG_20230914_232941.jpg"> <br>
  we know that compared to mux multiplier is going to take a huge area. so this design is optimized for area and power,<br><br>
- 
- <img width="800" alt="netlist" src=""> <br>
 
+*-> Logic sharing,* <br>
+Logic-sharing optimization in digital design minimizes duplications, improving resource utilization by consolidating common logic elements to enhance performance and efficiency.<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d3df29e372a69ac91e2a55dc18d97176550fbc67/day9/IMG_20230914_232921.jpg"> <br>
+ Here, we can say the optimized one will take less area and power.<br><br>
+
+*->
  <img width="800" alt="netlist" src=""> <br>
 
  <img width="800" alt="netlist" src=""> <br>
