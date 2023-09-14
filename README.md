@@ -1647,3 +1647,40 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 --> In the report one path is violated, but after compiling ultra that path won't be violated anymore Basically that path has met.
 
 </details>  
+
+
+
+
+## DAY-9 Optimizations
+
+<details>
+	<summary> Introduction </summary>
+	
+	--> VLSI design optimization is vital for efficient integrated circuits. It enhances power efficiency, space usage, timing precision, and manufacturability, ensuring high-performance ICs.<br>
+ <br>
+ --> Optimization goals:<br><br>
+
+**Cost-Based Optimization:** Striving for an optimal balance between performance and cost, ensuring that cost constraints are met without overemphasizing a single goal, which can compromise others.<br><br>
+
+**Performance Optimization:** <br>
+
+- Speed: Enhancing operational speed by minimizing delays, optimizing critical paths, and ensuring compliance with specified timing requirements.<br>
+
+- Throughput: Elevating system throughput through efficient data flow optimization and the elimination of circuit bottlenecks.<br><br>
+
+**Power Optimization:** <br>
+
+- Dynamic Power: Minimizing dynamic power consumption to extend battery life in portable devices and reduce power dissipation in data centers.<br>
+
+- Static Power: Reducing static power (leakage power) to lower overall power consumption during standby or idle IC states.<br><br>
+
+**Synthesis Goals:** <br>
+
+- Meet Timing: Ensuring that the IC design adheres to specified timing constraints.<br>
+
+- Meet Area: Optimizing the utilization of the physical chip area.<br>
+
+- Meet Power: Achieving power efficiency targets within the design.<br><br>
+</details>
+
+
