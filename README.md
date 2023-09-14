@@ -1654,7 +1654,7 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 ## DAY-9 Optimizations
 
 <details>
-	<summary> Introduction </summary>
+	<summary> Introduction </summary> <br>
 
 
 --> VLSI design optimization is vital for efficient integrated circuits. It enhances power efficiency, space usage, timing precision, and manufacturability, ensuring high-performance ICs.<br>
@@ -1686,3 +1686,8 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 </details>
 
 
+
+<details> 
+<summary>Combinational Logic optimization </summary>
+	
+</details>
