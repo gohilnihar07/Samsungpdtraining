@@ -1717,10 +1717,16 @@ Logic-sharing optimization in digital design minimizes duplications, improving r
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d3df29e372a69ac91e2a55dc18d97176550fbc67/day9/IMG_20230914_232921.jpg"> <br>
  Here, we can say the optimized one will take less area and power.<br><br>
 
-*->
- <img width="800" alt="netlist" src=""> <br>
+*-> Balanced vs preferential implementation,* <br>
+Consider the below equation<br>
 
- <img width="800" alt="netlist" src=""> <br>
+y = a & b & c & d & e <br>
+
+It can be implemented in two ways based on the constraints, as shown in the figure,
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7b51061434854ff8c936c43222cded8e4697ff06/day9/C5.jpg"> <br>
+
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7b51061434854ff8c936c43222cded8e4697ff06/day9/C6.jpg"> <br>
+ Now, the DC will select that totally depends on the delay acceptable from any input to output, how much delay is acceptable. so which implementation is to pick, all this are decided by constraints.<br><br>
 	
 	
 </details>
