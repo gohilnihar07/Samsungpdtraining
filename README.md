@@ -1695,7 +1695,20 @@ Can see in this case also available time for optimization of combo logic is 1ns.
 	
 **--> Common techniques used for combinational logic optimization are:-** <br>
 
-**1.
+*-> Constant propagation,* <br>
+  It's a direct optimization technique. It identifies and removes redundant logic expressions that appear in multiple places within the circuit.<br>
+Example,<br>
+	 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1fb31a2873013a2d80d629724f9a578444e30aab/day9/IMG_20230914_233024.jpg"> <br><br>
+
+  <img width="800" alt="netlist" src=""> <br>
+
+ <img width="800" alt="netlist" src=""> <br>
+ 
+ <img width="800" alt="netlist" src=""> <br>
+
+ <img width="800" alt="netlist" src=""> <br>
+
+ <img width="800" alt="netlist" src=""> <br>
 	
 	
 </details>
