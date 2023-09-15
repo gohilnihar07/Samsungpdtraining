@@ -1746,7 +1746,7 @@ It can be implemented in two ways based on the constraints, as shown in the figu
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S3.jpg"> <br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S4.jpg"> <br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S5.jpg"> <br>
- <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S6.jpg"> <br><br>
+<br>
 
 
 *-> Optimization of unloaded outputs,* <br>
