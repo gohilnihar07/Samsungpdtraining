@@ -1728,3 +1728,62 @@ It can be implemented in two ways based on the constraints, as shown in the figu
 	
 	
 </details>
+
+
+
+<details>
+	<summary> Sequential logic optimization </summary> 
+	Sequential logic optimization is the process of improving the performance, efficiency, and other characteristics of digital circuits that contain memory elements such as flip-flops, latches, and registers. <br>
+	The goal of sequential logic optimization is to enhance various aspects of the design, such as speed, power efficiency, area utilization, and reliability, while ensuring that the functionality of the circuit is preserved. <br> <br>
+
+ **--> common techniques used for sequential logic optimization are:-** <br>
+
+ *-> Sequential constant propagation,* <br>
+ Sequential Constant Propagation (SCP) is an optimization technique used in compiler design to improve the efficiency of code execution by replacing variables with their constant values wherever possible.<br>
+ Examples,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S1.jpg"> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S2.jpg"> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S3.jpg"> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S4.jpg"> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S5.jpg"> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S6.jpg"> <br><br>
+
+
+*-> Optimization of unloaded outputs,* <br>
+  Optimizing unused outputs in a sequential process typically involves improving the efficiency or effectiveness of a system by optimizing the outputs that are not directly used or observed in the process.<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b95bd568836096dac2b79ae3bc2bc72c3197dc70/day9/S6.jpg"> <br>
+  Can see the output which are not at all getting used, need not be kept,it can be knocked out.<br><br>
+
+
+   **--> Controlling sequential optimization in DC:-** <br>
+
+   --> For propagating sequential constant, <br>
+   
+   ```ruby
+    compile_seqmap_propagate_constants
+   ```
+
+  If we set it true then only it will propagate sequential constant else it will not.<br>
+<br>
+
+  --> For deleting unloaded output cells, <br>
+   
+   ```ruby
+    compile_delete_unloaded_sequential_cells
+   ```
+
+  If we set it true then only it will delete unloaded output cells. else it will not delete. <br> <br>
+<br>
+
+ --> For cloning registers, <br>
+   
+   ```ruby
+    compile_register_replication
+   ```
+
+ It can basically create replica or copy of flop to decrease the routing delay and meet the timing. <br><br>
+<br>
+
+    
+</details>
+         
