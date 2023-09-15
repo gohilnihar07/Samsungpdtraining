@@ -1796,16 +1796,16 @@ It can be implemented in two ways based on the constraints, as shown in the figu
 
  1.opt_check<br>
 	
-	 --> Verilog code for design,<br>
+--> Verilog code for design,<br>
 
-         ```ruby
-	  module opt_check (input a , input b , input c , output y1, output y2);
-          wire a1;
-          assign y1 = a?b:0;
-          assign y2 = ~((a1 & b) | c);
-          assign a1 = 1'b0;
-          endmodule
-          ```
+```ruby
+module opt_check (input a , input b , input c , output y1, output y2);
+wire a1;
+assign y1 = a?b:0;
+assign y2 = ~((a1 & b) | c);
+assign a1 = 1'b0;
+endmodule
+```
         
 
  --> expecting optimization result,<br>
@@ -1831,13 +1831,13 @@ It can be implemented in two ways based on the constraints, as shown in the figu
    
  --> Verilog code for design,<br>
   
-        ```ruby
-	 module opt_check2 (input a , input b , output y);
-	 assign y = a?1:b;
-         endmodule
-        ```
+```ruby
+module opt_check2 (input a , input b , output y);
+assign y = a?1:b;
+endmodule
+```
 	
-        <br>
+     
 
  --> expecting optimization result,<br>
        
@@ -1860,14 +1860,14 @@ It can be implemented in two ways based on the constraints, as shown in the figu
  --> Verilog code for design,<br>
 
 
-         ```ruby
-	module opt_check3 (input a , input b, input c , output y);
-	assign y = a?(c?b:0):0;
-        endmodule
-        ```
+ ```ruby
+ module opt_check3 (input a , input b, input c , output y);
+ assign y = a?(c?b:0):0;
+ endmodule
+ ```
 
  
-        <br>
+      
 	
 --> expecting optimization result,<br>
        
@@ -1890,14 +1890,14 @@ It can be implemented in two ways based on the constraints, as shown in the figu
  --> Verilog code for design,<br>
 
 
-         ```ruby
-	module opt_check4 (input a , input b , input c , output y);
-        assign y = a?(b?(a & c ):c):(!c);
-        endmodule
-        ```
+ ```ruby
+ module opt_check4 (input a , input b , input c , output y);
+ assign y = a?(b?(a & c ):c):(!c);
+ endmodule
+ ```
 	
 	
-        <br>
+      
 
 --> The below is the timing report,<br>
  
@@ -1932,13 +1932,13 @@ we can see it's taking 80ps from A to Y (WITH XNOR)<br> <br>
 --> The verilog code for the design we will use is,<br>
 
 
-    ```ruby
-       module_resource_sharing_mult_check (input [3:0] a,b,c,d,output [7:0]y, input sel);
-       assign y=sel?(a*b) :(c*d);
-       endmodule
-    ```
+```ruby
+ module_resource_sharing_mult_check (input [3:0] a,b,c,d,output [7:0]y, input sel);
+ assign y=sel?(a*b) :(c*d);
+ endmodule
+ ```
     
-    <br>
+  
     
 --> Expecting optimization,<br>
 
