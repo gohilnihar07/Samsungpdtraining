@@ -1792,9 +1792,11 @@ It can be implemented in two ways based on the constraints, as shown in the figu
 
 <details>
 	<summary> Lab for combinational logic optimization</summary> <br>
+	
         Examples,<br><br>
 
         1.opt_check<br>
+	
 	 --> Verilog code for design,<br>
 
          ```ruby
@@ -1805,23 +1807,31 @@ It can be implemented in two ways based on the constraints, as shown in the figu
           assign a1 = 1'b0;
           endmodule
           ```
-        <br><br>
-
+        
+<br>
        --> expecting optimization result,<br>
+       
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/LC1.jpg"> <br><br>
 
+
      --> Can see the below timing report, which is showing the path is unconstrained because we haven't yet constrained,<br>
+     
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/1_read_timing.png"> <br><br>
 
      --> Now, we can see timing is met after compilation,<br>
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/2_timing_aftercompile.png"> <br><br>
 
+
     --> Can see the schematic it has optimized our design as we expected,<br>
+    
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/4_GUI.png"> <br><br>
 
 
+
    2.opt_check2<br>
+   
 	 --> Verilog code for design,<br>
+  
 
          ```ruby
 	 module opt_check2 (input a , input b , output y);
@@ -1829,47 +1839,58 @@ It can be implemented in two ways based on the constraints, as shown in the figu
          endmodule
         ```
 	
-        <br><br>
+        <br>
 
        --> expecting optimization result,<br>
+       
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/LC2.jpg"> <br><br>
 
 
 
      --> Now, we can see timing is met after compilation,<br>
+     
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/9_optcheck4_timinng_post_compile.png"> <br><br>
 
     --> Can see the schematic it has optimized our design as we expected,<br>
+    
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/6_GUI.png"> <br><br>
 
 
 
  3.opt_check3<br>
+ 
 	 --> Verilog code for design,<br>
+
 
          ```ruby
 	module opt_check3 (input a , input b, input c , output y);
 	assign y = a?(c?b:0):0;
         endmodule
         ```
-	
-        <br><br>
 
+ 
+        <br>
+	
        --> expecting optimization result,<br>
+       
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/LC3.jpg"> <br><br>
 
 
      --> Now, we can see timing is met after compilation,<br>
+     
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/7_optcheck3_timinng_post_compile.png"> <br><br>
 
     --> Can see the schematic it has optimized our design as we expected,<br>
+    
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/8_GUI.png"> <br><br.>
 
 
 
  
  4.opt_check4 <br>
+ 
 	 --> Verilog code for design,<br>
+
 
          ```ruby
 	module opt_check4 (input a , input b , input c , output y);
@@ -1877,73 +1898,102 @@ It can be implemented in two ways based on the constraints, as shown in the figu
         endmodule
         ```
 	
-        <br><br>
+	
+        <br>
 
  --> The below is the timing report,<br>
+ 
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/9_optcheck4_timinng_post_compile.png"> <br>
 we can see it's taking 80ps from A to Y (WITH XNOR)<br> <br>
 
 
 --> Constraining the path,<br>
+
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/10_set_delay_timing_violate.png"> <br><br>
 
 --> Constraining the path,<br>
+
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/10_set_delay_timing_violate.png"> <br><br>
 
  --> Timing report after constraining path,<br>
+ 
   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/11_change_xnor_timing_violate_up.png"> <br>
   can see till there is vilation in path, to solve that we will do compile_ultra.<br><br>
 
   --> Timing report aftering compiling ultra,<br>
+  
   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/12_timing_after_compile.png"> <br><br>
   now we can see vilations are solved. <br><br>
+
   
     --> Can see the schematic ,<br>
+    
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/13_GUI.png"> <br><br>
 
 
  5. Resource sharing optimization,<br>
+ 
   --> The verilog code for the design we will use is,<br>
+
 
     ```ruby
        module_resource_sharing_mult_check (input [3:0] a,b,c,d,output [7:0]y, input sel);
        assign y=sel?(a*b) :(c*d);
        endmodule
     ```
-    <br><br>
+    
+    <br>
+    
 --> Expecting optimization,<br>
+
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/IMG_20230914_232941.jpg"> <br><br>
 
  
 -->  After reading file and compiling ultra write it out in ddc format and then seeing it's schematic in design vision,<br>
+
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/15_GUI.png"> <br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/16_GUI_mux.png"> <br>
+ 
  can see mux is at the back side. <br><br>
  
+ 
 --> Below is the area report of the design without giving constrains,<br>
+
   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/17_report_area.png"> <br><br>
 
+
 --> Timing report without giving constraints,<br>
+
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/18_timing_pastcompile.png"> <br><br>
 
+
 --> constraining my design,<br>
+
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/19_set_delay_timing_violate.png"> <br><br>
 
+
  --> Timing report after optimizing design,<br>
+ 
    <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/20_timing_post_compile.png"> <br><br>
 
+
 --> Area report after constraining from input to ouput paths,<br>
+
    <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/21_area_report_2.png"> <br><br>
 
 --> Area report for sel to out y constrained,<br>
+
    <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/25_area_report_3.png"> <br>
    Can see, and we can compare are with previous case it's almost 3 timesarea so we can say to met the constraint now it has used two multiplier instead one.<br><br>
 
+
 --> Same thing can also be noticed in schematic,<br>
+
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/24_GUI.png"> <br><br>
 
  --> Now we will constraint that max area can't be larger than 800. can see timing report for that,<br>
  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2c91064365dcce6b04754499e0f3dd285dcf2f30/day9/26_timing_report_postareaconstraint.png"> <br><br>
+
 
 
 --> Area report for this case,<br>
@@ -1955,10 +2005,14 @@ we can see it's taking 80ps from A to Y (WITH XNOR)<br> <br>
 
 
 <details> 
-<summary> Lab for sequential logic optimization </summary> <br>
+<summary> Lab for sequential logic optimization </summary> 
+	
 Examples,<br>
+
 1. dff_const1,<br>
+
 --> verilog code for the design,<br>
+
   ```ruby
     module dff_const1(input clk, input reset, output reg q);
 always @(posedge clk, posedge reset)
@@ -1971,9 +2025,125 @@ end
 
 endmodule
 ```
-<br><br>
 
-	
-</nr>
-	
+<br>
+
+--> Expecting after optimization,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/LS1.jpg"> <br><br>
+
+--> cells of design,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/28_seq_dff_const1_cells.png"> <br><br>
+
+-->schematic for design,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/29_dff_c1_GUI.png"> <br><br>
+
+
+
+
+2. dff_const2,<br>
+
+--> verilog code for the design,<br>
+
+  ```ruby
+   module dff_const2(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b1;
+	else
+		q <= 1'b1;
+end
+
+endmodule
+```
+
+<br>
+
+--> Expecting after optimization,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/LS2.jpg"> <br><br>
+
+--> schematic after optimization,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/29_dff_c1_GUI.png"> <br><br>
+
+--> now if we don't want to do optimization then by setting seuential propagation constant as false we can prevent it from optimization, can see in below schematic,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/30_dff_c2_GUI.png"> <br><br>
+
+
+
+
+3. dff_const3,<br>
+
+--> verilog code for the design,<br>
+
+  ```ruby
+ module dff_const3(input clk, input reset, output reg q);
+ reg q1;
+
+ always @(posedge clk, posedge reset)
+ begin
+	if(reset)
+	begin
+		q <= 1'b1;
+		q1 <= 1'b0;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+ end
+
+ endmodule
+```
+
+<br>
+
+--> Expecting after optimization,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/LS3.jpg"> <br><br>
+
+--> schematic for the design,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/33_dff_c3_GUI.png"> <br><br>
+
+
+
+
+4. dff_const4,<br>
+
+--> verilog code for the design,<br>
+
+  ```ruby
+  module dff_const4(input clk, input reset, output reg q);
+reg q1;
+
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+		q <= 1'b1;
+		q1 <= 1'b1;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+end
+endmodule
+```
+
+<br>
+
+--> Expecting after optimization,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/LS4.jpg"> <br><br>
+
+--> restricting optimization,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/32_dff_c2_restrict_optimisation.png"> <br><br>
+ 
+--> schematic for restricting optimization,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/34_dff_c5_GUI_constrained.png"> <br>
+ i have set the constraints as false so that variables will retain in tool memory so it's not removing that flop.<br><br>
+
+--> schematic for optimized one,<br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/34_dff_c4_GUI_unconstrained.png"> <br><br>
+
 </details>
