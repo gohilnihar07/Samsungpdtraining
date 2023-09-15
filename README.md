@@ -2157,11 +2157,189 @@ endmodule
 
 
  **Register retiming optimization**
- <br>
-   <img width="800" alt="netlist" src=""> <br><br>
-   <img width="800" alt="netlist" src=""> <br><br>
-   <img width="800" alt="netlist" src=""> <br><br>
+  Register retiming is a technique used to optimize the performance of digital circuits by arranging the registers in circuit without chnaging it's functionality.<br>
+  The primary goal of register retiming is to minimize the critical path delay, which is the longest parth in the circuit from input to an output.<br>
+  
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_RR_1.jpg"> <br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_RR_2.jpg"> <br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_RR_2.jpg"> <br>
+   Basically DC is doing here best possible split. and this is called register retiming.<br>
+   the disadvantage of register retiming is we won't be able to understand the value coming t intermediate stage but if we won't do register retiming then we will get sub-optimal logic. SO, be very careful in selecting when to use register retiming and when to not.<br><br>
+
+   *-->Lab example on register retiming*
+
+   --> verilog code for the design,<br>
+
+   ```ruby
+  module check_reg_retime (input clk , input [3:0] a, input [3:0] b , output [7:0] c , input reset);
+
+wire [7:0] mult;
+assign mult = a * b;
+reg [7:0] q1;
+reg [7:0] q2;
+reg [7:0] q3;
 
 
 
+
+always @ (posedge clk , posedge reset)
+begin
+	if(reset)
+	begin
+		q1 <= 8'b0;
+		q2 <= 8'b0;
+		q3 <= 8'b0;
+	end
+	else
+	begin
+		q1 <= mult;
+		q2 <= q1;
+		q3 <= q2;
+	end
+end
+assign c = q3;
+
+endmodule
+ ```
+   
+  --> view,<br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_RR_L_1.jpg"> <br><br>
+
+  --> Timing report,<br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/44_retime_timing_pastclock.png"> <br><br>
+
+  --> Constraining design for timing,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/45_retime_clocks.png"> <br><br>
+
+
+--> timing report after constraining design,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/46_retime_timig_report.png"> <br><br>
+
+--> timing report after compiling ultra,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/49_retime_timing_report_input_post_compile.png"> <br><br><br>
+
+
+
+**Boundary optimization**
+
+It refers typically to optimizing boundary7 of a digital design for improvement of power, performance and area.<br>
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_BO_1.jpg"> <br>
+the DC may dissolve this boundary to optimize it.so after synthesizing it there will not be hierarchy call sub module in the netlist.<br>
+
+The advantage of boundry optimization is, i will get optimal logic.but there is one drawback too, that this may going to create a problem for us in terms of functional design-verification. <br><br>
+
+So, for preventing from optimization,<br>
+
+```ruby
+  set_boundary_optimization <design> <true/false>
+```
+
+*-> Lab for boundary optimization*
+Example,<br>
+check_boundary,<br>
+
+--> verilog code for design,<br>
+
+```ruby
+module check_boundary (input clk , input res , input [3:0] val_in , output reg [3:0] val_out);
+wire en;
+internal_module u_im (.clk(clk) , .res(res) , .cnt_roll(en));
+
+always @ (posedge clk , posedge res)
+begin
+	if(res)
+		val_out <= 4'b0;
+	else if(en)
+		val_out <= val_in;	
+end
+endmodule
+
+
+module internal_module (input clk , input res , output cnt_roll);
+reg [2:0] cnt;
+
+always @(posedge clk , posedge res)
+begin
+	if(res)
+		cnt <= 3'b0;
+	else
+		cnt <= cnt + 1;
+end
+
+assign cnt_roll = (cnt == 3'b111);
+
+endmodule
+```
+<br><br>
+
+
+
+--> view of our design,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_BO_L_1.jpg"> <br><br>
+
+--> cells of the design,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/37_boundary_cell_nohier.png"> <br><br>
+
+--> GUI with no hierarchy,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/38_boundary_GUI_nohier.png"> <br><br>
+
+
+--> preventing from optimization ,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/41_boundary_GUI_withhier.png"> <br><br>
+
+--> GUI with hierarchy
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/41_boundary_GUI_withhier.png"> <br><br><br>
+
+
+
+
+**Isolating output ports**
+Isolating output ports is very important in some cases because exteranal load variations may affect out internal paths and due to that there may be a possiblity also that internal paths may get fail so to prevent internal paths from getting fail we isolate the output port via buffer. so there won't be any affect on internal paths.<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_isolating_output_port_1.jpg"> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/b38747db50d9cc29f08293a82bb0d61b46a17734/day9/SO_isolating_output_port_2.jpg"> <br><br>
+
+
+*Lab on isolating output ports* <br>
+Example,<br>
+ 
+--> verilog code for design,<br>
+
+```ruby
+module check_boundary (input clk , input res , input [3:0] val_in , output reg [3:0] val_out);
+wire en;
+internal_module u_im (.clk(clk) , .res(res) , .cnt_roll(en));
+
+always @ (posedge clk , posedge res)
+begin
+	if(res)
+		val_out <= 4'b0;
+	else if(en)
+		val_out <= val_in;	
+end
+endmodule
+
+
+module internal_module (input clk , input res , output cnt_roll);
+reg [2:0] cnt;
+
+always @(posedge clk , posedge res)
+begin
+	if(res)
+		cnt <= 3'b0;
+	else
+		cnt <= cnt + 1;
+end
+
+assign cnt_roll = (cnt == 3'b111);
+
+endmodule
+```
+<br><br>
+--> schamatic before isolating the output port,<br>
+--> Timing report before isolating the output port,<br>
+--> Timing report after isolating the ouput port,<br>
+--> Can see in schematic also,<br>
 </details>
+
+<img width="800" alt="netlist" src=""> <br><br>
