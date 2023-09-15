@@ -1787,3 +1787,86 @@ It can be implemented in two ways based on the constraints, as shown in the figu
     
 </details>
          
+
+
+
+<details>
+	<summary> Lab for combinational logic optimization</summary> <br>
+        Examples,<br><br>
+
+        1.opt_check<br>
+	 --> Verilog code for design,<br>
+
+         ```ruby
+	  module opt_check (input a , input b , input c , output y1, output y2);
+          wire a1;
+          assign y1 = a?b:0;
+          assign y2 = ~((a1 & b) | c);
+          assign a1 = 1'b0;
+          endmodule
+          ```
+        <br><br>
+
+       --> expecting optimization result,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/LC1.jpg"> <br><br>
+
+     --> Can see the below timing report, which is showing the path is unconstrained because we haven't yet constrained,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/1_read_timing.png"> <br><br>
+
+     --> Now, we can see timing is met after compilation,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/2_timing_aftercompile.png"> <br><br>
+
+    --> Can see the schematic it has optimized our design as we expected,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/6_GUI.png"> <br><br>
+
+
+   2.opt_check2<br>
+	 --> Verilog code for design,<br>
+
+         ```ruby
+	 module opt_check2 (input a , input b , output y);
+	 assign y = a?1:b;
+         endmodule
+        ```
+	
+        <br><br>
+
+       --> expecting optimization result,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/LC2.jpg"> <br><br>
+
+
+
+     --> Now, we can see timing is met after compilation,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/9_optcheck4_timinng_post_compile.png"> <br><br>
+
+    --> Can see the schematic it has optimized our design as we expected,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/8_GUI.png"> <br><br>
+
+
+
+ 3.opt_check3<br>
+	 --> Verilog code for design,<br>
+
+         ```ruby
+	module opt_check3 (input a , input b, input c , output y);
+	assign y = a?(c?b:0):0;
+        endmodule
+        ```
+	
+        <br><br>
+
+       --> expecting optimization result,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
+
+
+
+     --> Now, we can see timing is met after compilation,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/9_optcheck4_timinng_post_compile.png"> <br><br>
+
+    --> Can see the schematic it has optimized our design as we expected,<br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/36a1a2713db3a595192575c71c0ec67142d77638/day9/8_GUI.png"> <br><br.>
+
+ 
+</details>
+    
+ <img width="800" alt="netlist" src=""> <br>
