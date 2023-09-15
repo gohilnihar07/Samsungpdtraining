@@ -18,7 +18,7 @@ Synopsys ICC2 is an advanced IC design tool automating physical layout generatio
 <img width="1085" alt="snapshot2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
 
 
-</details>
+
 
 
 <details>
@@ -2337,9 +2337,82 @@ endmodule
 ```
 <br><br>
 --> schamatic before isolating the output port,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/52_isolate_GUI_without_isolate.png"> <br><br>
 --> Timing report before isolating the output port,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/54_isolate_timing_report_past_isolate.png"> <br><br>
 --> Timing report after isolating the ouput port,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/58_isolate_timing_report_post_isolate.png"> <br><br>
 --> Can see in schematic also,<br>
-</details>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/60_isolate_GUI_post_isolate.png"> <br><br>
 
-<img width="800" alt="netlist" src=""> <br><br>
+
+
+
+**Multi-cycle paths**
+
+--> Muticycle paths are encountered in digital designs when specific timing requirement or constrains permit longer propagation delays.<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/SO_MSP.jpg"> <br><br>
+
+
+*Lab on multi-cycle paths*
+Example,<br>
+--> verilog code for design,<br>
+
+```ruby
+module check_boundary (input clk , input res , input [3:0] val_in , output reg [3:0] val_out);
+wire en;
+internal_module u_im (.clk(clk) , .res(res) , .cnt_roll(en));
+
+always @ (posedge clk , posedge res)
+begin
+	if(res)
+		val_out <= 4'b0;
+	else if(en)
+		val_out <= val_in;	
+end
+endmodule
+
+
+module internal_module (input clk , input res , output cnt_roll);
+reg [2:0] cnt;
+
+always @(posedge clk , posedge res)
+begin
+	if(res)
+		cnt <= 3'b0;
+	else
+		cnt <= cnt + 1;
+end
+
+assign cnt_roll = (cnt == 3'b111);
+
+endmodule
+```
+<br><br>
+
+--> compiling the design,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/61_mcp_compile_link_compile.png"> <br><br>
+-->sourcing the script,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/62_mcp_source_timing_report.png"> <br><br>
+-->timing report after optimizing design,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/64_timing_report_post_-compile.png"> <br><br>
+-->setting up multicycle path,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/65_setmcp_timing_report_post_-compile.png"> <br><br>
+-->timing report after setting up ,multicycle path,<br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/65_setmcp_timing_report_post_-compile.png"> <br><br>
+--> hold timing report,<br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/73_timing_delay_min_from_inputs.png"> <br><br>
+-->timing reports to pro_reg[*]/D from all_inputs,
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/73_timing_delay_min_from_inputs.png"> <br><br>
+--> timing report after isolating the output,
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/76_timing_report_last.png"> <br><br>
+
+
+
+**False paths**
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/SO_FP_1.jpg"> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/SO_FP_2.jpg"> <br>
+Basically if there will be no relation between two clock then that will be declared as false path.
+
+</details>
