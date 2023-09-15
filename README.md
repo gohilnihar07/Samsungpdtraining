@@ -2147,3 +2147,21 @@ endmodule
   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85d2d0620a81670a50fe1d6818dd2cc7930fdeea/day9/34_dff_c4_GUI_unconstrained.png"> <br><br>
 
 </details>
+
+
+
+
+
+<details>
+	<summary>Special optimizations</summary>
+
+
+ **Register retiming optimization**
+ <br>
+   <img width="800" alt="netlist" src=""> <br><br>
+   <img width="800" alt="netlist" src=""> <br><br>
+   <img width="800" alt="netlist" src=""> <br><br>
+
+
+
+</details>
