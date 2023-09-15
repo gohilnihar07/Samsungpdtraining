@@ -16,7 +16,7 @@ This github repository summarizes the progress made in the samsung pd training. 
 Below is the screenshot showing the successful launch icc2:
 Synopsys ICC2 is an advanced IC design tool automating physical layout generation. It optimizes placement, routing, power, and timing, ensuring efficient and manufacturable chip designs. Hierarchical, multi-domain support enhances its utility.
 <img width="1085" alt="snapshot2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8553d133af27693fa09b05956ff915839704399f/snapshot2.png">
-
+</details>
 
 
 
@@ -2406,7 +2406,6 @@ endmodule
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/73_timing_delay_min_from_inputs.png"> <br><br>
 --> timing report after isolating the output,
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/df3177e8a85ab0cfba6237b5ff0dccf47c97311e/day9/76_timing_report_last.png"> <br><br>
-
 
 
 **False paths**
