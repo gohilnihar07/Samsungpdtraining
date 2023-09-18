@@ -2411,3 +2411,25 @@ endmodule
 Basically if there will be no relation between two clock then that will be declared as false path.
 
 </details>
+
+
+
+
+# DAY-10 Concepts related to propagation delay 
+
+<details>
+	<summary> Intoduction to propagation delay</summary>
+	 Propagation delay refers to the time it takes for a signal to travel from the input of a logic gate or circuit to its output, after accounting for various delays within the circuit. <br>
+	Let's take example of below CMOS inverter gate to understand it in more details,<br>
+	<img width="800" alt="netlist" src=""> <br>
+        Is A rise to Y fall and A fall to Y rise delay are same ? <br>
+	No. <br>
+        Because, Rise-to-fall and fall-to-rise propagation delays differ due to the intrinsic characteristics of NMOS and PMOS transistors. NMOS transistors switch faster during falling transitions due to higher electron mobility, while PMOS transistors have faster rising transitions due to lower hole mobility, creating an inherent asymmetry in CMOS circuitry. <br>
+	Basically for any circuit, all the different inputs are going to give us different timing arc combinations. <br><br>
+
+ 
+	
+</details>
+
+
+<img width="800" alt="netlist" src=""> <br>
