@@ -2496,8 +2496,6 @@ Basically if there will be no relation between two clock then that will be decla
                  = 1.0ns - 0.1ns <br>
                  = 0.9ns <br> <br>
      
-    
-
    
 </details>
 
