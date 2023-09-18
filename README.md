@@ -2620,6 +2620,18 @@ Basically if there will be no relation between two clock then that will be decla
  --> writing out ddc file for it,<br>
  --> Can see the schematic,<br>
  Can see now, enable is driving only selectively few bits.Basically we are dividing and conquring the problem, so the high fanout net gets split, such that single pin is not having the burden of such a large heavily loaded net.<br><br>
+ --> reporting timing,<br>
+ can see, trans is still bad here. there is something called set_max_transition. <br><br>
+ --> setting limit to maximum transition,<br>
+ --> reporting constraints,<br>
+  Can see the transition constraints violated.<br><br>
+ --> reporting all volations,<br>
+ --> After compiling ultra reporting constraints,<br>
+    we can see there is no more violations.
+ --> reporting timing to see transition values now,<br>
+  we can see, transition is limited to 150ns. now it may have use different kind of buffer to limit the transition time or something.<br><br>
+ --> reporting timing from en to y[116],<br>
+  we can see, transition is only 66ps. it has broken this net and adjusted this net is such a way that transition is not that bad. earlier the data arrival time due to high transition time was 442 ps and but now it has 254 ps. Earlier it was weak buffer so the output transition was very bad and it's strong buffer now(drive strength two) so transition time is less now.
  
 
 </details>
