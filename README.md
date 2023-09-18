@@ -2429,7 +2429,7 @@ Basically if there will be no relation between two clock then that will be decla
  
 
  **Timing paths** <br>
-*--> Lets understand the timing paths by one example,* <br> 
+*--> Let's understand the timing paths by one example,* <br> 
        <img width="800" alt="netlist" src=""> <br> <br>
 
        
@@ -2447,8 +2447,13 @@ Basically if there will be no relation between two clock then that will be decla
 
   4. DFFB(clk-Qf) -> AND (Bf) -> AND (Yf) -> DFFC(f) <br>
 
-  -> The above " Min delay from DFFB to C " path is having 1.0ns delay. <br><br>
+  -> The above " Min delay from DFFB to C " path is having 1.0ns delay. <br><br><br>
 
+
+*--> Now let's understand, For a particular command which path tool will report out of above,* <br><br>
+
+
+   
 </details>
 
 
