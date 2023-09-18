@@ -2511,8 +2511,48 @@ Basically if there will be no relation between two clock then that will be decla
      Basically, nworst suggest how many maximum worst path per end point it can select. For this example it will pick path with slack -1.2ns and -1.1ns. <br><br>
 
    
-   
 </details>
 
 
+
+
+<details> 
+<summary> Lab on timing report </summary> <br>
+
+ *--> Let's first understand, what are the ways to identify whether it's setup check report or hold check report,* <br>
+ 
+   --> The verilog code of design,<br>
+    <img width="800" alt="netlist" src=""> <br>
+   --> Constraint tcl file,<br>
+   <img width="800" alt="netlist" src=""> <br>
+   --> timing report (t1),<br>
+   <img width="800" alt="netlist" src=""> <br>
+     Clues to identify which check it is, are by path type or by launch and edge and capture edge timing difference or by setup time or hold time which one is written in the report, or by whether there is "data required -data arrival" or "data arrival - data required". So, by any on of these clue we can identify whether it's setup check report or it's hold check report. <br><br><br>
+
+
+*--> To observe, how slack and other delay and all are varying for input fall transition and input rise transition,* <br>
+
+  --> timing report "-from IN_A" (t1),<br>
+     <img width="800" alt="netlist" src=""> <br><br>
+  --> timing report "-from IN_A" (t1) Vs timing report  "-rise_from IN_A" (t2),<br>
+     <img width="800" alt="netlist" src=""> <br>
+      Since, the t1 and t2 report both are not ending at the same point so we can't make a pure comparison. <br><br>
+
+  --> timing report "-from IN_A" (t1) Vs timing report "-rise_from IN_A -to REGA_reg/D" (t3), <br>
+    <img width="800" alt="netlist" src=""> <br>
+     we have generated this t3 timing report because the t1 report is ending at REGA_reg/D pin so to compare purely in t3 report we have set end point same as t1 report. we can clearly observe that how slack and other delays of cells in path and all are changing for the input A rise and input A fall transitions. <br><br><br>
+     
+  
+  --> As i mentioned the clues earlier from that we can say this report is for hold chcek, <br>
+   <img width="800" alt="netlist" src=""> <br><br>
+
+  --> To see what is the contribution of this particular U15/Y cell in max path,<br>
+    <img width="800" alt="netlist" src=""> <br>
+   in max path this particular cell delay can be minimum also because what matters is overall delay of path.<br><br>
+
+   --> To see what is the contribution of this particular U15/Y cell in min path,<br>
+    <img width="800" alt="netlist" src=""> <br>
+   simillary here also, in min path this particular cell delay can be maximum also because what matters is overall delay of path.<br><br>
+	
+</details>
 <img width="800" alt="netlist" src=""> <br>
