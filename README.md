@@ -2502,12 +2502,12 @@ Basically if there will be no relation between two clock then that will be decla
    - Let's take one example to understand above two terms, <br>
    <img width="800" alt="netlist" src=""> <br>
 
-    - Now when i say just simply "report_timing" the worse failing path or worst slack path will get reported. in this example that path is, the path with -1.2ns slack. <br><br>
+   - Now when i say just simply "report_timing" the worse failing path or worst slack path will get reported. in this example that path is, the path with -1.2ns slack. <br><br>
    
-    - report_timing -max_paths2 ,<br>
+   - report_timing -max_paths2 ,<br>
      Basically max_paths means maximum this much path we can select for worst. Per end point it will pick one worst path. Because by default nwrost option is 1. For this example it will select path having slack of -1.0ns and path having of -1.2ns <br><br>
 
-    - report_timing -max_paths2 -nworst2,<br>
+   - report_timing -max_paths2 -nworst2,<br>
      Basically, nworst suggest how many maximum worst path per end point it can select. For this example it will pick path with slack -1.2ns and -1.1ns. <br><br>
 
    
