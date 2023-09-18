@@ -2555,4 +2555,28 @@ Basically if there will be no relation between two clock then that will be decla
    simillary here also, in min path this particular cell delay can be maximum also because what matters is overall delay of path.<br><br>
 	
 </details>
+<details>
+	<summary> Lab on checking design</summary> 
+--> we will check about whether my design is correctly loaded into DC or am i missing something in constraints or something, so is there any utility available in the tool to check whether we loaded the design is constraints correctly all these things we will see. <br>
+--> verilog code for the design, <br>
+--> check_design, <br>
+--> checking timing,<br>
+ it's going to check whether my design is proper or not , my design is constrained properly or not. <br><br>
+
+ --> reporting constraints, <br>
+  If we don't source any constraints then defaults constraints which are there in the tool memory that will be loaded.<br><br>
+
+ --> checking timing after sourcing my constraints,<br>
+  it showing that out_clk and out_div_clk are not constrained but that is fine because i can't constrained clock with anything.<br><br>
+
+--> reporting constraints after sourcing my constraints,<br>
+  since we have sourced our constraints so it's not showing default constraints.<br><br>
+
+
+**--> Lab on high fanout net(HFN) examples,** <br>
+
+-->  Verilog code for design(mux_generate_128_1.v),<br>
+--> 
+	
+</details>
 <img width="800" alt="netlist" src=""> <br>
