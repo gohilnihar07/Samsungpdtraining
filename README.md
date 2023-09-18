@@ -2670,6 +2670,5 @@ Basically if there will be no relation between two clock then that will be decla
  <img width="800" alt="netlist" src=""> <br>
   we can see, transition is only 66ps. it has broken this net and adjusted this net is such a way that transition is not that bad. earlier the data arrival time due to high transition time was 442 ps and but now it has 254 ps. Earlier it was weak buffer so the output transition was very bad and it's strong buffer now(drive strength two) so transition time is less now.
  
-
 </details>
-<img width="800" alt="netlist" src=""> <br><br>
+
