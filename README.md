@@ -2559,80 +2559,117 @@ Basically if there will be no relation between two clock then that will be decla
 	<summary> Lab on checking design</summary> 
 --> we will check about whether my design is correctly loaded into DC or am i missing something in constraints or something, so is there any utility available in the tool to check whether we loaded the design is constraints correctly all these things we will see. <br>
 --> verilog code for the design, <br>
+	<img width="800" alt="netlist" src=""> <br><br>
 --> check_design, <br>
+	<img width="800" alt="netlist" src=""> <br><br>
 --> checking timing,<br>
+	<img width="800" alt="netlist" src=""> <br>
  it's going to check whether my design is proper or not , my design is constrained properly or not. <br><br>
 
  --> reporting constraints, <br>
+ <img width="800" alt="netlist" src=""> <br>
   If we don't source any constraints then defaults constraints which are there in the tool memory that will be loaded.<br><br>
 
  --> checking timing after sourcing my constraints,<br>
+ <img width="800" alt="netlist" src=""> <br>
   it showing that out_clk and out_div_clk are not constrained but that is fine because i can't constrained clock with anything.<br><br>
 
 --> reporting constraints after sourcing my constraints,<br>
+<img width="800" alt="netlist" src=""> <br>
   since we have sourced our constraints so it's not showing default constraints.<br><br>
 
 
 **--> Lab on high fanout net(HFN) examples,** <br>
 
 -->  Verilog code for design(mux_generate_128_1.v),<br>
+<img width="800" alt="netlist" src=""> <br><br>
 --> reading verilog file,<br>
+<img width="800" alt="netlist" src=""> <br>
  it's interpriting as latch but when you synthesized it, there won.t be any latch.<br><br>
 --> check_design, <br>
+<img width="800" alt="netlist" src=""> <br><br>
 --> checking timing,<br>
+<img width="800" alt="netlist" src=""> <br>
  it's going to check whether my design is proper or not , my design is constrained properly or not. <br><br>
 --> viewing generated netlist,<br>
+<img width="800" alt="netlist" src=""> <br>
  Can see all are combinational cells here there is no any sequential cells.<br><br>
 
  --> To see wethere there is sequential cells or not,<br>
+ <img width="800" alt="netlist" src=""> <br>
   It won't show any cells because there is not any sequential cell.<br><br>
  --> To see whether there is any combinational cells or not,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> timing report to see capacitance,<br>
+ <img width="800" alt="netlist" src=""> <br>
     can see there is so much of fanout so very large capacitance.<br><br>
  --> checking timing,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
     can see the end points is not constrained.<br><br>
  --> setting the maximum delay from all inputs to all outputs,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> seeting maximum capacitance for our design,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> Below command is to check all violating constraints,<br>
+ <img width="800" alt="netlist" src=""> <br>
      we can see path is violating for timing and many nets are violating for capacitance. and we havne't yet modelled any leakage power so by default DC will target default leakage power which is in DC tool memory, that's here saying slack violation for power.<br><br>
  --> after compiling ultra, check_timing,<br>
+ <img width="800" alt="netlist" src=""> <br>
   Now we can unconstrained end points are not coming because i have set max delay.<br><br>
  --> reporting constraints,<br>
+ <img width="800" alt="netlist" src=""> <br>
   Can see now, max capacitance, max transition, max delay everything has met.<br><br>
   --> reporting for capacitance and nets,<br>
+  <img width="800" alt="netlist" src=""> <br>
   Can see now, everywhere the max capacitance is less than 0.025, can also see now fanout gets broken and the high fanout nets gets buffered to properly meet that criteria.<br><br><br>
    
 
  *-->one more lab example on HFN,*
  In below diagram we can see that en will go to 128 pins so load on enable is humungous and so capacitance.<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> Verilog code for the design "en_128.v",<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> report timing,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> report timing for capacitance,<br>
+ <img width="800" alt="netlist" src=""> <br>
    Can see, enable fanout is 128, which is very high, so the capacitance is huge.<br><br>
  --> setting max capacitance limit,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> reporting constraints,<br>
+ <img width="800" alt="netlist" src=""> <br>
     Capacitance is violating by huge amount because we haven't yet compiled ultra after setting max capacitance,<br><br>
  --> compile ultra,<br>
+ <img width="800" alt="netlist" src=""> <br>
     Now the nets will get broken and buffered.<br><br>
  --> report timing for capacitance after optimizing,<br>
+ <img width="800" alt="netlist" src=""> <br>
    Now we can see it has only 17 fanout. earlier it had 128 fanout.<br><br>
  --> writing out ddc file for it,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> Can see the schematic,<br>
+  <img width="800" alt="netlist" src=""> <br><br>
  Can see now, enable is driving only selectively few bits.Basically we are dividing and conquring the problem, so the high fanout net gets split, such that single pin is not having the burden of such a large heavily loaded net.<br><br>
  --> reporting timing,<br>
+ <img width="800" alt="netlist" src=""> <br>
  can see, trans is still bad here. there is something called set_max_transition. <br><br>
  --> setting limit to maximum transition,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> reporting constraints,<br>
+ <img width="800" alt="netlist" src=""> <br>
   Can see the transition constraints violated.<br><br>
  --> reporting all volations,<br>
+ <img width="800" alt="netlist" src=""> <br><br>
  --> After compiling ultra reporting constraints,<br>
-    we can see there is no more violations.
+ <img width="800" alt="netlist" src=""> <br>
+    we can see there is no more violations.<br><br>
  --> reporting timing to see transition values now,<br>
+ <img width="800" alt="netlist" src=""> <br>
   we can see, transition is limited to 150ns. now it may have use different kind of buffer to limit the transition time or something.<br><br>
  --> reporting timing from en to y[116],<br>
+ <img width="800" alt="netlist" src=""> <br>
   we can see, transition is only 66ps. it has broken this net and adjusted this net is such a way that transition is not that bad. earlier the data arrival time due to high transition time was 442 ps and but now it has 254 ps. Earlier it was weak buffer so the output transition was very bad and it's strong buffer now(drive strength two) so transition time is less now.
  
 
 </details>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src=""> <br><br>
