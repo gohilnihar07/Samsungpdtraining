@@ -2587,6 +2587,14 @@ Basically if there will be no relation between two clock then that will be decla
  --> To see wethere there is sequential cells or not,<br>
   It won't show any cells because there is not any sequential cell.<br><br>
  --> To see whether there is any combinational cells or not,<br>
+ --> timing report to see capacitance,<br>
+    can see there is so much of fanout so very large capacitance.<br><br>
+ --> checking timing,<br>
+    can see the end points is not constrained.<br><br>
+ --> setting the maximum delay from all inputs to all outputs,<br>
+ --> seeting maximum capacitance for our design,<br>
+ --> Below command is to check all violating constraints,<br>
+    
  
 	
 </details>
