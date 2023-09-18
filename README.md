@@ -2452,6 +2452,31 @@ Basically if there will be no relation between two clock then that will be decla
 
 *--> Now let's understand, For a particular command which path tool will report out of above,* <br><br>
 
+   - report_timing -from DFFA/clk -to DFFC/D -delay_max  <br>
+   -> This will report path number 1 which is "Max delay from DFFA to C". <br><br>
+
+   - report_timing -from DFFA/clk -to DFFC/D -delay_min  <br>
+   -> This will report path number 2 which is "Min delay from DFFA to C". <br><br>
+
+   - report_timing -delay min -to DFFC/D  <br>
+   -> This will report path number 4 which is "Min delay from DFFB to C". <br><br>
+
+   - report_timing -delay max -to DFFC/D  <br>
+   -> This will report path number 1 which is "Max delay from DFFA to C". <br><br>
+
+   - report_timing -delay_type max -rise_to DFF_C/D  // basically, it says what is the maximum rise delay to DFF C. <br>
+   -> This will report path number 2 which is "Min delay from DFFA to C". <br><br>
+
+     - report_timing -delay_type max -fall_to DFF_C/D  // basically, it says what is the maximum fall delay to DFF C. <br>
+   -> This will report path number 1 which is "Max delay from DFFA to C". <br><br>
+
+     - report_timing -delay_type min -rise_to DFF_C/D  // basically, it says what is the minimum rise delay to DFF C. <br>
+   -> This will report path number 3 which is "Max delay from DFFB to C". <br><br>
+
+     - report_timing -delay_type min -fall_to DFF_C/D  // basically, it says what is the minimum fall delay to DFF C. <br>
+   -> This will report path number 4 which is "Min delay from DFFB to C". <br><br>
+
+
 
    
 </details>
