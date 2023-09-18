@@ -2576,7 +2576,18 @@ Basically if there will be no relation between two clock then that will be decla
 **--> Lab on high fanout net(HFN) examples,** <br>
 
 -->  Verilog code for design(mux_generate_128_1.v),<br>
---> 
+--> reading verilog file,<br>
+ it's interpriting as latch but when you synthesized it, there won.t be any latch.<br><br>
+--> check_design, <br>
+--> checking timing,<br>
+ it's going to check whether my design is proper or not , my design is constrained properly or not. <br><br>
+--> viewing generated netlist,<br>
+ Can see all are combinational cells here there is no any sequential cells.<br><br>
+
+ --> To see wethere there is sequential cells or not,<br>
+  It won't show any cells because there is not any sequential cell.<br><br>
+ --> To see whether there is any combinational cells or not,<br>
+ 
 	
 </details>
 <img width="800" alt="netlist" src=""> <br>
