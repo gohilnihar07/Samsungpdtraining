@@ -2467,16 +2467,36 @@ Basically if there will be no relation between two clock then that will be decla
    - report_timing -delay_type max -rise_to DFF_C/D  // basically, it says what is the maximum rise delay to DFF C. <br>
    -> This will report path number 2 which is "Min delay from DFFA to C". <br><br>
 
-     - report_timing -delay_type max -fall_to DFF_C/D  // basically, it says what is the maximum fall delay to DFF C. <br>
+   - report_timing -delay_type max -fall_to DFF_C/D  // basically, it says what is the maximum fall delay to DFF C. <br>
    -> This will report path number 1 which is "Max delay from DFFA to C". <br><br>
 
-     - report_timing -delay_type min -rise_to DFF_C/D  // basically, it says what is the minimum rise delay to DFF C. <br>
+   - report_timing -delay_type min -rise_to DFF_C/D  // basically, it says what is the minimum rise delay to DFF C. <br>
    -> This will report path number 3 which is "Max delay from DFFB to C". <br><br>
 
-     - report_timing -delay_type min -fall_to DFF_C/D  // basically, it says what is the minimum fall delay to DFF C. <br>
-   -> This will report path number 4 which is "Min delay from DFFB to C". <br><br>
+   - report_timing -delay_type min -fall_to DFF_C/D  // basically, it says what is the minimum fall delay to DFF C. <br>
+   -> This will report path number 4 which is "Min delay from DFFB to C". <br><br><br>
 
 
+*--> Continuing the same example by considering that clock period be 5ns,*  <br>   
+   
+   - report_timing -delay_type max -to DFF_c/D <br>
+   -> This will report path number 1 which is "Max delay from DFFA to C". which has 1.65ns arrival time.<br><br>
+
+     Clock period = 5ns , setup of DFFC = 0.5ns <br>
+     Data at DFFC needs to be stable by = 5-0.5 => 4.5ns (Required time) <br>
+     Setup check = Required time - Arrival time <br>
+                 = 4.5ns - 1.65ns <br>
+                 = 2.85ns <br> <br>
+     
+   - report_timing -delay_type min -to DFF_c/D <br>
+   -> This will report path number 4 which is "Min delay from DFFB to C". which has 1.0ns arrival time.<br><br>
+
+     Hold of DFFC => 0.1ns (Required time) <br>
+     Setup check = Arrival time - Required time <br>
+                 = 1.0ns - 0.1ns <br>
+                 = 0.9ns <br> <br>
+     
+    
 
    
 </details>
