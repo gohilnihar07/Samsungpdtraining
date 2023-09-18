@@ -2594,8 +2594,33 @@ Basically if there will be no relation between two clock then that will be decla
  --> setting the maximum delay from all inputs to all outputs,<br>
  --> seeting maximum capacitance for our design,<br>
  --> Below command is to check all violating constraints,<br>
-    
+     we can see path is violating for timing and many nets are violating for capacitance. and we havne't yet modelled any leakage power so by default DC will target default leakage power which is in DC tool memory, that's here saying slack violation for power.<br><br>
+ --> after compiling ultra, check_timing,<br>
+  Now we can unconstrained end points are not coming because i have set max delay.<br><br>
+ --> reporting constraints,<br>
+  Can see now, max capacitance, max transition, max delay everything has met.<br><br>
+  --> reporting for capacitance and nets,<br>
+  Can see now, everywhere the max capacitance is less than 0.025, can also see now fanout gets broken and the high fanout nets gets buffered to properly meet that criteria.<br><br><br>
+   
+
+ *-->one more lab example on HFN,*
+ In below diagram we can see that en will go to 128 pins so load on enable is humungous and so capacitance.<br>
+ <img width="800" alt="netlist" src=""> <br>
+ --> Verilog code for the design "en_128.v",<br>
+ --> report timing,<br>
+ --> report timing for capacitance,<br>
+   Can see, enable fanout is 128, which is very high, so the capacitance is huge.<br><br>
+ --> setting max capacitance limit,<br>
+ --> reporting constraints,<br>
+    Capacitance is violating by huge amount because we haven't yet compiled ultra after setting max capacitance,<br><br>
+ --> compile ultra,<br>
+    Now the nets will get broken and buffered.<br><br>
+ --> report timing for capacitance after optimizing,<br>
+   Now we can see it has only 17 fanout. earlier it had 128 fanout.<br><br>
+ --> writing out ddc file for it,<br>
+ --> Can see the schematic,<br>
+ Can see now, enable is driving only selectively few bits.Basically we are dividing and conquring the problem, so the high fanout net gets split, such that single pin is not having the burden of such a large heavily loaded net.<br><br>
  
-	
+
 </details>
 <img width="800" alt="netlist" src=""> <br>
