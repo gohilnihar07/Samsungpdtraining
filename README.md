@@ -2552,7 +2552,36 @@ assign out_clk = clk;
 endmodule
    ```
    --> Constraint tcl file,<br>
-   <img width="800" alt="netlist" src=""> <br>
+   
+```ruby
+create_clock -name MYCLK -per 10 [get_ports clk];
+
+set_clock_latency -source 2 [get_clocks MYCLK];
+set_clock_latency 1 [get_clocks MYCLK];
+set_clock_uncertainty -setup 0.5 [get_clocks MYCLK];
+set_clock_uncertainty -hold 0.1 [get_clocks MYCLK];
+
+set_input_delay -max 4 -clock [get_clocks MYCLK] [get_ports IN_A];
+set_input_delay -max 4 -clock [get_clocks MYCLK] [get_ports IN_B];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports IN_A];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports IN_B];
+
+set_input_transition -max 0.4 [get_ports IN_A];
+set_input_transition -max 0.4 [get_ports IN_B];
+set_input_transition -min 0.1 [get_ports IN_A];
+set_input_transition -min 0.1 [get_ports IN_B];
+
+create_generated_clock -name MYGEN_CLK -master MYCLK -source [get_ports clk] -div 1 [get_ports out_clk];
+create_generated_clock -name MYGEN_DIV_CLK -master MYCLK -source [get_ports clk] -div 2 [get_ports out_div_clk]; 
+
+set_output_delay -max 4 -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y];
+set_output_delay -min 1 -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y];
+
+set_load -max 0.4 [get_ports OUT_Y];
+set_load -min 0.1 [get_ports OUT_Y];
+```
+
+
    --> timing report (t1),<br>
    <img width="800" alt="netlist" src=""> <br>
      Clues to identify which check it is, are by path type or by launch and edge and capture edge timing difference or by setup time or hold time which one is written in the report, or by whether there is "data required -data arrival" or "data arrival - data required". So, by any on of these clue we can identify whether it's setup check report or it's hold check report. <br><br><br>
@@ -2587,19 +2616,48 @@ endmodule
 	<summary> Lab on checking design</summary> 
 --> we will check about whether my design is correctly loaded into DC or am i missing something in constraints or something, so is there any utility available in the tool to check whether we loaded the design is constraints correctly all these things we will see. <br>
 --> verilog code for the design, <br>
-	<img width="800" alt="netlist" src=""> <br><br>
+	 ```ruby
+   
+module lab8_circuit (input rst, input clk , input IN_A , input IN_B , output OUT_Y , output out_clk , output reg out_div_clk);
+reg REGA , REGB , REGC ; 
+
+always @ (posedge clk , posedge rst)
+begin
+	if(rst)
+	begin
+		REGA <= 1'b0;
+		REGB <= 1'b0;
+		REGC <= 1'b0;
+		out_div_clk <= 1'b0;
+	end
+	else
+	begin
+		REGA <= IN_A | IN_B;
+		REGB <= IN_A ^ IN_B;
+		REGC <= !(REGA & REGB);
+		out_div_clk <= ~out_div_clk; 
+	end
+end
+
+assign OUT_Y = ~REGC;
+
+assign out_clk = clk;
+
+endmodule
+   ```
+	
 --> check_design, <br>
-	<img width="800" alt="netlist" src=""> <br><br>
+<img width="800" alt="netlist" src=""> <br><br>
 --> checking timing,<br>
-	<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src=""> <br>
  it's going to check whether my design is proper or not , my design is constrained properly or not. <br><br>
 
  --> reporting constraints, <br>
- <img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src=""> <br>
   If we don't source any constraints then defaults constraints which are there in the tool memory that will be loaded.<br><br>
 
  --> checking timing after sourcing my constraints,<br>
- <img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src=""> <br>
   it showing that out_clk and out_div_clk are not constrained but that is fine because i can't constrained clock with anything.<br><br>
 
 --> reporting constraints after sourcing my constraints,<br>
@@ -2610,7 +2668,21 @@ endmodule
 **--> Lab on high fanout net(HFN) examples,** <br>
 
 -->  Verilog code for design(mux_generate_128_1.v),<br>
-<img width="800" alt="netlist" src=""> <br><br>
+```ruby
+ module mux_generate (input [0:127]i , input [7:0] sel  , output reg y);
+wire [0:127] i;
+assign i = i[0:127];
+integer k;
+always @ (*)
+begin
+for(k = 0; k < 128; k=k+1) begin
+	if(k == sel)
+		y = i[k];
+end
+end
+endmodule
+```
+
 --> reading verilog file,<br>
 <img width="800" alt="netlist" src=""> <br>
  it's interpriting as latch but when you synthesized it, there won.t be any latch.<br><br>
@@ -2656,7 +2728,12 @@ endmodule
  In below diagram we can see that en will go to 128 pins so load on enable is humungous and so capacitance.<br>
  <img width="800" alt="netlist" src=""> <br><br>
  --> Verilog code for the design "en_128.v",<br>
- <img width="800" alt="netlist" src=""> <br><br>
+```ruby
+module en_128 (input [127:0] x , output [127:0] y , input en);
+	assign y[127:0] = en ?x[127:0]:128'b0;
+endmodule
+```
+<br><br>
  --> report timing,<br>
  <img width="800" alt="netlist" src=""> <br><br>
  --> report timing for capacitance,<br>
