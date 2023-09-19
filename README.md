@@ -2612,10 +2612,16 @@ set_load -min 0.1 [get_ports OUT_Y];
    simillary here also, in min path this particular cell delay can be maximum also because what matters is overall delay of path.<br><br>
 	
 </details>
+
+
+
 <details>
-	<summary> Lab on checking design for HFN and transition </summary> 
+ <summary> Lab on checking design for HFN and transition </summary> 
+	
 --> we will check about whether my design is correctly loaded into DC or am i missing something in constraints or something, so is there any utility available in the tool to check whether we loaded the design is constraints correctly all these things we will see. <br>
 --> verilog code for the design, <br>
+	
+  
 ```ruby
    
 module lab8_circuit (input rst, input clk , input IN_A , input IN_B , output OUT_Y , output out_clk , output reg out_div_clk);
