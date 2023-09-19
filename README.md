@@ -2889,29 +2889,29 @@ UFS 3.1<br><br><br>
 <details>
 	<summary> Semiconductor manufacturing process</summary> <br>
 	
-Design and Layout: Engineers start by planning how the computer chip will look using special computer programs. They decide where all the tiny parts, like transistors, should go.<br>
+**- Design and Layout:** Engineers start by planning how the computer chip will look using special computer programs. They decide where all the tiny parts, like transistors, should go.<br>
 
-Mask Creation: They make precise templates called photomasks that show where the chip's patterns should be. These guides are used during the making process.<br>
+**- Mask Creation:** They make precise templates called photomasks that show where the chip's patterns should be. These guides are used during the making process.<br>
 
-Wafer Preparation: A special flat piece of super-clean silicon, like a shiny rock, is used. They put a thin layer on it to protect it.<br>
+**- Wafer Preparation:** A special flat piece of super-clean silicon, like a shiny rock, is used. They put a thin layer on it to protect it.<br>
 
-Photolithography: They shine light through the masks onto the silicon to make the patterns.<br>
+**- Photolithography:** They shine light through the masks onto the silicon to make the patterns.<br>
 
-Etching: Chemicals are used to remove extra stuff from the silicon, leaving only the desired patterns.<br>
+**- Etching:** Chemicals are used to remove extra stuff from the silicon, leaving only the desired patterns.<br>
 
-Ion Implantation: Tiny bits are added to the silicon to make it work right.<br>
+**- Ion Implantation:** Tiny bits are added to the silicon to make it work right.<br>
 
-Deposition: They add more layers of materials like metal or insulation in a careful way.<br>
+**- Deposition:** They add more layers of materials like metal or insulation in a careful way.<br>
 
-Chemical Mechanical Polishing (CMP): They make sure everything is even and smooth.<br>
+**- Chemical Mechanical Polishing (CMP):** They make sure everything is even and smooth.<br>
 
-Lithography and Etching (Repeated): They repeat the process to build up all the chip's layers.<br>
+**- Lithography and Etching (Repeated):** They repeat the process to build up all the chip's layers.<br>
 
-Annealing: The chip gets heated up to work perfectly.<br>
+**- Annealing:** The chip gets heated up to work perfectly.<br>
 
-Testing and Inspection: They check it many times to make sure it's perfect.<br>
+**- Testing and Inspection:** They check it many times to make sure it's perfect.<br>
 
-Dicing: They cut it into tiny pieces, and each piece becomes a computer chip!<br>
+**- Dicing:** They cut it into tiny pieces, and each piece becomes a computer chip!<br>
 
-Packaging: The chips are put in special cases and connected to other things so they can do their jobs.<br>
+**- Packaging:** The chips are put in special cases and connected to other things so they can do their jobs.<br>
 </details>
