@@ -2415,7 +2415,7 @@ Basically if there will be no relation between two clock then that will be decla
 
 
 
-# DAY-10 QOR
+## DAY-10 QOR
 
 <details>
 	<summary> Intoduction to propagation delay and concepts associated with it</summary>
