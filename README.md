@@ -2522,7 +2522,35 @@ Basically if there will be no relation between two clock then that will be decla
  *--> Let's first understand, what are the ways to identify whether it's setup check report or hold check report,* <br>
  
    --> The verilog code of design,<br>
-    <img width="800" alt="netlist" src=""> <br>
+   ```ruby
+   
+module lab8_circuit (input rst, input clk , input IN_A , input IN_B , output OUT_Y , output out_clk , output reg out_div_clk);
+reg REGA , REGB , REGC ; 
+
+always @ (posedge clk , posedge rst)
+begin
+	if(rst)
+	begin
+		REGA <= 1'b0;
+		REGB <= 1'b0;
+		REGC <= 1'b0;
+		out_div_clk <= 1'b0;
+	end
+	else
+	begin
+		REGA <= IN_A | IN_B;
+		REGB <= IN_A ^ IN_B;
+		REGC <= !(REGA & REGB);
+		out_div_clk <= ~out_div_clk; 
+	end
+end
+
+assign OUT_Y = ~REGC;
+
+assign out_clk = clk;
+
+endmodule
+   ```
    --> Constraint tcl file,<br>
    <img width="800" alt="netlist" src=""> <br>
    --> timing report (t1),<br>
