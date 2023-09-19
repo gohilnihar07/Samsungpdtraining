@@ -2777,8 +2777,22 @@ endmodule
 
 
 ## DAY-11 SOC
+
 <details>
-	<summary> Summary </summary>
+	<summary> Introduction to SoC</summary>
+	A System on Chip (SoC) is a compact, integrated electronic circuit that encapsulates multiple essential components of a computer or electronic system onto a single semiconductor chip. It combines a microprocessor or CPU with various peripherals like memory, input/output interfaces, and often specialized hardware for specific functions.<br><br>
+
+SoCs are prevalent in modern electronics, from smartphones and tablets to embedded systems and IoT devices. Their compactness and power efficiency make them ideal for diverse applications. SoC design involves intricate hardware and software integration, ensuring seamless operation and optimized power consumption.<br><br>
+
+SoCs play a crucial role in enabling the proliferation of advanced technologies, offering high-performance computing in a compact form factor while minimizing energy consumption and production costs.<br><br>
+
+
+</details>
+
+
+
+<details>
+	<summary> Dimensity 1300 </summary>
  --> The chipset used in Oneplus nord 2T is dimensity 1300. <br><br>
 	
 **--> CPU Architecture:-** <br>
@@ -2869,5 +2883,35 @@ LPDDR4x<br>
 *- Storage Type*<br>
 UFS 3.1<br><br><br>
 
+</details>
 
+
+<details>
+	<summary> Semiconductor manufacturing process</summary> <br>
+	
+Design and Layout: Engineers start by planning how the computer chip will look using special computer programs. They decide where all the tiny parts, like transistors, should go.<br>
+
+Mask Creation: They make precise templates called photomasks that show where the chip's patterns should be. These guides are used during the making process.<br>
+
+Wafer Preparation: A special flat piece of super-clean silicon, like a shiny rock, is used. They put a thin layer on it to protect it.<br>
+
+Photolithography: They shine light through the masks onto the silicon to make the patterns.<br>
+
+Etching: Chemicals are used to remove extra stuff from the silicon, leaving only the desired patterns.<br>
+
+Ion Implantation: Tiny bits are added to the silicon to make it work right.<br>
+
+Deposition: They add more layers of materials like metal or insulation in a careful way.<br>
+
+Chemical Mechanical Polishing (CMP): They make sure everything is even and smooth.<br>
+
+Lithography and Etching (Repeated): They repeat the process to build up all the chip's layers.<br>
+
+Annealing: The chip gets heated up to work perfectly.<br>
+
+Testing and Inspection: They check it many times to make sure it's perfect.<br>
+
+Dicing: They cut it into tiny pieces, and each piece becomes a computer chip!<br>
+
+Packaging: The chips are put in special cases and connected to other things so they can do their jobs.<br>
 </details>
