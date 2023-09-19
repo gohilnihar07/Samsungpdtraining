@@ -2613,7 +2613,7 @@ set_load -min 0.1 [get_ports OUT_Y];
 	
 </details>
 <details>
-	<summary> Lab on checking design</summary> 
+	<summary> Lab on checking design for HFN and transition </summary> 
 --> we will check about whether my design is correctly loaded into DC or am i missing something in constraints or something, so is there any utility available in the tool to check whether we loaded the design is constraints correctly all these things we will see. <br>
 --> verilog code for the design, <br>
 ```ruby
