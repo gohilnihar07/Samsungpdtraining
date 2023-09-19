@@ -273,16 +273,16 @@ endmodule<br>
  
 <details>
 <summary> Some special cases in optimization </summary>
-	It's not necessary that every time when you are doing some operations hardware is required but in some cases, just by rewiring signals, we are able to get the logic functionality implemented.<br>
-	Let's see some examples of special cases,<br>
+It's not necessary that every time when you are doing some operations hardware is required but in some cases, just by rewiring signals, we are able to get the logic functionality implemented.<br>
+Let's see some examples of special cases,<br>
 	
-	1. y=2*a, where a[2:0] and y[3:0] (here the functionality that we actually need to implement is the multiplication)<br>
-	When we try to synthesize it, it shows<br>
-        <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a56a95bb0978b390b045f5a1c7a937bed9d8db3d/mul_2%20.jpg"><br>
-	 means, not needing any cell.<br>
-	Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
-	 <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4f204fbdc94c9d3f9e866904e4fb99ac1844979b/mul_2_nothing%20to%20map.jpg"><br>
-	We can understand the same thing by graphical representation also after the synthesis,<br>
+1. y=2*a, where a[2:0] and y[3:0] (here the functionality that we actually need to implement is the multiplication)<br>
+when we try to synthesize it, it shows<br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/a56a95bb0978b390b045f5a1c7a937bed9d8db3d/mul_2%20.jpg"><br>
+means, not needing any cell.<br>
+Now, when we try to map it with a technology file, it says no need because there is actually nothing to map<br>
+<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/4f204fbdc94c9d3f9e866904e4fb99ac1844979b/mul_2_nothing%20to%20map.jpg"><br>
+We can understand the same thing by graphical representation also after the synthesis,<br>
    <img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/0500353abc5f74c891f9eaa34bf391d0e5787d10/mul_2_post_synthesis%20view.jpg"><br>
 	Netlist <br>
 	<img width="600" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/faccf7bfb4209ab0a9b6493a6dee561eac98c020/mult_2%20netlist.jpg">
@@ -2583,32 +2583,32 @@ set_load -min 0.1 [get_ports OUT_Y];
 
 
    --> timing report (t1),<br>
-   <img width="800" alt="netlist" src=""> <br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/1.%20t1.rpt%20.png"> <br>
      Clues to identify which check it is, are by path type or by launch and edge and capture edge timing difference or by setup time or hold time which one is written in the report, or by whether there is "data required -data arrival" or "data arrival - data required". So, by any on of these clue we can identify whether it's setup check report or it's hold check report. <br><br><br>
 
 
 *--> To observe, how slack and other delay and all are varying for input fall transition and input rise transition,* <br>
 
   --> timing report "-from IN_A" (t1),<br>
-     <img width="800" alt="netlist" src=""> <br><br>
+     <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/2.%20t1.rpt_from%20IN_A%20.png"> <br><br>
   --> timing report "-from IN_A" (t1) Vs timing report "-rise_from IN_A" (t2),<br>
-     <img width="800" alt="netlist" src=""> <br>
+     <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/3.%20t1.rpt%20vs%20t2.rpt_rise_from%20IN_A%20.png"> <br>
       Since, the t1 and t2 report both are not ending at the same point so we can't make a pure comparison. <br><br>
 
   --> timing report "-from IN_A" (t1) Vs timing report "-rise_from IN_A -to REGA_reg/D" (t3), <br>
-    <img width="800" alt="netlist" src=""> <br>
+    <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/4.%20t1.rpt%20vs%20t3.rpt%20.png"> <br>
      we have generated this t3 timing report because the t1 report is ending at REGA_reg/D pin so to compare purely in t3 report we have set end point same as t1 report. we can clearly observe that how slack and other delays of cells in path and all are changing for the input A rise and input A fall transitions. <br><br><br>
      
   
   --> As i mentioned the clues earlier from that we can say this report is for hold chcek, <br>
-   <img width="800" alt="netlist" src=""> <br><br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/5.%20can%20say%20it's%20for%20hold%20check.png"> <br><br>
 
   --> To see what is the contribution of this particular U15/Y cell in max path,<br>
-    <img width="800" alt="netlist" src=""> <br>
+    <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/6.png"> <br>
    in max path this particular cell delay can be minimum also because what matters is overall delay of path.<br><br>
 
    --> To see what is the contribution of this particular U15/Y cell in min path,<br>
-    <img width="800" alt="netlist" src=""> <br>
+    <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/7.for%20min%20.png"> <br>
    simillary here also, in min path this particular cell delay can be maximum also because what matters is overall delay of path.<br><br>
 	
 </details>
@@ -2616,7 +2616,7 @@ set_load -min 0.1 [get_ports OUT_Y];
 	<summary> Lab on checking design</summary> 
 --> we will check about whether my design is correctly loaded into DC or am i missing something in constraints or something, so is there any utility available in the tool to check whether we loaded the design is constraints correctly all these things we will see. <br>
 --> verilog code for the design, <br>
-	 ```ruby
+```ruby
    
 module lab8_circuit (input rst, input clk , input IN_A , input IN_B , output OUT_Y , output out_clk , output reg out_div_clk);
 reg REGA , REGB , REGC ; 
@@ -2644,24 +2644,23 @@ assign OUT_Y = ~REGC;
 assign out_clk = clk;
 
 endmodule
-   ```
-	
+```
 --> check_design, <br>
-<img width="800" alt="netlist" src=""> <br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/9.%20check_design.png"> <br><br>
 --> checking timing,<br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/10.%20check_timing.png"> <br>
  it's going to check whether my design is proper or not , my design is constrained properly or not. <br><br>
 
  --> reporting constraints, <br>
-<img width="800" alt="netlist" src=""> <br>
-  If we don't source any constraints then defaults constraints which are there in the tool memory that will be loaded.<br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/11.%20reporting%20constraints%20.png"> <br>
+ If we don't source any constraints then defaults constraints which are there in the tool memory that will be loaded.<br><br>
 
  --> checking timing after sourcing my constraints,<br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/13.%20check%20timing%20.png"> <br>
   it showing that out_clk and out_div_clk are not constrained but that is fine because i can't constrained clock with anything.<br><br>
 
 --> reporting constraints after sourcing my constraints,<br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/14.%20reporting%20constraints.png"> <br>
   since we have sourced our constraints so it's not showing default constraints.<br><br>
 
 
@@ -2682,43 +2681,40 @@ endmodule
 ```
 
 --> reading verilog file,<br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/15.%20reading%20%20verilog%20file.png"> <br>
  it's interpriting as latch but when you synthesized it, there won.t be any latch.<br><br>
 --> check_design, <br>
-<img width="800" alt="netlist" src=""> <br><br>
---> checking timing,<br>
-<img width="800" alt="netlist" src=""> <br>
- it's going to check whether my design is proper or not , my design is constrained properly or not. <br><br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/16.%20check_design.png"> <br><br>
 --> viewing generated netlist,<br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/17.%20can%20see%20all%20the%20cells%20are%20combinational.png"> <br>
  Can see all are combinational cells here there is no any sequential cells.<br><br>
 
  --> To see wethere there is sequential cells or not,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/18.%20filtering%20sequential%20cells.png"> <br>
   It won't show any cells because there is not any sequential cell.<br><br>
  --> To see whether there is any combinational cells or not,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/19.%20filtering%20combinational%20cells.png"> <br><br>
  --> timing report to see capacitance,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/20.%20report%20timing%20for%20cap.%20png"> <br>
     can see there is so much of fanout so very large capacitance.<br><br>
  --> checking timing,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/21.%20check_timing.%20png"> <br><br>
     can see the end points is not constrained.<br><br>
  --> setting the maximum delay from all inputs to all outputs,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/22.%20setting%20%20max%20delay.%20png"> <br><br>
  --> seeting maximum capacitance for our design,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/23.%20setting%20%20max%20capacitance.%20png"> <br><br>
  --> Below command is to check all violating constraints,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/24.%20reporting%20for%20all%20violations.%20png"> <br>
      we can see path is violating for timing and many nets are violating for capacitance. and we havne't yet modelled any leakage power so by default DC will target default leakage power which is in DC tool memory, that's here saying slack violation for power.<br><br>
  --> after compiling ultra, check_timing,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/25.%20checking%20timing%20after%20seeting%20max%20delay%20and%20max%20capacitance.%20png"> <br>
   Now we can unconstrained end points are not coming because i have set max delay.<br><br>
  --> reporting constraints,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/26.%20reporting%20constraints.%20png"> <br>
   Can see now, max capacitance, max transition, max delay everything has met.<br><br>
   --> reporting for capacitance and nets,<br>
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/27.%20reporting%20timing%20after%20setting%20max%20delay%20and%20max%20capacitance.%20png"> <br>
   Can see now, everywhere the max capacitance is less than 0.025, can also see now fanout gets broken and the high fanout nets gets buffered to properly meet that criteria.<br><br><br>
    
 
@@ -2733,44 +2729,42 @@ endmodule
 ```
 <br><br>
  --> report timing,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/28.%20report%20timing%20for%20en_128.%20png"> <br><br>
  --> report timing for capacitance,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/29.%20timing%20report%20for%20cap.%20png"> <br>
    Can see, enable fanout is 128, which is very high, so the capacitance is huge.<br><br>
  --> setting max capacitance limit,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/30.%20setting%20max%20cap.%20png"> <br><br>
  --> reporting constraints,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/31.%20reporting%20constraints.%20png"> <br>
     Capacitance is violating by huge amount because we haven't yet compiled ultra after setting max capacitance,<br><br>
  --> compile ultra,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/32.%20compile%20ultra.%20png"> <br>
     Now the nets will get broken and buffered.<br><br>
  --> report timing for capacitance after optimizing,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/33.%20report%20timing%20for%20cap%20.%20png"> <br>
    Now we can see it has only 17 fanout. earlier it had 128 fanout.<br><br>
  --> writing out ddc file for it,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/34.%20writing%20out%20ddc.%20png"> <br><br>
  --> Can see the schematic,<br>
-  <img width="800" alt="netlist" src=""> <br><br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/35.%20schematic.%20png"> <br><br>
  Can see now, enable is driving only selectively few bits.Basically we are dividing and conquring the problem, so the high fanout net gets split, such that single pin is not having the burden of such a large heavily loaded net.<br><br>
  --> reporting timing,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/36%20timing%20report%20for%20transition.%20png"> <br>
  can see, trans is still bad here. there is something called set_max_transition. <br><br>
  --> setting limit to maximum transition,<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/37.%20setting%20max%20transition%20limit.%20png"> <br><br>
  --> reporting constraints,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/37.%20reporting%20constraints.%20png"> <br>
   Can see the transition constraints violated.<br><br>
- --> reporting all volations,<br>
- <img width="800" alt="netlist" src=""> <br><br>
  --> After compiling ultra reporting constraints,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/39.%20reporting%20constraints%20after%20compile%20ultra.%20png"> <br>
     we can see there is no more violations.<br><br>
  --> reporting timing to see transition values now,<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/40.reporting%20timing%20for%20transition.%20png"> <br>
   we can see, transition is limited to 150ns. now it may have use different kind of buffer to limit the transition time or something.<br><br>
  --> reporting timing from en to y[116],<br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/9662a1b76d7bbf1e6e08913ec50c992825acd708/DAY-10/41.reporting%20timing%20from%20en%20to%20y%5B116%5D.%20png"> <br>
   we can see, transition is only 66ps. it has broken this net and adjusted this net is such a way that transition is not that bad. earlier the data arrival time due to high transition time was 442 ps and but now it has 254 ps. Earlier it was weak buffer so the output transition was very bad and it's strong buffer now(drive strength two) so transition time is less now.
  
 </details>
