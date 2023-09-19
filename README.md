@@ -2782,7 +2782,7 @@ endmodule
  --> The chipset use in Oneplus nord 2T is dimensity 1300. <br><br>
 	
 **--> CPU Architecture:-** <br>
-	The Dimensity 1300’s octa-core CPU features four premium Arm Cortex-A78 processors, including an ‘ultra-core’ operating up to 3GHz. Built using the TSMC N6 (6nm-class) production process, the Dimensity 1300 is an incredibly efficient chip design for extended everyday battery life.<br><br>
+	The Dimensity 1300’s octa-core CPU features four premium Arm Cortex-A78 processors, including an ‘ultra-core’ operating up to 3GHz. Built using the TSMC N6 (6nm-class) production process, the Dimensity 1300 is an incredibly efficient chip design for extended everyday battery life.<br>
 - 1X Ultra Core: Arm Cortex-A78 up to 3GHz <br>
 - 3X Super Cores: Arm Cortex-A78 up to 2.6GHz<br>
 - 4X Efficiency Cores: Arm Cortex-A55 up to 2GHz<br>
@@ -2790,14 +2790,14 @@ endmodule
 
  **-> Graphics :-** <br>
  - It features a total of 8 high-performing ARM Cortex processors, each capable of reaching a maximum clock speed of 3GHz. Additionally, the chipset is equipped with a robust 9-core ARM Mali-G77 MC9 GPU, which efficiently handles graphics processing and also enhances gaming experiences, and accelerates day-to-day tasks.<br>
- *- GPU Type*<br>
+*- GPU Type*<br>
 Arm Mali-G77 MC9<br>
 
 *- Video Encoding*<br>
 H.264, H.265 / HEVC<br>
 
 *- Video Playback*<br>
-H.264, H.265 / HEVC, VP-9, AV1<br>
+H.264, H.265 / HEVC, VP-9, AV1<br><br><br>
 
  **-> Connectivity:-** <br>
 
