@@ -2779,14 +2779,94 @@ endmodule
 ## DAY-11 SOC
 <details>
 	<summary> Summary </summary>
---> The chipset use in Oneplus nord 2T is dimensity 1300.<br><br>
--> CPU Architecture:-<br>
+ --> The chipset use in Oneplus nord 2T is dimensity 1300. <br><br>
+	
+**--> CPU Architecture:-** <br>
 	The Dimensity 1300’s octa-core CPU features four premium Arm Cortex-A78 processors, including an ‘ultra-core’ operating up to 3GHz. Built using the TSMC N6 (6nm-class) production process, the Dimensity 1300 is an incredibly efficient chip design for extended everyday battery life.<br><br>
-	1X Ultra Core: Arm Cortex-A78 up to 3GHz
-3X Super Cores: Arm Cortex-A78 up to 2.6GHz
-4X Efficiency Cores: Arm Cortex-A55 up to 2GHz
-9-core Arm Mali <br><br><br>
+- 1X Ultra Core: Arm Cortex-A78 up to 3GHz <br>
+- 3X Super Cores: Arm Cortex-A78 up to 2.6GHz<br>
+- 4X Efficiency Cores: Arm Cortex-A55 up to 2GHz<br>
+- 9-core Arm Mali <br><br><br>
 
- -> GPU :- <br>
- It features a total of 8 high-performing ARM Cortex processors, each capable of reaching a maximum clock speed of 3GHz. Additionally, the chipset is equipped with a robust 9-core ARM Mali-G77 MC9 GPU, which efficiently handles graphics processing and also enhances gaming experiences, and accelerates day-to-day tasks.
+ **-> Graphics :-** <br>
+ - It features a total of 8 high-performing ARM Cortex processors, each capable of reaching a maximum clock speed of 3GHz. Additionally, the chipset is equipped with a robust 9-core ARM Mali-G77 MC9 GPU, which efficiently handles graphics processing and also enhances gaming experiences, and accelerates day-to-day tasks.<br>
+ *- GPU Type*<br>
+Arm Mali-G77 MC9<br>
+
+*- Video Encoding*<br>
+H.264, H.265 / HEVC<br>
+
+*- Video Playback*<br>
+H.264, H.265 / HEVC, VP-9, AV1<br>
+
+ **-> Connectivity:-** <br>
+
+*- Cellular Technologies* <br>
+2G / 3G / 4G / 5G Multi-Mode, 4G Carrier Aggregation (CA), 5G Carrier Aggregation (CA), CDMA2000 1x/EVDO Rev. A (SRLTE), EDGE, 4G FDD / TDD, 5G FDD / TDD, GSM, TD-SCDMA, WDCDMA<br>
+
+*- Specific Functions* <br>
+SA & NSA modes; SA Option2, NSA Option3 / 3a / 3x, NR TDD Band, NR FDD Band, DSS, NR DL 2CC, 200 MHz bandwidth, 4x4 MIMO, 256QAM NR UL 2CC, 2x2 MIMO, 256QAM VoNR / EPS fallback<br>
+
+*- Peak Downlink Speed* <br>
+4.7Gbps<br>
+
+*- Peak Uplink Speed*<br>
+2.5Gbps<br>
+
+*- GNSS*<br>
+GPS L1CA+L5 / BeiDou B1I+ B2a / Glonass L1OF / Galileo E1 + E5a / QZSS L1CA+ L5 / NavIC<br>
+
+*- Wi-Fi Antenna*<br>
+2T2R<br>
+
+*- Wi-Fi*<br>
+Wi-Fi 6 (a/b/g/n/ac/ax)<br>
+
+*- Bluetooth Version*<br>
+5.2<br><br><br>
+
+
+
+**--> 5G connectivity:-** <br>
+ Built into the chip, the 5G modem offer deeply engrained power saving enhancements, super-fast 5G NR performance and range with mixed-duplex 5G carrier aggregation, and true dual 5G SIM capability. ‘5G Elevator Mode’ & ‘5G HSR Mode’ specialist enhancements ensure seamless 5G experiences with immediate recovery time and reliably faster speeds, respectively.<br>
+- MediaTek 5G UltraSave power saving enhancement suite<br>
+- 2CC Carrier Aggregation (200MHz) across FDD+TDD<br>
+- True dual 5G SIM (5G SA + 5G SA)<br>
+- Dual VoNR<br><br><br>
+
+**--> Display :-** <br>
+  The Dimensity 1300 supports super-fast refresh rate displays, giving users impressive, zero-lag visuals in gaming, plus notably improved everyday experiences from smoother scrolling of webpages, social streams, and animations in apps.<br><br>
+*- Max Display Resolution* <br>
+2520 x 1080 <br>
+
+*- Max Refresh Rate*<br>
+168Hz <br><br><br>
+
+**--> Camera :-** <br>
+New AI-camera enhancements include improved night shot photography and HDR capabilities for great image clarity. ‘Staggered’ 4K HDR video recording uses real-time 3-exposure fusion to provide 40% greater dynamic range versus standard 4K HDR video capture. <br><br>
+*-Max Camera ISP* <br>
+32MP + 16MP, 200MP <br>
+
+*- Max Video Capture Resolution* <br>
+3840 x 2160 <br>
+
+*- Camera Features* <br>
+HDR-ISP (3+2) / Video HDR / Video NR / Video Bokeh / Video EIS / AI-Shutter / AI-AE / AI-AF / AI-AWB / AI-NR HDR / AI-HDR / AI-FD <br> <br> <br>
+
+
+
+**--> Memory and storage :-** <br>
+*- Memory Type*<br>
+LPDDR4x<br>
+
+*- Max Memory Frequency*<br>
+4266Mbps<br>
+
+*- Max Memory Size*<br>
+16GB<br>
+
+*- Storage Type*<br>
+UFS 3.1<br><br><br>
+
+
 </details>
