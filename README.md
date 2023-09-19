@@ -2775,3 +2775,10 @@ endmodule
  
 </details>
 
+
+## DAY-11 SOC
+<details>
+	<summary> Summary </summary>
+	--> The chipset use in Oneplus nord 2T is dimensity 1300.<br><br>
+        *dhd*
+</details>
