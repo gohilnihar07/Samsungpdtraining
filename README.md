@@ -2421,7 +2421,7 @@ Basically if there will be no relation between two clock then that will be decla
 	<summary> Intoduction to propagation delay and concepts associated with it</summary>
 	 Propagation delay refers to the time it takes for a signal to travel from the input of a logic gate or circuit to its output, after accounting for various delays within the circuit. <br>
 	Let's take example of below CMOS inverter gate to understand it in more details,<br>
-	<img width="800" alt="netlist" src=""> <br>
+	<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8d6d09ac00282153a53f3b73f34db50b57857511/1.jpg"> <br>
         Is A rise to Y fall and A fall to Y rise delay are same ? <br>
 	No. <br>
         Because, Rise-to-fall and fall-to-rise propagation delays differ due to the intrinsic characteristics of NMOS and PMOS transistors. NMOS transistors switch faster during falling transitions due to higher electron mobility, while PMOS transistors have faster rising transitions due to lower hole mobility, creating an inherent asymmetry in CMOS circuitry. <br>
@@ -2430,7 +2430,7 @@ Basically if there will be no relation between two clock then that will be decla
 
  **--> Timing paths** <br>
 *--> Let's understand the timing paths by one example,* <br> 
-       <img width="800" alt="netlist" src=""> <br> <br>
+       <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8d6d09ac00282153a53f3b73f34db50b57857511/2.jpg"> <br> <br>
 
        
   1. DFFA(clk-Qr) -> INV(Ar) -> INV(Yf) -> AND (Af) -> AND (Yf) -> DFFC(f) <br>
@@ -2500,7 +2500,7 @@ Basically if there will be no relation between two clock then that will be decla
 
    **--> Max_paths and nworst** <br>
    - Let's take one example to understand above two terms, <br>
-   <img width="800" alt="netlist" src=""> <br>
+   <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8d6d09ac00282153a53f3b73f34db50b57857511/3.jpg"> <br>
 
    - Now when i say just simply "report_timing" the worse failing path or worst slack path will get reported. in this example that path is, the path with -1.2ns slack. <br><br>
    
@@ -2669,9 +2669,7 @@ endmodule
 
 -->  Verilog code for design(mux_generate_128_1.v),<br>
 ```ruby
- module mux_generate (input [0:127]i , input [7:0] sel  , output reg y);
-wire [0:127] i;
-assign i = i[0:127];
+ module mux_generate (input [127:0]i , input [6:0] sel  , output reg y);
 integer k;
 always @ (*)
 begin
@@ -2726,7 +2724,7 @@ endmodule
 
  *-->one more lab example on HFN,*
  In below diagram we can see that en will go to 128 pins so load on enable is humungous and so capacitance.<br>
- <img width="800" alt="netlist" src=""> <br><br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8d6d09ac00282153a53f3b73f34db50b57857511/4.jpg"> <br><br>
  --> Verilog code for the design "en_128.v",<br>
 ```ruby
 module en_128 (input [127:0] x , output [127:0] y , input en);
