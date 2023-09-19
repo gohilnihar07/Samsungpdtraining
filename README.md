@@ -2534,7 +2534,7 @@ Basically if there will be no relation between two clock then that will be decla
 
   --> timing report "-from IN_A" (t1),<br>
      <img width="800" alt="netlist" src=""> <br><br>
-  --> timing report "-from IN_A" (t1) Vs timing report  "-rise_from IN_A" (t2),<br>
+  --> timing report "-from IN_A" (t1) Vs timing report "-rise_from IN_A" (t2),<br>
      <img width="800" alt="netlist" src=""> <br>
       Since, the t1 and t2 report both are not ending at the same point so we can't make a pure comparison. <br><br>
 
