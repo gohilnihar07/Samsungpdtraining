@@ -2915,3 +2915,67 @@ UFS 3.1<br><br><br>
 
 **- Packaging:** The chips are put in special cases and connected to other things so they can do their jobs.<br>
 </details>
+
+
+## DAY-12
+ <details>
+	 <summary> Introduction  </summary>
+```ruby
+module decoder_2_4 (en,a,b,y);
+input en,a,b;
+output reg [3:0]y;
+
+always @(en,a,b)
+begin
+if(en==0)
+begin
+if(a==1'b0 & b==1'b0) 
+   y=4'b0001;
+else if(a==1'b0 & b==1'b1)
+  y=4'b0010;
+else if(a==1'b1 & b==1'b0)
+  y=4'b0100;
+else if(a==1'b1 & b==1'b1)
+ y=4'b1000;
+else y=4'bxxxx;
+
+end 
+else
+y=4'b1111;
+end
+
+endmodule
+```
+
+
+```ruby
+module tb_decoder_2_4;
+
+reg a,b,en;
+
+wire [3:0]y;
+
+decoder_2_4 DUT(en,a,b,y);
+
+initial
+begin
+
+en=1; a=1'bx; b=1'bx;
+#5 en=0; a=0; b=0;
+#5 en=0; a=0; b=1;
+#5 en=0; a=1; b=0;
+#5 en=0; a=1; b=1;
+end
+
+initial
+begin
+$monitor("en=%b a=%b b=%b y=%b", en,a,b,y);
+$dumpfile("tb_decoder_2_4.vcd");
+$dumpvars;
+#50 $finish;
+end
+
+
+endmodule
+```
+ </details>
