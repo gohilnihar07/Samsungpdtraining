@@ -2993,16 +2993,69 @@ endmodule
 	<summary> BabySoC modelling</summary>
 	
 **--> Simulation result of Myth core module,** <br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE_myth_core.png"> <br>
+*->Commands to perform simulation,* <br>
+```ruby
+ iverilog mythcore_test.v tb_mythcore_test.v 
+ ./a.out
+gtkwave tb_mythcore_test.vcd
+```
+<br>
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE_myth_core.png"> <br><br>
+
+
 **--> Simulation result of PLL module,** <br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/2_pll_simulation.png"> <br>
+*->Commands to perform simulation,* <br>
+*->Commands to perform simulation,* <br>
+```ruby
+iverilog rvmyth_pll.v rvmyth_pll_tb.v avsd_pll_1v8.v pll_tb.v
+./a.out
+gtkwave test.vcd
+```
+<br>
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/2_pll_simulation.png"> <br> <br>
+
+
 **--> Simulation result of DAC module,** <br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/1_dac_simulation.png"> <br>
-**--> Simulation result of Interfacing myth core and PLL module,** <br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/4_pll_rvmyth.png"> <br>
-**--> Simulation result of Interfacing myth core and DAC module,** <br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/3_dac_rvmyth.png"> <br>
+*->Commands to perform simulation,* <br>
+```ruby
+iverilog avsddac.v avsddac_tb_test.v
+./a.out
+gtkwave avsddac_tb_test.vcd
+```
+<br>
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/1_dac_simulation.png"> <br> <br>
+**--> Simulation result of Interfacing mythcore and PLL module,** <br>
+*->Commands to perform simulation,* <br>
+```ruby
+iverilog rvmyth_pll.v rvmyth_pll_tb.v
+./a.out
+gtkwave test1.vcd
+```
+<br>
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/4_pll_rvmyth.png"> <br> <br>
+**--> Simulation result of Interfacing mythcore and DAC module,** <br>
+*->Commands to perform simulation,* <br>
+```ruby
+iverilog rvmyth_avsddac.v rvmyth_avsddac_TB.v
+./a.out
+gtkwave rvmyth_avsddac.vcd
+```
+<br>
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/3_dac_rvmyth.png"> <br> <br>
 **--> Simulation result of Main core module,** <br>
-<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE%20_3%20MAIN.png"> <br>
+*->Commands to perform simulation,* <br>
+```ruby
+iverilog vsdbabysoc.v testbench.v avsdpll.v avsddac.v mythcore_test.v
+./a.out
+gtkwave dump.vcd
+```
+<br>
+
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE%20_3%20MAIN.png"> <br> <br>
 
 </details>
