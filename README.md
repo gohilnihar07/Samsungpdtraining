@@ -3076,7 +3076,7 @@ gtkwave tb_mythcore_test.vcd
 <br>
 
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE_myth_core.png"> <br><br>
-
+The RVMyth processor generates 10-bit digital output codes.Its core function involves incrementing a 10-bit binary value by 1, while an additional 11th bit serves as a sign flag, directing either increment or decrement operations based on its state, thus facilitating dynamic arithmetic processing.<br><br>
 
 **--> Simulation result of PLL module,** <br>
 *->Commands to perform simulation,* <br>
