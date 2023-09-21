@@ -2985,24 +2985,24 @@ endmodule
 <br><br>
 
 **--> Simulation result,** <br><br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE.png"> <br>
  </details>
 
 
 <details>
 	<summary> BabySoC modelling</summary>
 	
-**--> Simulation result of Mythcore module,** <br>
-<img width="800" alt="netlist" src=""> <br>
+**--> Simulation result of Myth core module,** <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE_myth_core.png"> <br>
 **--> Simulation result of PLL module,** <br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/2_pll_simulation.png"> <br>
 **--> Simulation result of DAC module,** <br>
-<img width="800" alt="netlist" src=""> <br>
-**--> Simulation result of Interfacing mythcore and PLL module,** <br>
-<img width="800" alt="netlist" src=""> <br>
-**--> Simulation result of Interfacing mythcore and DAC module,** <br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/1_dac_simulation.png"> <br>
+**--> Simulation result of Interfacing myth core and PLL module,** <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/4_pll_rvmyth.png"> <br>
+**--> Simulation result of Interfacing myth core and DAC module,** <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/3_dac_rvmyth.png"> <br>
 **--> Simulation result of Main core module,** <br>
-<img width="800" alt="netlist" src=""> <br>
+<img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE%20_3%20MAIN.png"> <br>
 
 </details>
