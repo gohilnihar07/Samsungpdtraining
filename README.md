@@ -2921,25 +2921,45 @@ UFS 3.1<br><br><br>
 <details>
 	<summary> Introduction</summary>
 	
-**-->RVMYTH:-**	
+**-->RVMYTH:-**	<br>
 It's RISC-V based myth. it pronounced as "risk-five," represents an Instruction Set Architecture (ISA) rooted in the principles of Reduced Instruction Set Computing (RISC). This ISA establishes a fundamental set of instructions known as the core integer ISA, which is a mandatory component in all RISC-V implementations. Moreover, RISC-V incorporates optional extensions to augment its capabilities. The core integer instruction set can be distinguished by various characteristics, including the width of integer registers, the scope of its addressable memory, and the quantity of available integer registers. Notably, RISC-V encompasses two primary core integer variants, denoted as RV32I and RV64I.<br>
 
 *->RV32I:-*
 32-Bit Iteration: RV32I corresponds to the 32-bit iteration of the RISC-V architecture. In this variant, the CPU's data and address registers are both 32 bits wide.<br>
 Address Capacity: RV32I boasts a 32-bit virtual address space, empowering it to access up to 2^32 distinct memory locations, equivalent to a memory capacity of 4 gigabytes.<br>
 Register Bank: RV32I supplies 32 general-purpose registers (often referred to as integer registers) dedicated to executing arithmetic operations and manipulating data.<br>
-Instruction Repertoire: This iteration defines a specific set of instructions tailored for 32-bit RISC-V processors, encompassing arithmetic, logic, memory load and store, as well as control flow instructions.<br><br>
+Instruction Repertoire: This iteration defines a specific set of instructions tailored for 32-bit RISC-V processors, encompassing arithmetic, logic, memory load and store, as well as control flow instructions.<br>
 
 *->RV64I:-*
 64-Bit Version: RV64I signifies the 64-bit embodiment of the RISC-V architecture. Within this iteration, both data and address registers expand to 64 bits in width.<br>
 Expanded Address Space: RV64I introduces a vastly expanded virtual address space compared to RV32I. It has the capability to address up to 2^64 unique memory locations, an address space of astronomical proportions.<br>
 Register Complement: RV64I also furnishes 32 general-purpose registers (integer registers) akin to RV32I. However, these registers are 64 bits wide, permitting more comprehensive data manipulation and accommodating 64-bit data types.<br>
-Instruction Set: Similar to RV32I, RV64I lays out a specific set of instructions; nevertheless, these instructions operate on 64-bit data.<br><br>
+Instruction Set: Similar to RV32I, RV64I lays out a specific set of instructions; nevertheless, these instructions operate on 64-bit data.<br>
 
 In summary, RISC-V serves as an open and versatile ISA adhering to RISC principles. It encompasses both 32-bit (RV32I) and 64-bit (RV64I) core integer variants, each tailored to specific computing needs and offering distinct advantages in terms of addressable memory, register width, and data processing capabilities.<br><br>
 
-**-->DAC (Digital to analog converter):-**
+**-->DAC (Digital to analog converter):-** <br>
+A Digital-to-Analog Converter (DAC) is an electronic device or circuit that converts digital data (usually in the form of binary numbers) into analog signals, typically voltage or current. It plays a crucial role in many electronic systems, especially in applications where digital data needs to be converted into a continuous, analog signal for various purposes, such as audio playback, video generation, motor control, and more.<br>
 
+*-> Here's how a DAC works,* <br>
+
+Digital Input: The input to a DAC is a digital signal, often represented as a binary number. Each bit in the digital input corresponds to a different "level" or "step" in the analog output.<br>
+
+Conversion Process: The DAC takes the digital input and uses it to determine the appropriate analog output voltage or current. This process involves mapping the digital values to specific analog voltage levels.<br>
+
+Analog Output: The result is an analog output signal that varies continuously based on the digital input. This analog signal can be used to control various physical processes or to generate analog audio or video signals.<br>
+
+*-->There are different types of DACs, including:* <br>
+
+Binary Weighted DAC: In this type, the weight of each bit in the digital input is proportional to its significance. For example, the most significant bit (MSB) might have the largest weight, and each subsequent bit's weight is halved. <br>
+
+R-2R Ladder DAC: This type of DAC uses a ladder network of resistors to convert digital inputs into analog outputs. It's known for its simplicity and linearity. <br>
+
+Delta-Sigma DAC: These are often used in high-precision applications. They use oversampling and noise-shaping techniques to achieve high-resolution conversions. <br>
+
+Flash DAC: Also known as a parallel DAC, it's very fast but can be expensive and power-hungry due to the number of components required. <br>
+
+DACs are used in a wide range of applications, including music players (to convert digital audio data into analog audio signals for speakers or headphones), instrumentation (for measurement and control tasks), communication systems (to modulate signals), and many other areas where the conversion of digital data into analog form is needed. <br><br>
 
 **-->PLL(Phase-Locked loop):-**
 --> PLL stands for "Phase-Locked Loop," which is an electronic circuit used in various applications to generate or synchronize signals of a specific frequency. A PLL consists of several components, including a voltage-controlled oscillator (VCO), a phase comparator, a feedback loop, and a divider.<br><br>
@@ -2958,12 +2978,10 @@ Feedback Loop: The control voltage from the phase comparator is fed back to the 
 
 Divider (Optional): In some PLL applications, a divider is used to divide the output frequency of the VCO, providing a divided output signal at a lower frequency. This can be useful when precise frequency division is required.<br>
 
-PLLs are used in a wide range of applications, including clock generation, frequency synthesis, data recovery, modulation and demodulation, and clock synchronization in communication systems, digital circuits, and various electronic devices. They are essential for maintaining stable and synchronized signals in many electronic systems.<br>
+PLLs are used in a wide range of applications, including clock generation, frequency synthesis, data recovery, modulation and demodulation, and clock synchronization in communication systems, digital circuits, and various electronic devices. They are essential for maintaining stable and synchronized signals in many electronic systems.<br><br>
+
 
 </details>
-
-
-
 
 
 
