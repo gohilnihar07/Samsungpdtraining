@@ -3080,7 +3080,6 @@ The RVMyth processor generates 10-bit digital output codes.Its core function inv
 
 **--> Simulation result of PLL module,** <br>
 *->Commands to perform simulation,* <br>
-*->Commands to perform simulation,* <br>
 ```ruby
 iverilog rvmyth_pll.v rvmyth_pll_tb.v avsd_pll_1v8.v pll_tb.v
 ./a.out
