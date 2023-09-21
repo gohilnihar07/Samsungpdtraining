@@ -2942,7 +2942,7 @@ In summary, RISC-V serves as an open and versatile ISA adhering to RISC principl
 
 **-->PLL(Phase-Locked loop):-** <br>
 --> PLL stands for "Phase-Locked Loop," which is an electronic circuit used in various applications to generate or synchronize signals of a specific frequency. A PLL consists of several components, including a voltage-controlled oscillator (VCO), a phase comparator, a feedback loop, and a divider.<br><br>
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/2b5e4a03b0b30f485a094292705935d43a21925d/DAY-12/PLL.jpg"> <br>
 *--> Here's a brief overview of how a Phase-Locked Loop works:* <br>
 
 Reference Signal: The PLL takes an input signal called the "reference signal" or "reference clock." This signal represents the desired output frequency that the PLL will attempt to generate or synchronize with.<br>
