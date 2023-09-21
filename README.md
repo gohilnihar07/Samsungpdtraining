@@ -2987,3 +2987,22 @@ endmodule
 **--> Simulation result,** <br><br>
 <img width="800" alt="netlist" src=""> <br>
  </details>
+
+
+<details>
+	<summary> BabySoC modelling</summary>
+	
+**--> Simulation result of Mythcore module,** <br>
+<img width="800" alt="netlist" src=""> <br>
+**--> Simulation result of PLL module,** <br>
+<img width="800" alt="netlist" src=""> <br>
+**--> Simulation result of DAC module,** <br>
+<img width="800" alt="netlist" src=""> <br>
+**--> Simulation result of Interfacing mythcore and PLL module,** <br>
+<img width="800" alt="netlist" src=""> <br>
+**--> Simulation result of Interfacing mythcore and DAC module,** <br>
+<img width="800" alt="netlist" src=""> <br>
+**--> Simulation result of Main core module,** <br>
+<img width="800" alt="netlist" src=""> <br>
+
+</details>
