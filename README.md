@@ -2993,11 +2993,11 @@ DACs are used in a wide range of applications, including music players (to conve
 
 
  <details>
-	 <summary> Decoder2_4 </summary>
+	 <summary> Priority Decoder2_4 </summary>
 
 **--> Verilog code for design,** <br>
 ```ruby
-module decoder_2_4 (en,a,b,y);
+module priority_decoder_2_4 (en,a,b,y);
 input en,a,b;
 output reg [3:0]y;
 
@@ -3032,7 +3032,7 @@ reg a,b,en;
 
 wire [3:0]y;
 
-decoder_2_4 DUT(en,a,b,y);
+priority_decoder_2_4 DUT(en,a,b,y);
 
 initial
 begin
