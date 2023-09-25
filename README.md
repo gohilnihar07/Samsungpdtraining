@@ -3200,6 +3200,7 @@ Post-synthesis simulation is a critical part of the digital design flow, as it e
 <details>
 	<summary>Post-synthesis simulation of Priority decoder 2x4 </summary>
 	The combinational circuit that change the binary information into 2N output lines is known as Decoders. The binary information is passed in the form of N input lines. The output lines define the 2N-bit code for the binary information. In simple words, the Decoder performs the reverse operation of the Encoder. At a time, only one input line is activated for simplicity. The produced 2N-bit output code is equivalent to the binary information. <br>
+      In the 2 to 4 line decoder, there is a total of three inputs, i.e., A0, and A1 and E and four outputs, i.e., Y0, Y1, Y2, and Y3. For each combination of inputs, when the enable 'E' is set to 1, one of these four outputs will be 1. <br>
 
  **- Generated netlist after synthesis:-**
  <img width="800" alt="netlist" src=""> <br>
