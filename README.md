@@ -3203,16 +3203,17 @@ Post-synthesis simulation is a critical part of the digital design flow, as it e
       In the 2 to 4 line decoder, there is a total of three inputs, i.e., A0, and A1 and E and four outputs, i.e., Y0, Y1, Y2, and Y3. For each combination of inputs, when the enable 'E' is set to 1, one of these four outputs will be 1. <br>
 
  **- Generated netlist after synthesis:-**
- <img width="800" alt="netlist" src=""> <br>
+ <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/6c83bc5c8d1ba9649bec7249ed8c1ff1bcf77a61/DAY-13/2_netlist_decoder.png"> <br>
 
  **- Commands for simulation:-**
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a47a81049275b18773aae54f01b163812d27ebf/DAY-13/3_post_synthesis_simulation_decoder.png"> <br>
 
  **- Result:-**
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a47a81049275b18773aae54f01b163812d27ebf/DAY-13/4_post_synthesis_simulation_decoder_result.png"> <br>
+  Can observe here it's giving outputs based on priority
   
  **- Schematic:-**
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a47a81049275b18773aae54f01b163812d27ebf/DAY-13/schematic%20for%20decoder%20.png"> <br>
 	
 </details>
 
@@ -3220,25 +3221,21 @@ Post-synthesis simulation is a critical part of the digital design flow, as it e
 	<summary>Post-synthesis simultion of BabySOC </summary>
 	
  **--> Mythcore:-**
- *- Generated netlist after synthesis:-*
- <img width="800" alt="netlist" src=""> <br>
 
  *-Commands for simulation:-*
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a47a81049275b18773aae54f01b163812d27ebf/DAY-13/5_command_for_post_synthesis_simulation_myth_core.png"> <br>
 
  *-Result:-*
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a47a81049275b18773aae54f01b163812d27ebf/DAY-13/1_post_synthesis_mythcore.png"> <br>
 
 
  **--> BabySOC:-**
- *- Generated netlist after synthesis:-*
- <img width="800" alt="netlist" src=""> <br>
 
  *-Commands for simulation:-*
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a47a81049275b18773aae54f01b163812d27ebf/DAY-13/6_post%20synthesis%20simulation%20for%20main%20module.png"> <br>
 
  *-Result:-*
-  <img width="800" alt="netlist" src=""> <br>
+  <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7a47a81049275b18773aae54f01b163812d27ebf/DAY-13/7_post%20synthesis%20simulation%20for%20main%20module_result.png"> <br>
  
 </details>
 
