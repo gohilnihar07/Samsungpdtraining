@@ -3135,9 +3135,10 @@ gtkwave dump.vcd
 
 
 
-## DAY-14 Post-synthesis simulation
+## DAY-14 Post-synthesis simulation (GLS)
 <details>
-	<summary> post-synthesis simulation </summary>
+	<summary> Introduction </summary>
+   
  
 	
 </details>
