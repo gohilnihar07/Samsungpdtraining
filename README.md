@@ -3195,3 +3195,13 @@ Post-synthesis simulation is a critical part of the digital design flow, as it e
  <br>
 	
 </details>
+
+
+<details>
+	<summary>Post-synthesis of Priority decoder 2x4 </summary>
+</details>
+
+<details>
+	<summary>Post-synthesis of BabySOC </summary>
+</details>
+
