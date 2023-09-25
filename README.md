@@ -3132,3 +3132,12 @@ gtkwave dump.vcd
 <img width="800" alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/d4bc04214bce2102aaa4b5fddb3a14cba1be6cbb/DAY-12/GTKWAVE%20_3%20MAIN.png"> <br> <br>
 
 </details>
+
+
+
+## DAY-14 Post-synthesis simulation
+<details>
+	<summary> post-synthesis simulation </summary>
+ 
+	
+</details>
