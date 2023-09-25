@@ -3198,12 +3198,46 @@ Post-synthesis simulation is a critical part of the digital design flow, as it e
 
 
 <details>
-	<summary>Post-synthesis of Priority decoder 2x4 </summary>
+	<summary>Post-synthesis simulation of Priority decoder 2x4 </summary>
 	The combinational circuit that change the binary information into 2N output lines is known as Decoders. The binary information is passed in the form of N input lines. The output lines define the 2N-bit code for the binary information. In simple words, the Decoder performs the reverse operation of the Encoder. At a time, only one input line is activated for simplicity. The produced 2N-bit output code is equivalent to the binary information. <br>
+
+ **- Generated netlist after synthesis:-**
+ <img width="800" alt="netlist" src=""> <br>
+
+ **- Commands for simulation:-**
+  <img width="800" alt="netlist" src=""> <br>
+
+ **- Result:-**
+  <img width="800" alt="netlist" src=""> <br>
+  
+ **- Schematic:-**
+  <img width="800" alt="netlist" src=""> <br>
 	
 </details>
 
 <details>
-	<summary>Post-synthesis of BabySOC </summary>
+	<summary>Post-synthesis simultion of BabySOC </summary>
+	
+ **--> Mythcore:-**
+ *- Generated netlist after synthesis:-*
+ <img width="800" alt="netlist" src=""> <br>
+
+ *-Commands for simulation:-*
+  <img width="800" alt="netlist" src=""> <br>
+
+ *-Result:-*
+  <img width="800" alt="netlist" src=""> <br>
+
+
+ **--> BabySOC:-**
+ *- Generated netlist after synthesis:-*
+ <img width="800" alt="netlist" src=""> <br>
+
+ *-Commands for simulation:-*
+  <img width="800" alt="netlist" src=""> <br>
+
+ *-Result:-*
+  <img width="800" alt="netlist" src=""> <br>
+ 
 </details>
 
