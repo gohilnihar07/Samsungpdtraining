@@ -3286,3 +3286,15 @@ Semiconductor manufacturing processes are subject to inherent variations. Differ
 Electronic devices operate in a wide range of real-world conditions, and PVT variations are inevitable. Chips need to perform reliably in different environmental temperatures, supply voltage fluctuations, and manufacturing process variations. Designing for PVT ensures that the chip functions as expected in practical scenarios.<br><br>
 In summary, considering PVT variations in chip design, particularly in relation to timing, is crucial for ensuring that the chip operates reliably and meets its performance specifications across a wide range of conditions. This robustness is essential for electronic devices to function correctly in various applications and environments, from consumer electronics to critical infrastructure and automotive systems.
 </details>
+
+
+
+<details> <summary> LAB </summary>
+--> First we will delete all the lines from the .lib with the error stated. After deleting the lines ,We will convert .lib file into .db file because we know all the synopsys tool doesn't take file in .lib format, so we will convert by using followinf commands, <br>
+
+```ruby
+read_lib <library_name>
+write_lib <library_name> -f db -o <name_of_the_db_file>
+```
+
+</details>
