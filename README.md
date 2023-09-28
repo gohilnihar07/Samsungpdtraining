@@ -3468,4 +3468,13 @@ set_load -min 0.1 \[all_outputs];
   
  --> Output,<br> 
  <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/26.%20wns%20and%20tns%20for%20tt_025C_1v81.png"> <br><br>
+
+
+
+ **- Can see the below graph, which Generalized WNS of Setup for all above cases,** 
+ <img width="800" alt=""> <br><br>
+
+**- Can see the below graph, which Generalized WNS of Hold for all above cases,**
+<img width="800" alt=""> <br><br>
+
 </details>
