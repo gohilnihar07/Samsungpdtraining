@@ -3239,3 +3239,12 @@ Post-synthesis simulation is a critical part of the digital design flow, as it e
  
 </details>
 
+
+
+## DAY-14 Synopsys DC And Timing analysis
+
+<details>  <summary> Introduction </summary>
+
+
+
+</details>
