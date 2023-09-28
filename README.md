@@ -3297,7 +3297,7 @@ read_lib <library_name>
 write_lib <library_name> -f db -o <name_of_the_db_file>
 ```
 
---> Below constraints file we will using for our analysis,<br>
+--> Below constraints file we will be using for our analysis,<br>
 
 ```ruby
  set_units -time ns
@@ -3321,5 +3321,14 @@ set_load -max 0.2 \[all_outputs];
 set_load -min 0.1 \[all_outputs];
 ```
 
+**--> Now we will analyze the setup and hold for different operating conditions of PVT,** <br>
 
+*1. Operating conditions,* <br>
+    Process- SS <br>
+    voltage- 28 <br>
+    Temperature- 40C <br>
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+ --> Output,<br> 
+ <img width="800" alt=""> <br>
 </details>
