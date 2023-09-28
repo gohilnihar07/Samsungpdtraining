@@ -3297,4 +3297,28 @@ read_lib <library_name>
 write_lib <library_name> -f db -o <name_of_the_db_file>
 ```
 
+--> Below constraints file we will using for our analysis,<br>
+```ruby
+ set_units -time ns
+create_clock -name MYCLK -per 2 [get_pins {pll/CLK}];
+
+set_clock_latency -source 1 [get_clocks MYCLK]
+set_clock_uncertainty -setup 0.5 [get_clocks MYCLK]; 
+set_clock_uncertainty -hold 0.4 [get_clocks MYCLK]; 
+
+set_input_delay -max 1 -clock \[get_clocks MYCLK] [all_inputs];
+set_input_delay -min 0.5 -clock \[get_clocks MYCLK] [all_inputs];
+set_output_delay -max 1 -clock \[get_clocks MYCLK] [all_outputs];
+set_output_delay -min 0.5 -clock \[get_clocks MYCLK] [all_outputs];
+
+set_input_transition -max 0.2 \[all_inputs];
+set_input_transition -min 0.1 \[all_inputs];
+
+set_max_area  800;
+
+set_load -max 0.2 \[all_outputs];
+set_load -min 0.1 \[all_outputs];
+```
+
+
 </details>
