@@ -3471,10 +3471,15 @@ set_load -min 0.1 \[all_outputs];
 
 
 
- **- Can see the below graph, which Generalized WNS of Setup for all above cases,** 
- <img width="800" alt=""> <br><br>
+ **- Can see the below graph, which Generalized WNS and TNS of Setup for all above cases,** <br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20setup%20WNS.PNG"> <br><br>
 
-**- Can see the below graph, which Generalized WNS of Hold for all above cases,**
-<img width="800" alt=""> <br><br>
+**- Can see the below graph, which Generalized WNS and TNS of Hold for all above cases,** <br>
+<img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20hold%20wns.PNG"> <br><br>
 
+**--> Observations,** <br>
+
+ - In faster cells, hold violations are common due to quick data processing. Faster cells allow less time for data to stabilize before capture. Here also we can see in operating conditions wherever we used ff process, there we can see the hold violations and further that becomes more dangerous as voltage and temperature increases.<br>
+ 
+- In slower cells often face setup issues. Slower cells require more setup time because they process data slowly, potentially leading to setup violations if not met. Here also we can see in operating conditions wherever we used ss process, there we can see the setup violations and further that becomes more dangerous as voltage and temperature decreases.<br><br>
 </details>
