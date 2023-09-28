@@ -3471,11 +3471,13 @@ set_load -min 0.1 \[all_outputs];
 
 
 
- **- Can see the below graph, which Generalized WNS and TNS of Setup for all above cases,** <br>
- <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20setup%20WNS.PNG"> <br><br>
+ **- Can see the below graphs, WNS and TNS for Setup of all the above cases,** <br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20setup%20WNS.PNG"> <br>
+ <img width="800" alt=""> <br><br>
 
-**- Can see the below graph, which Generalized WNS and TNS of Hold for all above cases,** <br>
-<img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20hold%20wns.PNG"> <br><br>
+**- Can see the below graphs, WNS and TNS for Hold of all the above cases,** <br>
+<img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20hold%20wns.PNG"> <br>
+<img width="800" alt=""> <br><br>
 
 **--> Observations,** <br>
 
