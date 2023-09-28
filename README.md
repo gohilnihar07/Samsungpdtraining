@@ -3407,10 +3407,10 @@ set_load -min 0.1 \[all_outputs];
     Temperature- 100C <br>
     
  --> Below script we will source to perform,<br>
-  <img width="800" alt=""> <br>
+  <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/15.%20script%20for%20ss_100C_1v40.png"> <br>
   
  --> Output,<br> 
- <img width="800" alt=""> <br><br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/16.%20wns%20and%20tns%20for%20ss_100C_1v40.png"> <br><br>
 
 
  *9. Operating conditions,* <br>
@@ -3419,10 +3419,10 @@ set_load -min 0.1 \[all_outputs];
     Temperature- 100C <br>
     
  --> Below script we will source to perform,<br>
-  <img width="800" alt=""> <br>
+  <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/17.%20script%20for%20ss_100C_1v60.png"> <br>
   
  --> Output,<br> 
- <img width="800" alt=""> <br><br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/18.%20wns%20tns%20for%20ss_100C_1v60.png"> <br><br>
 
 
  *10. Operating conditions,* <br>
@@ -3431,10 +3431,10 @@ set_load -min 0.1 \[all_outputs];
     Temperature- 100C <br>
     
  --> Below script we will source to perform,<br>
-  <img width="800" alt=""> <br>
+  <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/19.%20script%20for%20ff_100C_1v65.png"> <br>
   
  --> Output,<br> 
- <img width="800" alt=""> <br><br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/20.%20wns%20and%20tns%20for%20ff_100C_1v65.png"> <br><br>
 
  *11. Operating conditions,* <br>
     Process- ff <br>
@@ -3442,10 +3442,10 @@ set_load -min 0.1 \[all_outputs];
     Temperature- 100C <br>
     
  --> Below script we will source to perform,<br>
-  <img width="800" alt=""> <br>
+  <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/21.%20script%20for%20ff_100C_1v95.png"> <br>
   
  --> Output,<br> 
- <img width="800" alt=""> <br><br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/22.%20wns%20and%20tns%20for%20ff_100C_1v95.png"> <br><br>
 
  *12. Operating conditions,* <br>
     Process- SS <br>
@@ -3453,10 +3453,10 @@ set_load -min 0.1 \[all_outputs];
     Temperature- 40C <br>
     
  --> Below script we will source to perform,<br>
-  <img width="800" alt=""> <br>
+  <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/23.%20script%20for%20ss_n40c_1v76.png"> <br>
   
  --> Output,<br> 
- <img width="800" alt=""> <br><br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/24.%20WNS%20AND%20TNS%20for%20ss_n40c_1v77.png"> <br><br>
 
  *13. Operating conditions,* <br>
     Process- tt <br>
@@ -3464,8 +3464,8 @@ set_load -min 0.1 \[all_outputs];
     Temperature- 25C <br>
     
  --> Below script we will source to perform,<br>
-  <img width="800" alt=""> <br>
+  <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/25.%20script%20for%20tt_025C_1v80.png"> <br>
   
  --> Output,<br> 
- <img width="800" alt=""> <br><br>
+ <img width="800" alt="https://github.com/gohilnihar07/Samsungpdtraining/blob/8a6f2bd28db2880ef5c6d46cbab4754c9a07bbad/DAY-14_FINAL/26.%20wns%20and%20tns%20for%20tt_025C_1v81.png"> <br><br>
 </details>
