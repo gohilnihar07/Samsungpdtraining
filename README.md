@@ -3327,8 +3327,145 @@ set_load -min 0.1 \[all_outputs];
     Process- SS <br>
     voltage- 28 <br>
     Temperature- 40C <br>
+    
  --> Below script we will source to perform,<br>
   <img width="800" alt=""> <br>
+  
  --> Output,<br> 
- <img width="800" alt=""> <br>
+ <img width="800" alt=""> <br><br>
+
+ *2. Operating conditions,* <br>
+    Process- SS <br>
+    voltage- 35 <br>
+    Temperature- 40C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+ *3. Operating conditions,* <br>
+    Process- SS <br>
+    voltage- 40 <br>
+    Temperature- 40C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+ *4. Operating conditions,* <br>
+    Process- SS <br>
+    voltage- 44 <br>
+    Temperature- 40C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+ *5. Operating conditions,* <br>
+    Process- ff <br>
+    voltage- 56 <br>
+    Temperature- 40C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+ *6. Operating conditions,* <br>
+    Process- ff <br>
+    voltage- 65 <br>
+    Temperature- 40C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+*7. Operating conditions,* <br>
+    Process- ff <br>
+    voltage- 76 <br>
+    Temperature- 40C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+
+ *8. Operating conditions,* <br>
+    Process- ss <br>
+    voltage- 40 <br>
+    Temperature- 100C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+
+ *9. Operating conditions,* <br>
+    Process- ss <br>
+    voltage- 60 <br>
+    Temperature- 100C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+
+ *10. Operating conditions,* <br>
+    Process- ff <br>
+    voltage- 65 <br>
+    Temperature- 100C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+ *11. Operating conditions,* <br>
+    Process- ff <br>
+    voltage- 95 <br>
+    Temperature- 100C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+ *12. Operating conditions,* <br>
+    Process- SS <br>
+    voltage- 76 <br>
+    Temperature- 40C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
+
+ *13. Operating conditions,* <br>
+    Process- tt <br>
+    voltage- 80 <br>
+    Temperature- 25C <br>
+    
+ --> Below script we will source to perform,<br>
+  <img width="800" alt=""> <br>
+  
+ --> Output,<br> 
+ <img width="800" alt=""> <br><br>
 </details>
