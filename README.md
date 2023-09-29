@@ -3472,12 +3472,12 @@ set_load -min 0.1 \[all_outputs];
 
 
  **- Can see the below graphs, WNS and TNS for Setup of all the above cases,** <br>
-  <img width="800"  alt="netlist" src=""> <br>
+  <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/29f0d0c74be4c346a66c8df2d81c03cf03d05346/DAY-14_FINAL/WNS%20for%20setup_n.PNG"> <br>
  <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20setup%20WNS.PNG"> <br>
  <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/de2a1c249f35bf9db6c568bc94e0aa6560a29cb5/DAY-14_FINAL/TNS%20for%20setup.PNG"> <br><br>
 
 **- Can see the below graphs, WNS and TNS for Hold of all the above cases,** <br>
- <img width="800"  alt="netlist" src=""> <br>
+ <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/29f0d0c74be4c346a66c8df2d81c03cf03d05346/DAY-14_FINAL/WNS%20for%20Hold_n.PNG"> <br>
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/70b7883551885ee98fcf81b91c574a02a138a2c1/DAY-14_FINAL/for%20hold%20wns.PNG"> <br>
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/de2a1c249f35bf9db6c568bc94e0aa6560a29cb5/DAY-14_FINAL/TNS%20for%20hold.PNG"> <br><br>
 
