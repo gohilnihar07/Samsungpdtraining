@@ -3687,9 +3687,9 @@ run_synthesis
 --> Can see, synthesis is done,<br>
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/23.%20synthesis%20done.png"> <br>
 --> From synthesis report, we can calculate flop ratio by the use of no. of DFF and total no. of cells,<br>
-<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/24.%20from%20synthesis%20report%20calculate%20flop%20ratio%20by%20the%20use%20of%20no.%20of%20DFF%20and%20total%20no.%20of%20cells.png"> <br
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/24.%20from%20synthesis%20report%20calculate%20flop%20ratio%20by%20the%20use%20of%20no.%20of%20DFF%20and%20total%20no.%20of%20cells.png"> <br>
 --> Earlier it was empty but now after synthesis we can see the netlist is generated,<br>
-<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/25.%20earlier%20it%20was%20empty%20but%20now%20after%20synthesis%20we%20can%20see%20the%20netlist%20is%20generated.png"> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/25.%20earlier%20it%20was%20empty%20but%20now%20after%20synthesis%20we%20can%20see%20the%20netlist%20is%20generated.png"> <br><br>
 
 - The number of d flip flops = 1613 <br> 
 - Total Number of cells = 14876 <br> 
