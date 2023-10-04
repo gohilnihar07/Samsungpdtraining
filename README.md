@@ -3496,7 +3496,7 @@ set_load -min 0.1 \[all_outputs];
 	An integrated circuit (IC), often referred to as simply an IC, is a comprehensive assembly of electronic circuits situated on a single, compact flat component—commonly recognized as a "chip." This chip primarily consists of semiconductor material, predominantly silicon. The customary arrangement involves mounting the integrated circuit onto a printed circuit board (PCB), thereby giving rise to a fully operational electronic system.<br>
       <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/DAY-15%20I1.PNG"> <br>
 
-      View of, how complete system looks,<br>
+View of, how complete system looks,<br>
       
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/I2.PNG"> <br>
       
