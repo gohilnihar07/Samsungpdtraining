@@ -3668,10 +3668,13 @@ run_synthesis
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/11."> <br>
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/12.png"> <br>
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/12."> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
+-> before we run synthesis we can see runs is created here after setting up the design,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/13%20before%20we%20run%20synthesis%20we%20can%20see%20runs%20is%20created%20here%20after%20setting%20up%20the%20design.png"> <br>
+-> we can see in runs just now one file is created wrt to current time,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/14%20we%20can%20see%20in%20runs%20just%20now%20one%20file%20is%20created%20wrt%20to%20current%20time.png"> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/15.png"> <br>
+-> by commanding less merged.lef we can see all the content which is about metal layer,vias,etc,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/16.%20by%20commandinf%20less%20merged.lef%20we%20can%20see%20all%20the%20content%20which%20is%20about%20metal%20layer%2Cvias%2Cetc.png"> <br>
 <img width="800"  alt="netlist" src=""> <br>
 <img width="800"  alt="netlist" src=""> <br>
 <img width="800"  alt="netlist" src=""> <br>
