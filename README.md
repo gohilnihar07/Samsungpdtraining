@@ -3530,6 +3530,27 @@ Some pads intentionally remain unconnected and are designated as "no-connect" to
 
 <details>
 	<summary> RTL to GDS</summary>
+	 <img width="800"  alt="netlist" src=""> <br>
+	
+ **->Synthesis:-**
+ synthesis is a critical step that involves the transformation of a high-level hardware description of a digital circuit, often articulated in a hardware description language (HDL) like VHDL or Verilog. This transformation leads to the creation of a netlist, a representation encompassing both the logical and physical components essential for shaping the actual integrated circuit.<br>
+
+During this intricate process, standard cells emerge as fundamental building blocks. These cells boast a consistent layout, and each one is depicted in various perspectives, including electrical, HDL, and SPICE models. Notably, standard cells offer both abstract and detailed layout views. These versatile components play a pivotal role in the synthesis journey, contributing significantly to the construction of the final layout of the integrated circuit. Their regularity and adaptability make them indispensable in achieving optimal functionality and efficiency in the overall design. <br><br>
+
+**->Floorplan:-**
+Floor planning, a pivotal early-stage process in VLSI design, entails defining the physical layout and strategic placement of functional blocks, modules, and components within an integrated circuit (IC). This meticulous planning is crucial for optimizing various factors such as chip area, signal routing, power distribution, and thermal management.<br>
+
+*- Chip Floorplan:*<br>
+
+The term "Chip Floorplan" specifically refers to the meticulously designed layout for an integrated circuit (IC) or semiconductor chip. This layout, presented as a diagram, intricately details the physical arrangement and placement of diverse components, functional blocks, and critical elements within the silicon area of the chip.<br><br>
+
+*- Macro Floorplan:*<br>
+
+In semiconductor and integrated circuit (IC) design, a "Macro Floorplan" stands as a distinct type of floorplan. This is particularly utilized in the context of macros, which are predefined and pre-characterized functional blocks or modules within an IC, each performing a specific function. Macros can encompass anything from processor cores to memory blocks, representing complex building blocks strategically positioned within the IC.<br><br>
+
+*- Power Planning :*<br>
+
+Power planning in VLSI design is a critical facet of semiconductor chip design, focusing on the management and distribution of electrical power within the IC. Effective power planning is indispensable for achieving reliable and efficient operation while minimizing power consumption. This aspect plays a crucial role in the overall success of the VLSI design by ensuring optimal power delivery and consumption throughout the integrated circuit.<br><br>
 </details>
 
 
