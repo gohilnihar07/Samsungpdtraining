@@ -3691,6 +3691,11 @@ run_synthesis
 --> Earlier it was empty but now after synthesis we can see the netlist is generated,<br>
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/25.%20earlier%20it%20was%20empty%20but%20now%20after%20synthesis%20we%20can%20see%20the%20netlist%20is%20generated.png"> <br>
 
+- The number of d flip flops = 1613 <br> 
+- Total Number of cells = 14876 <br> 
+- *D flip flop ratio* = 1613/14876 => **0.108429** or In percentage **10.8429%** <br> 
+
+
 </details> 
 
 
