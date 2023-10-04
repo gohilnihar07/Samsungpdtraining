@@ -3653,5 +3653,36 @@ package require openlane 0.9
 prep -design picorv32a
 run_synthesis
 ```
+<br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src=""> <br>
+
+
+
 
 </details> 
+
+
+
+
+
+
