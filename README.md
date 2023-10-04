@@ -3510,20 +3510,19 @@ Pads serve as the tangible external connections or terminals on the SoC. These c
 *- Varieties of Pads* <br>
 
 - Input Pads: <br>
+These serve as conduits for external signals entering the IC. For instance, they might receive data inputs from sensors or user interfaces, facilitating the integration of external information.<br>
 
-These serve as conduits for external signals entering the IC. For instance, they might receive data inputs from sensors or user interfaces, facilitating the integration of external information.
 - Output Pads: <br>
-
-Designed for transmitting signals generated within the IC to external devices or other segments of a circuit. An example includes the use of output pads to send data to a display or transmit information to another IC.
+Designed for transmitting signals generated within the IC to external devices or other segments of a circuit. An example includes the use of output pads to send data to a display or transmit information to another IC.<br>
 - Power Pads: <br>
+Essential for providing power to the IC, these pads are typically linked to the power supply voltage (VDD) and ground (GND), ensuring the energy requirements of the IC are met.<br>
 
-Essential for providing power to the IC, these pads are typically linked to the power supply voltage (VDD) and ground (GND), ensuring the energy requirements of the IC are met.
 - Ground Pads: <br>
+Connected to the ground reference voltage (GND), ground pads play a critical role in maintaining proper functionality and reducing noise within the circuit.<br>
 
-Connected to the ground reference voltage (GND), ground pads play a critical role in maintaining proper functionality and reducing noise within the circuit.
-No-Connect Pads:
+- No-Connect Pads: <br>
+Some pads intentionally remain unconnected and are designated as "no-connect" to prevent unintended connections, ensuring the integrity and stability of the circuit.<br>
 
-Some pads intentionally remain unconnected and are designated as "no-connect" to prevent unintended connections, ensuring the integrity and stability of the circuit.
  <img width="800"  alt="netlist" src=""> <br>
  Contained within a QFN-48 package, denoting Quad Flat No Leads with 48 pins, this specific component boasts a dimension of 7mm by 7mm. Each of the 48 pins serves as a vital connection point, establishing interfaces with various components or packages integrated onto the design board. The central focal point within this package is typically occupied by a microchip. The pins situated on the periphery, commonly termed "outbounds," play a pivotal role in orchestrating the seamless exchange of data between the external world and the encapsulated chip, thus contributing significantly to the functionality of the entire package.
 </details>
