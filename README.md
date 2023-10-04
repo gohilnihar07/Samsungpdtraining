@@ -3675,12 +3675,21 @@ run_synthesis
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/15.png"> <br>
 -> by commanding less merged.lef we can see all the content which is about metal layer,vias,etc,<br>
 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/16.%20by%20commandinf%20less%20merged.lef%20we%20can%20see%20all%20the%20content%20which%20is%20about%20metal%20layer%2Cvias%2Cetc.png"> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-
-
-
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/16.png"> <br>
+-->  since we havn't done synthesis yet so we can see every othere info is empty,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/18.%20since%20we%20havn't%20done%20synthesis%20yet%20so%20we%20can%20every%20othere%20info%20is%20empty.png"> <br>
+ --> we haven't done synthesis yet so we can see all the other result and stage reports and synthesis reports are empty,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/19.%20we%20haven't%20done%20synthesis%20yet%20so%20we%20can%20all%20the%20other%20reports%20and%20synthesis%20reports%20are%20empty.png"> <br>
+--> config.tcl,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/8f17441d40f6e37b18b22a7ba532803dcabcb5a1/DAY-15/20.%20config.tcl%20.png"> <br>
+--> Giving the commands to run synthesis,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/22.%20giving%20the%20command%20to%20run%20synthesis.png"> <br>
+--> Can see, synthesis is done,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/23.%20synthesis%20done.png"> <br>
+--> From synthesis report, we can calculate flop ratio by the use of no. of DFF and total no. of cells,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/24.%20from%20synthesis%20report%20calculate%20flop%20ratio%20by%20the%20use%20of%20no.%20of%20DFF%20and%20total%20no.%20of%20cells.png"> <br
+--> Earlier it was empty but now after synthesis we can see the netlist is generated,<br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/32609b61099912cfe7897f3f52793314fc779b53/DAY-15/25.%20earlier%20it%20was%20empty%20but%20now%20after%20synthesis%20we%20can%20see%20the%20netlist%20is%20generated.png"> <br>
 
 </details> 
 
