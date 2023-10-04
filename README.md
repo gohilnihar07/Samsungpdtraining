@@ -3641,4 +3641,17 @@ In summary, Physical Verification acts as the gatekeeper, validating the precisi
 
 <details> 
 	<summary>LAB</summary>
+	
+**OpenLane :-**
+OpenLane stands out as a trailblazing and open-source toolchain, empowering the creation of custom Application-Specific Integrated Circuits (ASICs). Widely recognized in the semiconductor realm, it's celebrated for making chip design accessible to all. OpenLane boasts a comprehensive suite of EDA (Electronic Design Automation) tools and scripts, smoothing the journey from RTL (Register Transfer Level) to GDSII (Graphic Design System II) in ASIC design. It's not just a tool—it's a movement, championing accessibility, collaboration, and personalized circuit creation. This tool gives developers, from hobbyists to seasoned pros, the keys to design and produce custom chips tailored to their unique specifications. OpenLane's transparent, community-driven ethos is a breath of fresh air, propelling ASIC design forward and breaking down the traditionally high barriers to entry in this field.<br>
+
+--> Commands:- <br>
+
+```ruby
+/flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+```
+
 </details> 
