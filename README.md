@@ -3487,3 +3487,53 @@ set_load -min 0.1 \[all_outputs];
  
 - In slower cells often face setup issues. Slower cells require more setup time because they process data slowly, potentially leading to setup violations if not met. Here also we can see in operating conditions wherever we used ss process, there we can see the setup violations and further that becomes more dangerous as voltage and temperature decreases.<br><br>
 </details>
+
+
+
+## DAY-15 Inception of EDA and PDK
+<details>
+	<summary> Introduction </summary>
+	An integrated circuit (IC), often referred to as simply an IC, is a comprehensive assembly of electronic circuits situated on a single, compact flat component—commonly recognized as a "chip." This chip primarily consists of semiconductor material, predominantly silicon. The customary arrangement involves mounting the integrated circuit onto a printed circuit board (PCB), thereby giving rise to a fully operational electronic system.<br>
+      <img width="800"  alt="netlist" src=""> <br>
+
+      View of, how complete system looks,<br>
+      
+<img width="800"  alt="netlist" src=""> <br>
+      
+*-->Core*  <br>
+A "core" in the context of integrated circuit (IC) design denotes a fundamental functional block or module. Cores are meticulously crafted to execute precise tasks or functions, and their integration with other cores and components allows for the creation of intricate ICs with diverse functionalities to serve various purposes.<br>
+*-->Die*  <br>
+A "die" stands as a distinctive component within the context of silicon wafer intricacies, encapsulating an individual integrated circuit (IC) or chip. The silicon wafer undergoes meticulous division into multiple smaller sections, and within each of these sections resides a replicated version of the identical integrated circuit design. These segmented portions, aptly named "dies," represent miniature entities. It's noteworthy that each die, functioning as an independent entity, can operate autonomously once surgically separated from the wafer, embodying the essence of an individualized and self-sufficient chip.<br>
+*-->Pads*  <br>
+Pads serve as the tangible external connections or terminals on the SoC. These crucial points act as the interface between the SoC and the external environment, encompassing input and output pins for linking with other electronic components, power supply pins, ground pins, and more. Positioned along the periphery of the die, pads facilitate soldering or wire connections to the SoC, playing a pivotal role in establishing and expanding the SoC's connectivity.<br>
+     
+*- Varieties of Pads* <br>
+
+- Input Pads: <br>
+
+These serve as conduits for external signals entering the IC. For instance, they might receive data inputs from sensors or user interfaces, facilitating the integration of external information.
+- Output Pads: <br>
+
+Designed for transmitting signals generated within the IC to external devices or other segments of a circuit. An example includes the use of output pads to send data to a display or transmit information to another IC.
+- Power Pads: <br>
+
+Essential for providing power to the IC, these pads are typically linked to the power supply voltage (VDD) and ground (GND), ensuring the energy requirements of the IC are met.
+- Ground Pads: <br>
+
+Connected to the ground reference voltage (GND), ground pads play a critical role in maintaining proper functionality and reducing noise within the circuit.
+No-Connect Pads:
+
+Some pads intentionally remain unconnected and are designated as "no-connect" to prevent unintended connections, ensuring the integrity and stability of the circuit.
+ <img width="800"  alt="netlist" src=""> <br>
+ Contained within a QFN-48 package, denoting Quad Flat No Leads with 48 pins, this specific component boasts a dimension of 7mm by 7mm. Each of the 48 pins serves as a vital connection point, establishing interfaces with various components or packages integrated onto the design board. The central focal point within this package is typically occupied by a microchip. The pins situated on the periphery, commonly termed "outbounds," play a pivotal role in orchestrating the seamless exchange of data between the external world and the encapsulated chip, thus contributing significantly to the functionality of the entire package.
+</details>
+
+
+<details>
+	<summary> RTL to GDS</summary>
+</details>
+
+
+<details> 
+	<summary>LAB</summary>
+</details> 
