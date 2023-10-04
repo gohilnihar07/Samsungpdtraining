@@ -3494,11 +3494,11 @@ set_load -min 0.1 \[all_outputs];
 <details>
 	<summary> Introduction </summary>
 	An integrated circuit (IC), often referred to as simply an IC, is a comprehensive assembly of electronic circuits situated on a single, compact flat component—commonly recognized as a "chip." This chip primarily consists of semiconductor material, predominantly silicon. The customary arrangement involves mounting the integrated circuit onto a printed circuit board (PCB), thereby giving rise to a fully operational electronic system.<br>
-      <img width="800"  alt="netlist" src=""> <br>
+      <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/DAY-15%20I1.PNG"> <br>
 
       View of, how complete system looks,<br>
       
-<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/I2.PNG"> <br>
       
 *-->Core*  <br>
 A "core" in the context of integrated circuit (IC) design denotes a fundamental functional block or module. Cores are meticulously crafted to execute precise tasks or functions, and their integration with other cores and components allows for the creation of intricate ICs with diverse functionalities to serve various purposes.<br>
@@ -3523,14 +3523,14 @@ Connected to the ground reference voltage (GND), ground pads play a critical rol
 - No-Connect Pads: <br>
 Some pads intentionally remain unconnected and are designated as "no-connect" to prevent unintended connections, ensuring the integrity and stability of the circuit.<br>
 
- <img width="800"  alt="netlist" src=""> <br>
+ <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/I3.PNG"> <br>
  Contained within a QFN-48 package, denoting Quad Flat No Leads with 48 pins, this specific component boasts a dimension of 7mm by 7mm. Each of the 48 pins serves as a vital connection point, establishing interfaces with various components or packages integrated onto the design board. The central focal point within this package is typically occupied by a microchip. The pins situated on the periphery, commonly termed "outbounds," play a pivotal role in orchestrating the seamless exchange of data between the external world and the encapsulated chip, thus contributing significantly to the functionality of the entire package.
 </details>
 
 
 <details>
 	<summary> RTL to GDS</summary>
-	 <img width="800"  alt="netlist" src=""> <br>
+	 <img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/RTL%20to%20GDS.PNG"> <br>
 	
  **->Synthesis:-**
  synthesis is a critical step that involves the transformation of a high-level hardware description of a digital circuit, often articulated in a hardware description language (HDL) like VHDL or Verilog. This transformation leads to the creation of a netlist, a representation encompassing both the logical and physical components essential for shaping the actual integrated circuit.<br>
@@ -3654,20 +3654,20 @@ prep -design picorv32a
 run_synthesis
 ```
 <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
-<img width="800"  alt="netlist" src=""> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/1."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/2."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/3."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/4."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/5."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/6."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/7."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/8."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/9."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/9.b"> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/10."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/11."> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/12.png"> <br>
+<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e9b787e91e6822ef6b2309a60409e738b1915e83/DAY-15/12."> <br>
 <img width="800"  alt="netlist" src=""> <br>
 <img width="800"  alt="netlist" src=""> <br>
 <img width="800"  alt="netlist" src=""> <br>
