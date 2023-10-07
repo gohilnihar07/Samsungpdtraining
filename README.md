@@ -3848,11 +3848,11 @@ In conclusion, decoupling capacitors are a critical part of VLSI system design, 
 
 
 <details>
-	<summary> </summary>
+	<summary>Power planning </summary>
 	Power planning, the use of decoupling capacitors, ground bounce, voltage droop, and voltage mesh are all important aspects of VLSI (Very Large Scale Integration) system design that play a crucial role in managing power distribution and ensuring reliable operation of integrated circuits.<br>
         Let's explore each of these concepts in detail: <br>
 	
-*- Power Planning:*
+**--> Power Planning:**
 
 Definition: Power planning, also known as power distribution network (PDN) design, involves the layout and distribution of power supply lines (VDD) and ground lines (VSS or GND) throughout the chip. The goal is to ensure efficient and low-impedance delivery of power to all functional blocks.
 
