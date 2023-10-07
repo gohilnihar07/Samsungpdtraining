@@ -3915,11 +3915,45 @@ In summary, power planning, decoupling capacitors, ground bounce, voltage droop,
 
 
 
+
+
 <details>
 	<summary>LAB- OpenLANE for floorplan</summary>
 	--> The Images given below give a clear picture of how the floorplan is done in Openlane and how the directories look before and after the run, <br>
-	
+        ->README.md file which will say what all parameters need to be set for each stage,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/26.%20README.md%20file%20which%20will%20say%20what%20all%20parameter%20are%20need%20to%20be%20set%20for%20each%20stage.png"> <br>
+        -> parameters which are needed to be set for floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/27.%20parameter%20which%20are%20needed%20to%20be%20set%20for%20floorplan.png"> <br>
+        ->command to see default values are set for floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/28.%20command%20to%20see%20default%20values%20are%20set%20for%20floorplan%20.png"> <br>
+        -> What all default values are set for floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/28.%20what%20all%20default%20values%20are%20set%20for%20floorplan%20.png"> <br>
+	->command to see that config.tcl file values which are set for floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/30.%20command%20to%20see%20that%20config.tcl%20file%20values%20which%20are%20set%20for%20floorplan%20.png"> <br>
+        ->config.tcl file values which are set for floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/31.%20config.tcl%20file%20values%20which%20are%20set%20for%20floorplan%20.png"> <br>
+        -> Now we can see after running the floorplan there is reports are getting generated,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/32.%20now%20we%20can%20see%20after%20running%20floorplan%20there%20is%20reports%20are%20getting%20generated.png"> <br>
+        ->can see in this what all parameter it has taken,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/35.%20can%20see%20in%20this%20what%20all%20parameter%20it%20has%20taken.png"> <br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/35.%20can%20see%20in%20this%20what%20all%20parameter%20it%20has%20taken.png"> <br>
+        ->DEF file after running floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/36.%20DEF%20file%20after%20running%20floorplan.png"> <br>
+        ->To see the actual layout after the floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/37.%20To%20see%20the%20actual%20layout%20after%20floorplan.png"> <br>
+	->Can see the layout after floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/38.%20Can%20see%20the%20layout%20after%20floorplan.png"> <br>
+        ->"what" command,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/what.png"> <br>
+        ->Reviwing layout after floorplan,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/39.%20Reviwing%20layout%20after%20floorplan.png"> <br>
+        ->reviewing layout after floorplan--> Tap cells ,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/41.%20reviewing%20layout%20after%20floorplan...%20Tap%20cells%20.png"> <br>
+	-> reviewing layout after floorplan... preplaced cells in the left bottommost core,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/42.%20reviewing%20layout%20after%20floorplan...%20preplaced%20cells%20in%20left%20bottom%20most%20core.png"> <br>
 </details>
+
+
 
 
 
@@ -3989,6 +4023,24 @@ Initial placement is typically carried out using EDA tools specifically designed
 
 In summary, library netlist binding and initial place design are crucial stages in the physical design flow of VLSI chip design. Netlist binding associates functional descriptions with physical standard cells, while initial placement positions these cells on the chip's layout canvas, setting the stage for subsequent optimization and routing. These stages are vital for achieving efficient and high-performance chip layouts.
 </details>
+
+
+
+
+
+
+
+<details>
+	<summary> LAB- OpenLANE for Placementc</summary>
+	->Result after run_placement,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/43.%20Result%20after%20run_placement.png"> <br>
+        ->To see the layout post placement,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/44.%20To%20see%20the%20layout%20post%20placement.png"> <br>
+	->Layout post placement,<br>
+	<img width="800"  alt="netlist" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/52ec2c3df782605e02dae4eb8238ed5edd322889/DAY-16/45.layout%20post%20placement.png"> <br>
+</details>
+
+
 
 
 
