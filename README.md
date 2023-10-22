@@ -4586,7 +4586,14 @@ This comprehensive process forms the foundation of semiconductor device manufact
 
 
 
-## Day-18 Pre timing Analysis and Importance of good clock tree ##
+
+
+
+
+
+
+
+## Day-18 Pre timing Analysis and Importance of Good Clock Tree ##
 
 <details>
  <summary>Steps to convert Grid into track info</summary>
@@ -4596,15 +4603,17 @@ This comprehensive process forms the foundation of semiconductor device manufact
 - LEF files describe the characteristics of individual cells or components within a semiconductor library.
 - Here we are converting .mag files of inverter to .lef .
 
-The track info detail is as follows:<br>
-<img width="600" alt="tracks_info" src="https://github.com/Sidv005/Samsung-PD-Training/blob/782a7481f9e71a461b90bd38d4e5c4224b2a80e6/SamsungPD_training/day4_final/tracks_info.png"><br>
-- Now grid is set as hsown in below figure.<br>
-<img width="600" alt="tckon_grid" src="https://github.com/Sidv005/Samsung-PD-Training/blob/782a7481f9e71a461b90bd38d4e5c4224b2a80e6/SamsungPD_training/day4_final/tckon_grid.png"><br>
+- The track info detail is as follows:<br>
+<img width="600" alt="tracks_info" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/1.%20track%20info.png"><br>
+- Now the grid is set as shown in the below figure.<br>
+<img width="600" alt="tracks_info" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/2.%20Command%20G.png"><br>
+
+
 
 1. Rule 1 : Input and output port should lie on the intersection of horizontal and vertical track
 
 2. Rule 2 : The width of a standard cell should be odd multiple of the horizontal track pitch<br>
-<img width="600" alt="grid_check" src="https://github.com/Sidv005/Samsung-PD-Training/blob/0894a12dbc3fcd72cd41a580a9cba75abfff0717/SamsungPD_training/day4_final/grid_check.PNG"><br>
+<img width="600" alt="grid_check" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/3.%20rule%201%20odd%20multiple.png"><br>
 
 - Here we can observe that the width equals to 3 times the horizontal track pitch.
 </details>
@@ -4616,11 +4625,11 @@ The track info detail is as follows:<br>
 
 Then use the ***lef_write*** command this creates a .lef file
 
-The following image shows the inclusion of the sky130_siddhant.lef file in src.<br>
-<img width="600" alt="src_content" src="https://github.com/Sidv005/Samsung-PD-Training/blob/0894a12dbc3fcd72cd41a580a9cba75abfff0717/SamsungPD_training/day4_final/src_content.png"><br>
+The following image shows the inclusion of the sky130_nihar.lef file in src.<br>
+<img width="600" alt="src_content" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/4.%20can%20see%20mag%20file%20of%20my%20name%20is%20created.png"><br>
 
 The contents of the .lef file are shown in the below image.<br>
-<img width="600" alt="siddhant.lef" src="https://github.com/Sidv005/Samsung-PD-Training/blob/0894a12dbc3fcd72cd41a580a9cba75abfff0717/SamsungPD_training/day4_final/siddhant.lef.png"><br>
+<img width="600" alt="siddhant.lef" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/5.%20nihar_inv.lef%20.png"><br>
 
 </details>
 
@@ -4629,23 +4638,23 @@ The contents of the .lef file are shown in the below image.<br>
 
 ```ruby
 cd ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
-cp sky130_siddhant.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+cp sky130_nihar_inv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
 cd ~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/libs
 cp sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
 cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/
 vim config.tcl
 ```
-The below screenshot displays the modified config.tcl file.<br>
-<img width="600" alt="config" src="https://github.com/Sidv005/Samsung-PD-Training/blob/8b203812883cf396508a7b9c7b3c8d05e47c5eb5/SamsungPD_training/day4_final/config.PNG"><br>
-
-The following image demonstrates how the .lef file is added before synthesizing.<br>
-<img width="600" alt="siddhant.lef_added" src="https://github.com/Sidv005/Samsung-PD-Training/blob/8b203812883cf396508a7b9c7b3c8d05e47c5eb5/SamsungPD_training/day4_final/siddhant.lef_added.png"><br>
-
+The openLane start command for new cell:<br>
+<img width="600" alt="config" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/6.%20openlane%20start%20command%20for%20new%20cell.png"><br>
+run_synthesis command:<br>
+<img width="600" alt="config" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/8.%20run_synthesis.png"><br>
 The following image demonstrates how the custom cell is merged into the design during synthesis.<br>
-<img width="600" alt="siddhantinv_mergerd" src="https://github.com/Sidv005/Samsung-PD-Training/blob/8b203812883cf396508a7b9c7b3c8d05e47c5eb5/SamsungPD_training/day4_final/siddhantinv_mergerd.png"><br>
+<img width="600" alt="siddhant.lef_added" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/7.%20in%20synthesis%20we%20can%20it%20has%20taken%20my%20cell.png"><br>
 
 - We can observe that the cell of our name is getting used.
 </details>
+
+
 
 <details>
  <summary>Introduction to Delay Table</summary>
@@ -4696,14 +4705,20 @@ echo $::env(SYNTH_DRIVING_CELL)
 <img width="600" alt="SET_STRATEGY1" src="https://github.com/Sidv005/Samsung-PD-Training/blob/02ddba812831bd12ca3271a69608cf8c5ec1085f/SamsungPD_training/day4_final/SET_STRATEGY1.png"><br>
 
 After modifying the configuration when we give run_synthesis<br>
-<img width="600" alt="slack%3D-10(reduced)" src="https://github.com/Sidv005/Samsung-PD-Training/blob/02ddba812831bd12ca3271a69608cf8c5ec1085f/SamsungPD_training/day4_final/slack%3D-10(reduced).png"><br>
-When we give run_floorplan we get an error of macro placement so we need to comment the lines from flooplan.tcl. Then when we run_floorplan it works<br>
-<img width="600" alt="run_floorplan" src="https://github.com/Sidv005/Samsung-PD-Training/blob/02ddba812831bd12ca3271a69608cf8c5ec1085f/SamsungPD_training/day4_final/run_floorplan.png"><br>
+<img width="600" alt="slack%3D-10(reduced)" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/10.%20slack%200%20after%20changing%20constraints%20.png"><br>
+run_floorplan error command:<br>
+<img width="600" alt="run_floorplan" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/11.%20floorplan%20error.png"><br>
 
+When we give run_floorplan we get an error of macro placement so we need to comment the lines from flooplan.tcl.<br>
+<img width="600" alt="run_floorplan" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/12.%20commenting%20from%20floorplan.tcl%20to%20solve%20error.png"><br>
+Then when we run_floorplan it works<br>
+<img width="600" alt="run_placement" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/13.%20run_floorplan.png"><br>
 Then we need to give run_placement<br>
-<img width="600" alt="run_placement" src="https://github.com/Sidv005/Samsung-PD-Training/blob/02ddba812831bd12ca3271a69608cf8c5ec1085f/SamsungPD_training/day4_final/run_placement.png"><br>
-
-<img width="600" alt="place_layout" src="https://github.com/Sidv005/Samsung-PD-Training/blob/02ddba812831bd12ca3271a69608cf8c5ec1085f/SamsungPD_training/day4_final/place_layout.png"><br>
+<img width="600" alt="run_placement" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/14.%20run_placement.png"><br>
+Layout of my cell: <br>
+<img width="600" alt="place_layout" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/15.%20layout%20of%20my%20cell.png"><br>
+Can see my cell in layout:<br>
+<img width="600" alt="place_layout" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/16.%20can%20see%20my%20cell%20in%20layout.png"><br>
 </details>
 
 <details>
@@ -4734,26 +4749,25 @@ Consider the below example<br>
  <summary>Steps to configure OpenSTA</summary>
 - Firstly we have to write a pre_sta.conf file<br>
 <img width="600" alt="pre_sta_conf" src="https://github.com/Sidv005/Samsung-PD-Training/blob/65a532a682167581f10bdfb2c7c311cb7c2f8446/SamsungPD_training/day4_final/pre_sta_conf.tcl.PNG"><br>
+can see the slack met after pre_sta.conf<br>
+<img width="600" alt="pre_sta_conf" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/17.%20can%20see%20the%20slack%20met%20after%20in%20pre_sta.conf%20.png"><br>	
 - Then we need to run sta pre_sta.conf<br>
 <img width="600" alt="pre_sta_conf" src="https://github.com/Sidv005/Samsung-PD-Training/blob/65a532a682167581f10bdfb2c7c311cb7c2f8446/SamsungPD_training/day4_final/pre_sta.png"><br>
-
+- New verilog (.v):<br>
+<img width="600" alt="pre_sta_conf" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/17.%20new%20verilog.v%20.png"><br>	
 </details>
 
 <details>
  <summary>Clock Tree Synthesis TritconCTS and signal integrity</summary>
 	
-In STA use the below command
-```ruby
-write_verilog ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/crct2/results/synthesis/picorv32a.synthesis.v
-```
 - Now we need to use the below commands in openlane<br>
 ```ruby
-run_floorplan
-run_placement
 run_cts
 ```
-.def file is generated in cts which is shown below.<br>
-<img width="600" alt="(after_cts_def)" src="https://github.com/Sidv005/Samsung-PD-Training/blob/65a532a682167581f10bdfb2c7c311cb7c2f8446/SamsungPD_training/day4_final/(after_cts_def).png"><br>
+
+- run_cts:<br>
+<img width="600" alt="(run_cts)" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/19.%20run_cts.png"><br>
+
 
 *Verifying the CTS design*
 
@@ -4766,7 +4780,7 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 echo $::env(CTS_ROOT_BUFFER)
 ```
 
-<img width="600" alt="(after_cts_def)" src="https://github.com/Sidv005/Samsung-PD-Training/blob/65a532a682167581f10bdfb2c7c311cb7c2f8446/SamsungPD_training/day4_final/(after_cts_verify).png"><br>
+<img width="600" alt="(verify_cts)" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/20.%20cts_verification.png"><br>
 
 </details>
 
@@ -4791,9 +4805,9 @@ These are the outputs of the above commands shown in below figure.<br>
 <img width="600" alt="(openroad_commands)2" src="https://github.com/Sidv005/Samsung-PD-Training/blob/65a532a682167581f10bdfb2c7c311cb7c2f8446/SamsungPD_training/day4_final/(openroad_commands)2.png"><br>
 
 From the below image we can observe that min slack is met.<br> 
-<img width="600" alt="(openroad_min_slack)" src="https://github.com/Sidv005/Samsung-PD-Training/blob/65a532a682167581f10bdfb2c7c311cb7c2f8446/SamsungPD_training/day4_final/(openroad_min_slack).png"><br>
+<img width="600" alt="min_slack" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/22.%20min_violated.png"><br>
 Max is violating<br>
-<img width="600" alt="(openroad_max_slack)" src="https://github.com/Sidv005/Samsung-PD-Training/blob/65a532a682167581f10bdfb2c7c311cb7c2f8446/SamsungPD_training/day4_final/(openroad_max_slack).png"><br>
+<img width="600" alt="max_slack" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/21.%20max_violated.png"><br>
 
 ***Steps to execute STA with right timing library***
 
@@ -4811,8 +4825,8 @@ report_checks -path_delay min_max -fields {slew trans net cap input pin} -format
 echo $::env(CTS_CLK_BUFFER_LIST)
 ```
 Following the verification of checks in the report, we observe that both the minimum and maximum requirements have been satisfied.<br>
-<img width="600" alt="slack_met1" src="https://github.com/Sidv005/Samsung-PD-Training/blob/299e9f62c6ad297ccc575256fe1916b6c40f6c77/SamsungPD_training/day4_final/slack_met1.PNG"><br>
-<img width="600" alt="slack_met2" src="https://github.com/Sidv005/Samsung-PD-Training/blob/299e9f62c6ad297ccc575256fe1916b6c40f6c77/SamsungPD_training/day4_final/slackmet2.PNG"><br>
+<img width="600" alt="slack_met1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/24.%20met_hold_kargaye.png"><br>
+<img width="600" alt="slack_met2" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/23.%20met_kargaye.png"><br>
 
 *Steps to observe impact of bigger CTS buffers on setup and hold timing*
 
@@ -4842,8 +4856,11 @@ read_sdc designs/picorv32a/src/my_base.sdc
 set_propagated_clock [all_clocks]
 report_checks -path_delay min_max -fields {slew trans net cap input pin} -format full_clock_expanded
 ```
-We can observe that max slack improved from 5.10 to 5.18.<br>
-<img width="600" alt="commands1" src="https://github.com/Sidv005/Samsung-PD-Training/blob/d3a9c83fc1937f943217921722ab4623f4ef7e89/SamsungPD_training/day4_final/slackmet3.PNG"><br>
+
+run_cts:<br>
+<img width="600" alt="commands1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/25.%20run_cts.png"><br>
+We can see slack has met now:<br><br>
+<img width="600" alt="commands1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-18/26.%20slack%20met.png"><br>
 </details>
 
 
@@ -4955,3 +4972,169 @@ The below screenshot shows the results folder.<br>
 <img width="600" alt="route_pic10" src="https://github.com/Sidv005/Samsung-PD-Training/blob/799df10e787d03f566a7e068394ae1f66348237e/day19/route_pic10.PNG"><br>
 
 </details>
+
+
+
+
+
+
+
+
+
+## Day-20 Floorplanning and power planning labs ##
+<details>
+ <summary>Theory</summary>
+	The physical design flow in VLSI (Very Large Scale Integration) is a series of steps that transform a high-level hardware description of a digital circuit into a physical layout that can be fabricated as an integrated circuit (IC) on a semiconductor wafer. This flow involves several stages and a range of tools and methodologies. Here is an overview of the typical steps in the physical design flow:
+
+1. Design Specification: This is the initial step where you gather requirements and specifications for the digital circuit. It includes understanding the functionality, power consumption, performance, area constraints, and other design goals.
+
+2. RTL Design: Register Transfer Level (RTL) design involves creating a high-level representation of the digital circuit in a hardware description language (HDL) like VHDL or Verilog. The RTL description typically consists of flip-flops, registers, and the interconnections between them.
+
+3. Logic Synthesis: This step involves converting the RTL description into a gate-level representation. Logic synthesis tools map the RTL to a library of standard cells, optimizing for area, power, and speed while meeting the design constraints.
+
+4. Floor Planning: In this phase, you decide on the placement of different functional blocks and macros on the chip. It involves defining the size and location of each block to optimize for area, power, and signal routing.
+
+5. Power Planning: Power distribution networks are designed to ensure that all parts of the chip receive a stable and adequate power supply. This includes the design of power grids and voltage regulation circuits.
+
+6. Placement: The placement stage determines the physical locations of each standard cell on the chip. Tools aim to minimize wirelength, optimize for timing, and meet other design constraints.
+
+7. Clock Tree Synthesis (CTS): CTS is the process of designing a clock distribution network to ensure that clock signals reach all the flip-flops and latches with minimal skew and low power consumption.
+
+8. Routing: The routing step involves creating the physical wires (metal layers) that connect the gates, ensuring that all connections meet design requirements and constraints. Global and detailed routing are usually performed.
+
+9. Design for Manufacturing (DFM): DFM considerations address manufacturability issues like lithography, etching, and other process-related aspects to ensure the chip can be manufactured with high yield.
+
+10. Design Verification: Extensive verification is carried out at each stage of the physical design flow to ensure that the final layout adheres to the original design specifications and that it is free from logical and physical errors.
+
+11. Physical Verification: This involves checking the design against manufacturing rules, including design rule checking (DRC) and layout vs. schematic (LVS) checks.
+
+12. Extraction: Parasitic capacitances and resistances are extracted from the layout and included in the simulation models to accurately predict circuit behavior.
+
+13. Sign-off: This is the final review and approval stage before tape-out, where the design is deemed ready for fabrication.
+
+14. Tape-out: Once the design is thoroughly reviewed, validated, and optimized, it is sent for semiconductor fabrication. A set of files representing the design layout is created and submitted to the foundry.
+
+15. Post-Tapeout Tasks: After fabrication, there may be additional tasks such as package design, testing, and assembly before the final IC is ready for use.
+
+The physical design flow in VLSI is a complex and iterative process that requires careful planning and the use of various EDA (Electronic Design Automation) tools. Success in physical design depends on meeting the design goals and constraints while optimizing for power, area, and performance.
+</details>
+
+<details>
+ <summary>Labs</summary>
+	
+```ruby
+git clone https://github.com/manili/VSDBabySoC.git
+git clone https://github.com/Devipriya1921/VSDBabySoC_ICC2.git
+git clone https://github.com/bharath19-gs/synopsys_ICC2flow_130nm.git
+git clone https://github.com/kunalg123/icc2_workshop_collaterals.git
+git clone https://github.com/google/skywater-pdk-libs-sky130_fd_sc_hd.git
+git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+```
+
+ ```ruby
+gvim vsdbabysoc.tcl &
+gvim avsdpll.lib &
+```
+
+*vsdbabysoc.tcl*
+- Modifying the contents to my path, remove -lib in read_lib commands, and replace MYCLK to clk since the clock used in the design is {clk}
+- All of the commands have been inserted in gvim and the tool will run it once at a time.<br>
+<img width="800" alt="1.vsdbabysoc.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/1_vadbabysoc_tcl.png"><br>
+<img width="800" alt="1.vsdbabysoc.tcl" src=""><br>
+
+
+
+ *avsdpll.lib*
+ 
+- Remove the unwanted pins<br>
+<img width="800" alt="3.avsdpll.lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/3_avsdpll_lib.png"><br>
+
+```ruby
+dc_shell
+source vsdbabysoc.tcl
+```
+
+-sourcing that tcl file:<br>
+<img width="800" alt="3.avsdpll.lib" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/4_source.png"><br>
+***Reports***
+
+Report timing image is shown below.<br>
+<img width="800" alt="pic3_timing" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/8_report_timing.png"><br>
+
+Report area image is shown below.<br>
+<img width="800" alt="pic4_area" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/6_report_area.png"><br>
+
+Report power image is shown below.<br>
+<img width="800" alt="pic5_power" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/7_report_power.png"><br>
+
+Report constraints:<br>
+<img width="800" alt="pic5_power" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/9_report_constraint.png"><br>
+
+
+***Output schematic***<br>
+<img width="800" alt="sche_pic1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/10_report_gui.png"><br>
+<img width="800" alt="sche_pic1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/11_report_gui.png"><br>
+<img width="800" alt="sche_pic1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/12_report_gui.png"><br>
+<img width="800" alt="sche_pic1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/13_report_gui.png"><br>
+<img width="800" alt="sche_pic1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/14_report_gui.png"><br>
+<img width="800" alt="sche_pic1" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/15_report_gui.png"><br>
+*RVMYTH core*<br>
+<img width="800" alt="sche_pic2" src="https://github.com/Sidv005/Samsung-PD-Training/blob/5867dee56a51d6d04d937d6db09f9af1480ebff6/day20/sche_pic2.png"><br>
+
+***Performing physical design***
+
+```ruby
+gvim top.tcl
+gvim icc2_common_setup.tcl
+gvim icc2_dp_setup.tcl
+gvim init_design.read_parasitic_tech_example.tcl
+gvim init_design.mcmm_example.auto_expanded.tcl
+gvim pns_example.tcl
+```
+*Modifying files*
+
+1. top.tcl<br>
+<img width="800" alt="3.top.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/16_top_TCL.png"><br>
+<img width="800" alt="3.top.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/17_top_TCL.png"><br>
+<img width="800" alt="3.top.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/18_top_TCL.png"><br>
+
+2. icc2_common_setup.tcl<br>
+<img width="800" alt="4.icc2_common.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/19_icc2_commom.png"><br>
+<img width="800" alt="4.icc2_common.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/20_icc2_commom.png"><br>
+
+3. icc2_dp_setup.tcl<br>
+<img width="800" alt="5.icc2_dp.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/21_icc2_dp_setup.png"><br>
+
+4. init_design.read_parasitic_tech_example.tcl<br>
+<img width="800" alt="6.init_example.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/22_example_tcl.png"><br>
+ 
+5. init_design.mcmm_example.auto_expanded.tcl<br>
+<img width="800" alt="7.init_expanded.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/23_expanded_tcl.png"><br>
+
+6. pns_example.tcl<br>
+<img width="800" alt="8.pns_ex.tcl" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/24_pns_example.png"><br>
+
+**Observing for utilization**
+
+***Output Layout***
+
+```ruby
+source top.tcl
+```
+
+<img width="800" alt="pic7_floorplan_plac" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/25.%20run%20completed.png"><br>
+
+gui run completed
+<img width="800" alt="pic8_chip" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/26.%20gui_run%20completed.png"><br>
+
+Below screenshot displays the timing report showing slack = -5.31. <br>
+<img width="800" alt="pic9_40%25_before_propagated" src="https://github.com/Sidv005/Samsung-PD-Training/blob/5867dee56a51d6d04d937d6db09f9af1480ebff6/day20/pic9_40%25_before_propagated.png"><br>
+
+
+-pll_dac :<br>
+<img width="800" alt="pic13_40-50%25violators" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/77ca6e75034f22aa71437cadaf8257b75e31fcb2/DAY-20/27.%20pll_dac.png"><br>
+
+
+</details>
+
+
