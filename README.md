@@ -5221,3 +5221,95 @@ top.tcl <br>
 
 
 
+
+
+
+
+## Day-22 CTS Analysis ##
+
+<details>
+ <summary>Theory</summary>
+	
+**What is CTS?**
+
+- Clock Tree Synthesis
+- A technique for distributing the clock equally among all sequential parts of VLSI design
+- It will balancing the delays to all clock input pins when the clock is distributed equally
+- The goal of CTS is to minimize skew and insertion delay.
+
+**H-tree algorithm**
+
+- Find out all the flops present
+- Find out the center of all the flops
+- Trace clock port ot the center point
+- Divide the core into two parts, trace both the parts and reach to each center
+- From the center, again, divide the area into two and again trace till center at both the end
+- Repeat this algo till the time we reach the flop clock pin
+
+**Various CTS checks**
+
+1.  Skew check
+2.  Pulse width check
+3.  Duty cycle check
+4.  Latency check
+5.  Power check
+6.  Crosstalk Quality check
+7.  Delta Delay Quality check
+8.  Glitch Quality check
+
+
+</details>
+
+<details>
+ <summary>LABS</summary>
+
+**CTS Lab analysis**
+
+*Using 40% of utilization*
+
+- ***After CTS, we do synthesis***
+- Before we synthesize the clock trees, use below command to verify that the clock trees are properly defined
+
+```ruby
+check_clock_tree                        (Checking the issues that can lead to bad QoR)
+```
+This is used to check for common problems that might impact CTS. Verifies the given clock tree in current design to display possible issues with netlist, timing performance, etc. One warning which states that there are some clock cells that does not have LEQ cells for resizing is shown in below image.<br>
+<img width="800" alt="1.check_clock_tree" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/1.%20check_clock_tree"><br>
+
+```ruby
+check_legality                          (Checking the legality of the current placement and report out the violation statistics)
+```
+This command checks the legality of the curreent_placement and yields to report of violation statistics as shown in below image.<br>
+<img width="800" alt="2.check_legality" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/2.%20check_legality"><br>
+
+- In top.tcl as we can view that *clock_opt* is present, this is used to to perform clock tree synthesis and it optimizes the clock trees.<br>
+<img width="800" alt="6.clock_opt_top.tcl" src=""><br>
+
+Reports:-
+
+```ruby
+report_clock_timing -type summary
+```
+
+<img width="800" alt="3.report_timing_summ" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/3.%20report_summary"><br>
+
+```ruby
+report_clock_timing -type skew
+```
+
+<img width="800" alt="4.report_timing_skew" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/4.%20report_skew"><br>
+
+```ruby
+report_clock_timing -type latency
+```
+
+<img width="800" alt="5.report_timing_latency" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/5.%20report_latency"><br>
+
+```ruby
+report_clock_timing -type transition
+```
+
+<img width="800" alt="7.transition" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/6.%20report_transition"><br>
+
+
+</details>
