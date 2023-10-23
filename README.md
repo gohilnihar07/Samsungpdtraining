@@ -5367,7 +5367,7 @@ report_clock_timing -type transition
 
  <summary>Labs</summary>
  
- - We need to add 3 lines between place_opt and clock_opt , to insert the clock buffers in the design 
+ - We need to add 3 lines between place_opt and clock_opt , to insert the clock buffers in the design <br>
 
  ```ruby
   
@@ -5375,42 +5375,35 @@ report_clock_timing -type transition
  synthesize_clock_tree
  set_propagated_clock \[all_clocks]
  ```
+- PNS example:<br>
+  <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/1_PNS_example_tcl.png"> <br><br>
 
-   <img  width="1085" alt="hand_writ_exam" src="https://github.com/AbhishekChinchani/Samsung_pd/blob/8124a19f0bda887ab38c003fa9d3f45d8e50315b/day23/adding_in_top.tcl.png">
+   <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/2_top.tcl.png"><br>
    
- - Before this we need to change the input voltage to 1.80V
+ - Before this we need to change the input voltage to 1.80V<br>
 
-<img  width="1085" alt="hand_writ_exam" src="https://github.com/AbhishekChinchani/Samsung_pd/blob/8124a19f0bda887ab38c003fa9d3f45d8e50315b/day23/change_voltage_1.8_3.png">
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/3_init_design_mcmm%20setting%20voltage%20to%201.8v.png"><bvr>
 
- - Then when we source this file we can see buffers in the design
+ - Then when we source this file we can see buffers in the design<br>
 
- - We can see that slack is reduced
+ - We can see that slack is reduced<br>
 
- Before
-   
-<img  width="1085" alt="hand_writ_exam" src="https://github.com/AbhishekChinchani/Samsung_pd/blob/8124a19f0bda887ab38c003fa9d3f45d8e50315b/day23/viol_after_mod_16.png">
-
-   After
-
-<img  width="1085" alt="hand_writ_exam" src="https://github.com/AbhishekChinchani/Samsung_pd/blob/8124a19f0bda887ab38c003fa9d3f45d8e50315b/day23/slack_is_comparitively_reduced.png">
-   
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/5_report_timing_we%20can%20see%20that%20the%20slask%20has%20reduced.png"> <br>
+<img  width="1085" alt="hand_writ_exam" src=""><br>   
  
 
- - Three types of routing: P/G routing, Clock routing and Signal routing
+ - Three types of routing: P/G routing, Clock routing and Signal routing <br>
 
-	P/G routing:
-
- <img  width="1085" alt="hand_writ_exam" src="https://github.com/AbhishekChinchani/Samsung_pd/blob/31b137e4bee427cca24cd607ca9e45ceae265ec5/day23/top.tcl_1.png">
-
-**Clock Routing and signal routing**:
+**P/G routing**:<br>
+**Clock Routing and signal routing**:<br>
 
 - place_opt: Place and optimize the current design
 - clock_opt: Synthesize and route the clocks in the current design and then further optimize the design based on the propagated clock latencies
 - route_auto: runs global routing, track assignment and detail routing in one step
 
-<img  width="1085" alt="hand_writ_exam" src="https://github.com/AbhishekChinchani/Samsung_pd/blob/31b137e4bee427cca24cd607ca9e45ceae265ec5/day23/pns_2.png">
-    
-    
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4_gui.png"><br>   
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4.2%20can%20see%20the%20buffer%20here.png"><br>
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4.3%20buffer.png"><br>
 
         
 		
