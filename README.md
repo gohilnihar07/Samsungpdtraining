@@ -5417,10 +5417,16 @@ check_placement_constraints
  synthesize_clock_tree
  set_propagated_clock \[all_clocks]
  ```
+-  *set_lib_cell_purpose -include cts {sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_*}* command specifies that the library cells in the  tech_lib library(sky130_fd_sc_hd__tt_025C_1v80)  whose names start with "buf" should be used for clock tree synthesis.
+  -  *synthesize_clock_tree*  command synthesizes clock trees and updates  the  design  database with  the  compiled  clock  trees. The compilation of the clock tree is skew driven.  Optionally, this command can optimize compiled clock tree for slack metric.
+  -  *set_propagated_clock \[all_clocks]* command Specifies that delays be propagated through the clock network to determine latency at register clock pins.Propagated  clock latency is used for post-layout, after final clock tree generation. If  the  set_propagated_clock  command  is applied to pins or ports, it affects all register clock pins in the transitive fanout of the pins or ports. *The above command specifies to use propagated clock latency for all clocks only in the current mode in the design* . <br>
+   
 - PNS example:<br>
   <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/1_PNS_example_tcl.png"> <br><br>
 
-   <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/2_top.tcl.png"><br>
+  <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/2_top.tcl.png"><br>
+
+
    
  - Before this we need to change the input voltage to 1.80V<br>
 
@@ -5448,5 +5454,74 @@ check_placement_constraints
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4.3%20buffer.png"><br>
 
         
-		
+--> The clock buffers and ICG inserted in the circuit are as follows:
+
+```ruby
+
+-  Buffer/Inverter reference list for clock tree synthesis:
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_12
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_6
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__bufbuf_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__bufbuf_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkbuf_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkbuf_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkbuf_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkbuf_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkbuf_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s15_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s15_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s18_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s18_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s25_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s25_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s50_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkdlybuf4s50_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlygate4sd1_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlygate4sd2_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlygate4sd3_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlymetal6s2s_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlymetal6s4s_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlymetal6s6s_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__probe_p_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__probec_p_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkbufkapwr_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkbufkapwr_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkbufkapwr_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkbufkapwr_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkbufkapwr_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__bufinv_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__bufinv_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkinv_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkinv_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkinv_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkinv_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkinv_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkinvlp_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__clkinvlp_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__inv_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__inv_12
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__inv_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__inv_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__inv_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__inv_6
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__inv_8
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkinvkapwr_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkinvkapwr_16
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkinvkapwr_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkinvkapwr_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__lpflow_clkinvkapwr_8
+
+ICG reference list:
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlclkp_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlclkp_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dlclkp_4
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__sdlclkp_1
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__sdlclkp_2
+   sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__sdlclkp_4
+```	
 </details>
