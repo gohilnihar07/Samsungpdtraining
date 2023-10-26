@@ -5237,14 +5237,39 @@ top.tcl <br>
 - It will balancing the delays to all clock input pins when the clock is distributed equally
 - The goal of CTS is to minimize skew and insertion delay.
 
-**H-tree algorithm**
 
-- Find out all the flops present
-- Find out the center of all the flops
-- Trace clock port ot the center point
-- Divide the core into two parts, trace both the parts and reach to each center
-- From the center, again, divide the area into two and again trace till center at both the end
-- Repeat this algo till the time we reach the flop clock pin
+- Various Algorithms used for CTS
+
+   1. H-Tree
+
+ 
+  Steps:
+
+  - Find out all the flops present
+  - Find out the center of all the flops
+  - Trace clock port ot the center point
+  - Divide the core into two parts, trace both the parts and reach to each center
+  - From the center, again, divide the area into two and again trace till center at both the end
+  - Repeat this algo till the time we reach the flop clock pin.
+ 
+2. **Clockwise multi-source clock tree synthesis (CTS) algorithm** : It is a specific approach to designing and optimizing the clock distribution network in digital integrated circuits. In this algorithm, multiple clock sources are considered, and the clock tree is designed to distribute clock signals from these sources in a clockwise direction.
+ 
+ 
+
+  Steps:
+
+  - Identify and specify the multiple clock sources in the design. These sources may be associated with different clock domains or regions of the chip.
+  - Create a clock tree topology that outlines the placement of buffers and repeaters, the routing of clock lines, and the interconnection of clock network elements. In a multi-source CTS, the tree should be designed to distribute 	 
+    clock signals from all selected sources.
+  - Determine the type and sizes of buffers to be used in the clock tree. Sizing is crucial for optimizing power consumption, signal integrity, and clock skew. Consider the characteristics of each clock source when sizing buffers.
+  - Physically lay out the clock distribution network, including the placement of buffers and the routing of clock lines. Ensure that the routing accommodates the distribution of clock signals from multiple sources in a clockwise 
+    manner
+  - Implement clock gating cells as needed to selectively enable or disable clock signals to specific circuit portions when they are not in use. Ensure that clock signals are synchronized as they traverse the clock tree.
+  - Ensure that the clock tree meets timing constraints, such as setup and hold times, for all flip-flops and other clocked elements in the design. Adjust buffer sizes and placement as necessary to achieve timing closure.
+  - After synthesizing the clock tree, perform thorough verification, including simulations and static timing analysis, to ensure that the design requirements are met and that clock signals are properly distributed from all sources.
+  - it's common to go through several iterations of clock tree synthesis to achieve the desired performance, power efficiency, and timing closure. Fine-tune the clock tree as necessary based on the results of analysis and simulation.
+
+
 
 **Various CTS checks**
 
@@ -5275,6 +5300,10 @@ check_clock_tree                        (Checking the issues that can lead to ba
 ```
 This is used to check for common problems that might impact CTS. Verifies the given clock tree in current design to display possible issues with netlist, timing performance, etc. One warning which states that there are some clock cells that does not have LEQ cells for resizing is shown in below image.<br>
 <img width="800" alt="1.check_clock_tree" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/1.%20check_clock_tree"><br>
+<img width="800" alt="1.check_clock_tree" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/12a6755111ae0863f2d05fb6700f07c6a3ea7818/day-22/1.2%20man%20ctc-904.png"><br>
+CTS cannot resize a cell in the clock network unless  there  are  logically equivalent lib_cells specified in the clock reference list. This message indicates that there are cells instantiated in the  clock  network that have no logically equivalent lib_cells in the reference list,so no sizing can be done.<br><br>
+
+
 
 ```ruby
 check_legality                          (Checking the legality of the current placement and report out the violation statistics)
@@ -5298,19 +5327,32 @@ report_clock_timing -type skew
 ```
 
 <img width="800" alt="4.report_timing_skew" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/4.%20report_skew"><br>
+- These reports specify a skew report ,For skew reports, each report entry  is a  pair  of  sink  pins and their relative skew.
+- Skews reported by report_clock_timing are local skews only.  Local skew exists from one sink pin to another only if their associated sequential devices are connected via a data path in the appropriate from-to sense.
+-   Specify a skew report; you cannot use the -launch, -capture, -rise, -fall, and -lesser_than options if you specify  a skew report, and you can use the -include_uncertainty_in_skew option only in a skew, interclock_skew, or summary report.<br><br>
+
 
 ```ruby
 report_clock_timing -type latency
 ```
 
 <img width="800" alt="5.report_timing_latency" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/5.%20report_latency"><br>
+- Specify a latency report of those  clock  paths that reach right trigger edge at endpoint is reported.<br><br>
+
 
 ```ruby
 report_clock_timing -type transition
 ```
+Specify a transition time report.
+ <img width="800" alt="7.transition" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/6.%20report_transition"><br><br>
 
-<img width="800" alt="7.transition" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/1a9c9a4ceff1a79efce879d7a27ef7d354378a49/day-22/6.%20report_transition"><br>
 
+```ruby
+check_placement_constraints
+```
+<img width="800" alt="7.transition" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/12a6755111ae0863f2d05fb6700f07c6a3ea7818/day-22/7check_placement_constraints.png"><br>
+<img width="800" alt="7.transition" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/12a6755111ae0863f2d05fb6700f07c6a3ea7818/day-22/8%20man_check_placement_constraints.png"><br>
+ This command is used to check coarse placement constraints before  running  create_placement  or place_opt. If any infeasible constraints are found, information about the constraints will be written  out  for  the user to fix.<br><br>
 
 </details>
 
