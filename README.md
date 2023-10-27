@@ -5525,3 +5525,171 @@ ICG reference list:
    sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__sdlclkp_4
 ```	
 </details>
+
+
+
+
+
+
+
+
+
+
+
+# Day 24 ECO
+<details>
+
+ <summary>ECO</summary>
+ 
+ - ECO, or Engineering Change Order, in the context of VLSI (Very Large Scale Integration), refers to a process of making modifications or corrections to an already designed and taped-out integrated          circuit (IC) before it goes into production. ECOs are a crucial part of the design and manufacturing flow in VLSI, allowing designers to address issues, optimize performance, fix bugs, or incorporate      changes without the need for a complete redesign of the chip.
+
+ - ECOs are typically performed to address various issues, including functional errors, timing violations, power consumption concerns, or changes in specifications. They can also be required for yield        enhancement or to accommodate new features.
+ - ECO involves identifying the necessary changes in the design, often at the gate level, and implementing those changes without affecting the rest of the design. This process typically requires careful      validation to ensure that the changes don't introduce new issues.
+ - ECOs may involve changes to logic paths, which can impact timing. Achieving timing closure, ensuring that the circuit meets its timing constraints after ECO implementation, is a crucial part of the        process.
+ - Proper documentation of ECOs, including the reasons for the changes and their impact, is essential for tracking the changes and communicating them to manufacturing teams.
+ - ECOs can be a complex and iterative process, as multiple iterations may be required to achieve the desired design improvements or corrections. Efficient ECO management is critical to meet tight            schedules and ensure the quality and reliability of VLSI chips.
+</details>
+<details>
+
+ <summary>Labs</summary>
+
+ - After performing CTS (with clock buffers) we can see that the slack is improved but it is not met.
+
+  Setup
+  <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/4%20setup%20before.png">
+  
+  Hold
+  <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/5%20hold%20before.png">
+
+  The slacks have significantly improved compared with the case without cts buffers.
+
+- To meet the slack we upsize/downsize the cell depending on the requirement.
+  
+- To anlayze the path in GUI
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/13.%20critical%20path.png">
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/14.%20critical%20path%20schematic%20launch%20flop.png">
+
+   
+   
+- Upsizing the cell will increase the drive strength of the cell which helps in reducing the delay.
+  
+- Upsizing the cell using the command *size_cell*
+  ```ruby
+  size_cell core1/U628 sky130_fd_sc_hd__nand_2
+  size_cell core1/U501 sky130_fd_sc_hd__nand_2
+  ```
+  <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/11%20tranfix_1.png">
+  <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/11%20tranfix_2.png">
+ 
+
+  
+- Now we can see that the *report_timing -delay max* is met
+ <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/8%20setup%20after.png">
+- The worst met slack path in GUI is as follows
+   <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/14.%20critical%20path%20schematic%20launch%20flop.png">
+- Now we can see that the *report_timing -delay min* is met
+ <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/9%20hold%20after.png">
+
+
+- Giving *report_global_timing*
+ <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/12.%20global%20report%20timing.png">
+
+  We see that there are no setup or hold violations.
+
+**Comparing results before and after ECO**
+
+*report_qor*
+- This command reports Quality of Results information about  the  design.This  includes  timing  information, cell count details, and statistics such as combinational, noncombinational, and total area.
+- Under  the  Cell Count section, the Leaf Cell Count report includes all leaf cells that are not constant cells. Constant cells are  omitted  in this count. The Combinational Cell Count and Sequential      Cell Count only include leaf cells.
+- Under Area section, Cell Area (netlist) ignores physical-only cells but Cell  Area  (netlist and physical only) includes them for area calculation.
+- Comparing the qor before upsizing the cell and after upsizing the cell.
+   
+Before 
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/2%20area%20before.png">
+
+After
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/10%20area%20after.png">
+
+- We can see that the cell area is increased due to the upsizing of cell for meeting the slack.
+- We can see that still its not clean it still has 4 trans and 6 cap violations.
+- Fixing the trans violations by either upsizing the cell or adding a buffer
+
+When we give *report_constraints -max_transition -all_violators*
+We see that there are 2 trans violation. The steps to meet these violation is first *report_timing -through <violating_net>* Then increasing the drive strength of that cell using *size_cell*.
+ <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/11%20tranfix_3.png">
+ <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/11%20tranfix_4.png">
+
+
+
+Now we can see that all the violations are fixed
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/12.%20global%20report%20timing.png">
+
+
+*report_power*
+
+- This report gives us internal , switching and leakage power for of the power groups
+- Internal power: It refers to the power consumption within the Ic due to switching activites of transistors , gates and interconnects.
+- Switching power : It refers to the power consumed or dissipated when digital components such as transistors , gates or flip-flops changes states from one logic level to another.
+- Leakage power : It refers to the power consumption in a circuit that occurs when the transistors are not actively switching states.
+
+Before
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/3%20power%20before.png">
+
+After
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/11%20power%20after.png">
+
+
+
+**Adding Decaps**
+
+- The primary function of adding decaps is to filter out noise and stabilize the power supply.
+- Decpas assisit in regulating the voltage supplied to the digital circuit. They help mitigate voltage droops and spikes ensuring that the voltage remains stable and within the required specifications.
+- Properly placed decaps can help reduce Electromagnetic interferance by stabilizing power supply voltages.
+- Decaps are strategically placed throughout digital circuit to address the specific power distribution needs of that circuit.
+
+Adding decaps cells using the command *set FILLER_CELLS [get_object_name [sort_collection -descending [get_lib_cells {sky130_fd_sc_hd__fill* sky130_fd_sc_hd__decap*}] area]]*
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/1%20adding%20decap%20top.png">
+
+Now again sourcing the top.tcl and after that we can see that decaps are inserted
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/6%20decaps%20inserted.png">
+
+Meeting slack by changing size of cell 
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/15%20eco_sizecell_1.png">
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/16%20eco_sizecell_2.png">
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/16%20eco_sizecell_3.png">
+
+
+The decaps in GUI
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/17.%20highlighting%20decap%20cells.png">
+
+fillers in GUI
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/18.%20highlighting%20fillar.png">
+
+CTS buffer
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/21%20cts%20buffer.png">
+
+Clock sink
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/22%20clock%20sink.png">
+
+
+When we do final *report_power* 
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/eedc9b08df6663528fc6bdced3a006d2b4e7536a/day-24/20%20final%20power.png">
+We can see that power is optimized.
+
+  
+    
+</details>
+
+
+
+
