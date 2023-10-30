@@ -5396,6 +5396,8 @@ check_placement_constraints
 
 <details>
 
+
+
  <summary>Labs</summary>
  
  CLOCK GATING
@@ -5418,12 +5420,14 @@ In this manner, the compile_ultra -incremental -gate_clock command is used in th
 
  - We need to add 3 lines between place_opt and clock_opt , to insert the clock buffers in the design <br>
 
+
  ```ruby
-  
  set_lib_cell_purpose -include cts {sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_*}
  synthesize_clock_tree
  set_propagated_clock \[all_clocks]
  ```
+
+
 -  *set_lib_cell_purpose -include cts {sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_*}* command specifies that the library cells in the  tech_lib library(sky130_fd_sc_hd__tt_025C_1v80)  whose names start with "buf" should be used for clock tree synthesis.
   -  *synthesize_clock_tree*  command synthesizes clock trees and updates  the  design  database with  the  compiled  clock  trees. The compilation of the clock tree is skew driven.  Optionally, this command can optimize compiled clock tree for slack metric.
   -  *set_propagated_clock \[all_clocks]* command Specifies that delays be propagated through the clock network to determine latency at register clock pins.Propagated  clock latency is used for post-layout, after final clock tree generation. If  the  set_propagated_clock  command  is applied to pins or ports, it affects all register clock pins in the transitive fanout of the pins or ports. *The above command specifies to use propagated clock latency for all clocks only in the current mode in the design* . <br>
@@ -5441,11 +5445,10 @@ In this manner, the compile_ultra -incremental -gate_clock command is used in th
 
  - Then when we source this file we can see buffers in the design<br>
 
- - We can see that slack is reduced<br>
+ - We can see that slack is reduced to -0.14.<br>
 
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/5_report_timing_we%20can%20see%20that%20the%20slask%20has%20reduced.png"> <br>
-<img  width="1085" alt="hand_writ_exam" src=""><br>   
- 
+
 
  - Three types of routing: P/G routing, Clock routing and Signal routing <br>
 
