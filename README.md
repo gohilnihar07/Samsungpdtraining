@@ -1,5 +1,3 @@
-https://github.com/gohilnihar07/Samsungpdtraining/blob/29cfcec6ab7d472613d85297f5529bf78ab6fd5c/day-23/6_report_timing_min.png# Samsungpdtraining
-PD training 
 # Nihar_Pd_training
 This github repository summarizes the progress made in the samsung pd training. Quick links:
 
