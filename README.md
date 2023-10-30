@@ -5399,26 +5399,26 @@ check_placement_constraints
 
 
  <summary>Labs</summary>
- 
- CLOCK GATING
+  
+ **--> CLOCK GATING**
 
-    Stage: Synthesis
+*- Stage: Synthesis*
         Command Used: compile_ultra -incremental -gate_clock
         Purpose: This command is used during the synthesis stage.
         Function: It initiates the synthesis process, which converts a high-level RTL (Register-Transfer Level) description of the design into a gate-level representation. The -incremental option indicates that it is an incremental synthesis, which means that it only updates the parts of the design that have changed since the last synthesis run. The -gate_clock option suggests that it is related to optimizing clock gating.
 
-    Input Data:
+*Input Data:*
         Input Files: The DEF (Design Exchange Format) and gate-level netlist generated after synthesis are provided as input.
         Purpose: These input files serve as the basis for the synthesis process.
 
-    ICGs (Integrated Clock Gating) Insertion:
+*ICGs (Integrated Clock Gating) Insertion:*
         Action: During the synthesis process, Integrated Clock Gating cells (ICGs) are inserted into the design.
         Purpose: ICGs are added to optimize power consumption by gating the clock signals to specific parts of the design when they are not actively processing data. This helps reduce dynamic power consumption in the circuit.
 
 In this manner, the compile_ultra -incremental -gate_clock command is used in the synthesis stage, with input from DEF and gate-level netlist files, to insert ICGs into the design and optimize power efficiency by controlling clock signals.
 
 
- - We need to add 3 lines between place_opt and clock_opt , to insert the clock buffers in the design <br>
+- We need to add 3 lines between place_opt and clock_opt , to insert the clock buffers in the design <br>
 
 
  ```ruby
@@ -5428,7 +5428,7 @@ In this manner, the compile_ultra -incremental -gate_clock command is used in th
  ```
 
 
--  *set_lib_cell_purpose -include cts {sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_*}* command specifies that the library cells in the  tech_lib library(sky130_fd_sc_hd__tt_025C_1v80)  whose names start with "buf" should be used for clock tree synthesis.
+- *set_lib_cell_purpose -include cts {sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__buf_*}* command specifies that the library cells in the  tech_lib library(sky130_fd_sc_hd__tt_025C_1v80)  whose names start with "buf" should be used for clock tree synthesis.
   -  *synthesize_clock_tree*  command synthesizes clock trees and updates  the  design  database with  the  compiled  clock  trees. The compilation of the clock tree is skew driven.  Optionally, this command can optimize compiled clock tree for slack metric.
   -  *set_propagated_clock \[all_clocks]* command Specifies that delays be propagated through the clock network to determine latency at register clock pins.Propagated  clock latency is used for post-layout, after final clock tree generation. If  the  set_propagated_clock  command  is applied to pins or ports, it affects all register clock pins in the transitive fanout of the pins or ports. *The above command specifies to use propagated clock latency for all clocks only in the current mode in the design* . <br>
    
