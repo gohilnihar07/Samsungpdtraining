@@ -5467,7 +5467,9 @@ In this manner, the compile_ultra -incremental -gate_clock command is used in th
 - clock_opt: Synthesize and route the clocks in the current design and then further optimize the design based on the propagated clock latencies
 - route_auto: runs global routing, track assignment and detail routing in one step
 
-<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4_gui.png"><br>   
+- we can see the graphical view in below figure,<br>
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4_gui.png"><br>
+- can the see the all 17 buffers,<br>
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4.2%20can%20see%20the%20buffer%20here.png"><br>
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/4.3%20buffer.png"><br>
 
