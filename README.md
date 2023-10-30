@@ -5378,17 +5378,6 @@ check_placement_constraints
  - A digital circuit having lot of clocks, so if designing a clock tree will be huge with many buffers etc
  - So the whole chip will section into smaller versions and then each section will have its own clock tree, and then finally a complete routed tree.
 
-**Clock Gating**
-
- - Beside area and timing, there is another important factor which is power -> Need power “aware” CTS
- - Clock gating is one of the techniques used to save the dynamic power of clock elements in the design
- - The principle behind clock gating is to stop the clock of those sequential elements whose data is not toggling
- - Clock gating technique using AND, OR Universal NAND gate
- - It has been found that 50% of the dynamic power originates from clock-related circuits
-   <image>
- - Clock gating is inserted during synthesis stage and optimized in the implementation stage (Physical Design stage)
- - Example scenario why required clock gating: If there is a block only need clock signal for 10 mins but the clock signal is running 1hr, so a lot of power is dissipating (due to switching activity), so we need clock gating which act as switch.
-
 **Routing**
 
 - The last step of physical design flow
@@ -5409,6 +5398,24 @@ check_placement_constraints
 
  <summary>Labs</summary>
  
+ CLOCK GATING
+
+    Stage: Synthesis
+        Command Used: compile_ultra -incremental -gate_clock
+        Purpose: This command is used during the synthesis stage.
+        Function: It initiates the synthesis process, which converts a high-level RTL (Register-Transfer Level) description of the design into a gate-level representation. The -incremental option indicates that it is an incremental synthesis, which means that it only updates the parts of the design that have changed since the last synthesis run. The -gate_clock option suggests that it is related to optimizing clock gating.
+
+    Input Data:
+        Input Files: The DEF (Design Exchange Format) and gate-level netlist generated after synthesis are provided as input.
+        Purpose: These input files serve as the basis for the synthesis process.
+
+    ICGs (Integrated Clock Gating) Insertion:
+        Action: During the synthesis process, Integrated Clock Gating cells (ICGs) are inserted into the design.
+        Purpose: ICGs are added to optimize power consumption by gating the clock signals to specific parts of the design when they are not actively processing data. This helps reduce dynamic power consumption in the circuit.
+
+In this manner, the compile_ultra -incremental -gate_clock command is used in the synthesis stage, with input from DEF and gate-level netlist files, to insert ICGs into the design and optimize power efficiency by controlling clock signals.
+
+
  - We need to add 3 lines between place_opt and clock_opt , to insert the clock buffers in the design <br>
 
  ```ruby
