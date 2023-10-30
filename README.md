@@ -1,4 +1,4 @@
-# Samsungpdtraining
+https://github.com/gohilnihar07/Samsungpdtraining/blob/29cfcec6ab7d472613d85297f5529bf78ab6fd5c/day-23/6_report_timing_min.png# Samsungpdtraining
 PD training 
 # Nihar_Pd_training
 This github repository summarizes the progress made in the samsung pd training. Quick links:
@@ -5450,12 +5450,15 @@ In this manner, the compile_ultra -incremental -gate_clock command is used in th
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/e603b0f24dc473531599b3d7574efac23e3e163a/day-23/5_report_timing_we%20can%20see%20that%20the%20slask%20has%20reduced.png"> <br>
 - The setup path gives the arrival time minus required time. The required time is the summation of period and setup uncertainty, clock network delay of capture flop.
 - The library setup time is 0.09ns (defined in libs), uncertainty is 0.5ns (user-defined in SDC) and network delay of 2.28ns.
-- The required time is 11.68 ns. The timing is violated by 0.14ns as the arrival time in data path is 11.82ns (clock network delay + comb delay)
-<img  width="1085" alt="hand_writ_exam" src=""><br>
-The hold path gives required time minus arrival time. The required time is due to network delay and uncertainties of clock, library hold time of capture flop.
-The library hold time is 40ps (defined in libs), uncertainty is 0.5ns and the network delay is 2.38ns.
-The hold is checked at the same edge of flop(at 0ns). The clock network delay is same for both flops as same clock is being propagated.
- - Three types of routing: P/G routing, Clock routing and Signal routing <br>
+- The required time is 11.68 ns. The timing is violated by 0.14ns as the arrival time in data path is 11.82ns (clock network delay + comb delay)<br>
+
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/29cfcec6ab7d472613d85297f5529bf78ab6fd5c/day-23/6_report_timing_min.png"><br>
+- The hold path gives required time minus arrival time. The required time is due to network delay and uncertainties of clock, library hold time of capture flop.
+- The library hold time is 40ps (defined in libs), uncertainty is 0.5ns and the network delay is 2.27ns.
+- The hold is checked at the same edge of flop(at 0ns). The clock network delay is same for both flops as same clock is being propagated.<br>
+
+ 
+ *- Three types of routing: P/G routing, Clock routing and Signal routing* <br>
 
 **P/G routing**:<br>
 **Clock Routing and signal routing**:<br>
