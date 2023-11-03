@@ -5915,7 +5915,8 @@ This command reads parasitics for the current design  and  sub  designs from  th
 --> The following image shows the report of check_timing as follows: check_timing
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/5%20check_timing.png"> <br>
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/6%20check_timing_1.png"> <br><br>`
-
+  This  command checks the timing attributes placed on the current design and issues warning messages as needed.  The messages  provide  information  that  identifies  and corrects potential errors. The warnings do not necessarily indicate design problems.
+<r>
 
 
 **--> The various checks done specific to crosstalk analysis are:** <br>
