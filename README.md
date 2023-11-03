@@ -5854,8 +5854,8 @@ Several strategies can mitigate crosstalk problems. These include employing guar
 
 
 <details>
-<summary>Glitches </summary>
-- It's basically the consequences of crosstalk.<br>
+<summary> Glitches </summary> 
+- It's basically the consequences of crosstalk. <br>
 - When one net is switching, and another net is constant then switching signal may cause spikes on other net because of which coupling capacitance (Cc) occurs between two nets, this is called as crosstalk noise. A steady signal net can have a glitch due to the charge transferred by the switching aggressors through coupling capacitances. The glitch magnitude may be large enough to be seen as a different logic value by the fan-out cells of the victim nets.<br>
 - Glitches come in different flavors, including rise glitches, fall glitches, overshoot glitches, and undershoot glitches. These glitches can have a substantial impact on the fan-out cells of the victim nets, potentially leading to misinterpretation of logic values.<br><br>
 
