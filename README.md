@@ -5828,9 +5828,6 @@ In summary, the integration of analog and digital signals in mixed-signal design
 <summary> Signal Integrity and Crosstalk</summary>
 
 
-
-
-
 -> Signal Integrity (SI) and Crosstalk (XTK) are crucial quality checks in clock route design. They play a pivotal role in ensuring the reliable operation of digital circuits.
 
 **Signal Integrity (SI):** Ensuring Reliable Data Transmission
@@ -5853,3 +5850,19 @@ As semiconductor designs evolve and cell dimensions shrink, the physical distanc
 **--> Strategies for addressing Crosstalk Challenges:-** <br>
 
 Several strategies can mitigate crosstalk problems. These include employing guard rings, down-sizing the aggressors or introducing shielding, layer promotion of nets, and segmenting lengthy nets into more manageable sections.
+</details>
+
+
+<details>
+<summary>Glitches </summary>
+It's basically the consequences of crosstalk.<br>
+When one net is switching, and another net is constant then switching signal may cause spikes on other net because of which coupling capacitance (Cc) occurs between two nets, this is called as crosstalk noise. A steady signal net can have a glitch due to the charge transferred by the switching aggressors through coupling capacitances. The glitch magnitude may be large enough to be seen as a different logic value by the fan-out cells of the victim nets.<br>
+Glitches come in different flavors, including rise glitches, fall glitches, overshoot glitches, and undershoot glitches. These glitches can have a substantial impact on the fan-out cells of the victim nets, potentially leading to misinterpretation of logic values.<br><br>
+
+*--> Rise glitch:* Raising aggressor net induces a rise glitch on a steady low.<br>
+*--> Fall glitch:* Falling aggressor net induces a fall glitch on a steady high.<br>
+*--> Overshoot glitch:* Raising aggressor net induces overshoot glitch on a steady high This takes the victim net voltage above its steady high value.<br>
+*--> Undershoot glitch:* Falling aggressor net induces an undershoot glitch on a steady low This takes the victim net voltage below its steady low value.<br>
+
+
+</details>
