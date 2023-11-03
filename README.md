@@ -5756,54 +5756,54 @@ Digital signals, on the other hand, represent information in discrete, binary fo
 	<summary> Files required </summary>
 
 **--> LEF (Library Exchange Format):** The LEF file contains the physical information such as height,width etc.. of standard cells. A LEF file has two parts:
-        - Cell LEF
-        - Tech LEF Technology LEF part contains the information regarding all the metal interconnects, via information and related design rules whereas cell LEF part contains information related to the geometry of each cell. Technology LEF part contains the following information
-        - LEF Version ( like 5.7 or 5.8 )
-        - Units (for database, time, resistance, capacitance)
-        - Manufacturing grids
-        - Design rules and other details of BEOL (Back End Of Layers)
-            Layer name (like poly, contact, via1, metal1 etc)
-            Layer type ( like routing, masterslice, cut etc)
-            Prefered direction (like horizontal or vertical)
-            Pitch
-            Minimum width
-            Spacing
-            Sheet resistance Cell LEF basically contains the following information
-        - Cell name (like AND2X2, CLKBUF1 etc)
-        - Class ( like CORE or PAD)
-        - Origin 0 0
-        - Size (width x height)
-        - Symmetry ( like XY, X, Y etc)
-        - Pin Information
-        - Pin name (like A, B, Y etc)
-        - Direction (like input, output, inout etc )
-        - Use (like Signal, clock, power etc)
-        - Shape (Abutment in case of power pin)
-        - Layer (like Metal1, Metal2 etc )
-       -  rectangular coordinate of pin (llx lly urx ury)
+        - Cell LEF <br>
+        - Tech LEF Technology LEF part contains the information regarding all the metal interconnects, via information and related design rules whereas cell LEF part contains information related to the geometry of each cell. Technology LEF part contains the following information<br>
+        - LEF Version ( like 5.7 or 5.8 )<br>
+        - Units (for database, time, resistance, capacitance)<br>
+        - Manufacturing grids<br>
+        - Design rules and other details of BEOL (Back End Of Layers)<br>
+            Layer name (like poly, contact, via1, metal1 etc)<br>
+            Layer type ( like routing, masterslice, cut etc)<br>
+            Prefered direction (like horizontal or vertical)<br>
+            Pitch<br>
+            Minimum width<br>
+            Spacing<br>
+            Sheet resistance Cell LEF basically contains the following information<br>
+        - Cell name (like AND2X2, CLKBUF1 etc)<br>
+        - Class ( like CORE or PAD)<br>
+        - Origin 0 0<br>
+        - Size (width x height)<br>
+        - Symmetry ( like XY, X, Y etc)<br>
+        - Pin Information<br>
+        - Pin name (like A, B, Y etc)<br>
+        - Direction (like input, output, inout etc )<br>
+        - Use (like Signal, clock, power etc)<br>
+        - Shape (Abutment in case of power pin)<br>
+        - Layer (like Metal1, Metal2 etc )<br>
+       -  rectangular coordinate of pin (llx lly urx ury)<br>
 <br><br>
        
   **--> LIB (Liberty File) :** LIB file is an ASCII representation of timing and power parameter associated with cells inside the standard cell library of a particular technology node. Lib file is basically a timing model file which contains cell delay, cell transition time, setup and hold time requirement of the cell. So Lib file basically contains the timing and electrical characteristics of a cell or macros. Lib file is generated and provided to ASIC designer by a standard cell library vendor or Foundry if the foundry provides a standard cell library. Timing and power parameter of a cell is obtained by simulating the cell in a variety of operating conditions and data are represented in the Lib file.
 <br><br>
   
-   **--> GDSII file :** GDSII (Graphic Data System II) is a file format commonly used in the semiconductor industry, particularly in the design and manufacturing of integrated circuits. It is the standard format for transferring and storing design data for electronic chips. The
-        Geometric Shapes and Layout Information: GDSII files encapsulate geometric shapes that define the layout of an integrated circuit. This includes polygons, paths, and other structures representing different elements of the chip design such as transistors, interconnects, vias, and metal layers.
-1. Layered Information: The design is segmented into various layers, each representing a distinct aspect of the chip. Layers are crucial in distinguishing different elements of the chip design, from the physical components to the interconnections.
-2.  Hierarchical Data: GDSII files can contain hierarchical information, allowing designers to create and manage complex designs with different levels of detail, from macros to smaller components, making the representation of the layout more efficient and organized.
-3. Text Labels and Markings: GDSII files may include textual information that labels components, specifies measurements, or contains other crucial annotations to aid in the understanding and interpretation of the design.
-4. Design Data Compression: To manage the complexity and size of the file, GDSII uses data compression techniques, grouping geometric shapes into structures that facilitate efficient storage and retrieval of information.
-5.Technology Information and Design Parameters: GDSII files can include information about the technology used, design rules, and parameters that define the chip's characteristics and constraints.
+   **--> GDSII file :** GDSII (Graphic Data System II) is a file format commonly used in the semiconductor industry, particularly in the design and manufacturing of integrated circuits. It is the standard format for transferring and storing design data for electronic chips. <br>
+1.Geometric Shapes and Layout Information: GDSII files encapsulate geometric shapes that define the layout of an integrated circuit. This includes polygons, paths, and other structures representing different elements of the chip design such as transistors, interconnects, vias, and metal layers.<br>
+2. Layered Information: The design is segmented into various layers, each representing a distinct aspect of the chip. Layers are crucial in distinguishing different elements of the chip design, from the physical components to the interconnections.<br>
+3.  Hierarchical Data: GDSII files can contain hierarchical information, allowing designers to create and manage complex designs with different levels of detail, from macros to smaller components, making the representation of the layout more efficient and organized.<br>
+4. Text Labels and Markings: GDSII files may include textual information that labels components, specifies measurements, or contains other crucial annotations to aid in the understanding and interpretation of the design.<br>
+5. Design Data Compression: To manage the complexity and size of the file, GDSII uses data compression techniques, grouping geometric shapes into structures that facilitate efficient storage and retrieval of information.<br>
+6.Technology Information and Design Parameters: GDSII files can include information about the technology used, design rules, and parameters that define the chip's characteristics and constraints.<br>
 <br><br>
 
-**--> OASIS file :** OASIS (Open Artwork System Interchange Standard) is another file format used in the semiconductor industry for representing and transferring layout data of integrated circuits. It was developed to address some limitations of the older GDSII format, aiming to handle the challenges posed by increasingly complex chip designs and to improve data handling efficiency.
-        OASIS was designed to handle the complexities of modern chip designs more efficiently compared to GDSII
-        They enable the representation of complex designs with various levels of detail, allowing for a more organized and manageable layout representation.
-        OASIS files incorporate advanced features such as reusability of cell libraries and the ability to represent larger data volumes with improved data access, addressing the limitations faced by GDSII.
-        OASIS employs variable-sized elements and serialization techniques, enhancing the handling of complex and detailed geometries.
+**--> OASIS file :** OASIS (Open Artwork System Interchange Standard) is another file format used in the semiconductor industry for representing and transferring layout data of integrated circuits. It was developed to address some limitations of the older GDSII format, aiming to handle the challenges posed by increasingly complex chip designs and to improve data handling efficiency.<br>
+        OASIS was designed to handle the complexities of modern chip designs more efficiently compared to GDSII<br>
+        They enable the representation of complex designs with various levels of detail, allowing for a more organized and manageable layout representation.<br>
+        OASIS files incorporate advanced features such as reusability of cell libraries and the ability to represent larger data volumes with improved data access, addressing the limitations faced by GDSII.<br>
+        OASIS employs variable-sized elements and serialization techniques, enhancing the handling of complex and detailed geometries.<br>
 
-The PnR tool takes the inputs and generates the GDSII file. The various tools for PnR are Innovus (Cadence Design System), IC Compiler II (Synopsys), Olympus SOC (Mentor Graphics).
+The PnR tool takes the inputs and generates the GDSII file. The various tools for PnR are Innovus (Cadence Design System), IC Compiler II (Synopsys), Olympus SOC (Mentor Graphics).<br>
 
-The inputs required are the gate level netlist (.v or .vg format), the constraint files (.sdc format), the logical libraries (.lib or .db format), physical libraries (.lef), technology libraries(.tf or .techlef), the PVT conditions (scenarios defining file) and the RC parasitics file.
+The inputs required are the gate level netlist (.v or .vg format), the constraint files (.sdc format), the logical libraries (.lib or .db format), physical libraries (.lef), technology libraries(.tf or .techlef), the PVT conditions (scenarios defining file) and the RC parasitics file.<br>
 
 The additional input files can be block partition (.fp file), I/O pin locations file (as pad_placement_constraints.tcl in vsdbabysoc), power plan script or rule, the power intent file and saif file(switching activity file).<br><br>
 
@@ -5814,5 +5814,5 @@ The additional input files can be block partition (.fp file), I/O pin locations 
 - Categories: IP cores come in two primary categories - "Hard IP Cores" with fixed physical implementations and "Soft IP Cores" that offer customization opportunities during physical design phases.<br>
 - Applications: IP cores are integral to creating field programmable gate arrays (FPGAs) and application-specific integrated circuits (ASICs), enhancing design efficiency and flexibility.<br>
 
-In summary, the integration of analog and digital signals in mixed-signal design leverages the strengths of both domains. It involves critical components like ADCs and DACs to bridge the gap between analog and digital systems, while the utilization of essential file formats and IP cores ensures efficient design processes and reuse opportunities.
+In summary, the integration of analog and digital signals in mixed-signal design leverages the strengths of both domains. It involves critical components like ADCs and DACs to bridge the gap between analog and digital systems, while the utilization of essential file formats and IP cores ensures efficient design processes and reuse opportunities.<br><br>
 </details>
