@@ -5848,16 +5848,16 @@ As semiconductor designs evolve and cell dimensions shrink, the physical distanc
 - *Thin and Long Metal Layers*: The routing of thin and lengthy metal layers can amplify crosstalk issues.<br><br>
 
 **--> Strategies for addressing Crosstalk Challenges:-** <br>
-
 Several strategies can mitigate crosstalk problems. These include employing guard rings, down-sizing the aggressors or introducing shielding, layer promotion of nets, and segmenting lengthy nets into more manageable sections.
+
 </details>
 
 
 <details>
 <summary>Glitches </summary>
-It's basically the consequences of crosstalk.<br>
-When one net is switching, and another net is constant then switching signal may cause spikes on other net because of which coupling capacitance (Cc) occurs between two nets, this is called as crosstalk noise. A steady signal net can have a glitch due to the charge transferred by the switching aggressors through coupling capacitances. The glitch magnitude may be large enough to be seen as a different logic value by the fan-out cells of the victim nets.<br>
-Glitches come in different flavors, including rise glitches, fall glitches, overshoot glitches, and undershoot glitches. These glitches can have a substantial impact on the fan-out cells of the victim nets, potentially leading to misinterpretation of logic values.<br><br>
+- It's basically the consequences of crosstalk.<br>
+- When one net is switching, and another net is constant then switching signal may cause spikes on other net because of which coupling capacitance (Cc) occurs between two nets, this is called as crosstalk noise. A steady signal net can have a glitch due to the charge transferred by the switching aggressors through coupling capacitances. The glitch magnitude may be large enough to be seen as a different logic value by the fan-out cells of the victim nets.<br>
+- Glitches come in different flavors, including rise glitches, fall glitches, overshoot glitches, and undershoot glitches. These glitches can have a substantial impact on the fan-out cells of the victim nets, potentially leading to misinterpretation of logic values.<br><br>
 
 *--> Rise glitch:* Raising aggressor net induces a rise glitch on a steady low.<br>
 *--> Fall glitch:* Falling aggressor net induces a fall glitch on a steady high.<br>
