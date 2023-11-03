@@ -5880,14 +5880,14 @@ write_parasitics -format spef -output vsdbabysoc_spef
 ```
 
 --> Can see in below image we are generating SPEF file first,<br>
-<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/1%20update_timing%20%26%20parasitics.png"> <br><br>
 
 --> Unzipping the generated files by the following commands,<br>
 ```ruby
 gzip -d vsdbabysoc.pt.v.gz
 gzip -d func1.sdc.gz
 ```
-<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/2%20unzip_files.png"> <br><br>
 
 --> Reading the design into the pt_shell, <br>
 ```ruby
@@ -5897,7 +5897,7 @@ read_verilog vsdbabysoc.pt.v
 link_design vsdbabysoc_1
 current_design
 ```
-<img  width="1085" alt="hand_writ_exam" src=""> <br><br>`
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/3%20current_design.png"> <br><br>`
 
 
 --> sdc is read into the design,<br>
@@ -5908,17 +5908,13 @@ read_parasitics -keep_capacitive_coupling vsdbabysoc_spef.temp1_25.spef
 ```
 
 --> The following image shows the parasitics read by the tool. sdc read
-<img  width="1085" alt="hand_writ_exam" src=""> <br><br>`
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/4%20readsdc.png"> <br><br>`
 
 --> The following image shows the report of check_timing as follows: check_timing
-<img  width="1085" alt="hand_writ_exam" src=""> <br><br>`
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/5%20check_timing.png"> <br>
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/6%20check_timing_1.png"> <br><br>`
 
---> The design can be viewed using GUI is as follows: gui
-report_si_bottleneck              
-report_bottleneck                
-report_si_delay_analysis
-report_si_aggressor_exclusion
-report_si_noise_analysis
+
 
 **--> The various checks done specific to crosstalk analysis are:** <br>
 
@@ -5935,6 +5931,6 @@ report_si_delay_analysis
 report_si_aggressor_exclusion
 report_si_noise_analysis
 ```
-<img  width="1085" alt="hand_writ_exam" src=""> <br>
-<img  width="1085" alt="hand_writ_exam" src=""> <br>
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/7report_1.png"> <br>
+<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/8report_2.png"> <br>
 </details>
