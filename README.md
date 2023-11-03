@@ -5871,10 +5871,70 @@ Several strategies can mitigate crosstalk problems. These include employing guar
 
 <details> 
 <summary> Labs </summary>
-	There are some input required to read the design by the primetime tool for signal integrity and crosstalk analysis, first we will generate that by icc2_shell. 
-	```
-	source top1.tcl
-        update_timing
-        write_parasitics -format spef -output vsdbabysoc_spef
-	```
+There are some input required to read the design by the primetime tool for signal integrity and crosstalk analysis, first we will generate that by icc2_shell. <br>
+	
+```ruby
+source top1.tcl
+update_timing
+write_parasitics -format spef -output vsdbabysoc_spef
+```
+
+--> Can see in below image we are generating SPEF file first,<br>
+<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
+
+--> Unzipping the generated files by the following commands,<br>
+```ruby
+gzip -d vsdbabysoc.pt.v.gz
+gzip -d func1.sdc.gz
+```
+<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
+
+--> Reading the design into the pt_shell, <br>
+```ruby
+set target_library {list set target_library "avsddac.db avsdpll.db sky130_fd_sc_hd__tt_025C_1v80.db"
+set link_library [list avsddac.db avsdpll.db sky130_fd_sc_hd__tt_025C_1v80.db]
+read_verilog vsdbabysoc.pt.v
+link_design vsdbabysoc_1
+current_design
+```
+<img  width="1085" alt="hand_writ_exam" src=""> <br><br>`
+
+
+--> sdc is read into the design,<br>
+```ruby
+read_sdc func1.sdc
+set_app_var si_enable_analysis true
+read_parasitics -keep_capacitive_coupling vsdbabysoc_spef.temp1_25.spef
+```
+
+--> The following image shows the parasitics read by the tool. sdc read
+<img  width="1085" alt="hand_writ_exam" src=""> <br><br>`
+
+--> The following image shows the report of check_timing as follows: check_timing
+<img  width="1085" alt="hand_writ_exam" src=""> <br><br>`
+
+--> The design can be viewed using GUI is as follows: gui
+report_si_bottleneck              
+report_bottleneck                
+report_si_delay_analysis
+report_si_aggressor_exclusion
+report_si_noise_analysis
+
+**--> The various checks done specific to crosstalk analysis are:** <br>
+
+   *- no_driving_cell :* reports input ports with no driving cell and doesn't have case analysis set on it. These nets are assigned as a stronger driver for modelling agressors.<br>
+   *- ideal_clocks :* reports nets that do not have propagated clocks. The design must have propagating clock tree to calaculate crosstalk.<br>
+   *- partial_input_delay :* reports the delays set with set_max_delay and set_min_delay commands in SDC.<br>
+   *- unexpandable_clocks :* reports any clocks that are not expanded to common time base.<br>
+
+**--> The various reports are as follows in pt_shell,** <br>
+```ruby
+report_si_bottleneck              
+report_bottleneck                
+report_si_delay_analysis
+report_si_aggressor_exclusion
+report_si_noise_analysis
+```
+<img  width="1085" alt="hand_writ_exam" src=""> <br>
+<img  width="1085" alt="hand_writ_exam" src=""> <br>
 </details>
