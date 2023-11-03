@@ -5906,6 +5906,8 @@ read_sdc func1.sdc
 set_app_var si_enable_analysis true
 read_parasitics -keep_capacitive_coupling vsdbabysoc_spef.temp1_25.spef
 ```
+This command reads parasitics for the current design  and  sub  designs from  the  SPEF  files, or GPD path, GPD attachent.  read_parasitics is the block level command. You need to specify one  read_parasitics  command  for each block for hierarchical design.  The read_parasitics command would annotate RC for the nets  reading  from  SPEF  files,or  GPD path,  GPD  attachment.   The nets in the design not annotated would be estimated  when  executing  the  report_timing  command  after  running read_parasitics.<br>
+
 
 --> The following image shows the parasitics read by the tool. sdc read
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/4%20readsdc.png"> <br><br>`
