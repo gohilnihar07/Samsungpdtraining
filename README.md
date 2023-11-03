@@ -5734,19 +5734,19 @@ Digital signals, on the other hand, represent information in discrete, binary fo
 	<summary> Analog and mixed signal(AMS) </summary>
 	
 
-    - AMS, which stands for "Analog and Mixed-Signal," is a term commonly used in the field of VLSI. It refers to the integration of both analog and digital circuitry on the same integrated circuit (IC) or chip.<br>
+- AMS, which stands for "Analog and Mixed-Signal," is a term commonly used in the field of VLSI. It refers to the integration of both analog and digital circuitry on the same integrated circuit (IC) or chip.<br>
 
-    - AMS design involves combining analog and digital components within a single IC. This integration allows a chip to process both analog signals (continuous voltages) and digital signals (discrete logic levels) concurrently.<br>
+- AMS design involves combining analog and digital components within a single IC. This integration allows a chip to process both analog signals (continuous voltages) and digital signals (discrete logic levels) concurrently.<br>
 
-    - AMS ICs are used in a wide range of applications, including data converters (analog-to-digital and digital-to-analog converters), sensor interfaces, communication systems, audio processing, power management, and more.<br>
+- AMS ICs are used in a wide range of applications, including data converters (analog-to-digital and digital-to-analog converters), sensor interfaces, communication systems, audio processing, power management, and more.<br>
 
-    - Analog components in AMS design may include amplifiers, filters, voltage references, oscillators, and analog sensors. These components are designed to process and manipulate continuous analog signals with high precision.<br>
+- Analog components in AMS design may include amplifiers, filters, voltage references, oscillators, and analog sensors. These components are designed to process and manipulate continuous analog signals with high precision.<br>
 
-    - Digital components in AMS design comprise microcontrollers, digital signal processors (DSPs), memory, and other digital logic. They are optimized for fast digital processing and computation.
+- Digital components in AMS design comprise microcontrollers, digital signal processors (DSPs), memory, and other digital logic. They are optimized for fast digital processing and computation.
 <br>
-    - AMS ICs often feature analog-to-digital converters (ADCs) to convert analog signals into digital data and digital-to-analog converters (DACs) to convert digital data back into analog signals.<br>
+- AMS ICs often feature analog-to-digital converters (ADCs) to convert analog signals into digital data and digital-to-analog converters (DACs) to convert digital data back into analog signals.<br>
 
-    - AMS ICs frequently have mixed-signal interfaces, allowing them to interact with external sensors, actuators, or communication interfaces while maintaining high accuracy.<br>
+- AMS ICs frequently have mixed-signal interfaces, allowing them to interact with external sensors, actuators, or communication interfaces while maintaining high accuracy.<br>
 
 </details>
 
