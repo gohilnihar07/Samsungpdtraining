@@ -5866,3 +5866,15 @@ Several strategies can mitigate crosstalk problems. These include employing guar
 
 
 </details>
+
+
+
+<details> 
+<summary> Labs </summary>
+	There are some input required to read the design by the primetime tool for signal integrity and crosstalk analysis, first we will generate that by icc2_shell. 
+	```
+	source top1.tcl
+        update_timing
+        write_parasitics -format spef -output vsdbabysoc_spef
+	```
+</details>
