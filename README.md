@@ -5919,12 +5919,12 @@ This command reads parasitics for the current design  and  sub  designs from  th
 <r>
 
 
-**--> The various checks done specific to crosstalk analysis are:** <br>
+**--> The various checks done specifically to crosstalk analysis are:** <br>
 
-   *- no_driving_cell :* reports input ports with no driving cell and doesn't have case analysis set on it. These nets are assigned as a stronger driver for modelling agressors.<br>
-   *- ideal_clocks :* reports nets that do not have propagated clocks. The design must have propagating clock tree to calaculate crosstalk.<br>
+   *- no_driving_cell :* reports input ports with no driving cell and doesn't have a case analysis set on it. These nets are assigned as a stronger driver for modeling aggressors.<br>
+   *- ideal_clocks :* reports nets that do not have propagated clocks. The design must have a propagating clock tree to calculate crosstalk.<br>
    *- partial_input_delay :* reports the delays set with set_max_delay and set_min_delay commands in SDC.<br>
-   *- unexpandable_clocks :* reports any clocks that are not expanded to common time base.<br>
+   *- unexpandable_clocks :* reports any clocks that are not expanded to a common time base.<br>
 
 **--> The various reports are as follows in pt_shell,** <br>
 ```ruby
@@ -5936,4 +5936,17 @@ report_si_noise_analysis
 ```
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/7report_1.png"> <br>
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/8report_2.png"> <br>
+</details>
+
+
+
+
+
+
+
+## DAY-28 DRC/LVS checks
+<details> 
+<summary> Introduction to Skywater 130 </summary>
+
+ 
 </details>
