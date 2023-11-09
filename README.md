@@ -5948,7 +5948,7 @@ report_si_noise_analysis
 <details> 
 <summary> Introduction to Skywater 130 </summary>
 	
-  The Skywater 130nm Process Design Kit (PDK) is a robust open-source toolkit that equips chip designers with everything they need—design rules, layer definitions, device specs, and models. Thanks to open PDKs, anyone can leverage open-source design tools to craft their circuits. Take the Caravel chip, for example; it houses a RISC-V processor and provides users with a customizable design space. A PDK, or Process Design Kit, is essentially a set of crucial files and documentation guiding chip designers through the intricacies of working with a specific process foundry to produce chips.<br><br>
+- The Skywater 130nm Process Design Kit (PDK) is a robust open-source toolkit that equips chip designers with everything they need—design rules, layer definitions, device specs, and models. Thanks to open PDKs, anyone can leverage open-source design tools to craft their circuits. Take the Caravel chip, for example; it houses a RISC-V processor and provides users with a customizable design space. A PDK, or Process Design Kit, is essentially a set of crucial files and documentation guiding chip designers through the intricacies of working with a specific process foundry to produce chips.<br><br>
 
 - The "130" in Sky130 signifies the feature size of the process, meaning the smallest transistors achievable with this PDK are 130nm. The Sky130PDK mainly comprises documentation (courtesy of the Skywater PDK), library files on GitHub, and a community thriving in a Slack group.<br><br>
 
@@ -5983,4 +5983,21 @@ Takes the spotlight for digital logic synthesis and formal verification of digit
 
 **-> NGSpice** <br>
 The open-source electronic circuit simulator, strides into the Electronic Design Automation (EDA) arena, specializing in analog and mixed-signal circuit analysis. A boon for electronics engineers and circuit designers, NGSpice facilitates the simulation of analog, digital, and mixed-signal circuits, empowering users to breathe life into their designs through virtual experimentation.<br><br>
+
+- In the expansive landscape of Electronic Design Automation (EDA), additional tools like qflow, IRSIM (a switch-level simulator and power analyzer), and circuit add depth to the arsenal. Beyond these, open_pdks takes the stage, seamlessly installing foundry and third-party libraries to forge a unified directory across the source. Within this realm, diverse digital libraries emerge, each tailored to the nuanced requirements of speed and power in operation. It's a dynamic ecosystem where variety meets cohesion, ensuring a rich tapestry of resources for EDA enthusiasts.<br><br>
+
+
+- The sky130_fd_pr stands as the analog components' go-to, with most, including transistors, navigated through extraction sans the need for libraries. Certain components like RF layouts, bipolar devices, and parallel plate capacitors boast approved layouts within the library, ready for utilization in IP formats. Operating within the voltage spectrum of 1.8V to 20V, with 1.8V and 3.3V as common denominators, these devices offer versatility in performance.<br>
+
+- On the other hand, the sky130_fd_io takes charge of IO pads and pad frame cells, encompassing power and ground pads, along with general-purpose IO pads. Meanwhile, the third-party library, sky130_ml_xx_hd, is a treasure trove housing alpha-numeric text layouts, perfect for integrating textual elements into the overall layout design.<br>
+
+- Delving into the structure of sky130A, it unfolds with libs.tech and libs.ref directories. libs.tech orchestrates the setup of all open-source EDA tools, while libs.ref houses reference libraries. The sky130 process, characterized as a hybrid 130nm-180nm standard CMOS fabrication process, boasts 5 layers of aluminum metal and titanium nitride (reserved for short routes due to high resistivity) known as local interconnect li. This local interconnect plays a pivotal role in powering and grounding rails within skywater standard layouts. Poly contacts, in turn, demand a nitride poly cut around them. The metal layers vary in thickness, with higher-order metals typically earmarked for routing purposes. It's a symphony of intricacies, where each layer plays a crucial note in the harmonious creation of electronic wonders.<br>br>
+
+**--> Skywater PDks boast three libraries:** <br>
+
+*1. Digital Standard Cells:* Equipped with layout and GDS formats for synthesis, these cells span high speed, density, voltage, and low leakage, adhering to a consistent naming convention.<br>
+
+*2. I/O Cells:* These libraries encompass full power and ground pads, complete with disconnected blocks. An overlay facilitates connections from clamps/pads to power rails.<br>
+
+*3. Primitive Devices and Models:* Encompassing bipolar transistors, varactors, and ESD devices, these designs form the foundation of the library.<br>
 </details>
