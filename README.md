@@ -6012,7 +6012,7 @@ The open-source electronic circuit simulator, strides into the Electronic Design
 **--> DRC :-**
 Design Rule Checks (DRC) play a pivotal role in the VLSI (Very Large Scale Integration) design and manufacturing journey. They are automated procedures meticulously ensuring that the physical layout of an integrated circuit aligns with the specified design rules of the semiconductor fabrication process. These rules, paramount for functionality and reliable manufacturing, safeguard against potential errors that could translate into defects like shorts, opens, or undesirable metal density.<br>
 
-**-> Purpose of DRC Checks:** <br><br>
+**- Purpose of DRC Checks:** <br><br>
 
 *- Ensure Manufacturability:* By averting layout errors, DRC checks prevent manufacturing defects, upholding the chip's integrity.<br>
 
@@ -6020,5 +6020,22 @@ Design Rule Checks (DRC) play a pivotal role in the VLSI (Very Large Scale Integ
 
 Performed through specialized software tools from the semiconductor foundry or third-party EDA (Electronic Design Automation) tools, these checks utilize design layout data (in GDSII or OASIS format) and technology-specific rules. Compatibility with the targeted semiconductor manufacturing process (e.g., 28nm, 14nm) is paramount for effective DRC checks.<br>
 
-Repeated iteratively throughout the design process, designers adjust and rerun the checks until they achieve a DRC-clean design. In the realm of VLSI design, DRC checks stand as a linchpin, ensuring the physical layout aligns seamlessly with the manufacturing process, culminating in reliable and manufacturable semiconductor devices.<br>
+Repeated iteratively throughout the design process, designers adjust and rerun the checks until they achieve a DRC-clean design. In the realm of VLSI design, DRC checks stand as a linchpin, ensuring the physical layout aligns seamlessly with the manufacturing process, culminating in reliable and manufacturable semiconductor devices.<br><br><br>
+
+
+**--> LVS:-**
+- LVS, or Layout Versus Schematic in the realm of VLSI (Very Large Scale Integration) design, holds a crucial role in the design and verification of integrated circuits (ICs). It acts as a safeguard, ensuring that the physical layout of a chip aligns seamlessly with the intended schematic representation of the design.<br>
+
+- This essential step verifies that the geometric layout on the mask, representing the physical structure, precisely corresponds to the electrical schematic envisioned for the design. In essence, LVS checks for consistency, confirming that the layout mirrors the circuit's intended functionality.<br>
+
+- The LVS tool, typically working with layout data in formats like GDSII or OASIS, meticulously compares geometric shapes, connectivity, and other layout properties against the logical connectivity specified in the schematic. It scrutinizes for potential issues such as missing connections, shorts, opens, and other discrepancies.<br>
+
+- LVS is not a one-time task but an iterative process. Designers frequently tweak the layout based on LVS results, running checks multiple times until they achieve an LVS-clean design. Debugging and resolving LVS issues become integral aspects of the IC design process.<br>
+
+- In essence, Layout Versus Schematic (LVS) stands as a linchpin in VLSI design, ensuring the harmony between the physical layout and electrical schematic, safeguarding the chip's functionality, and minimizing manufacturing errors.<br><br>
+
 </details>
+
+
+
+
