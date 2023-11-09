@@ -6001,3 +6001,24 @@ The open-source electronic circuit simulator, strides into the Electronic Design
 
 *3. Primitive Devices and Models:* Encompassing bipolar transistors, varactors, and ESD devices, these designs form the foundation of the library.<br>
 </details>
+
+
+
+
+
+<details>
+	<summary>Basic introduction of DRC/LVS</summary>
+	
+**--> DRC :-**
+Design Rule Checks (DRC) play a pivotal role in the VLSI (Very Large Scale Integration) design and manufacturing journey. They are automated procedures meticulously ensuring that the physical layout of an integrated circuit aligns with the specified design rules of the semiconductor fabrication process. These rules, paramount for functionality and reliable manufacturing, safeguard against potential errors that could translate into defects like shorts, opens, or undesirable metal density.<br>
+
+**-> Purpose of DRC Checks:** <br><br>
+
+*- Ensure Manufacturability:* By averting layout errors, DRC checks prevent manufacturing defects, upholding the chip's integrity.<br>
+
+*- Confirm Design Compliance:* DRC checks validate adherence to technology-specific rules outlined by the foundry or semiconductor manufacturing process.<br>
+
+Performed through specialized software tools from the semiconductor foundry or third-party EDA (Electronic Design Automation) tools, these checks utilize design layout data (in GDSII or OASIS format) and technology-specific rules. Compatibility with the targeted semiconductor manufacturing process (e.g., 28nm, 14nm) is paramount for effective DRC checks.<br>
+
+Repeated iteratively throughout the design process, designers adjust and rerun the checks until they achieve a DRC-clean design. In the realm of VLSI design, DRC checks stand as a linchpin, ensuring the physical layout aligns seamlessly with the manufacturing process, culminating in reliable and manufacturable semiconductor devices.<br>
+</details>
