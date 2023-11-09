@@ -6066,7 +6066,7 @@ Repeated iteratively throughout the design process, designers adjust and rerun t
 	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/6.%20checking%20whether%20everything%20has%20setup%20properly%20or%20not.png"> <br><br>
 	--> Can see that the magic has setup properly,<br>
 	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/7.%20can%20see%20that%20the%20magic%20has%20setup%20properly.png"> <br><br>
-	--> Can see that the magic icons now in saturated colors by command *magic -d xr*,<br>
+	--> Can see that the magic icons are now in saturated colors by command *magic -d xr*,<br>
 	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/8.%20can%20see%20that%20the%20magic%20icons%20now%20in%20saturated%20colorsby%20command%20*magic%20-d%20xr*.png"> <br><br>
         --> schematic for inverter created for simulation purpose,<br>
 	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/9.%20schematic%20for%20inverter%20created%20for%20simulation%20purpose.png"> <br><br>
@@ -6076,12 +6076,37 @@ Repeated iteratively throughout the design process, designers adjust and rerun t
 	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/10.1%20basically%20this%20symol%20is%20nothing%20butthe%20testbench%20for%20our%20inverter.png"> <br><br>
         --> Simulation result,<br>
 	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/11.%20simuation%20result.png"> <br><br>
-	--> ,<br>
-	<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
-          --> ,<br>
-	<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
-	--> ,<br>
-	<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
- 
+	-> Now first, Import the schematic to the layout in Magic by running the magic, then click on File -> Import SPICE and then select the inverter.spice file from the xschem directory. If done correctly, the following layout has been opened up in magic.<br>
+	- Then place the pfet device above the nfet and adjust the placement of the input, output and supply pins.<br>
+	- Next, set some parameters that are only adjustable in the layout which will make it more convenient to wire the whole layout up.<br>
+	- Then Set the "Top guard ring via coverage" to 100. This will put a local interconnect to metal1 via ta the top of the guard ring. Next, for "Source via coverage", put +40 and for "Drain via coverage", put -40. This will split the source drain contacts, making it easy to connect them with a wire.<br>
+	- then For nfet, set the "Bottom guard ring via coverage" to 100, while the source and drain via coverages are set to +40 and -40, respectively, like the pfet.<br>
+	- then Start to paint the wires using metal1 layers by connecting the source of the pfet to Vdd and source of the nfet to Vss <br>
+	- Next connect the drains of both mosfets to the output. and finally, connect the input to all the poly contacts of the gate.<br>
+	--> Magic layout,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/12_magic_layout.png"> <br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/13_magic_layout.png"> <br><br>
+	--> Can see I have made DRC zero,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/14_DRC_zero.png"> <br><br>
+	--> Running the following command in the magic console window,<br>
+	```ruby
+	extract do local    (Ensuring that magic writes all results to the local directory)
+        extract all         (Performing the actual extraction)
+        ext2spice lvs       (Simulating and setting up the netlist to hierarchical spice output in ngspice format with no parasitic components)
+        ext2spice           (Generating the spice netlist)
+	``` <br><br>
+         --> Extracted spice,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85aa2336e7392271ebe5c5e877e71528aa5a0a19/day28/15_extract_spicee.png"> <br><br>
+	-->
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85aa2336e7392271ebe5c5e877e71528aa5a0a19/day28/17_copy_tb.png"> <br><br>
+	--> Modified a testbench netlist file,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/85aa2336e7392271ebe5c5e877e71528aa5a0a19/day28/18_editted_tb.png"> <br><br>
+	```ruby
+       /usr/share/pdk/bin/cleanup_unref.py -remove .
+       cp ../xschem/.spiceinit .
+       ngspice inverter_tb.spice
+	```
+	-->Can see, a similar result to the previous one,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/11.%20simuation%20result.png"> <br><br>
 </details>
 
