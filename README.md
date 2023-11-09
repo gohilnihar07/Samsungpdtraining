@@ -6038,4 +6038,50 @@ Repeated iteratively throughout the design process, designers adjust and rerun t
 
 
 
+<details>
+<summary> Lab </summary>
+	--> Opening magic,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/1.%20opening%20_magic.png"> <br><br>
+        --> Opening magic without console by using this command, in this case, we need to give the command by the terminal,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/1.1%20opening%20magic%20without%20console%20by%20using%20this%20commnad(in%20this%20case%20we%20need%20to%20give%20command%20by%20ter%2Cminal.png"> <br><br>
+	--> Magic can also be run without layout,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/1.2%20magic%20can%20also%20be%20run%20without%20layout.png"> <br><br>
+        --> Command for sourcing tcl file in magic,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/1.3%20command%20for%20sourcing%20tcl%20file%20in%20magic.png"> <br><br>
+	--> Opening netgen,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/2.%20opening%20netgen.png"> <br><br>
+        --> Command for sourcing that tcl file in netgen, <br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/2.1%20command%20for%20sourcing%20that%20tcl%20file%20in%20netgen.png"> <br><br>
+	--> Opening xschem,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/3.%20opening%20xschem.png"> <br><br>
+	--> Script can't be read by xschem because its interpreter not support tcl,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/3.1%20script%20can't%20be%20read%20by%20xschem%20because%20it's%20interpreter%20not%20supporting%20tcl.png"> <br><br>
+         --> Opening ngspice ,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/4.%20opening%20ngspice.png"> <br><br>
+	--> After writing this command ngspice can support batch format also,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/4.1%20after%20writing%20this%20command%20now%20ngspice%20can%20support%20batch%20format%20also.png"> <br><br>
+	--> Making a directory and setting it up for running the tools,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/5.%20making%20directory%20and%20setting%20it%20up%20for%20running%20the%20tools.png"> <br><br>
+           --> Checking whether everything has been set up properly or not,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/6.%20checking%20whether%20everything%20has%20setup%20properly%20or%20not.png"> <br><br>
+	--> Can see that the magic has setup properly,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/7.%20can%20see%20that%20the%20magic%20has%20setup%20properly.png"> <br><br>
+	--> Can see that the magic icons now in saturated colors by command *magic -d xr*,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/8.%20can%20see%20that%20the%20magic%20icons%20now%20in%20saturated%20colorsby%20command%20*magic%20-d%20xr*.png"> <br><br>
+        --> schematic for inverter created for simulation purpose,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/9.%20schematic%20for%20inverter%20created%20for%20simulation%20purpose.png"> <br><br>
+        --> Created a symbol for our inverter,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/10.%20created%20a%20symbol%20for%20our%20inverter.png"> <br><br>
+	--> Basically, this symbol is nothing but the testbench for our inverter,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/10.1%20basically%20this%20symol%20is%20nothing%20butthe%20testbench%20for%20our%20inverter.png"> <br><br>
+        --> Simulation result,<br>
+	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/11.%20simuation%20result.png"> <br><br>
+	--> ,<br>
+	<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
+          --> ,<br>
+	<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
+	--> ,<br>
+	<img  width="1085" alt="hand_writ_exam" src=""> <br><br>
+ 
+</details>
 
