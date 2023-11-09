@@ -5947,14 +5947,15 @@ report_si_noise_analysis
 ## DAY-28 DRC/LVS checks
 <details> 
 <summary> Introduction to Skywater 130 </summary>
-- The Skywater 130nm Process Design Kit (PDK) is a robust open-source toolkit that equips chip designers with everything they need—design rules, layer definitions, device specs, and models. Thanks to open PDKs, anyone can leverage open-source design tools to craft their circuits. Take the Caravel chip, for example; it houses a RISC-V processor and provides users with a customizable design space. A PDK, or Process Design Kit, is essentially a set of crucial files and documentation guiding chip designers through the intricacies of working with a specific process foundry to produce chips.<br><br>
+	
+  The Skywater 130nm Process Design Kit (PDK) is a robust open-source toolkit that equips chip designers with everything they need—design rules, layer definitions, device specs, and models. Thanks to open PDKs, anyone can leverage open-source design tools to craft their circuits. Take the Caravel chip, for example; it houses a RISC-V processor and provides users with a customizable design space. A PDK, or Process Design Kit, is essentially a set of crucial files and documentation guiding chip designers through the intricacies of working with a specific process foundry to produce chips.<br><br>
 
 - The "130" in Sky130 signifies the feature size of the process, meaning the smallest transistors achievable with this PDK are 130nm. The Sky130PDK mainly comprises documentation (courtesy of the Skywater PDK), library files on GitHub, and a community thriving in a Slack group.<br><br>
 
 - It's essential to highlight that open PDKs harmonize best with open-source Electronic Design Automation (EDA) tools. Attempting to use them with commercialized EDA tools might pose compatibility challenges due to differences in file formats.<br><br>
 
 
-**--> Open-source EDA tools** <br>
+**--> Open-source EDA tools :-** <br>
 - The open_pdks files available on opencircuitdesign.com are designed as an installer based on makefiles. This installer takes files from the Skywater PDK and restructures them to make them compatible with a variety of open-source tools.<br>
 - To install open_pdks, you can follow these steps:<br>
 
@@ -5965,8 +5966,21 @@ report_si_noise_analysis
  make 
  sudo make install
 ```
+As the open-source pdks support every process, the configured process is defined. The make command grabs the skywater PDKs from Google and submerges and keeps them for installation. Now, Building the libraries from the repository is done after the installation.<br><br>
 
 
+**-> Magic** <br>
+Magic stands as a go-to Electronic Design Automation (EDA) tool in the realm of Very Large Scale Integration (VLSI) design. Its primary role lies in the layout and physical design of integrated circuits. Magic facilitates the creation, editing, and visualization of the physical representations of various components on a chip, ranging from transistors to wires and other interconnections.<br><br>
 
- 
+**-> OpenLANE** <br>
+Steps into the scene as an open-source framework and toolchain, weaving a tapestry of digital integrated circuits using open-source EDA tools and methodologies. Tailored for Application-Specific Integrated Circuit (ASIC) design, OpenLANE orchestrates a seamless RTL-to-GDSII flow, automating the chip design process from the register-transfer level to Graphic Design System II.<br><br>
+
+**-> XSCHEM** <br>
+it's another open-source gem in the Electronic Design Automation (EDA) toolkit, specializing in schematic capture and simulation for both digital and analog circuit design. As part of the XESS project, XSCHEM collaborates harmoniously with other EDA tools, providing a graphical interface for designers to craft circuit diagrams with components like transistors, resistors, capacitors, and more.<br><br>
+
+**-> Netgen** <br>
+Takes the spotlight for digital logic synthesis and formal verification of digital circuits. This EDA tool is often enlisted for the intricate dance of creating gate-level representations from high-level hardware descriptions, typically in Hardware Description Language (HDL) like VHDL or Verilog. Its prowess finds a natural home in the domains of ASIC and FPGA design.<br><br>
+
+**-> NGSpice** <br>
+The open-source electronic circuit simulator, strides into the Electronic Design Automation (EDA) arena, specializing in analog and mixed-signal circuit analysis. A boon for electronics engineers and circuit designers, NGSpice facilitates the simulation of analog, digital, and mixed-signal circuits, empowering users to breathe life into their designs through virtual experimentation.<br><br>
 </details>
