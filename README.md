@@ -5947,6 +5947,26 @@ report_si_noise_analysis
 ## DAY-28 DRC/LVS checks
 <details> 
 <summary> Introduction to Skywater 130 </summary>
+- The Skywater 130nm Process Design Kit (PDK) is a robust open-source toolkit that equips chip designers with everything they need—design rules, layer definitions, device specs, and models. Thanks to open PDKs, anyone can leverage open-source design tools to craft their circuits. Take the Caravel chip, for example; it houses a RISC-V processor and provides users with a customizable design space. A PDK, or Process Design Kit, is essentially a set of crucial files and documentation guiding chip designers through the intricacies of working with a specific process foundry to produce chips.<br><br>
+
+- The "130" in Sky130 signifies the feature size of the process, meaning the smallest transistors achievable with this PDK are 130nm. The Sky130PDK mainly comprises documentation (courtesy of the Skywater PDK), library files on GitHub, and a community thriving in a Slack group.<br><br>
+
+- It's essential to highlight that open PDKs harmonize best with open-source Electronic Design Automation (EDA) tools. Attempting to use them with commercialized EDA tools might pose compatibility challenges due to differences in file formats.<br><br>
+
+
+**--> Open-source EDA tools** <br>
+- The open_pdks files available on opencircuitdesign.com are designed as an installer based on makefiles. This installer takes files from the Skywater PDK and restructures them to make them compatible with a variety of open-source tools.<br>
+- To install open_pdks, you can follow these steps:<br>
+
+```ruby
+ git clone https://github.com/RTimothyEdwards/open_pdks
+ cd open_pdks
+ configure –enable-sky130-pdk
+ make 
+ sudo make install
+```
+
+
 
  
 </details>
