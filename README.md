@@ -6110,3 +6110,108 @@ Repeated iteratively throughout the design process, designers adjust and rerun t
 	<img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/26f8ec8411b1fd199d2a134cea689296848aed7e/day28/11.%20simuation%20result.png"> <br><br>
 </details>
 
+
+
+
+
+## TCL Programming
+
+<details>
+
+ <summary>Day 1</summary><br>
+
+We hete target at utilizing TCL scripting to generate a comprehensive report from a design using the free and open-source EDA tools, Yosys and Opentimer. The input for the program consists of paths to design files in CSV format. By the end of the fifth day, the objective is to supply design information, specifically the paths of design data, to the "TCL BOX" (synui). This TCL BOX, powered by Yosys and Opentimer, is responsible for executing the design and producing detailed timing reports.<br><br>
+
+
+
+On the first day of the training course, the primary objective is to develop a command (in this case, synui) and establish a mechanism for transferring a .csv file from the UNIX shell to the TCL script. This process is designed to accommodate three distinct scenarios from the user's perspective. <br>
+
+
+**Developing the script for the synui command and the ```synui.tcl``` files:** <br><br>
+**synui code**: <br><br>
+
+
+
+*--> The provided code illustrates the fundamental structure of Bash code employed for implementing common scenarios:* <br>
+
+```ruby
+#This Code to handle the scenario where user does not give any file, does not give .csv file, gives more than one file as argument
+
+if [ $# -eq 0 ]
+then
+        echo "Info: Please provide a CSV file"
+        exit 1
+elif [ $# -gt 1 ]
+then
+        echo "Info: Please provide only 1 CSV file"
+        exit 1
+else
+        if [[ $1 != *.csv  &&  $1 != "-help" ]]
+        then
+                echo "Info: Please provide a .csv format file"
+                exit 1
+        fi
+fi
+#This part of the Code to check if the .csv file is present in directory or not, and also to display information for -help argument.
+if [ ! -f $1 ] || [ $1 == "-help" ]
+then
+        if [ $1 != "-help" ]
+        then
+                echo "Error: The file $1 is not found in current directory."
+                exit 1
+        else
+                echo "USAGE: ./synui <csv_file>"
+                echo
+                echo " where <csv file> consists of 2 columns, below keyword being in 1st column and is Case Sensitive. Please request Niharika for sample csv file."
+                echo
+                echo " <Design Name> is the name of top level module."
+                echo
+                echo " <Output Directory> is the name of output directory where you want to dump synthesis script, synthesized netlist and timing reports."
+                echo
+                echo " <Netlist Directory> is the name of directory where all RTL netlist are present."
+                echo
+                echo " <Early Library Path> is the file path of the early cell library to be used for STA."
+                echo
+                echo " <Late Library Path> is file path of the late cell library to be used for STA."
+                echo
+                echo " <Constraints file> is csv file path of constraints to be used for STA."
+                exit 1
+        fi
+else
+        #Code to execute if the proper CSV file exists.
+        echo "Info: CSV file accepted"
+        tclsh synui.tcl $1
+fi
+```
+
+**--> Within my synui command, I've incorporated a total of 5 general scenarios as perceived from the user's standpoint in the bash script:** <br><br>
+
+1. No input file provided.<br>
+
+2. File provided exists but is not of .csv format.<br>
+
+3. More than one file or parameters provided.<br>
+
+4. Provide a .csv file that does not exist.<br>
+
+5. Type "-help" to find out usage.<br>
+
+6. providing a correct .csv file.<br>
+
+</details>
+
+
+<details>
+
+<summary>Day 2</summary><br>
+
+Let us convert all inputs into format[1] and SDC format, and pass these inputs to synthesis tool called 'yosys'. This can be further made into sub-tasks as follows:
+- Create the variables
+-  Check if files and directories mentioned in .csv, exists or not.
+-  Read the constraint file for above .csv file and convert it to SDC format.
+-  Read all files in the netlist directory.
+-  Create main synthesis script in format[2]
+-  Pass this script to yosys.
+
+
+</details>
