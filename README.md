@@ -6549,7 +6549,7 @@ while { $i < $end_of_inputs } {
 
 
 <details>
-<summary>Day 4 - Complete Scripting and Yosys Synthesis Introduction</summary><br>
+<summary>Day 4</summary><br>
 
 Day 4 tasks encompassed processing the output section, writing SDC commands to a file, verifying the Yosys hierarchy, addressing errors, and conducting a sample Yosys synthesis utilizing a memory example, accompanied by detailed explanations.<br>
 
@@ -6729,9 +6729,10 @@ show
 
 </details>
 
- 
+
+ <details>
 <summary> Day 5</summary>
-<details>
+
 	
 **--> Advanced Scripting Techniques:** <br>
 - The task of day5 is to automate the running synthesis in yosys and writing the files needed for the OpenTimer tool, like .conf,.spef, and timing Create an OpenTimer script, launch an OpenTimer STA, and gather the information needed to create a QoR.<br>
