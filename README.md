@@ -6730,7 +6730,7 @@ show
 </details>
 	
 <summary>Day 5</summary><br>
-
+<details>
 **--> Advanced Scripting Techniques:** <br>
 - The task of day5 is to automate the running synthesis in yosys and writing the files needed for the OpenTimer tool, like .conf,.spef, and timing Create an OpenTimer script, launch an OpenTimer STA, and gather the information needed to create a QoR.<br>
 - Finally, print the data in a tool-standard QoR output format using the results file that was created during the OpenTimer STA run.<br>
@@ -7223,7 +7223,7 @@ puts "\nInfo: Time elapsed = $time_elapsed_in_sec"
 
 
 **--> Final QOR Report generation** <br><br>
-```
+```ruby
 puts "\n"
 puts "                                                           ****PRELAYOUT TIMING RESULTS_TCLBOX****\n"
 set formatStr {%15s%14s%21s%16s%16s%15s%15s%15s%15s}
