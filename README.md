@@ -5936,7 +5936,7 @@ report_si_noise_analysis
 ```
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/7report_1.png"> <br>
 <img  width="1085" alt="hand_writ_exam" src="https://github.com/gohilnihar07/Samsungpdtraining/blob/7ff6139c92f2ca15babaf849cc6eec248bb18533/DAY-27%20N/8report_2.png"> <br>
-</details>
+</details> 
 
 
 
@@ -6114,7 +6114,7 @@ Repeated iteratively throughout the design process, designers adjust and rerun t
 
 
 
-## TCL Programming
+## DAY-30 TCL Programming
 
 <details>
 
@@ -7239,4 +7239,86 @@ foreach design_name $Design_Name runtime $time_elapsed_in_sec instance_count $In
 puts [format $formatStr "-----------" "-------" "--------------" "---------" "---------" "--------" "--------" "-------" "-------"]
 puts "\n"
 ```
+</details>
+
+
+
+
+
+## Day31 : Low power design
+<details>
+<summary> DAY-1 </summary>
+	
+**--> Distinguishing "power" and "energy" and their impact on performance:** <br><br>
+**- Power:** <br>
+- Definition: Power represents the rate at which energy is transferred or converted. It quantifies the amount of energy transferred or converted per unit of time.<br>
+
+- Formula: In electrical terms, power (P) is determined by the product of voltage (V) and current (I): P = V × I.<br>
+
+-> As power increases, the following observations become apparent:<br>
+
+Heat dissipation rises.<br>
+
+Cooling costs escalate.<br>
+
+Frequency becomes constrained.<br>
+
+Overall material degradation accelerates.<br><br>
+
+**- Energy:**
+- Definition: Energy signifies the capacity to perform work or generate heat. It manifests in diverse forms such as electrical, mechanical, thermal, etc.<br>
+- Formula: In electrical terms, energy (E) can be computed by multiplying power (P) by time (t): E = P × t or E = V × I × t.<br>
+
+
+
+
+
+#### Differentiating "power" and "energy" and it's impact on performance:
+- Power:
+  - Definition: Power is the rate at which energy is transferred or converted. It is the amount of energy transferred or converted per unit of time.
+  - Formula: In electrical terms, power (P) is calculated as the product of voltage (V) and current (I) : P=V×I.
+
+    As power increase following observations can be made
+  - Heat dissipation increases.
+  - Cooling cost increases.
+  - Frequency get limited.
+  - Overall material degrades faster.
+- Energy:
+   - Definition: Energy is the capacity to do work or produce heat. It exists in various forms such as electrical, mechanical, thermal, etc.
+   - Formula: In electrical terms, energy (E) can be calculated by multiplying power (P) by time (t): E=Pxt or E=VxIxt
+
+#### Economics of power/energy:
+- Performance.
+- Cost.
+  - Packaging
+  - Battery capacity
+  - Shipping
+- Weight.
+- Form factor
+- Functionality.
+- Context of use.
+- Comfort/Safety.
+#### Low power designs are essential for various electronic devices and systems for several reasons:
+- Battery Life: Many devices, especially portable ones like smartphones, wearables, and IoT devices, rely on batteries. Low power designs help extend the battery life, allowing devices to operate longer without needing a recharge.
+- Heat Dissipation: High power consumption generates heat, which can degrade the performance and lifespan of electronic components. Low power designs reduce heat dissipation, leading to more reliable and durable devices.
+- Environmental Impact: Energy efficiency is crucial for reducing the environmental impact of electronic devices. Lower power consumption means less energy usage, which translates to reduced greenhouse gas emissions.
+- Cost Reduction: With less power consumption, devices may use smaller batteries or require less frequent charging. This can lower production costs and increase the overall affordability of the device.
+- Portability and Mobility: Low power designs enable smaller form factors and lighter devices, which is crucial for portable electronics. For example, in the case of wearables or medical devices, minimizing power consumption is vital for user comfort and convenience.
+- Reliability: Lower power consumption often leads to improved device reliability. Components operating at lower temperatures tend to have longer lifespans and reduced failure rates.
+- Regulatory Compliance: Many regions have regulations and standards regarding energy consumption for electronic devices. Low power designs help manufacturers comply with these regulations.
+#### Portable vs Mobile vs Mobility
+In the realm of low-power IC design, the terms "portable," "mobile," and "mobility" are often used to describe different categories or aspects related to devices and their usage.
+- Portable:
+  - Portable refer to gadgets or tools that can be easily carried or moved from one place to another.
+  - Low-power IC design is crucial for portable devices as they often rely on batteries.
+  - Minimizing power consumption ensures longer battery life, making these devices more practical and convenient for users. Examples include laptops, tablets, portable gaming consoles, etc.
+- Mobile:
+  - Mobile devices are specifically designed for use while being in motion or while on the go. They provide communication, entertainment, or productivity capabilities and often rely on wireless connectivity.
+  - Mobile devices, such as smartphones, smartwatches, and GPS units, heavily benefit from low-power IC design. These devices require energy-efficient components to support functionalities like constant connectivity, GPS tracking, sensors, and multimedia capabilities while ensuring prolonged battery life.
+- Mobility:
+ - Mobility in IC design refers to the ability to create integrated circuits that cater to the dynamic and changing requirements of portable and mobile devices.
+ - Design is focused on creating ICs that not only consume minimal power but also offer the necessary performance and functionality demanded by portable and mobile devices. This involves designing chips that optimize power consumption during various operating modes, including active use, standby, and sleep modes, to support the mobility and versatility required by modern devices.
+#### Power Management Techniques:
+- Basic Techniques: Clock gating and Multi-Threshold.
+- Advanced Techniques: MTCMOS power gating, Power gating with state retention, DVFS and Low VDD StandBy.
 </details>
