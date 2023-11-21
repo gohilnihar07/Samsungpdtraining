@@ -6213,5 +6213,343 @@ Let us convert all inputs into format[1] and SDC format, and pass these inputs t
 -  Create main synthesis script in format[2]
 -  Pass this script to yosys.
 
+**Creating variables**:<br>
+
+- I've automatically generated variables by converting the CSV file into a matrix and subsequently into an array. Additionally, I've implemented a specific condition to identify the design name. Moreover, I've included a command to capture the script's start time, enabling runtime calculation at the end.<br>
+- lindex command is used to retrieve elements from a list. It allows you to access a specific element in a list based on its index.  The basic syntax is ```lindex $listname $index```.$listName is the name of the list.$index is the index of the element you want to retrieve. Indexing in Tcl starts at 0.<br>
+- argv variable holds the list of command-line arguments passed to a Tcl script. It's similar to how other programming languages handle command-line arguments. The argv variable is a list containing the script name and any additional arguments provided when invoking the Tcl script.<br>
+- set command is used to create or modify the variables.<br>
+
+
+* Code: synui.tcl<br>
+
+```ruby
+#!/bin/tclsh
+
+set start_time [clock clicks -microseconds]
+set csv_design [lindex $argv 0]
+
+package require csv
+package require struct::matrix
+
+struct::matrix m
+
+set f [open $csv_design]
+
+csv::read2matrix $f m , auto
+
+close $f
+
+set n_columns [m columns]
+set n_rows [m rows]
+
+puts "\nInfo:Variable values"
+puts "No. of rows =  $n_rows"
+puts "No. of columns = $n_columns"
+
+m link csv_arr
+
+set i 0
+while {$i < $n_rows} {
+        puts "\nInfo: Setting $csv_arr(0,$i) as '$csv_arr(1,$i)'"
+        if { ![string match "*/*" $csv_arr(1,$i)] && ![string match "*.*" $csv_arr(1,$i)] } {
+                        set [string map {" " "_"} $csv_arr(0,$i)] $csv_arr(1,$i)
+        } else {
+                set [string map {" " "_"} $csv_arr(0,$i)] [file normalize $csv_arr(1,$i)]
+        }
+        set i [expr {$i+1}]
+}
+```
+
+--> Above code has set the following variables.
+- Design Name : 'openMSP430'
+- Output Directory : './outdir_openMSP430'
+- Netlist Directory : './verilog'
+- Early Library Path : 'osu018_stdcells.lib'
+- Late Library Path : 'osu018_stdcells.lib'
+- Constraints File : 'openMSP430_design_constraints.csv'
+- Output directory : /home/vsduser/vsdsynth/outdir_openMSP430
+- RTL netlist directory : /home/vsduser/vsdsynth/verilog
+- Early cell library : /home/vsduser/vsdsynth/osu018_stdcells.lib
+- Late cell library : /home/vsduser/vsdsynth/osu018_stdcells.lib
+- Constraints file f : /home/vsduser/vsdsynth/openMSP430_design_constraints.csv<br><br>
+
+**--> For checking existance of file and directory**:
+
+As the presence of these files and directories is crucial for the program's functionality, I've incorporated code to verify their existence. If the input files are not found, the code exits, except in the case of the output directory, which is created if absent. The following screenshots showcase the terminal displaying this functionality, along with the basic code for the process.<br><br>
+
+* The following code will assess the presence of the required directories and files to ensure successful execution.<br>
+* Code: synui.tcl<br>
+
+```ruby
+############# FILE AND DIRECTORY EXISTENCE CHECK ###################
+
+if { ![file isdirectory $Output_Directory] } {
+        puts "\nInfo: Cannot find output directory $Output_Directory. Creating $Output_Directory"
+        file mkdir $Output_Directory
+} else {
+        puts "\nInfo: Output directory found in path $Output_Directory"
+}
+# Checking if netlist directory exists if not exits
+if { ![file isdirectory $Netlist_Directory] } {
+        puts "\nError: Cannot find RTL netlist directory in path $Netlist_Directory. Exiting..."
+        exit
+} else {
+        puts "\nInfo: RTL netlist directory found in path $Netlist_Directory"
+}
+# Checking if early cell library file exists if not exits
+if { ![file exists $Early_Library_Path] } {
+        puts "\nError: Cannot find early cell library in path $Early_Library_Path. Exiting..."
+        exit
+} else {
+        puts "\nInfo: Early cell library found in path $Early_Library_Path"
+}
+# Checking if late cell library file exists if not exits
+if { ![file exists $Late_Library_Path] } {
+        puts "\nError: Cannot find late cell library in path $Late_Library_Path. Exiting..."
+        exit
+} else {
+        puts "\nInfo: Late cell library found in path $Late_Library_Path"
+}
+# Checking if constraints file exists if not exits
+if { ![file exists $Constraints_File] } {
+        puts "\nError: Cannot find constraints file in path $Constraints_File. Exiting..."
+        exit
+} else {
+        puts "\nInfo: Constraints file found in path $Constraints_File"
+}  
+```
+
+**--> Now inorder to process the constraints,the following snip of code is used as follows:**
+The file was effectively analyzed and transformed into a matrix. Subsequently, the initial rows of clocks, inputs, and outputs were extracted, along with the count of rows and columns. Presented below is the basic code for this process, along with a terminal screenshot illustrating numerous "puts" commands recording the variables.<br><br>
+
+* Code: synui.tcl<br>
+
+```ruby
+# Constraints csv file data processing for convertion to format[1](excel) and SDC
+
+puts "\nInfo: Dumping SDC constraints for $Design_Name"
+::struct::matrix m1
+set f1 [open $Constraints_File]
+csv::read2matrix $f1 m1 , auto
+close $f1
+set n_rows_concsv [m1 rows]
+set n_columns_concsv [m1 columns]
+# Finding row number starting for CLOCKS section
+set clocks_start_row [lindex [lindex [m1 search all CLOCKS] 0] 1]
+# Finding column number starting for CLOCKS section
+set clocks_start_column [lindex [lindex [m1 search all CLOCKS] 0] 0]
+# Finding row number starting for INPUTS section
+set inputs_start [lindex [lindex [m1 search all INPUTS] 0] 1]
+# Finding row number starting for OUTPUTS section
+set outputs_start [lindex [lindex [m1 search all OUTPUTS] 0] 1]
+
+puts "\nInfo: Listing value of variables for user debug"
+puts "Number of rows in CSV file = $n_rows_concsv"
+puts "Number of columns in CSV file = $n_columns_concsv"
+puts "CLOCKS starting row in CSV file = $clocks_start_row"
+puts "CLOCKS starting column in CSV file = $clocks_start_column"
+puts "INPUTS starting row in CSV file = $inputs_start "
+puts "OUTPUTS starting row in CSV file = $outputs_start "
+```
 
 </details>
+
+
+
+
+
+
+<details>
+	
+<summary>Day 3</summary><br>
+
+The task for Day 3 primarily involves analyzing clock and input constraints within a CSV file and generating SDC commands in a .sdc file containing the processed data. This process incorporates various matrix search algorithms, including one specifically designed to differentiate between inputs classified as buses and individual bits.<br>
+```ruby
+# Constraints csv file data processing for convertion to format[1](excel) and SDC
+
+puts "\nInfo: Dumping SDC constraints for $Design_Name"
+::struct::matrix cons
+set f1 [open $Constraints_File]
+csv::read2matrix $f1 cons , auto
+close $f1
+set n_rows_concsv [cons rows]
+set n_columns_concsv [cons columns]
+# Finding row number starting for CLOCKS section
+set clocks_start_row [lindex [lindex [cons search all CLOCKS] 0] 1]
+# Finding column number starting for CLOCKS section
+set clocks_start_column [lindex [lindex [cons search all CLOCKS] 0] 0]
+# Finding row number starting for INPUTS section
+set inputs_start [lindex [lindex [cons search all INPUTS] 0] 1]
+# Finding row number starting for OUTPUTS section
+set outputs_start [lindex [lindex [cons search all OUTPUTS] 0] 1]
+
+puts "\nInfo: Listing value of variables for user debug"
+puts "Number of rows in CSV file = $n_rows_concsv"
+puts "Number of columns in CSV file = $n_columns_concsv"
+puts "CLOCKS starting row in CSV file = $clocks_start_row"
+puts "CLOCKS starting column in CSV file = $clocks_start_column"
+puts "INPUTS starting row in CSV file = $inputs_start "
+puts "OUTPUTS starting row in CSV file = $outputs_start "
+```
+![2](https://github.com/Usha-Mounika/Samsung_PD/assets/142480150/a25de779-2b83-4a8f-a8e0-a5508a895c5d)
+
+To process constraints in a csv file for clocks and inputs and dump SDC commands into a .sdc file with actual processed data.
+
+Processing of the constraints .csv file for CLOCKS and dumping SDC commands to .sdc The csv file containing the CLOCKS data has been successfully processed, and clock-based SDC commands (with distinct clock names by appending "_synyui" to the SDC create_clock command) have been dumped into the.sdc file.
+```
+
+**--> Processing of the constraints .csv file for CLOCKS and dumping SDC commands to .sdc :** <br>
+
+The processing of the CSV file containing CLOCK data has been completed successfully. Clock-based SDC commands, featuring unique clock names achieved by appending "_synui" to the SDC create_clock command, have been written to the .sdc file. Provided below are terminal screenshots displaying numerous "puts" statements showcasing variables, user debug information, and the output.sdc file, along with the basic code for this process:<br>
+
+
+```ruby
+# Conversion of constraints csv file to SDC
+# CLOCKS section
+
+#puts "$n_columns_concsv"
+set clk_erd_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] early_rise_delay] 0 ] 0 ]
+set clk_efd_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] early_fall_delay] 0 ] 0 ]
+set clk_lrd_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] late_rise_delay] 0 ] 0 ]
+set clk_lfd_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] late_fall_delay] 0 ] 0 ]
+# Finding column number starting for clock transition in CLOCKS section
+set clk_ers_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] early_rise_slew] 0 ] 0 ]
+set clk_efs_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] early_fall_slew] 0 ] 0 ]
+set clk_lrs_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] late_rise_slew] 0 ] 0 ]
+set clk_lfs_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] late_fall_slew] 0 ] 0 ]
+# Finding column number starting for frequency and duty cycle in CLOCKS section only
+set clk_freq_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] frequency] 0 ] 0 ]
+set clk_dc_st_col [lindex [lindex [m1 search rect $clocks_start_column $clocks_start_row [expr { $n_columns_concsv - 1}] [expr {$inputs_start-1}] duty_cycle] 0 ] 0 ]
+
+# Creating .sdc file with design name in output directory and opening it in write mode
+set sdc_file [open $Output_Directory/$Design_Name.sdc "w"]
+# Setting variables for actual clock row start and end
+set i [expr {$clocks_start_row+1}]
+set end_of_clocks [expr {$inputs_start-1}]
+
+puts "\nInfo-SDC: Working on clock constraints and creating clocks. Please wait"
+
+# while loop to write constraint commands to .sdc file
+while { $i < $end_of_clocks } {
+	#Create SDC command to create clocks.
+	puts -nonewline $sdc_file "\ncreate_clock -name [concat [m1 get cell 0 $i]_tclbox] -period [m1 get cell $clk_freq_st_col $i] -waveform \{0 [expr {[m1 get cell $clk_freq_st_col $i]*[m1 get cell $clk_dc_st_col $i]/100}]\} \[get_ports [m1 get cell 0 $i]\]"
+	# set_clock_transition SDC command to set clock transition values
+	puts -nonewline $sdc_file "\nset_clock_transition -min -rise [m1 get cell $clk_ers_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	puts -nonewline $sdc_file "\nset_clock_transition -min -fall [m1 get cell $clk_efs_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	puts -nonewline $sdc_file "\nset_clock_transition -max -rise [m1 get cell $clk_lrs_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	puts -nonewline $sdc_file "\nset_clock_transition -max -fall [m1 get cell $clk_lfs_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	# set_clock_latency SDC command to set clock latency values
+	puts -nonewline $sdc_file "\nset_clock_latency -source -early -rise [m1 get cell $clk_erd_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	puts -nonewline $sdc_file "\nset_clock_latency -source -early -fall [m1 get cell $clk_efd_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	puts -nonewline $sdc_file "\nset_clock_latency -source -late -rise [m1 get cell $clk_lrd_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	puts -nonewline $sdc_file "\nset_clock_latency -source -late -fall [m1 get cell $clk_lfd_st_col $i] \[get_clocks [m1 get cell 0 $i]\]"
+	set i [expr {$i+1}]
+}
+set clocks_start_row_actual [expr {$clocks_start_row+1}]
+puts "\n Clocks created in .sdc file. Values for debugging: "
+puts "\n Clock early rise delay start column in constraint file = $clk_erd_st_col"
+puts "\n Clock early fall delay start column in constraint file = $clk_efd_st_col"
+puts "\n Clock late rise delay start column in constraint file = $clk_lrd_st_col"
+puts "\n Clock late fall delay start column in constraint file = $clk_lfd_st_col"
+puts "\n Clock early rise slew start column in constraint file = $clk_ers_st_col"
+puts "\n Clock early fall slew start column in constraint file = $clk_efs_st_col"
+puts "\n Clock late rise slew start column in constraint file = $clk_lrs_st_col"
+puts "\n Clock late fall slew start column in constraint file = $clk_lfs_st_col"
+puts "\n Clock frequency start column in constraint file = $clk_freq_st_col"
+puts "\n Clock duty cycle start column in constraint file = $clk_dc_st_col"
+puts "\n Clock actual starting row = $clocks_start_row_actual"
+puts "\n Clock actual ending row = $end_of_clocks"
+```
+
+
+
+
+**Processing of the constraints .csv file for INPUTS and dumping SDC commands to .sdc**
+
+The constraints .csv file for INPUTS has been effectively processed, distinguishing between bit and bus inputs. Subsequently, SDC commands based on input constraints have been successfully written to a .sdc file. Terminal screenshots are provided below, featuring numerous "puts" statements displaying variables, user debug information, and the output.sdc file, along with the essential code for this process.<br><br>
+
+* Code: synui.tcl<br>
+
+```ruby
+# Finding the starting column number for input clock latency in INPUTS section
+set ip_erd_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] early_rise_delay] 0 ] 0 ]
+set ip_efd_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] early_fall_delay] 0 ] 0 ]
+set ip_lrd_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] late_rise_delay] 0 ] 0 ]
+set ip_lfd_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] late_fall_delay] 0 ] 0 ]
+
+# Finding column number starting for input clock transition in INPUTS section only
+set ip_ers_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] early_rise_slew] 0 ] 0 ]
+set ip_efs_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] early_fall_slew] 0 ] 0 ]
+set ip_lrs_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] late_rise_slew] 0 ] 0 ]
+set ip_lfs_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] late_fall_slew] 0 ] 0 ]
+
+# Finding column number starting for input related clock in INPUTS section only
+set ip_rc_st_col [lindex [lindex [m1 search rect $clocks_start_column $inputs_start [expr {$n_columns_concsv-1}] [expr {$outputs_start-1}] clocks] 0 ] 0 ]
+
+# Setting variables for actual input row start and end
+set i [expr {$inputs_start+1}]
+set end_of_inputs [expr {$outputs_start-1}]
+
+puts "\nInfo-SDC: Working on input constraints.."
+puts "\nInfo-SDC: Categorizing input ports as bits and busses"
+
+# while loop to write constraint commands to .sdc file
+while { $i < $end_of_inputs } {
+# Checking if input is bussed or not
+	set netlist [glob -dir $Netlist_Directory *.v]
+	set tmp_file [open /tmp/1 w]
+	foreach f $netlist {
+		set fd [open $f]
+		while { [gets $fd line] != -1 } {
+			set pattern1 " [m1 get cell 0 $i];"
+			if { [regexp -all -- $pattern1 $line] } {
+				set pattern2 [lindex [split $line ";"] 0]
+				if { [regexp -all {input} [lindex [split $pattern2 "\S+"] 0]] } {
+					set s1 "[lindex [split $pattern2 "\S+"] 0] [lindex [split $pattern2 "\S+"] 1] [lindex [split $pattern2 "\S+"] 2]"
+					puts -nonewline $tmp_file "\n[regsub -all {\s+} $s1 " "]"
+				
+				}
+			}
+		}
+		close $fd
+	}
+	close $tmp_file
+	set tmp_file [open /tmp/1 r]
+	set tmp2_file [open /tmp/2 w]
+	puts -nonewline $tmp2_file "[join [lsort -unique [split [read $tmp_file] \n]] \n]"
+	close $tmp_file
+	close $tmp2_file
+	set tmp2_file [open /tmp/2 r]
+	set count [llength [read $tmp2_file]]
+	close $tmp2_file
+	if {$count > 2} {
+		set inp_ports [concat [m1 get cell 0 $i]*]
+	} else {
+		set inp_ports [m1 get cell 0 $i]
+	}
+		# set_input_transition SDC command to set input transition values
+	puts -nonewline $sdc_file "\nset_input_transition -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -min -rise -source_latency_included [m1 get cell $ip_ers_st_col $i] \[get_ports $inp_ports\]"
+	puts -nonewline $sdc_file "\nset_input_transition -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -min -fall -source_latency_included [m1 get cell $ip_efs_st_col $i] \[get_ports $inp_ports\]"
+	puts -nonewline $sdc_file "\nset_input_transition -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -max -rise -source_latency_included [m1 get cell $ip_lrs_st_col $i] \[get_ports $inp_ports\]"
+	puts -nonewline $sdc_file "\nset_input_transition -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -max -fall -source_latency_included [m1 get cell $ip_lfs_st_col $i] \[get_ports $inp_ports\]"
+# set_input_delay SDC command to set input latency values
+	puts -nonewline $sdc_file "\nset_input_delay -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -min -rise -source_latency_included [m1 get cell $ip_erd_st_col $i] \[get_ports $inp_ports\]"
+	puts -nonewline $sdc_file "\nset_input_delay -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -min -fall -source_latency_included [m1 get cell $ip_efd_st_col $i] \[get_ports $inp_ports\]"
+	puts -nonewline $sdc_file "\nset_input_delay -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -max -rise -source_latency_included [m1 get cell $ip_lrd_st_col $i] \[get_ports $inp_ports\]"
+	puts -nonewline $sdc_file "\nset_input_delay -clock \[get_clocks [m1 get cell $ip_rc_st_col $i]\] -max -fall -source_latency_included [m1 get cell $ip_lfd_st_col $i] \[get_ports $inp_ports\]"
+	set i [expr {$i+1}]
+
+}
+
+</details>
+
+
+
+
+
+<details>
+	
+<summary>Day 4<br>
+
+
